@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<points datum="WGS84">
+    <point id="p1">
+        <lat>N4137.79900</lat>
+        <long>W00801.12100</long>
+        <alt>992</alt>
+        <date>17-JUL-02</date>
+        <desc>Casa da guarda florestal abandonada.
+            Daqui pode avistar-se o
+            <ref para="p3">marco geodésico</ref>.</desc>
+    </point>
+    <point id="p2">
+        <lat>N4137.77600</lat>
+        <long>W00801.05800</long>
+        <alt>991</alt>
+        <date>17-JUL-02</date>
+        <desc>Área de pic-nic na
+            <lugar>Serra da Cabreira</lugar></desc>
+    </point>
+    <point id="p3">
+        <lat>N4137.52900</lat>
+        <long>W00800.99600</long>
+        <alt>999</alt>
+        <date>17-JUL-02</date>
+    </point>
+</points>

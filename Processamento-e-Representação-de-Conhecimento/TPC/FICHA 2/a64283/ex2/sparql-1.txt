@@ -1,0 +1,9 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX untitled-ontology-22: <http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#>
+SELECT  ?nome 
+	WHERE {
+	 ?person untitled-ontology-22:chama_se ?nome.
+	 }

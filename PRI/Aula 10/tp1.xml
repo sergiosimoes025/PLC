@@ -1,0 +1,5021 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<tp1>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33679</numero>
+    
+         <nome>Ana Cristina Marques Teixeira</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35851</numero>
+    
+         <nome>Nuno Miguel Barroso Macedo</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>22328</numero>
+    
+         <nome>Rita Suzana Boto</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>33679_35851_2232812:02:20.pp1</file>
+  
+      <data>Wed Nov  7 12:02:20 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33702</numero>
+    
+         <nome>Hugo Teixeira da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33150</numero>
+    
+         <nome>Cristovão Henriques</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33175</numero>
+    
+         <nome>João Pedro Bacão Barros</nome>
+    
+         <curso/>
+  
+      </aluno>
+  
+      <titulo>Primeiro trabalho</titulo>
+  
+      <file>33702_33150_3317512:15:23.pp1</file>
+  
+      <data>Wed Nov  7 12:15:23 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33167</numero>
+    
+         <nome>Helena Isabel dos Santos Melo</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>32010</numero>
+    
+         <nome>Catarina Sofia Martinho Luís</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>33167_32010_23:40:46.pp1</file>
+  
+      <data>Wed Nov  7 23:40:46 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33148</numero>
+    
+         <nome>Bruno Miguel Faria</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33184</numero>
+    
+         <nome>José Pedro Carvalho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33238</numero>
+    
+         <nome>Sónia Andrea Eiras</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático N.º 1</titulo>
+  
+      <file>33148_33184_3323810:11:21.pp1</file>
+  
+      <data>Thu Nov  8 10:11:21 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35296</numero>
+    
+         <nome>Diogo Santos Marques Videira Sousa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35307</numero>
+    
+         <nome>Flávio Rinaldo Ribeiro da Rocha</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35326</numero>
+    
+         <nome>João Pedro Soares Henriques</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho PP I</titulo>
+  
+      <file>35296_35307_3532611:14:28.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\PP I\relatorio.zip</file-env>
+  
+      <data>Thu Nov  8 11:14:28 WET 2001</data>
+
+   </grupo>
+  
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33226</numero>
+    
+         <nome>Rodrigo Moreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33170</numero>
+    
+         <nome>João Paiva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo>Relatório do 1ºTrabalho Prático PP1</titulo>
+  
+      <file>33226_33170_12:25:54.pp1</file>
+  
+      <file-env>D:\pp1\relpp1.ps</file-env>
+  
+      <data>Thu Nov  8 12:25:54 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>34316</numero>
+    
+         <nome>Adriano Daniel Gonçalves Godinho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33180</numero>
+    
+         <nome>José Carlos Abreu</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>programa classificacao</titulo>
+  
+      <file>34316_33180_12:29:17.pp1</file>
+  
+      <file-env>U:\trabalho1.hs</file-env>
+  
+      <data>Thu Nov  8 12:29:17 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>34935</numero>
+    
+         <nome>João Manuel Campos Gonçalves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33162</numero>
+    
+         <nome>Gonçalo Leal Machado Ribeiro Pinto</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>34935_33162_12:30:21.pp1</file>
+  
+      <file-env>C:\Os meus documentos\LESI\PP\Trabalhopp1.zip</file-env>
+  
+      <data>Thu Nov  8 12:30:21 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30244</numero>
+    
+         <nome>Pedro Nuno Vaz Alves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30242</numero>
+    
+         <nome>Pedro Miguel Cunha Correia Araujo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33695</numero>
+    
+         <nome>Edgar Meira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório do primeiro trabalho de pp1</titulo>
+  
+      <file>30244_30242_3369513:31:26.pp1</file>
+  
+      <file-env>U:\pp1relatorio1.doc</file-env>
+  
+      <data>Thu Nov  8 13:31:26 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30176</numero>
+    
+         <nome>Bruno Magalhães</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33171</numero>
+    
+         <nome>João Miguel Falcão</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35328</numero>
+    
+         <nome>Joel Rocha</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuação</titulo>
+  
+      <file>30176_33171_3532814:17:59.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Pessoais\pp1 01-02.doc</file-env>
+  
+      <data>Thu Nov  8 14:17:59 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33225</numero>
+    
+         <nome>Roberto Marques</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <titulo>Relatorio</titulo>
+  
+      <file>33225__14:38:58.pp1</file>
+  
+      <file-env>A:\Rel1.txt</file-env>
+  
+      <data>Thu Nov  8 14:38:58 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33196</numero>
+    
+         <nome>Nelson Sousa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33219</numero>
+    
+         <nome>Pedro Pires</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>36758</numero>
+    
+         <nome>Hugo Martins</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático Nr 1</titulo>
+  
+      <file>33196_33219_3675816:16:41.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\tp1.zip</file-env>
+  
+      <data>Thu Nov  8 16:16:41 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>36859</numero>
+    
+         <nome>Anabela Carvalho Pinto</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33692</numero>
+    
+         <nome>Célia Augusta Mota de Miranda</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33696</numero>
+    
+         <nome>Eunice Marisa da Cunha Gomes</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1 de PP1</titulo>
+  
+      <file>36859_33692_3369616:22:10.pp1</file>
+  
+      <file-env>A:\relatorio.doc</file-env>
+  
+      <data>Thu Nov  8 16:22:10 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35298</numero>
+    
+         <nome>Duarte Nuno Malheiro de Barreiro</nome>
+    
+         <curso/>
+  
+      </aluno>
+  
+      <titulo>Primeiro trabalho PP1</titulo>
+  
+      <file>35298__17:02:33.pp1</file>
+  
+      <file-env/>
+  
+      <data>Thu Nov  8 17:02:33 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35298</numero>
+    
+         <nome>Duarte Nuno Malheiro de Barreiro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35309</numero>
+    
+         <nome>Francisco Manuel Esteves de Magalhães Fernandes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Primeiro Trabalho PP1</titulo>
+  
+      <file>35298_35309_17:10:40.pp1</file>
+  
+      <file-env>C:\Trabalho 1\relatorio.doc</file-env>
+  
+      <data>Thu Nov  8 17:10:40 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35298</numero>
+    
+         <nome>Duarte Nuno Malheiro de Barreiro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35309</numero>
+    
+         <nome>Francisco Manuel Esteves de Magalhães Fernandes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Primeiro Trabalho PP1</titulo>
+  
+      <file>35298_35309_17:11:04.pp1</file>
+  
+      <file-env>C:\Trabalho 1\trabalho1.hs</file-env>
+  
+      <data>Thu Nov  8 17:11:04 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>36868</numero>
+    
+         <nome>Sérgio Bruno Rodrigues Gonçalves</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho prático 1 - Orientação</titulo>
+  
+      <file>36868__17:14:34.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\Tp1 A36868.zip</file-env>
+  
+      <data>Thu Nov  8 17:14:34 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30481</numero>
+    
+         <nome>Maria de Fátima Sancho Monteiro</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34432</numero>
+    
+         <nome>Maria José Mendes</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34441</numero>
+    
+         <nome>Mário Hélder Ribeiro Macedo</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático nº1</titulo>
+  
+      <file>30481_34432_3444119:54:10.pp1</file>
+  
+      <file-env>A:\1trabalho.doc</file-env>
+  
+      <data>Thu Nov  8 19:54:10 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30221</numero>
+    
+         <nome>Maria Luísa do Rosário da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo>Trabalho prático1 de PPI</titulo>
+  
+      <file>30221__20:20:13.pp1</file>
+  
+      <file-env>C:\LESI\Trabalho 1.doc</file-env>
+  
+      <data>Thu Nov  8 20:20:13 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35367</numero>
+    
+         <nome>Rick Gomes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35308</numero>
+    
+         <nome>Fransisco José Maio Leite</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo>Trabalho Prático Nº 1</titulo>
+  
+      <file>35367_35308_21:07:37.pp1</file>
+  
+      <file-env>B:\U.M\I Ano\PPI\Work\Part 1\Relatório(R&amp;F).zip</file-env>
+  
+      <data>Thu Nov  8 21:07:37 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33234</numero>
+    
+         <nome>sandra maria</nome>
+    
+         <curso>lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35329</numero>
+    
+         <nome>Joel Puga</nome>
+    
+         <curso>lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>20128</numero>
+    
+         <nome>Amélia Carrapito</nome>
+    
+         <curso>mcc</curso>
+  
+      </aluno>
+  
+      <titulo>trabalho de pp1</titulo>
+  
+      <file>33234_35329_2012821:23:13.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\zandra\trbpp1.zip</file-env>
+  
+      <data>Thu Nov  8 21:23:13 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35343</numero>
+    
+         <nome>Luís Faria</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35353</numero>
+    
+         <nome>Nuno Castro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35369</numero>
+    
+         <nome>Rodrigo Baptista</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1 de PP I</titulo>
+  
+      <file>35343_35353_3536923:03:09.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\trab1pp1.zip</file-env>
+  
+      <data>Thu Nov  8 23:03:09 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35343</numero>
+    
+         <nome>Luís Faria</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35353</numero>
+    
+         <nome>Nuno Castro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35369</numero>
+    
+         <nome>Rodrigo Baptista</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1 de PP I (O correcto, o outro foi engano.)</titulo>
+  
+      <file>35343_35353_3536923:09:30.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\trab1pp1.zip</file-env>
+  
+      <data>Thu Nov  8 23:09:30 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>32011</numero>
+    
+         <nome>Gonçalo Figueiredo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>29356</numero>
+    
+         <nome>Hugo Santos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>20934</numero>
+    
+         <nome>Júlio Sá</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1 - Tipos e Pontuacoes</titulo>
+  
+      <file>32011_29356_2093423:32:44.pp1</file>
+  
+      <file-env>C:\Documents and Settings\Goncalo\My Documents\UM\PPI\Trab1\orientacao.zip</file-env>
+  
+      <data>Thu Nov  8 23:32:44 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>29241</numero>
+    
+         <nome>Nuno Miguel Silva Costa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>24784</numero>
+    
+         <nome>Nuno Filipe M.M. Ribeiro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33136</numero>
+    
+         <nome>André Marques da Fonseca</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatorio do 1 trabalho</titulo>
+  
+      <file>29241_24784_3313623:50:58.pp1</file>
+  
+      <file-env>C:\Documents and Settings\Administrator\My Documents\uminho\PPI\tp1\Relatorio.doc</file-env>
+  
+      <data>Thu Nov  8 23:50:58 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>18728</numero>
+    
+         <nome>Carlos Filipe Bettencourt Teixeira</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>21018</numero>
+    
+         <nome>Marco Hélder Ferreira Silva Machado</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>26329</numero>
+    
+         <nome>Nuno Joaquim Monteiro de Araújo</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>FPO - Tipos e Pontuações</titulo>
+  
+      <file>18728_21018_2632901:18:54.pp1</file>
+  
+      <file-env>D:\LMCC\2001-2002\PP1\trab1_18728_21018_26329.zip</file-env>
+  
+      <data>Fri Nov  9 01:18:54 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>32015</numero>
+    
+         <nome>Rui Miguel Vieira da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>TP1</titulo>
+  
+      <file>32015__04:22:56.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Rui Miguel\Sistemas e Informática\01-02\PP I\Trabalho prático n.º 1.doc</file-env>
+  
+      <data>Fri Nov  9 04:22:56 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33057</numero>
+    
+         <nome>Antonio Rui Miranda de Lemos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33437</numero>
+    
+         <nome>Nuno Miguel Gomes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33420</numero>
+    
+         <nome>Nelson Leandro Barbosa Carneiro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Orientacao - Trabalho Pratico 1 - Tipos e Pontuacoes </titulo>
+  
+      <file>33057_33437_3342007:50:03.pp1</file>
+  
+      <file-env>C:\Os meus documentos\pp1_tp2_LESI.doc</file-env>
+  
+      <data>Fri Nov  9 07:50:03 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35812</numero>
+    
+         <nome>Carlos Manuel Gomes Vilhena</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35860</numero>
+    
+         <nome>Sérgio Augusto Pereira Novo</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35861</numero>
+    
+         <nome>Sérgio José Ferreira Rodrigues</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho1</titulo>
+  
+      <file>35812_35860_3586108:41:10.pp1</file>
+  
+      <file-env>A:\tpp1.doc</file-env>
+  
+      <data>Fri Nov  9 08:41:10 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35803</numero>
+    
+         <nome>Alexandra Martins da Silva</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35863</numero>
+    
+         <nome>Susana Cecilia Vilas Boas Esteves</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33682</numero>
+    
+         <nome>Andre Oliveira Costa Santos</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho numero 1</titulo>
+  
+      <file>35803_35863_3368209:31:00.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\tpp1.zip</file-env>
+  
+      <data>Fri Nov  9 09:31:00 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33143</numero>
+    
+         <nome>Bruno Miguel Campos Rodrigues</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34435</numero>
+    
+         <nome>Ricardo José Ferreira Dias Oliveira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho prático n.º1 - relatório</titulo>
+  
+      <file>33143_34435_09:49:35.pp1</file>
+  
+      <file-env>A:\Trabalho 1\Relatório1.doc</file-env>
+  
+      <data>Fri Nov  9 09:49:35 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30238</numero>
+    
+         <nome>Paulo Jorge Soares Mendes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30015</numero>
+    
+         <nome>Renato Figueiredo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático n.º 1</titulo>
+  
+      <file>30238_30015_10:09:58.pp1</file>
+  
+      <file-env>A:\trab1pp1.doc</file-env>
+  
+      <data>Fri Nov  9 10:09:58 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33233</numero>
+    
+         <nome>Samuel Amado Cordeiro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33200</numero>
+    
+         <nome>Nuno Manuel Ferreira Gonçálves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo/>
+  
+      <file>33233_33200_10:19:16.pp1</file>
+  
+      <file-env>D:\Ano0001\relatorio_primeiro_trab.txt</file-env>
+  
+      <data>Fri Nov  9 10:19:16 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33233</numero>
+    
+         <nome>Samuel Amado Cordeiro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33200</numero>
+    
+         <nome>Nuno Manuel Ferreira Gonçálves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório do primeiro trabalho de PP1</titulo>
+  
+      <file>33233_33200_10:20:05.pp1</file>
+  
+      <file-env>D:\Ano0001\relatorio_primeiro_trab.txt</file-env>
+  
+      <data>Fri Nov  9 10:20:05 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>29251</numero>
+    
+         <nome>Nuno Miguel Milhases da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>27650</numero>
+    
+         <nome>Paulo Alexandre Ferreira Braga </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático nº1</titulo>
+  
+      <file>29251_27650_10:26:47.pp1</file>
+  
+      <file-env>D:\PP1\trabalho\relatorio.doc</file-env>
+  
+      <data>Fri Nov  9 10:26:47 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33189</numero>
+    
+         <nome>Manuel da Silva Alves </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35346</numero>
+    
+         <nome>Manuel Eira Sobreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Pratico1</titulo>
+  
+      <file>33189_35346_10:26:57.pp1</file>
+  
+      <file-env>A:\Relatorio PP1.txt</file-env>
+  
+      <data>Fri Nov  9 10:26:57 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35312</numero>
+    
+         <nome>Helder Filipe de Castro Marques</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35274</numero>
+    
+         <nome>André Filipe Oliveira Martins</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos  e Pontuações</titulo>
+  
+      <file>35312_35274_10:28:46.pp1</file>
+  
+      <file-env>A:\pp\pp1.hs</file-env>
+  
+      <data>Fri Nov  9 10:28:46 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>27629</numero>
+    
+         <nome>José Luis Pinto Monteiro Alves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30166</numero>
+    
+         <nome>António Tiago Morgado Pereira </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatorio pp1 - trabalho nº 1</titulo>
+  
+      <file>27629_30166_10:29:12.pp1</file>
+  
+      <file-env>A:\Relatório de PPI.doc</file-env>
+  
+      <data>Fri Nov  9 10:29:12 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>24279</numero>
+    
+         <nome>Nuno Miguel Gomes da Costa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>36971</numero>
+    
+         <nome>Augusto Jorge Pereira da Costa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>27577</numero>
+    
+         <nome>Paulo César de Carvalho Lopes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho prático nº 1</titulo>
+  
+      <file>24279_36971_2757710:32:42.pp1</file>
+  
+      <file-env>E:\tp1.zip</file-env>
+  
+      <data>Fri Nov  9 10:32:42 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33229</numero>
+    
+         <nome>Rui Manuel Silva Oliveira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33176</numero>
+    
+         <nome>João Pedro Fernandes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33172</numero>
+    
+         <nome>João Miguel Marques</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório de pp1</titulo>
+  
+      <file>33229_33176_3317210:41:40.pp1</file>
+  
+      <file-env>A:\Relatório PP1</file-env>
+  
+      <data>Fri Nov  9 10:41:40 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35288</numero>
+    
+         <nome>Carlos André Leite de Carvalho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35364</numero>
+    
+         <nome>Pedro Miguel Meira das Neves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo/>
+  
+      <file>35288_35364_11:09:00.pp1</file>
+  
+      <file-env>C:\My Documents\PPI.zip</file-env>
+  
+      <data>Fri Nov  9 11:09:00 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35288</numero>
+    
+         <nome>Carlos André Leite de Carvalho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35364</numero>
+    
+         <nome>Pedro Miguel Meira das Neves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo>Trabalho de PPI</titulo>
+  
+      <file>35288_35364_11:09:17.pp1</file>
+  
+      <file-env/>
+  
+      <data>Fri Nov  9 11:09:17 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30266</numero>
+    
+         <nome>victor pimentel</nome>
+    
+         <curso>lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>27667</numero>
+    
+         <nome>rodrigo oliveira</nome>
+    
+         <curso>lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34418</numero>
+    
+         <nome>helder silva</nome>
+    
+         <curso>lesi</curso>
+  
+      </aluno>
+  
+      <titulo>trab1</titulo>
+  
+      <file>30266_27667_3441811:26:41.pp1</file>
+  
+      <file-env>A:\relatorio do trabalho 1.doc</file-env>
+  
+      <data>Fri Nov  9 11:26:41 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>18141</numero>
+    
+         <nome>Alexandre Miguel Costa Ferreira dos Santos </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34434</numero>
+    
+         <nome>José Carlos Marques Dias</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35330</numero>
+    
+         <nome>Jorge André Alves de Melo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho de Paradigmas da  Programação 1</titulo>
+  
+      <file>18141_34434_3533011:29:04.pp1</file>
+  
+      <file-env>C:\My Documents\TRABALHO DE PARADIGMAS DA PROGRAMAÇÃO 1.zip</file-env>
+  
+      <data>Fri Nov  9 11:29:04 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33694</numero>
+    
+         <nome>César Miguel Vieira Martind</nome>
+    
+         <curso/>
+  
+      </aluno>
+  
+      <titulo>Trabalho de PP1</titulo>
+  
+      <file>33694__11:47:02.pp1</file>
+  
+      <file-env/>
+  
+      <data>Fri Nov  9 11:47:02 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33694</numero>
+    
+         <nome>César Miguel Vieira Martins</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33708</numero>
+    
+         <nome>Jorge André R. S. Vitorino</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35856</numero>
+    
+         <nome>Pedro Miguel Rosas G. da Silva</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho de PP1</titulo>
+  
+      <file>33694_33708_3585611:48:52.pp1</file>
+  
+      <file-env>A:\Relatpp01.doc</file-env>
+  
+      <data>Fri Nov  9 11:48:52 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35826</numero>
+    
+         <nome>Joana Maria Alcaide Vilas Boas</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35847</numero>
+    
+         <nome>Maria Madalena da Silva Lopes</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35862</numero>
+    
+         <nome>Sofia Helena Roriz Moreira</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>trabalho prático I</titulo>
+  
+      <file>35826_35847_3586212:10:03.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\trabalho prático I.zip</file-env>
+  
+      <data>Fri Nov  9 12:10:03 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>34188</numero>
+    
+         <nome>Paulo Jorge Lppes</nome>
+    
+         <curso/>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático 1</titulo>
+  
+      <file>34188__12:18:37.pp1</file>
+  
+      <file-env/>
+  
+      <data>Fri Nov  9 12:18:37 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>34188</numero>
+    
+         <nome>Paulo Jorge Lopes Maia da Silva </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33156</numero>
+    
+         <nome>Eugénio Mendes Rosas</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático 1</titulo>
+  
+      <file>34188_33156_12:19:34.pp1</file>
+  
+      <file-env>D:\Paulo Maia\relatorioPP1.dvi</file-env>
+  
+      <data>Fri Nov  9 12:19:34 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30245</numero>
+    
+         <nome>Pedro Marques</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30256</numero>
+    
+         <nome>Rui Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30219</numero>
+    
+         <nome>Manuel Franqueira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>30245_30256_3021912:20:37.pp1</file>
+  
+      <file-env>A:\trabalho1.doc</file-env>
+  
+      <data>Fri Nov  9 12:20:37 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35842</numero>
+    
+         <nome>Katia Marina Silva</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35814</numero>
+    
+         <nome>Cátia Alexandra Coelho</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35850</numero>
+    
+         <nome>Miguel Ângelo Carvalho</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório de PP1</titulo>
+  
+      <file>35842_35814_3585012:22:29.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\Relatório de pp1.doc</file-env>
+  
+      <data>Fri Nov  9 12:22:29 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35280</numero>
+    
+         <nome>António Ricardo P. Gonçalves</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35323</numero>
+    
+         <nome>João Mário M. Oliveira</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <titulo>trabalho pp1 #1</titulo>
+  
+      <file>35280_35323_12:29:20.pp1</file>
+  
+      <file-env>A:\t_pp1_#1.hs</file-env>
+  
+      <data>Fri Nov  9 12:29:20 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>34180</numero>
+    
+         <nome>Nelson José Oliveira Fernandes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Esquema de classificação</titulo>
+  
+      <file>34180__12:31:10.pp1</file>
+  
+      <file-env>A:\RELpp1.doc</file-env>
+  
+      <data>Fri Nov  9 12:31:10 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30262</numero>
+    
+         <nome>Sandra Heloisa M.Ferreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30173</numero>
+    
+         <nome>Bruno Miguel R. Ferreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho1</titulo>
+  
+      <file>30262_30173_13:14:48.pp1</file>
+  
+      <file-env>C:\trabalho1.doc</file-env>
+  
+      <data>Fri Nov  9 13:14:48 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33141</numero>
+    
+         <nome>Bárbara Freitas</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33168</numero>
+    
+         <nome>Joana Gonzalez</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33237</numero>
+    
+         <nome>Simão Nunes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho nº1</titulo>
+  
+      <file>33141_33168_3323713:27:11.pp1</file>
+  
+      <file-env>A:\relatoriopp1.ps</file-env>
+  
+      <data>Fri Nov  9 13:27:11 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35313</numero>
+    
+         <nome>Helder José da Silva Gomes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35290</numero>
+    
+         <nome>Carlos Miguel Martins da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35348</numero>
+    
+         <nome>Manuel José Gomes Meireles</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Pratico nº 1</titulo>
+  
+      <file>35313_35290_3534813:57:54.pp1</file>
+  
+      <file-env>A:\Trab1.doc</file-env>
+  
+      <data>Fri Nov  9 13:57:54 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33222</numero>
+    
+         <nome>Ricardo Jorge A. Magalhães</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33964</numero>
+    
+         <nome>Paulo César Santos da Cunha</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>reletoriopp1</titulo>
+  
+      <file>33222_33964_13:58:11.pp1</file>
+  
+      <file-env>A:\relatoriopp1.zip</file-env>
+  
+      <data>Fri Nov  9 13:58:11 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35335</numero>
+    
+         <nome>Jose Paulo Carneiro de Melo Mamede</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35358</numero>
+    
+         <nome>Paulo Sergio Ferreira Martins</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35363</numero>
+    
+         <nome>Pedro Miguel Silva Araujo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático Nº 1 - Tipos e pontucoes</titulo>
+  
+      <file>35335_35358_3536314:01:07.pp1</file>
+  
+      <file-env>C:\pp1\Trab1.txt</file-env>
+  
+      <data>Fri Nov  9 14:01:07 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35335</numero>
+    
+         <nome>Jose Paulo Carneiro de Melo Mamede</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35358</numero>
+    
+         <nome>Paulo Sergio Ferreira Martins</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35363</numero>
+    
+         <nome>Pedro Miguel Silva Araujo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático Nº 1 - Tipos e pontucoes</titulo>
+  
+      <file>35335_35358_3536314:01:32.pp1</file>
+  
+      <file-env>C:\pp1\Trab1.txt</file-env>
+  
+      <data>Fri Nov  9 14:01:31 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35335</numero>
+    
+         <nome>Jose Paulo Carneiro de Melo Mamede</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35358</numero>
+    
+         <nome>Paulo Sergio Ferreira Martins</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35363</numero>
+    
+         <nome>Pedro Miguel Silva Araujo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático Nº 1 - Tipos e pontucoes</titulo>
+  
+      <file>35335_35358_3536314:01:43.pp1</file>
+  
+      <file-env>C:\pp1\Trab1.txt</file-env>
+  
+      <data>Fri Nov  9 14:01:43 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35272</numero>
+    
+         <nome>Ana Luisa Parreira Nunes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33147</numero>
+    
+         <nome>Bruno Miguel Magalhaes de Matos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33210</numero>
+    
+         <nome>Paulo Ricardo Pereira Ribeiro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho nº1</titulo>
+  
+      <file>35272_33147_3321014:19:57.pp1</file>
+  
+      <file-env>C:\Hugs98\prog\trab1.zip</file-env>
+  
+      <data>Fri Nov  9 14:19:57 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33169</numero>
+    
+         <nome>João Teixeira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33207</numero>
+    
+         <nome>Paulo Soares</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório1.doc</titulo>
+  
+      <file>33169_33207_14:35:06.pp1</file>
+  
+      <file-env>F:\Universidade\1º Ano\P.P. I\Trabalho nº 1\Relatório1.doc</file-env>
+  
+      <data>Fri Nov  9 14:35:06 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33677</numero>
+    
+         <nome>Alexandra Mendes</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35810</numero>
+    
+         <nome>Carlos Daniel</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35827</numero>
+    
+         <nome>João André Morais</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Cálculo de Pontuação - Trabalho 1</titulo>
+  
+      <file>33677_35810_3582714:39:52.pp1</file>
+  
+      <file-env>D:\Hugs98\Trab1.hs</file-env>
+  
+      <data>Fri Nov  9 14:39:52 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33228</numero>
+    
+         <nome>Rui Filipe Barros Tavares</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33242</numero>
+    
+         <nome>Victor Jorge Silva Castro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35373</numero>
+    
+         <nome>Sandrine Alves Mendes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório do 1º trabalho prático</titulo>
+  
+      <file>33228_33242_3537315:11:27.pp1</file>
+  
+      <file-env>A:\relatoriopp1.pdf</file-env>
+  
+      <data>Fri Nov  9 15:11:27 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35375</numero>
+    
+         <nome>Sérgio Ricardo Teixeira Andias Miranda</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35271</numero>
+    
+         <nome>Alexandre Jorge Camelo Faria</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho nº1 - Tipos e pontuações</titulo>
+  
+      <file>35375_35271_15:12:42.pp1</file>
+  
+      <file-env>A:\PPI.doc</file-env>
+  
+      <data>Fri Nov  9 15:12:42 WET 2001</data>
+
+   </grupo>
+
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35286</numero>
+    
+         <nome>Bruno Simões Dias</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33181</numero>
+    
+         <nome>José Machado</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>TrabPratico1</titulo>
+  
+      <file>35286_33181_15:21:28.pp1</file>
+  
+      <file-env>C:\windows\Ambiente de Trabalho\relTrab.pdf</file-env>
+  
+      <data>Fri Nov  9 15:21:28 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35286</numero>
+    
+         <nome>Bruno Simões Dias</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33181</numero>
+    
+         <nome>José Machado</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>TrabPratico1</titulo>
+  
+      <file>35286_33181_15:21:47.pp1</file>
+  
+      <file-env>C:\windows\Ambiente de Trabalho\relTrab.pdf</file-env>
+  
+      <data>Fri Nov  9 15:21:47 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30726</numero>
+    
+         <nome>Henrique josé Rodrigues</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35865</numero>
+    
+         <nome>Teresa bastos peixoto</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero/>
+    
+         <nome>Tiago Vieira</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Relatorio de pp1</titulo>
+  
+      <file>30726_35865_15:33:33.pp1</file>
+  
+      <file-env>A:\TRABALHO DE PP1.doc</file-env>
+  
+      <data>Fri Nov  9 15:33:33 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35325</numero>
+    
+         <nome>João Paulo Coelho Gomes Teixeira e Oliveira    </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35334</numero>
+    
+         <nome>José Miguel da Silva Peixoto de Carvalho          </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35357</numero>
+    
+         <nome>Paulo Jorge Fernandes Sousa                               </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1 - Relatório</titulo>
+  
+      <file>35325_35334_3535715:47:52.pp1</file>
+  
+      <file-env>C:\My Documents\Relatório - pp1.doc</file-env>
+  
+      <data>Fri Nov  9 15:47:52 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30747</numero>
+    
+         <nome>Pedro Ferreira</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30739</numero>
+    
+         <nome>Marco Bernardo</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30754</numero>
+    
+         <nome>Sónia Lopes</nome>
+    
+         <curso>Mcc</curso>
+  
+      </aluno>
+  
+      <titulo>Relatorio de pp1</titulo>
+  
+      <file>30747_30739_3075415:49:06.pp1</file>
+  
+      <file-env>A:\Paradigmas da Programação I.htm</file-env>
+  
+      <data>Fri Nov  9 15:49:06 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35365</numero>
+    
+         <nome>Luís Miguel Loureiro Lopes de Araújo</nome>
+    
+         <curso>LMCC 1º</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35816</numero>
+    
+         <nome>Davide Cristóvão Moniz de Sousa</nome>
+    
+         <curso>LMCC 1º</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35813</numero>
+    
+         <nome>Carlos Manuel Pereira Lima</nome>
+    
+         <curso>LMCC 1º</curso>
+  
+      </aluno>
+  
+      <titulo>Paradigmas da Programação - Trabalho Pratico nº1</titulo>
+  
+      <file>35365_35816_3581315:55:54.pp1</file>
+  
+      <file-env>C:\Hugs\Trabalho Pratico 1 LMCC1.exe</file-env>
+  
+      <data>Fri Nov  9 15:55:54 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>32220</numero>
+    
+         <nome>Carlos Manuel Gonçalves Pereira</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático n. 1</titulo>
+  
+      <file>32220__15:57:56.pp1</file>
+  
+      <file-env>A:\pp1 trabalho pratico.doc</file-env>
+  
+      <data>Fri Nov  9 15:57:56 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>24821</numero>
+    
+         <nome>Gonçalo Manuel Ferreira Duarte</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>32653</numero>
+    
+         <nome>Ricardo Manuel Moreira da Cunha  </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1</titulo>
+  
+      <file>24821_32653_15:59:54.pp1</file>
+  
+      <file-env>A:\Relatorio_pp1.doc</file-env>
+  
+      <data>Fri Nov  9 15:59:54 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>31184</numero>
+    
+         <nome>Vânea Ribeiro</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34556</numero>
+    
+         <nome>Andreia Borges</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34559</numero>
+    
+         <nome>Sara Fernandes</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>PP1 -&gt; Trabalho prático nº 1</titulo>
+  
+      <file>31184_34556_3455916:11:00.pp1</file>
+  
+      <file-env>rel.ps</file-env>
+  
+      <data>Fri Nov  9 16:11:00 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35318</numero>
+    
+         <nome>Jason Peter Costa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35336</numero>
+    
+         <nome>José Pedro B. G. P. Pinto</nome>
+    
+         <curso/>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>35318_35336_16:14:23.pp1</file>
+  
+      <file-env>A:\Trabalho_e_Relatorio\Trabalho_e_Relatorio.zip</file-env>
+  
+      <data>Fri Nov  9 16:14:23 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35854</numero>
+    
+         <nome>Pedro José Ferreira Bastos</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35846</numero>
+    
+         <nome>Márcio José Marques Azevedo</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35836</numero>
+    
+         <nome>Jorge Leonel Gonçalves Matos</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático Nº 1 - Tipos e pontucoes</titulo>
+  
+      <file>35854_35846_3583616:32:02.pp1</file>
+  
+      <file-env>A:\TrabPrático1.txt</file-env>
+  
+      <data>Fri Nov  9 16:32:02 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>29871</numero>
+    
+         <nome>Andre Leite Ferreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>29871Lesi.doc</titulo>
+  
+      <file>29871__16:42:32.pp1</file>
+  
+      <file-env>C:\My Documents\LESI\1º Ano\PP I\29871Lesi.doc</file-env>
+  
+      <data>Fri Nov  9 16:42:32 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>36759</numero>
+    
+         <nome>João Paulo Barreira Mimoso Lopes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório de pp1</titulo>
+  
+      <file>36759__16:51:47.pp1</file>
+  
+      <file-env>U:\progs\Relatorio de pp1.doc</file-env>
+  
+      <data>Fri Nov  9 16:51:47 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35287</numero>
+    
+         <nome>Carlos Gravato</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35350</numero>
+    
+         <nome>Marcial Gomes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35315</numero>
+    
+         <nome>Hugo Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático nº1</titulo>
+  
+      <file>35287_35350_3531517:01:40.pp1</file>
+  
+      <file-env>A:\Trabalho Prático 1.txt</file-env>
+  
+      <data>Fri Nov  9 17:01:40 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35316</numero>
+    
+         <nome>Hugo Guilherme Rigor</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35337</numero>
+    
+         <nome>José Pedro Domingues</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35354</numero>
+    
+         <nome>Nuno Miguel Guerreiro</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático nº1</titulo>
+  
+      <file>35316_35337_3535417:08:00.pp1</file>
+  
+      <file-env>C:\Os meus documentos\lesi\PP1\Trabalho Prático 1 - PP1.doc</file-env>
+  
+      <data>Fri Nov  9 17:08:00 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35320</numero>
+    
+         <nome>João António Lavrador Vilanova</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35832</numero>
+    
+         <nome>João Pedro Gonçalves Carvalho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>!º trabalho de PPI</titulo>
+  
+      <file>35320_35832_17:08:51.pp1</file>
+  
+      <file-env>A:\trabalho</file-env>
+  
+      <data>Fri Nov  9 17:08:51 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35317</numero>
+    
+         <nome>Hugo Gonçalves</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35341</numero>
+    
+         <nome>Luis Fernandes</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35377</numero>
+    
+         <nome>Vitor Pinheiro</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório de PP1</titulo>
+  
+      <file>35317_35341_3537717:12:33.pp1</file>
+  
+      <file-env>C:\Luis\Trabalhos Práticos\LESI.doc</file-env>
+  
+      <data>Fri Nov  9 17:12:33 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35317</numero>
+    
+         <nome>Hugo Gonçalves</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35341</numero>
+    
+         <nome>Luis Fernandes</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35377</numero>
+    
+         <nome>Vitor Pinheiro</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório de PP1</titulo>
+  
+      <file>35317_35341_3537717:13:53.pp1</file>
+  
+      <file-env>C:\Luis\Trabalhos Práticos\LESI.doc</file-env>
+  
+      <data>Fri Nov  9 17:13:53 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>32652</numero>
+    
+         <nome>Pedro Lopes</nome>
+    
+         <curso>L.E.S.I</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33204</numero>
+    
+         <nome>Paulo Campos</nome>
+    
+         <curso>L.E.S.I</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33188</numero>
+    
+         <nome>Luís Pereira</nome>
+    
+         <curso>L.E.S.I</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1-Tipos e Pontuações</titulo>
+  
+      <file>32652_33204_3318817:20:17.pp1</file>
+  
+      <file-env>C:\hugs98\lib\Trabalho1-PPI.hs</file-env>
+  
+      <data>Fri Nov  9 17:20:17 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30681</numero>
+    
+         <nome>Rui Miguel Reis Alves Martins Dias</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30655</numero>
+    
+         <nome>Joana Teresa da Cunha Teixeira Neves</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>30681_30655_17:21:52.pp1</file>
+  
+      <file-env>C:\Documents and Settings\Administrador\Os meus documentos\pp1_1.zip</file-env>
+  
+      <data>Fri Nov  9 17:21:52 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35806</numero>
+    
+         <nome>Bruno Miguel Freitas de Sousa</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35829</numero>
+    
+         <nome>João Luis da Silva Mendes</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35852</numero>
+    
+         <nome>Nuno Miguel Lima Cardoso</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e pontuações</titulo>
+  
+      <file>35806_35829_3585217:27:31.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\Tipos e Pontuações.hs</file-env>
+  
+      <data>Fri Nov  9 17:27:31 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33158</numero>
+    
+         <nome>Fausto Miguel Pacheco Faria Viana</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>32014</numero>
+    
+         <nome>Ricardo Ayala Monteiro Fernandes Pereira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33165</numero>
+    
+         <nome>Hélder Artur Peixoto Magalhães</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Práctico nº1</titulo>
+  
+      <file>33158_32014_3316517:29:01.pp1</file>
+  
+      <file-env>A:\Trab.zip</file-env>
+  
+      <data>Fri Nov  9 17:29:01 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35029</numero>
+    
+         <nome>Ricardo Nuno Torres da Silva</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35052</numero>
+    
+         <nome>Cesar Filipe Cruz Gomes</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Práctico nº1</titulo>
+  
+      <file>35029_35052_17:31:20.pp1</file>
+  
+      <file-env>A:\Trabalho1.zip</file-env>
+  
+      <data>Fri Nov  9 17:31:20 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35304</numero>
+    
+         <nome>Filipe José de Oliveira Campos</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33858</numero>
+    
+         <nome>Fernando Jorge Pinto Lima</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho prárico nº1 - PP1</titulo>
+  
+      <file>35304_33858_17:34:20.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\TrabPrát1.htm</file-env>
+  
+      <data>Fri Nov  9 17:34:20 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35304</numero>
+    
+         <nome>Filipe José de Oliveira Campos</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33858</numero>
+    
+         <nome>Fernando Jorge Pinto Lima</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho prárico nº1 - PP1</titulo>
+  
+      <file>35304_33858_17:35:24.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\trab1.hs</file-env>
+  
+      <data>Fri Nov  9 17:35:24 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35332</numero>
+    
+         <nome>José Diogo Almeida</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35376</numero>
+    
+         <nome>Telma Sá</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35349</numero>
+    
+         <nome>Márcia Martins</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático nº1</titulo>
+  
+      <file>35332_35376_3534917:35:55.pp1</file>
+  
+      <file-env>A:\Trab PP1.doc</file-env>
+  
+      <data>Fri Nov  9 17:35:55 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35837</numero>
+    
+         <nome>José Amarilio S. D. Barbosa</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35831</numero>
+    
+         <nome>João Pedro A. Cerqueira</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35824</numero>
+    
+         <nome>Idabel da Silva</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático nº1 de PP1</titulo>
+  
+      <file>35837_35831_3582417:46:02.pp1</file>
+  
+      <file-env>A:\trb pp1.txt</file-env>
+  
+      <data>Fri Nov  9 17:46:02 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35857</numero>
+    
+         <nome>Pedro Tiago R. L. Cunha</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero/>
+    
+         <nome>Orlanda</nome>
+    
+         <curso>Mcc</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero/>
+    
+         <nome>Isa</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho PPI</titulo>
+  
+      <file>35857__17:47:50.pp1</file>
+  
+      <file-env>A:\TRABALHO DE PP I.txt</file-env>
+  
+      <data>Fri Nov  9 17:47:50 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>LMCC</numero>
+    
+         <nome>Bruno Sousa</nome>
+    
+         <curso>35807</curso>
+  
+      </aluno>
+  
+      <titulo>Classificações</titulo>
+  
+      <file>LMCC__18:06:50.pp1</file>
+  
+      <file-env>G:\PP1\Trabalho 1\Relatório.txt</file-env>
+  
+      <data>Fri Nov  9 18:06:50 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33235</numero>
+    
+         <nome>Sérgio de Almeida Paiva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero/>
+    
+         <nome>Joaquim Araujo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>22722</numero>
+    
+         <nome>Jose Miguel Pontes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatorio</titulo>
+  
+      <file>33235__2272218:23:10.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\Trabalho.zip</file-env>
+  
+      <data>Fri Nov  9 18:23:10 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33272</numero>
+    
+         <nome>Hugo André Peixoto Freitas Pereira </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>32753</numero>
+    
+         <nome>João Arnaldo Freitas Abreu  </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30214</numero>
+    
+         <nome>José Pedro Silva de Oliveira Carvalho  </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático nº 1 - Tipos e Pontuações</titulo>
+  
+      <file>33272_32753_3021418:24:07.pp1</file>
+  
+      <file-env>C:\Meus documentos\Documentos do Word\Zé Pedro\LESI\PP1\PP1.doc</file-env>
+  
+      <data>Fri Nov  9 18:24:07 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35815</numero>
+    
+         <nome>Daniel Philippe Bezerra Ferreira</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35867</numero>
+    
+         <nome>Vitor Manuel Costa Magalhães</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35844</numero>
+    
+         <nome>Luis Filipe Calado Ferreira</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>tp1 35815</titulo>
+  
+      <file>35815_35867_3584418:40:25.pp1</file>
+  
+      <file-env>A:\tp135815.zip</file-env>
+  
+      <data>Fri Nov  9 18:40:25 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33104</numero>
+    
+         <nome>Thiago Espanha</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33494</numero>
+    
+         <nome>Ségio Moreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório 1</titulo>
+  
+      <file>33104_33494_18:40:46.pp1</file>
+  
+      <file-env>A:\Trabalho.doc</file-env>
+  
+      <data>Fri Nov  9 18:40:46 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35305</numero>
+    
+         <nome>Filipe Manuel Dias Matos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35327</numero>
+    
+         <nome>João Tiago Maia Salgueirinho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35371</numero>
+    
+         <nome>Rui Jorge Guimarães Machado Rodrigues Valente</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>1º Trabalho de PP I (grupo PORTUGA)</titulo>
+  
+      <file>35305_35327_3537118:42:16.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Escola\LESI 1ºAno\Paradigmas da Programação (I)\Trabalho nº1\I Trabalho de PP I (grupo PORTUGA).zip</file-env>
+  
+      <data>Fri Nov  9 18:42:16 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35305</numero>
+    
+         <nome>Filipe Manuel Dias Matos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35327</numero>
+    
+         <nome>João Tiago Maia Salgueirinho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35371</numero>
+    
+         <nome>Rui Jorge Guimarães Machado Rodrigues Valente</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>1º Trabalho de PP I (grupo PORTUGA)</titulo>
+  
+      <file>35305_35327_3537118:42:44.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Escola\LESI 1ºAno\Paradigmas da Programação (I)\Trabalho nº1\I Trabalho de PP I (grupo PORTUGA).zip</file-env>
+  
+      <data>Fri Nov  9 18:42:44 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35281</numero>
+    
+         <nome>Aurélio Navarro Belletti Garcia</nome>
+    
+         <curso>L.E.S.I   </curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33689</numero>
+    
+         <nome>Carlos André Brito Ribeiro</nome>
+    
+         <curso>L.E.S.I  </curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33065</numero>
+    
+         <nome>João Luis Rua Pires</nome>
+    
+         <curso>L.E.S.I  </curso>
+  
+      </aluno>
+  
+      <titulo>Paradigmas de Programação - ORIENTAÇÃO</titulo>
+  
+      <file>35281_33689_3306518:43:34.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Paradigmas de Programação I.doc</file-env>
+  
+      <data>Fri Nov  9 18:43:34 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33703</numero>
+    
+         <nome>Isabel Cardoso</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>36864</numero>
+    
+         <nome>Maria Beatriz Campos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho nº1 de Paradigmas de Programação1 </titulo>
+  
+      <file>33703_36864_18:47:18.pp1</file>
+  
+      <file-env>A:\Relatório.doc</file-env>
+  
+      <data>Fri Nov  9 18:47:18 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35835</numero>
+    
+         <nome>Joaquim Daniel Monteiro Baião</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35839</numero>
+    
+         <nome>José Manuel Serra Marques</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35828</numero>
+    
+         <nome>João Henrique Alves Cerqueira</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático 1</titulo>
+  
+      <file>35835_35839_3582818:52:23.pp1</file>
+  
+      <file-env>A:\mccTP1.hs</file-env>
+  
+      <data>Fri Nov  9 18:52:23 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35279</numero>
+    
+         <nome>António Pedro Sousa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35345</numero>
+    
+         <nome>Luís Miguel Gonçalves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35297</numero>
+    
+         <nome>Domingos Ralha</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático n.º 1</titulo>
+  
+      <file>35279_35345_3529718:52:46.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Relatório.doc</file-env>
+  
+      <data>Fri Nov  9 18:52:46 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>36867</numero>
+    
+         <nome>Rui Samuel Portilha Valinho</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Classificação Final</titulo>
+  
+      <file>36867__19:04:16.pp1</file>
+  
+      <file-env>C:\Os meus documentos\PP.zip</file-env>
+  
+      <data>Fri Nov  9 19:04:16 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35276</numero>
+    
+         <nome>Anibal Almeida Pinto </nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35295</numero>
+    
+         <nome>Diogo Rafael Ribeiro da Silva</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35277</numero>
+    
+         <nome>António Manuel Martins Pinto</nome>
+    
+         <curso>L.E.S.I.</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Completo</titulo>
+  
+      <file>35276_35295_3527719:07:33.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de trabalho\Trabalho.hs.txt</file-env>
+  
+      <data>Fri Nov  9 19:07:33 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35294</numero>
+    
+         <nome>Diamantino José Madeira Abobeleira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35303</numero>
+    
+         <nome>Filipe António Gonçalves da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35339</numero>
+    
+         <nome>Lídia Nogueira Laranjeira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático PPI</titulo>
+  
+      <file>35294_35303_3533919:15:18.pp1</file>
+  
+      <file-env>A:\PPI.zip</file-env>
+  
+      <data>Fri Nov  9 19:15:18 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33146</numero>
+    
+         <nome>Bruno Azevedo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>24654</numero>
+    
+         <nome>Carlos Brandão</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35299</numero>
+    
+         <nome>Eduardo Cruz</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho de PP1</titulo>
+  
+      <file>33146_24654_3529919:21:41.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\pp1.zip</file-env>
+  
+      <data>Fri Nov  9 19:21:41 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33220</numero>
+    
+         <nome>Pedro Miguel Russo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33161</numero>
+    
+         <nome>Francisco Tomé Campos Costa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Práctico nº1</titulo>
+  
+      <file>33220_33161_19:48:54.pp1</file>
+  
+      <file-env>C:\Os meus documentos\U.Minho\1º Ano\pp1\trabalhos\Relatorio PP1.doc</file-env>
+  
+      <data>Fri Nov  9 19:48:54 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>36863</numero>
+    
+         <nome>João Miguel Miranda Encarnação</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Pratico 1</titulo>
+  
+      <file>36863__19:55:25.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Tp1.zip</file-env>
+  
+      <data>Fri Nov  9 19:55:25 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33211</numero>
+    
+         <nome>Pedro Carvalhido</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33019</numero>
+    
+         <nome>Pedro Torres</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <titulo>Relatorio Trabalho Pratico I</titulo>
+  
+      <file>33211_33019_20:11:53.pp1</file>
+  
+      <file-env>C:\Mes documents\Work\Relatorio1.txt</file-env>
+  
+      <data>Fri Nov  9 20:11:53 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35275</numero>
+    
+         <nome>André Henrique L. Nogueira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35282</numero>
+    
+         <nome>Bruno Alberto A. Lage</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35356</numero>
+    
+         <nome>Paulo Jorge Alves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Pratico nº1</titulo>
+  
+      <file>35275_35282_3535620:11:55.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de trabalho\TrabalhoPratico1.doc</file-env>
+  
+      <data>Fri Nov  9 20:11:55 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33082</numero>
+    
+         <nome>Pedro Tiago Dias Gonçalves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33142</numero>
+    
+         <nome>Bruno César Pereira da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33822</numero>
+    
+         <nome>André Fernandes Martins </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>33082_33142_3382220:34:27.pp1</file>
+  
+      <file-env>tp1.hs</file-env>
+  
+      <data>Fri Nov  9 20:34:27 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33282</numero>
+    
+         <nome>Virgilio Abrantes da Vinha</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33206</numero>
+    
+         <nome>Paulo Machado</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>33282_33206_20:36:25.pp1</file>
+  
+      <file-env>C:\WINDOWS\Desktop\trabpp1.zip</file-env>
+  
+      <data>Fri Nov  9 20:36:25 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>27625</numero>
+    
+         <nome>Jorge Abreu</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>27658</numero>
+    
+         <nome>Pedro Lopes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>1º trabalho pratico </titulo>
+  
+      <file>27625_27658_20:44:31.pp1</file>
+  
+      <file-env>C:\mirc\download\relatoriotp1.txt</file-env>
+  
+      <data>Fri Nov  9 20:44:31 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33195</numero>
+    
+         <nome>Miguel Pinto de Sousa Marques</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>trabalho1.txt</titulo>
+  
+      <file>33195__20:45:14.pp1</file>
+  
+      <file-env>C:\miguel\trabalho1.txt</file-env>
+  
+      <data>Fri Nov  9 20:45:14 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35378</numero>
+    
+         <nome>Victor Hugo Pereira da Silva Moreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>36424</numero>
+    
+         <nome>Francisco Eurico Pinto Cortez Martins Leite</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>36422</numero>
+    
+         <nome>Bruno José de Macedo Soares Amor</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>PP 1</titulo>
+  
+      <file>35378_36424_3642221:02:27.pp1</file>
+  
+      <file-env>C:\Documents and Settings\Dalen Valas\Desktop\VCB.zip</file-env>
+  
+      <data>Fri Nov  9 21:02:27 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30148</numero>
+    
+         <nome>Hugo Araújo Gonçalves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33291</numero>
+    
+         <nome>Bárbara Sofia Araújo da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo>Relatório do Trabalho Prático nº1</titulo>
+  
+      <file>30148_33291_21:16:36.pp1</file>
+  
+      <file-env>D:\Documents and Settings\Hugo\My Documents\LESI\Relatorio1_pp.doc</file-env>
+  
+      <data>Fri Nov  9 21:16:36 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33183</numero>
+    
+         <nome>José Pedro Santos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33198</numero>
+    
+         <nome>Nuno César Tendais</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>32642</numero>
+    
+         <nome>Ricardo Miguel Godinho</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório do Trabalho Prático Nº1</titulo>
+  
+      <file>33183_33198_3264221:19:09.pp1</file>
+  
+      <file-env>C:\Os meus documentos\lesi\pp1\Trabalho1\relatoris.ps</file-env>
+  
+      <data>Fri Nov  9 21:19:09 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35283</numero>
+    
+         <nome>Bruno Edgar Bernardo Teixeira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35355</numero>
+    
+         <nome>Nuno Miguel Machado Alves Costa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>trabalho nº1</titulo>
+  
+      <file>35283_35355_21:27:24.pp1</file>
+  
+      <file-env>C:\eheh\trabalho.hs</file-env>
+  
+      <data>Fri Nov  9 21:27:24 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35338</numero>
+    
+         <nome>Júlio Leite</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35362</numero>
+    
+         <nome>Pedro Rodrigues</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trab_PP1_Orientação</titulo>
+  
+      <file>35338_35362_21:38:49.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\Trab_PP1_Orientação.pdf</file-env>
+  
+      <data>Fri Nov  9 21:38:49 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35821</numero>
+    
+         <nome>Gonçalo Gomes</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35310</numero>
+    
+         <nome>Gabriel Azevedo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35351</numero>
+    
+         <nome>Mário Rui Ferreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho1 PP1 </titulo>
+  
+      <file>35821_35310_3535121:55:23.pp1</file>
+  
+      <file-env>C:\WIN98\Desktop\TrabalhoPP1.zip</file-env>
+  
+      <data>Fri Nov  9 21:55:23 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>36961</numero>
+    
+         <nome>Luis Miguel Pinto Azevedo</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35344</numero>
+    
+         <nome>Luis Miguel Belo Nobre</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho de PP1 </titulo>
+  
+      <file>36961_35344_22:18:34.pp1</file>
+  
+      <file-env>trabalho.zip</file-env>
+  
+      <data>Fri Nov  9 22:18:34 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>28735</numero>
+    
+         <nome>Rui Miguel Novais Castro</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33650</numero>
+    
+         <nome>Lúís André da Cunha Marques  </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33281</numero>
+    
+         <nome>Pedro Miguel Soares Pinto</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho1</titulo>
+  
+      <file>28735_33650_3328122:20:22.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Relatório.txt</file-env>
+  
+      <data>Fri Nov  9 22:20:22 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35820</numero>
+    
+         <nome>Gilberto Fernandes</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35855</numero>
+    
+         <nome>Pedro Ribeiro</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero/>
+    
+         <nome>Carlos</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1 - Tipos e pontuações</titulo>
+  
+      <file>35820_35855_22:28:06.pp1</file>
+  
+      <file-env>C:\hugs\Hugs98\lib\Trabalho1.hs</file-env>
+  
+      <data>Fri Nov  9 22:28:06 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35859</numero>
+    
+         <nome>Rui Maciel Simão</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35804</numero>
+    
+         <nome>Ângelo David Soares Pérez Dias</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Orientação.hs</titulo>
+  
+      <file>35859_35804_22:40:33.pp1</file>
+  
+      <file-env>D:\HUGS98\Trabalhos\Orientação.hs</file-env>
+  
+      <data>Fri Nov  9 22:40:33 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35841</numero>
+    
+         <nome>Júlio Sérgio Pereira Lopes</nome>
+    
+         <curso>M.C.C.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35805</numero>
+    
+         <nome>Arnaldo Nuno Gonçalves Monteiro</nome>
+    
+         <curso>M.C.C.</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35838 </numero>
+    
+         <nome>José Manuel Matos de Araújo Vilaça</nome>
+    
+         <curso>M.C.C.</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho N.º 1</titulo>
+  
+      <file>35841_35805_35838 22:40:47.pp1</file>
+  
+      <file-env>A:\Trabalho nº1\Relatório de PP I.doc</file-env>
+  
+      <data>Fri Nov  9 22:40:47 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35372</numero>
+    
+         <nome>Rui Andias Duarte</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35278</numero>
+    
+         <nome>António Manuel Fernandes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35352</numero>
+    
+         <nome>Miguel Pires da Rosa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Tipos e Pontuações</titulo>
+  
+      <file>35372_35278_3535223:03:32.pp1</file>
+  
+      <file-env>C:\pp1-1\relatorio-pp1-1.txt</file-env>
+  
+      <data>Fri Nov  9 23:03:32 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35347</numero>
+    
+         <nome>Manuel Francisco Cunha Costa</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35319</numero>
+    
+         <nome>João Alexandre Oliveira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>36425</numero>
+    
+         <nome>João Pedro Pereira da Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Orientação!</titulo>
+  
+      <file>35347_35319_3642523:14:07.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\PP1 tp1.doc</file-env>
+  
+      <data>Fri Nov  9 23:14:07 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33182</numero>
+    
+         <nome>José Miguel Ferraz</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33232</numero>
+    
+         <nome>Rui Rodrigues</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35291</numero>
+    
+         <nome>Carlos Miguel Tavares</nome>
+    
+         <curso>Lesi</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Prático 1</titulo>
+  
+      <file>33182_33232_3529123:17:15.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de trabalho\Relatório PPI.txt</file-env>
+  
+      <data>Fri Nov  9 23:17:15 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35302</numero>
+    
+         <nome>Fábio Roberto Leite Matos </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33186</numero>
+    
+         <nome>Luís Filipe Gama </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>32592</numero>
+    
+         <nome>Joel Ribeiro </nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trbalho Prático n.º 1</titulo>
+  
+      <file>35302_33186_3259223:32:31.pp1</file>
+  
+      <file-env>C:\Documents and Settings\groo\Desktop\PP I - TP1 - 2001_2002.doc</file-env>
+  
+      <data>Fri Nov  9 23:32:31 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33194</numero>
+    
+         <nome>Miguel Alexandre Ferreira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35293</numero>
+    
+         <nome>David Oliveira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+      <titulo>Trabalho 1 - Tipos e Pontuações</titulo>
+  
+      <file>33194_35293_23:49:05.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\Reltp1.txt.txt</file-env>
+  
+      <data>Fri Nov  9 23:49:05 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33691</numero>
+    
+         <nome>Carlos </nome>
+    
+         <curso/>
+  
+      </aluno>
+  
+      <titulo/>
+  
+      <file>33691__10:52:35.pp1</file>
+  
+      <file-env/>
+  
+      <data>Sat Nov 10 10:52:35 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>33691</numero>
+    
+         <nome>Carlos Filipe Lima Duarte</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35843</numero>
+    
+         <nome>Lara Sofia Alpoim Miranda</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35866</numero>
+    
+         <nome>Tiago Lamas Carvalheira</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho prático de pp1</titulo>
+  
+      <file>33691_35843_3586611:10:53.pp1</file>
+  
+      <file-env>A:\Tp1.zip</file-env>
+  
+      <data>Sat Nov 10 11:10:53 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35289</numero>
+    
+         <nome>Carlos Daniel Fernandes Peixoto</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35284</numero>
+    
+         <nome>Bruno Emanuel Teixeira de Castro Araújo</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>36969</numero>
+    
+         <nome>Pedro Lopes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo/>
+  
+      <file>35289_35284_3696901:06:13.pp1</file>
+  
+      <file-env>A:\relatorio.txt</file-env>
+  
+      <data>Sun Nov 11 01:06:13 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35833</numero>
+    
+         <nome>Joao Pedro Padilha de Sousa</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35809</numero>
+    
+         <nome>Carla Sofia Gomes Azevedo </nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35849</numero>
+    
+         <nome>Micaela Maio Flores Morim</nome>
+    
+         <curso>LMCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho Pratico n1</titulo>
+  
+      <file>35833_35809_3584918:47:38.pp1</file>
+  
+      <file-env>A:\relatorio.txt</file-env>
+  
+      <data>Sun Nov 11 18:47:38 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35379</numero>
+    
+         <nome>Vítor Videira</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35300</numero>
+    
+         <nome>Emanuel Mesquita</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35370</numero>
+    
+         <nome>Romulo Gonçalves</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>trabalho pratico nº 1 pp1</titulo>
+  
+      <file>35379_35300_3537013:14:25.pp1</file>
+  
+      <file-env>C:\Trabalho pratico nº1 de pp1.doc</file-env>
+  
+      <data>Mon Nov 12 13:14:25 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>36764</numero>
+    
+         <nome>Rui André Silva</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33140</numero>
+    
+         <nome>Avelino Pinto</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>33213</numero>
+    
+         <nome>Pedro Freitas</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trab1- Calculo Pontuação</titulo>
+  
+      <file>36764_33140_3321322:54:41.pp1</file>
+  
+      <file-env>C:\Os meus documentos\pp1\Trab1\trab1.zip</file-env>
+  
+      <data>Mon Nov 12 22:54:41 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35840</numero>
+    
+         <nome>Tércio Soares</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35825</numero>
+    
+         <nome>Jacome Cunha</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho PP1</titulo>
+  
+      <file>35840_35825_00:48:46.pp1</file>
+  
+      <file-env>C:\TP1.doc</file-env>
+  
+      <data>Wed Nov 14 00:48:46 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35840</numero>
+    
+         <nome>Tércio Soares</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>35825</numero>
+    
+         <nome>Jacome Cunha</nome>
+    
+         <curso>MCC</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho PP1</titulo>
+  
+      <file>35840_35825_00:49:17.pp1</file>
+  
+      <file-env>C:\trabalho.hs</file-env>
+  
+      <data>Wed Nov 14 00:49:17 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>35321</numero>
+    
+         <nome>João Filipe Fontes Machado</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>34509</numero>
+    
+         <nome>Pedro Miguel Gomes Mendes</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Trabalho 1</titulo>
+  
+      <file>35321_34509_01:24:36.pp1</file>
+  
+      <file-env>C:\WINDOWS\Ambiente de Trabalho\pp1-t1-35321-34509.zip</file-env>
+  
+      <data>Sat Nov 17 01:24:36 WET 2001</data>
+
+   </grupo>
+   <grupo>
+  
+      <aluno>
+    
+         <numero>30212</numero>
+    
+         <nome>José Carlos Machado</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30211</numero>
+    
+         <nome>José Carlos Santos</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <aluno>
+    
+         <numero>30229</numero>
+    
+         <nome>Miguel Rodrigues MArques</nome>
+    
+         <curso>LESI</curso>
+  
+      </aluno>
+  
+      <titulo>Relatório do trabalho 1</titulo>
+  
+      <file>30212_30211_3022923:33:45.pp1</file>
+  
+      <file-env>C:\Os meus documentos\Disciplinas\PP1\2001-2002\relatorio pp1.doc</file-env>
+  
+      <data>Sun Nov 18 23:33:45 WET 2001</data>
+
+   </grupo>
+</tp1>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ex="http://www.di.uminho.pt/jcr/XML/rdf/ex1#">
+    
+    <ex:Estudante rdf:ID="eduardo">
+        <ex:nome>Eduardo</ex:nome>
+        <ex:idade>21</ex:idade>
+        <ex:linguaEstranjeira>
+            <rdf:Bag>
+                <rdf:li>português</rdf:li>
+                <rdf:li>espanhol</rdf:li>
+                <rdf:li>inglês</rdf:li>
+            </rdf:Bag>
+        </ex:linguaEstranjeira>
+        <ex:Parceiro rdf:resources="#hana"/>
+    </ex:Estudante>
+    
+    <ex:Estudante rdf:ID="hana">
+        <ex:nome>Hana</ex:nome>
+        <ex:nacionalidade>Alemã</ex:nacionalidade>
+        <ex:Parceiro rdf:resources="#eduardo"/>
+    </ex:Estudante>
+   
+    <ex:Estudante rdf:ID="ana">
+        <ex:nome>Ana</ex:nome>
+        <ex:Parceiro rdf:resources="#eduardo"/>
+    </ex:Estudante>
+    
+    
+    <ex:Estudante rdf:ID="carlos">
+        <ex:nome>Carlos</ex:nome>
+        <ex:Parceiro rdf:resources="#eduardo"/>
+    </ex:Estudante>
+    
+    
+    <ex:Professor rdf:ID="helmut">
+        <ex:nome>Helmut</ex:nome>
+    </ex:Professor>
+    
+    <ex:Curso rdf:ID="alemao">
+        <ex:designacao>Curso de língua entrangeira : Alemão</ex:designacao>
+        <ex:local>Centro de línguas da universidade</ex:local>
+        <ex:horário>Sexta feira</ex:horário>
+        <ex:e-lecionada rdf:resources="#helmut"/>
+        <ex:temEstudante>
+            <rdf:Bag>
+                <rdf:li resources="#ana"/>
+                <rdf:li resources="#carlos"/>
+                <rdf:li resources="#eduardo"/>
+            </rdf:Bag>
+            
+        </ex:temEstudante>
+        
+    </ex:Curso>
+    
+    
+</rdf:RDF>
+

@@ -1,0 +1,328 @@
+<thesup>
+<the type="phd" status="undergoing">
+<student>
+<name>Luís Francisco da Cunha Cardoso de Faria</name>
+<program>
+<desc>PDI - Programa Doutoral em Informática</desc>
+</program>
+</student>
+<document>
+<title>Automated Watch for Digital Preservation</title>
+</document>
+<cosup>
+<name>José Miguel Araújo Ferreira</name>
+<inst>KEEP SOLUTIONS LDA</inst>
+</cosup>
+<inst>
+Dep. Informática - Universidade do Minho, KEEP SOLUTIONS LDA
+</inst>
+<beginyear>2011</beginyear>
+</the>
+<the type="phd" status="concluded">
+<student>
+<name>Ricardo Freitas</name>
+<program>
+<desc>MAP-i</desc>
+<address>href="http://map.edu.pt/</address>
+</program>
+</student>
+<document>
+<title>Relational Databases Digital Preservation</title>
+<doi>http://hdl.handle.net/1822/25655</doi>
+</document>
+<inst>Universidade do Minho</inst>
+<beginyear>2009</beginyear>
+<endyear>2013</endyear>
+</the>
+<the type="phd" status="concluded">
+<student>
+<name>José Miguel Ferreira</name>
+<program>
+<desc>
+DTSI - Doutoramento em Tecnologias e Sistemas de Informação, Especialização em Preservação Digital
+</desc>
+</program>
+</student>
+<document>
+<title>Preservação Digital</title>
+<doi>http://hdl.handle.net/1822/9563</doi>
+</document>
+<cosup>
+<name>Ana A. Baptista</name>
+<inst>DSI/UM</inst>
+</cosup>
+<inst>Universidade do Minho</inst>
+<endyear>2009</endyear>
+</the>
+<the type="phd" status="concluded">
+<student>
+<name>Giovani Rubert Librelotto</name>
+</student>
+<document>
+<title>Topic maps : da sintaxe à semântica</title>
+<doi>http://hdl.handle.net/1822/4822</doi>
+</document>
+<cosup>
+<name>Pedro Rangel Henriques</name>
+<inst>DI/UM</inst>
+</cosup>
+<inst>Universidade do Minho</inst>
+<endyear>2006</endyear>
+</the>
+<the type="msc" status="undergoing">
+<student>
+<name>João Meira</name>
+<program>
+<desc>MI - Mestrado em Informática</desc>
+</program>
+</student>
+<document>
+<title>???</title>
+</document>
+<inst>Dep. Informática - Universidade do Minho</inst>
+<beginyear>2012</beginyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Tiago Pereira</name>
+<program>
+<desc>MI - Mestrado em Informática</desc>
+</program>
+</student>
+<document>
+<title>
+FITTEST logging and log-analysis’ infrastructure for PHP
+</title>
+</document>
+<inst>Dep. Informática - Universidade do Minho</inst>
+<beginyear>2012</beginyear>
+<endyear>2014</endyear>
+</the>
+<the type="msc" status="undergoing">
+<student>
+<name>Fábio Alves Rocha</name>
+<program>
+<desc>MI - Mestrado em Informática</desc>
+</program>
+</student>
+<document>
+<title>Database Convert Tool</title>
+</document>
+<inst>Dep. Informática - Universidade do Minho</inst>
+<beginyear>2012</beginyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Nuno Antunes Marques</name>
+<program>
+<desc>MI - Mestrado em Informática</desc>
+</program>
+</student>
+<document>
+<title>Gestão de depósitos em arquivos</title>
+</document>
+<inst>Dep. Informática - Universidade do Minho</inst>
+<endyear>2012</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>David Pires</name>
+<program>
+<desc>
+MIECOM - Mestrado Integrado em Engenharia de Comunicações
+</desc>
+</program>
+</student>
+<document>
+<title>Implementação do WebDav para o weebox</title>
+</document>
+<inst>
+Dep. Informática - Universidade do Minho, KEEP SOLUTIONS LDA
+</inst>
+<endyear>2011</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Vitor Fernandes</name>
+<program>
+<desc>MI - Mestrado em Informática</desc>
+</program>
+</student>
+<document>
+<title>Aplicações móveis para o Safe Office</title>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2010</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Luis Miguel Neiva Sá Ferros</name>
+<program>
+<desc>
+MSDPA - Mestrado em Sistemas de Dados e Processamento Analítico
+</desc>
+</program>
+</student>
+<document>
+<title>
+Extracção e Concentração de Metainformação distribuída por vários Repositórios
+</title>
+<doi>http://hdl.handle.net/1822/11066</doi>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2009</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>José Filipe Cruz</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>Portefólio digital (e-portefólio)</title>
+<doi>http://hdl.handle.net/1822/11380</doi>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2009</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Ricardo Freitas</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>Preservação Digital de Bases de Dados Relacionais</title>
+<doi>http://hdl.handle.net/1822/12907</doi>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2008</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Margarida Silva</name>
+<program>
+<desc>MCA - Mestrado em Contabilidade e Auditoria</desc>
+</program>
+</student>
+<document>
+<title>XBRL: Aplicação em Pequenas e Médias Empresas</title>
+<doi>http://hdl.handle.net/1822/9793</doi>
+</document>
+<cosup>
+<name>Lúcia Rodrigues</name>
+<inst>EEG/UM</inst>
+</cosup>
+<inst>Escola de Economia e Gestão, Universidade do Minho</inst>
+<endyear>2007</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Paulo Jorge Dias Domingues</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>
+Especificação e implementação de um repositório de objectos de ensino
+</title>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2007</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>António José Lira Ramos Fernandes</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>
+Definição e implementação de um sistema de avaliação para E-Learning
+</title>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2007</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Ricardo Manuel Meira Ferrão Luís</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>
+Especificação e geração de um ambiente de suporte ao workflow de aplicações distribuídas por Web Services
+</title>
+<doi>http://hdl.handle.net/1822/6746</doi>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2006</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Luís Miguel Alves Domingues</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>
+Especificação e Geração Automática de navegadores para redes semânticas baseados em interfaces Web
+</title>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2006</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Joel Alexandre da Silva Vicente</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>
+XBRL em Portugal: Apresentação e Indicações Técnicas para a sua Implementação
+</title>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2006</endyear>
+</the>
+<the type="msc" status="concluded">
+<student>
+<name>Carlos Jorge Feijó Lopes</name>
+<program>
+<desc>
+MICEI - Mestrado em Informática / Curso de Especialização em Informática
+</desc>
+</program>
+</student>
+<document>
+<title>
+Web Services: Aplicações Distribuídas sobre Protocolos Internet
+</title>
+</document>
+<inst>Dep. Informática, Universidade do Minho</inst>
+<endyear>2004</endyear>
+</the>
+</thesup>

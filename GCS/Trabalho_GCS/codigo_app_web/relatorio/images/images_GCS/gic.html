@@ -1,0 +1,93 @@
+<html>
+	<head>
+	<title>Gramática Independende de Contexto</title>
+	<meta charset="UTF-8">
+	<style>
+
+	terminal{
+	color:#00639e;
+	}
+
+	p{
+	font-size:20px;	
+
+	}
+
+	</style>
+
+	</head>
+
+	<body style="background-color:#dfe3ee">
+	<i>
+		<p>grammar gic_arq;</p>
+
+<p>gic_arq: <terminal>'::ENTIDADES::'</terminal> entidades <terminal>'::PROCESSOS::'</terminal> processos <terminal>'::ACOMPANHANTES::'</terminal> acompanhantes '.END.';</p>
+
+<p>entidades : entidade (entidade)*;</p>
+
+<p>processos: processo (processo)*;</p>
+
+<p>acompanhantes: acompanhante (acompanhante)*;</p>
+
+<p>entidade : bi ';' nome ';' freguesia ';' concelho ';' data ';' nome_pai ';' nome_mae ';' (conjugue)? '#';</p>
+<p>bi :NUM+;</p>
+<p>nome:PAL+;</p>
+<p>freguesia:PAL+;</p>
+<p>concelho:PAL+;</p>
+<p>nome_pai:PAL+;</p>
+<p>nome_mae:PAL+;</p>
+<p>conjugue:PAL+;</p>
+
+
+<p>processo:id_emigrante ';' id_processo ';' destino ';' expediente ';' idade ';' estado_civil ';' data_saida ';' </p>habilitacoes ';' trabalho_futuro '#';</p>
+<p>id_emigrante:NUM+;</p>
+<p>idade:NUM+;</p>
+<p>estado_civil:PAL;</p>
+
+<p>id_processo : numCM ';' numJE? ';' ano_processo;</p>
+
+<p>numCM:NUM_PROCESSO;</p>
+<p>numJE:NUM_PROCESSO;</p>
+<p>ano_processo:NUM+;</p>
+
+<p>destino : pais? ';' localidade?;</p>
+
+<p>pais:PAL+;</p>
+<p>localidade:PAL+;</p>
+
+<p>expediente : data? ';'  oficio? ';' passaporte?;</p>
+
+<p>oficio:NUM;</p>
+<p>passaporte:NUM_PROCESSO+;</p>
+<p>data:DATA;</p>
+<p>data_saida:PAL+;</p>
+
+<p>habilitacoes: profissao? ';' habLiterarias ';' local_trabalho?;</p>
+
+
+<p>trabalho_futuro: local? ';' profissao?;</p>
+
+<p>local:PAL+;</p>
+<p>profissao:PAL+;</p>
+<p>habLiterarias:PAL+;</p>
+<p>local_trabalho:PAL+;</p>
+
+
+<p>acompanhante:  bi? ';' numCM? ';' nome_acompanhante ';' data? ';' relacao?;</p>
+
+<p>relacao:PAL;</p>
+<p>nome_acompanhante:PAL;</p>
+
+
+<p>NUM_PROCESSO:[0-9]+'/'[0-9]+('-'[A-Z0-9]+)?;</p>
+<p>NUM: '0'..'9'+;</p>
+<p>DATA:[0-9]+('/'|'.')[0-9]+('/'|'.')[0-9]+;</p>
+<p>Sep:  ('\r'? '\n' | ' ' |'\t')+ -> skip;</p>
+<p>PAL: [A-ZÓÂÁÍa-z\,\"\(\)\`\?\.\'\-\&0-9][\.\(\)&\,A-Za-zí\'\"\è\?\-áìéçóãúêõâÓÂÁ\ª\º]*;</p>
+	</i>
+
+	</body>
+
+
+
+</html>

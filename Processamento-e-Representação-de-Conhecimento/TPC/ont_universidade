@@ -1,0 +1,2484 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ont_universidade "http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#" >
+    <!ENTITY untitled-ontology-31 "http://www.semanticweb.org/perez_25/ontologies/2015/5/untitled-ontology-31#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/perez_25/ontologies/2015/6/ont_universidade#"
+     xml:base="http://www.semanticweb.org/perez_25/ontologies/2015/6/ont_universidade"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-31="http://www.semanticweb.org/perez_25/ontologies/2015/5/untitled-ontology-31#"
+     xmlns:ont_universidade="http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/perez_25/ontologies/2015/6/ont_universidade">
+        <untitled-ontology-31:date rdf:datatype="&xsd;string">18 de Junho de 2015</untitled-ontology-31:date>
+        <rdfs:comment rdf:datatype="&xsd;string">Ontologia sobre o conceito de Universidade. Engloba faculdades, departamentos , cursos , disciplinas , alunos , docentes e funcionários . </rdfs:comment>
+        <untitled-ontology-31:subject rdf:datatype="&xsd;string">PRC</untitled-ontology-31:subject>
+        <untitled-ontology-31:author rdf:datatype="&xsd;string">Sérgio Simões a64283</untitled-ontology-31:author>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/perez_25/ontologies/2015/6/ont_universidade"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#author -->
+
+    <owl:AnnotationProperty rdf:about="&ont_universidade;author"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#aluno_tem_disc -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;aluno_tem_disc">
+        <rdfs:domain rdf:resource="&ont_universidade;Aluno"/>
+        <rdfs:range rdf:resource="&ont_universidade;Disciplina"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;tem_aluno_inscrito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#curso_pertence_ao_dep -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;curso_pertence_ao_dep">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:range rdf:resource="&ont_universidade;Departamento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#curso_tem_aluno -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;curso_tem_aluno">
+        <owl:inverseOf rdf:resource="&ont_universidade;frequenta_o_curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#departamento_pertence_a -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;departamento_pertence_a">
+        <rdfs:domain rdf:resource="&ont_universidade;Departamento"/>
+        <rdfs:range rdf:resource="&ont_universidade;Faculdade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#e_director_curso -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;e_director_curso">
+        <rdfs:range rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Docente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#e_do_departamento -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;e_do_departamento">
+        <rdfs:range rdf:resource="&ont_universidade;Departamento"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Docente"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;tem_docente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#estuda -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;estuda">
+        <rdfs:domain rdf:resource="&ont_universidade;Aluno"/>
+        <rdfs:range rdf:resource="&ont_universidade;Universidade"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;univ_tem_aluno"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#frequenta_o_curso -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;frequenta_o_curso">
+        <rdfs:domain rdf:resource="&ont_universidade;Aluno"/>
+        <rdfs:range rdf:resource="&ont_universidade;Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#lecciona -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;lecciona">
+        <rdfs:range rdf:resource="&ont_universidade;Disciplina"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Docente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#pertence_a_universidade -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;pertence_a_universidade">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Faculdade"/>
+        <rdfs:range rdf:resource="&ont_universidade;Universidade"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;é_consituida_por_faculdade_de"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#pertence_ao_curso_de -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;pertence_ao_curso_de">
+        <rdfs:range rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Disciplina"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;tem_disciplina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_aluno_inscrito -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_aluno_inscrito">
+        <rdfs:range rdf:resource="&ont_universidade;Aluno"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Disciplina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_curso_de -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_curso_de">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Departamento"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;curso_pertence_ao_dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_departamento_de -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_departamento_de">
+        <rdfs:range rdf:resource="&ont_universidade;Departamento"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Faculdade"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;departamento_pertence_a"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_director_curso -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_director_curso">
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:range rdf:resource="&ont_universidade;Docente"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;e_director_curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_disciplina -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_disciplina">
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:range rdf:resource="&ont_universidade;Disciplina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_docente -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_docente">
+        <rdfs:domain rdf:resource="&ont_universidade;Departamento"/>
+        <rdfs:range rdf:resource="&ont_universidade;Docente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_funcionario -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_funcionario">
+        <rdfs:range rdf:resource="&ont_universidade;Funcionário"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Universidade"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;trabalha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_vice_director -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;tem_vice_director">
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:range rdf:resource="&ont_universidade;Docente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#trabalha -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;trabalha">
+        <rdfs:domain rdf:resource="&ont_universidade;Funcionário"/>
+        <rdfs:range rdf:resource="&ont_universidade;Universidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#univ_tem_aluno -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;univ_tem_aluno"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#é_consituida_por_faculdade_de -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;é_consituida_por_faculdade_de">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&ont_universidade;Faculdade"/>
+        <rdfs:domain rdf:resource="&ont_universidade;Universidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#é_leccionada_por -->
+
+    <owl:ObjectProperty rdf:about="&ont_universidade;é_leccionada_por">
+        <rdfs:domain rdf:resource="&ont_universidade;Disciplina"/>
+        <rdfs:range rdf:resource="&ont_universidade;Docente"/>
+        <owl:inverseOf rdf:resource="&ont_universidade;lecciona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#ano_da_disciplina -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;ano_da_disciplina">
+        <ont_universidade:author rdf:datatype="&xsd;string">Sérgio Simões</ont_universidade:author>
+        <rdfs:comment>Ano onde é dada a disciplina no curso</rdfs:comment>
+        <rdfs:domain rdf:resource="&ont_universidade;Disciplina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#chama_se -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;chama_se">
+        <rdfs:comment>Nome de uma pessoa</rdfs:comment>
+        <rdfs:domain rdf:resource="&ont_universidade;Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#curso_iniciou_se_em -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;curso_iniciou_se_em">
+        <rdfs:comment>Data onde o curso começou</rdfs:comment>
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#esta_no_ano -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;esta_no_ano">
+        <rdfs:domain rdf:resource="&ont_universidade;Aluno"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#nome_cidade -->
+
+    <rdf:Description rdf:about="&ont_universidade;nome_cidade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#nome_curso -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;nome_curso">
+        <rdfs:comment rdf:datatype="&xsd;string">Nome do curso/designação</rdfs:comment>
+        <ont_universidade:author rdf:datatype="&xsd;string">Sérgio Simões</ont_universidade:author>
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#nome_departamento -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;nome_departamento">
+        <rdfs:comment rdf:datatype="&xsd;string">Nome do departamento/designação</rdfs:comment>
+        <ont_universidade:author rdf:datatype="&xsd;string">Sérgio Simões</ont_universidade:author>
+        <rdfs:domain rdf:resource="&ont_universidade;Departamento"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#nome_faculdade -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;nome_faculdade">
+        <rdfs:comment rdf:datatype="&xsd;string">Nome da faculdade/designação</rdfs:comment>
+        <ont_universidade:author rdf:datatype="&xsd;string">Sérgio Simões</ont_universidade:author>
+        <rdfs:domain rdf:resource="&ont_universidade;Faculdade"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#nome_universidade -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;nome_universidade">
+        <rdfs:comment rdf:datatype="&xsd;string">Nome do universidade/designação</rdfs:comment>
+        <ont_universidade:author rdf:datatype="&xsd;string">Sérgio Simões</ont_universidade:author>
+        <rdfs:domain rdf:resource="&ont_universidade;Universidade"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_designacao -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_designacao">
+        <rdfs:comment rdf:datatype="&xsd;string">Nome da disciplina/designação</rdfs:comment>
+        <ont_universidade:author rdf:datatype="&xsd;string">Sérgio Simões</ont_universidade:author>
+        <rdfs:domain rdf:resource="&ont_universidade;Disciplina"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_duracao_de -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_duracao_de">
+        <rdfs:comment rdf:datatype="&xsd;string">Duração do curso</rdfs:comment>
+        <ont_universidade:author rdf:datatype="&xsd;string">Sérgio Simões</ont_universidade:author>
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_funcao -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_funcao">
+        <rdfs:domain rdf:resource="&ont_universidade;Funcionário"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_home_page -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_home_page">
+        <rdfs:domain rdf:resource="&ont_universidade;Universidade"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_idade -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_idade">
+        <rdfs:domain rdf:resource="&ont_universidade;Pessoa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_nacionalidade -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_nacionalidade">
+        <rdfs:domain rdf:resource="&ont_universidade;Pessoa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_numero -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_numero">
+        <rdfs:domain rdf:resource="&ont_universidade;Aluno"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_pagina_curricular -->
+
+    <rdf:Description rdf:about="&ont_universidade;tem_pagina_curricular"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_sexo -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_sexo">
+        <rdfs:domain rdf:resource="&ont_universidade;Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tem_site -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tem_site">
+        <rdfs:domain rdf:resource="&ont_universidade;Docente"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#tipo_curso -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;tipo_curso">
+        <rdfs:domain rdf:resource="&ont_universidade;Curso"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#universidade_fundou_se_em -->
+
+    <owl:DatatypeProperty rdf:about="&ont_universidade;universidade_fundou_se_em">
+        <rdfs:domain rdf:resource="&ont_universidade;Universidade"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Aluno -->
+
+    <owl:Class rdf:about="&ont_universidade;Aluno">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;estuda"/>
+                <owl:someValuesFrom rdf:resource="&ont_universidade;Universidade"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&ont_universidade;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Curso -->
+
+    <owl:Class rdf:about="&ont_universidade;Curso">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;tem_disciplina"/>
+                <owl:onClass rdf:resource="&ont_universidade;Disciplina"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;curso_pertence_ao_dep"/>
+                <owl:onClass rdf:resource="&ont_universidade;Departamento"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Departamento -->
+
+    <owl:Class rdf:about="&ont_universidade;Departamento">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;tem_docente"/>
+                <owl:onClass rdf:resource="&ont_universidade;Docente"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;tem_curso_de"/>
+                <owl:onClass rdf:resource="&ont_universidade;Curso"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Disciplina -->
+
+    <owl:Class rdf:about="&ont_universidade;Disciplina">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;pertence_ao_curso_de"/>
+                <owl:onClass rdf:resource="&ont_universidade;Curso"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Docente -->
+
+    <owl:Class rdf:about="&ont_universidade;Docente">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;lecciona"/>
+                <owl:someValuesFrom rdf:resource="&ont_universidade;Disciplina"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&ont_universidade;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Faculdade -->
+
+    <owl:Class rdf:about="&ont_universidade;Faculdade">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;pertence_a_universidade"/>
+                <owl:onClass rdf:resource="&ont_universidade;Universidade"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Funcionário -->
+
+    <owl:Class rdf:about="&ont_universidade;Funcionário">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;trabalha"/>
+                <owl:someValuesFrom rdf:resource="&ont_universidade;Universidade"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&ont_universidade;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Pessoa -->
+
+    <owl:Class rdf:about="&ont_universidade;Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#Universidade -->
+
+    <owl:Class rdf:about="&ont_universidade;Universidade">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;tem_funcionario"/>
+                <owl:onClass rdf:resource="&ont_universidade;Funcionário"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;é_consituida_por_faculdade_de"/>
+                <owl:onClass rdf:resource="&ont_universidade;Faculdade"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ont_universidade;univ_tem_aluno"/>
+                <owl:onClass rdf:resource="&ont_universidade;Aluno"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A35133 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A35133">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A35133</ont_universidade:tem_numero>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Lia Isabela Esteves Alves</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pf"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A38620 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A38620">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">26</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">38620</ont_universidade:tem_numero>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Alexandre Fernandes</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Porto</ont_universidade:nome_cidade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pf"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A40616 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A40616">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">24</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">40616</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Coimbra</ont_universidade:nome_cidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">José Augusto</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;log"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A54764 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A54764">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">24</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A54764</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Coimbra</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Moisés Alexandre Barreto Martins</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A60988 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A60988">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">23</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">60988</ont_universidade:tem_numero>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Agostinho Abílio Cardoso Fernandes</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A61029 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A61029">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A61029</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Fafe</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">William Rodrigues Sousa</ont_universidade:chama_se>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A62021 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A62021">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A62021</ont_universidade:tem_numero>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">José Rodrigues Simões</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Porto</ont_universidade:nome_cidade>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;elect"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A62819 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A62819">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">24</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">62819</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Faro</ont_universidade:nome_cidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Fernado Sousa</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;log"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A64308 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A64308">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">24</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">64308</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Faro</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Manuel Rodrigues Oliveira</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>1</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;log"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;stp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A64319 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A64319">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">21</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A64319</ont_universidade:tem_numero>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Duarte Cunha da Silva Moças</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:nome_cidade>Vila Verde</ont_universidade:nome_cidade>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A64331 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A64331">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A64331</ont_universidade:tem_numero>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Rita da Conceição Araújo Santos</ont_universidade:chama_se>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A64349 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A64349">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">21</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A64349</ont_universidade:tem_numero>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Nuno Miguel Fernandes Monteiro</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:nome_cidade>Régua</ont_universidade:nome_cidade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;srcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A64460 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A64460">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">21</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A64460</ont_universidade:tem_numero>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Cláudia Fernandes Ribeiro</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:nome_cidade>Fafe</ont_universidade:nome_cidade>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A67643 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A67643">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade>20</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero>67643</ont_universidade:tem_numero>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:nome_cidade>Porto</ont_universidade:nome_cidade>
+        <ont_universidade:chama_se>Luís Miguel Aquino Silva</ont_universidade:chama_se>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;arqc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;elect"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A67737 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A67737">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">20</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A67737</ont_universidade:tem_numero>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Tiago Emanuel Duarte Correia Dinis</ont_universidade:chama_se>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:nome_cidade>Lisboa</ont_universidade:nome_cidade>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sd"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;srcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A70513 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A70513">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A70513</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Fafe</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Pedro Miguel Pereira Luís de Almeida Araújo</ont_universidade:chama_se>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algeb"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A71613 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A71613">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A71613</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Famalicão</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Zé Miguel Monteiro</ont_universidade:chama_se>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;dss"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;elect"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#A71927 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;A71927">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">A71927</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Fafe</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Tânia da Conceição Araújo Esteves</ont_universidade:chama_se>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algeb"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;dss"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#UM -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;UM">
+        <rdf:type rdf:resource="&ont_universidade;Universidade"/>
+        <ont_universidade:universidade_fundou_se_em rdf:datatype="&xsd;string">1973</ont_universidade:universidade_fundou_se_em>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Braga</ont_universidade:nome_cidade>
+        <ont_universidade:nome_universidade rdf:datatype="&xsd;string">Universidade do Minho</ont_universidade:nome_universidade>
+        <ont_universidade:tem_home_page rdf:datatype="&xsd;string">http://www.uminho.pt/</ont_universidade:tem_home_page>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A38620"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A40616"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A54764"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A60988"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A62819"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A64308"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A64319"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A64331"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A64349"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A64460"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:é_consituida_por_faculdade_de rdf:resource="&ont_universidade;UM-F1"/>
+        <ont_universidade:é_consituida_por_faculdade_de rdf:resource="&ont_universidade;UM-F2"/>
+        <ont_universidade:é_consituida_por_faculdade_de rdf:resource="&ont_universidade;UM-F3"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a27678"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a54212"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a54731"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a64283"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a70415"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;a8320"/>
+        <ont_universidade:tem_funcionario rdf:resource="&ont_universidade;f1"/>
+        <ont_universidade:tem_funcionario rdf:resource="&ont_universidade;f2"/>
+        <ont_universidade:tem_funcionario rdf:resource="&ont_universidade;f3"/>
+        <ont_universidade:tem_funcionario rdf:resource="&ont_universidade;f4"/>
+        <ont_universidade:tem_funcionario rdf:resource="&ont_universidade;f5"/>
+        <ont_universidade:tem_funcionario rdf:resource="&ont_universidade;f6"/>
+        <ont_universidade:tem_funcionario rdf:resource="&ont_universidade;f7"/>
+        <ont_universidade:univ_tem_aluno rdf:resource="&ont_universidade;pg27770"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#UM-F1 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;UM-F1">
+        <rdf:type rdf:resource="&ont_universidade;Faculdade"/>
+        <ont_universidade:nome_faculdade rdf:datatype="&xsd;string">Escola de Engenharia</ont_universidade:nome_faculdade>
+        <ont_universidade:pertence_a_universidade rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:tem_departamento_de rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:tem_departamento_de rdf:resource="&ont_universidade;dps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#UM-F2 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;UM-F2">
+        <rdf:type rdf:resource="&ont_universidade;Faculdade"/>
+        <ont_universidade:nome_faculdade rdf:datatype="&xsd;string">Escola de Arquitectura</ont_universidade:nome_faculdade>
+        <ont_universidade:pertence_a_universidade rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#UM-F3 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;UM-F3">
+        <rdf:type rdf:resource="&ont_universidade;Faculdade"/>
+        <ont_universidade:nome_faculdade rdf:datatype="&xsd;string">Escola de Ciências</ont_universidade:nome_faculdade>
+        <ont_universidade:pertence_a_universidade rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:tem_departamento_de rdf:resource="&ont_universidade;mat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a27678 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a27678">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">26</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">27678</ont_universidade:tem_numero>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Porto</ont_universidade:nome_cidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Sandra Manuela Silva Machado</ont_universidade:chama_se>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pf"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a54212 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a54212">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">25</ont_universidade:tem_idade>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Lisboa</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Manuel Ribeiro</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">a54212</ont_universidade:tem_numero>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;bd"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a54731 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a54731">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;string">22</ont_universidade:tem_idade>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">BR</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Carlos Alberto</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:esta_no_ano>1</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;log"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;stp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a61076 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a61076">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Diogo Martins</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">a61076</ont_universidade:tem_numero>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sd"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a64283 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a64283">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">22</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">64283</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Aveiro</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Sérgio Manuel Pereira Simões</ont_universidade:chama_se>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;prc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;spln"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a64351 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a64351">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade>22</ont_universidade:tem_idade>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:chama_se>João Tavares</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_numero>64351</ont_universidade:tem_numero>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a70415 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a70415">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:tem_numero>70415</ont_universidade:tem_numero>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_idade>19</ont_universidade:tem_idade>
+        <ont_universidade:chama_se>Luís Paulo Ferreira Pedro</ont_universidade:chama_se>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a71015 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a71015">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:tem_sexo>F</ont_universidade:tem_sexo>
+        <ont_universidade:tem_idade>18</ont_universidade:tem_idade>
+        <ont_universidade:chama_se>Beatriz Abreu Aarão</ont_universidade:chama_se>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algeb"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;dss"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;elect"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a71074 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a71074">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">19</ont_universidade:tem_idade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Sebastião Mendes de Freitas</ont_universidade:chama_se>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">a71074</ont_universidade:tem_numero>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;dss"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a71150 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a71150">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">20</ont_universidade:tem_idade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">André Ricardo Covelo Germano</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">a71150</ont_universidade:tem_numero>
+        <ont_universidade:esta_no_ano>3</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algeb"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;dss"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;srcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#a8320 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;a8320">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;int">27</ont_universidade:tem_idade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">8320</ont_universidade:tem_numero>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Fafe</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Ricardo Afonso Coutinho Pinheiro Augusto</ont_universidade:chama_se>
+        <ont_universidade:esta_no_ano>2</ont_universidade:esta_no_ano>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#ajp -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;ajp">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Alberto José Gonçalves Proença</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;sc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#algc -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;algc">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Algoritmos e Complexidade</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a27678"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a8320"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jbb"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#algeb -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;algeb">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">1</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Álgebra Linear</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;maf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#anr -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;anr">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">António Nestor Ribeiro</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_site rdf:datatype="&xsd;string">http://www4.di.uminho.pt/~anr/</ont_universidade:tem_site>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;dss"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;poo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#arf -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;arf">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">António Ramires Fernandes</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_site rdf:datatype="&xsd;string">http://www4.di.uminho.pt/~arf/</ont_universidade:tem_site>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#arqc -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;arqc">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_pagina_curricular rdf:datatype="&xsd;string"></ont_universidade:tem_pagina_curricular>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">2</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Arquitectura de Computadores</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jls"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#bd -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;bd">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Base de Dados</ont_universidade:tem_designacao>
+        <ont_universidade:ano_da_disciplina>3</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54212"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;omb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#cal1 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;cal1">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">1</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Cálculo 1</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54212"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;mfr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#cal2 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;cal2">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">1</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Cálculo 2</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;mfr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#can -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;can">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Cesar Analide</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_site rdf:datatype="&xsd;string">http://www4.di.uminho.pt/~car/indice.html</ont_universidade:tem_site>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;srcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#cbm -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;cbm">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se>Carlos Miguel Ferraz Baquero Moreno</ont_universidade:chama_se>
+        <ont_universidade:tem_site>http://www4.di.uminho.pt/~cbm</ont_universidade:tem_site>
+        <ont_universidade:nome_cidade>Braga</ont_universidade:nome_cidade>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;sd"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#cg -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;cg">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Computação Gráfica</ont_universidade:tem_designacao>
+        <ont_universidade:ano_da_disciplina>3</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A54764"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64319"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64349"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64460"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54731"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;arf"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#cp -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;cp">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina>2</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_pagina_curricular>http://wiki.di.uminho.pt/twiki/bin/view/Education/CP/Alunos</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tem_designacao>Cálculo de Programas</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A40616"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62819"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a27678"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a70415"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a8320"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jno"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;mjf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#di -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;di">
+        <rdf:type rdf:resource="&ont_universidade;Departamento"/>
+        <ont_universidade:nome_departamento rdf:datatype="&xsd;string">Departamento de Informática</ont_universidade:nome_departamento>
+        <ont_universidade:departamento_pertence_a rdf:resource="&ont_universidade;UM-F1"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;ajp"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;anr"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;arf"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;can"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;cbm"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;fmm"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;fsm"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;jbb"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;jcr"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;jls"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;jno"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;jsp"/>
+        <ont_universidade:tem_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:tem_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:tem_curso_de rdf:resource="&ont_universidade;mei_plc"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;mjf"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;omb"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;prh"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;rcm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#dps -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;dps">
+        <rdf:type rdf:resource="&ont_universidade;Departamento"/>
+        <ont_universidade:nome_departamento>Departamento de Produção e Sistemas</ont_universidade:nome_departamento>
+        <ont_universidade:departamento_pertence_a rdf:resource="&ont_universidade;UM-F1"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;jt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#dss -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;dss">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Desenvolvimento de Sistemas de Software</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;anr"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#elect -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;elect">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_pagina_curricular></ont_universidade:tem_pagina_curricular>
+        <ont_universidade:ano_da_disciplina>2</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao>Electromagnetismo</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#f1 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;f1">
+        <rdf:type rdf:resource="&ont_universidade;Funcionário"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Braga</ont_universidade:nome_cidade>
+        <ont_universidade:tem_funcao rdf:datatype="&xsd;string">Cantina</ont_universidade:tem_funcao>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Carlos Pereira</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:trabalha rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#f2 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;f2">
+        <rdf:type rdf:resource="&ont_universidade;Funcionário"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_funcao rdf:datatype="&xsd;string">Biblioteca</ont_universidade:tem_funcao>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Faro</ont_universidade:nome_cidade>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Rita Alentejo</ont_universidade:chama_se>
+        <ont_universidade:trabalha rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#f3 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;f3">
+        <rdf:type rdf:resource="&ont_universidade;Funcionário"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_funcao>Jardineiro</ont_universidade:tem_funcao>
+        <ont_universidade:tem_idade>45</ont_universidade:tem_idade>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se>João o &quot;Jardineiro&quot;</ont_universidade:chama_se>
+        <ont_universidade:trabalha rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#f4 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;f4">
+        <rdf:type rdf:resource="&ont_universidade;Funcionário"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_funcao>Cantina</ont_universidade:tem_funcao>
+        <ont_universidade:tem_sexo>F</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se>Rita Sousa</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:trabalha rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#f5 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;f5">
+        <rdf:type rdf:resource="&ont_universidade;Funcionário"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;string">54</ont_universidade:tem_idade>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">BR</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_funcao rdf:datatype="&xsd;string">Bar</ont_universidade:tem_funcao>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Dilma Guerra</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:trabalha rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#f6 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;f6">
+        <rdf:type rdf:resource="&ont_universidade;Funcionário"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">BR</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Rosa Rodrigues</ont_universidade:chama_se>
+        <ont_universidade:trabalha rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#f7 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;f7">
+        <rdf:type rdf:resource="&ont_universidade;Funcionário"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_idade>41</ont_universidade:tem_idade>
+        <ont_universidade:tem_funcao>Cozinheira</ont_universidade:tem_funcao>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_sexo>F</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se>Rosa Cremilde</ont_universidade:chama_se>
+        <ont_universidade:trabalha rdf:resource="&ont_universidade;UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#fmm -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;fmm">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Fernando Mário Martins</ont_universidade:chama_se>
+        <ont_universidade:tem_site>http://www4.di.uminho.pt/~fmm</ont_universidade:tem_site>
+        <ont_universidade:nome_cidade>Braga</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;li3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#fsm -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;fsm">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_site>http://www4.di.uminho.pt/~fsm/</ont_universidade:tem_site>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se>Francisco Soares de Moura</ont_universidade:chama_se>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;so"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#jbb -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;jbb">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">José Barros</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_site>http://www4.di.uminho.pt/~jbb/</ont_universidade:tem_site>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;pi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#jcr -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;jcr">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">José Carlos Ramalho</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_site rdf:datatype="&xsd;string">http://www4.di.uminho.pt/~jcr/</ont_universidade:tem_site>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;prc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#jls -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;jls">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:nome_cidade rdf:datatype="&xsd;string">Braga</ont_universidade:nome_cidade>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">João Luis Sobral</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;arqc"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#jno -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;jno">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se>José Nuno Oliveira</ont_universidade:chama_se>
+        <ont_universidade:tem_site>http://www4.di.uminho.pt/~jno/</ont_universidade:tem_site>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#jsp -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;jsp">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Jorge Sousa Pinto</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;stp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#jt -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;jt">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se>José Telhada</ont_universidade:chama_se>
+        <ont_universidade:tem_site>http://pessoais.dps.uminho.pt//telhada/</ont_universidade:tem_site>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;dps"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;meio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#lcc -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;lcc">
+        <rdf:type rdf:resource="&ont_universidade;Curso"/>
+        <ont_universidade:nome_curso rdf:datatype="&xsd;string">Licenciatura em Ciencias da Computação</ont_universidade:nome_curso>
+        <ont_universidade:tem_duracao_de>3 anos</ont_universidade:tem_duracao_de>
+        <ont_universidade:tem_pagina_curricular>lcc.di.uminho.pt</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tipo_curso>Licenciatura</ont_universidade:tipo_curso>
+        <ont_universidade:curso_iniciou_se_em>1986</ont_universidade:curso_iniciou_se_em>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A64308"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A64331"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a27678"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a54731"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;algeb"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;bd"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:curso_pertence_ao_dep rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;elect"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;li2"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;log"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;pf"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;so"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;srcr"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;stp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#lei -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;lei">
+        <rdf:type rdf:resource="&ont_universidade;Curso"/>
+        <ont_universidade:curso_iniciou_se_em rdf:datatype="&xsd;string">1978</ont_universidade:curso_iniciou_se_em>
+        <ont_universidade:nome_curso rdf:datatype="&xsd;string">Licenciatura em Engenharia Informática</ont_universidade:nome_curso>
+        <ont_universidade:tem_duracao_de rdf:datatype="&xsd;string">Três anos</ont_universidade:tem_duracao_de>
+        <ont_universidade:tem_pagina_curricular rdf:datatype="&xsd;string">lei.di.uminho.pt</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tipo_curso>Licenciatura</ont_universidade:tipo_curso>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A38620"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A40616"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A54764"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A60988"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A62819"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A64319"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A64349"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A64460"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a54212"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a64283"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a64351"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a70415"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;a8320"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;algc"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;algeb"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;arqc"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;bd"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;cg"/>
+        <ont_universidade:curso_pertence_ao_dep rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;dss"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;elect"/>
+        <ont_universidade:tem_vice_director rdf:resource="&ont_universidade;jcr"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;li2"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;li3"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;li4"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;log"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;meio"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;pf"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;pi"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;pl"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;poo"/>
+        <ont_universidade:tem_director_curso rdf:resource="&ont_universidade;prh"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;sc"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;sd"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;so"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;srcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#li2 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;li2">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">1</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Laboratórios de Informática II</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;rcm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#li3 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;li3">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">2</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Laboratórios de Informática III</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A40616"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62819"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64331"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64349"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a64283"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a8320"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;fmm"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#li4 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;li4">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">3</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Laboratórios de Informática IV</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A38620"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A54764"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64319"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64349"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64460"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a64351"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;omb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#log -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;log">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Lógica</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A40616"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62819"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64308"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54731"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#maf -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;maf">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_site rdf:datatype="&xsd;string"></ont_universidade:tem_site>
+        <ont_universidade:tem_idade rdf:datatype="&xsd;string">49</ont_universidade:tem_idade>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Maria Antónia Forjaz</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;algeb"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;mat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#mat -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;mat">
+        <rdf:type rdf:resource="&ont_universidade;Departamento"/>
+        <ont_universidade:nome_departamento rdf:datatype="&xsd;string">Departamento de Matemática</ont_universidade:nome_departamento>
+        <ont_universidade:departamento_pertence_a rdf:resource="&ont_universidade;UM-F3"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;maf"/>
+        <ont_universidade:tem_docente rdf:resource="&ont_universidade;mfr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#mei_plc -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;mei_plc">
+        <rdf:type rdf:resource="&ont_universidade;Curso"/>
+        <ont_universidade:tem_pagina_curricular rdf:datatype="&xsd;string"></ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tem_duracao_de>dois anos</ont_universidade:tem_duracao_de>
+        <ont_universidade:tipo_curso>Mestrado</ont_universidade:tipo_curso>
+        <ont_universidade:nome_curso>Processamento de Linguagens e Conhecimento</ont_universidade:nome_curso>
+        <ont_universidade:curso_pertence_ao_dep rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:curso_tem_aluno rdf:resource="&ont_universidade;pg27770"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;prc"/>
+        <ont_universidade:tem_disciplina rdf:resource="&ont_universidade;spln"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#meio -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;meio">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">3</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao>Métodos Estocásticos de Investigação Operacional</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jt"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#mfr -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;mfr">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Maria Elfrida Ramos Matos Ralha</ont_universidade:chama_se>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;cal1"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;cal2"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;mat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#mjf -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;mjf">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_site rdf:datatype="&xsd;string"></ont_universidade:tem_site>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">F</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Maria João Frade</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;cp"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;pi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#omb -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;omb">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Orlando Belo</ont_universidade:chama_se>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_site>http://www4.di.uminho.pt/~omb/Orlando_Belo/Home.html</ont_universidade:tem_site>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;bd"/>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;li4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#pf -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;pf">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Programação Funcional</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A38620"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a27678"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#pg27770 -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;pg27770">
+        <rdf:type rdf:resource="&ont_universidade;Aluno"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">André David Gomes Monteiro Oliveira</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo rdf:datatype="&xsd;string">M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_nacionalidade rdf:datatype="&xsd;string">PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:tem_numero rdf:datatype="&xsd;string">pg27770</ont_universidade:tem_numero>
+        <ont_universidade:estuda rdf:resource="&ont_universidade;UM"/>
+        <ont_universidade:frequenta_o_curso rdf:resource="&ont_universidade;mei_plc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;prc"/>
+        <ont_universidade:aluno_tem_disc rdf:resource="&ont_universidade;spln"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#pi -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;pi">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Programação Imperativa</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A38620"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A54764"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64308"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64331"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64460"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a27678"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54212"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54731"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a70415"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jbb"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;mjf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#pl -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;pl">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:ano_da_disciplina rdf:datatype="&xsd;string">3</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Licenciatura em Engenharia Informática</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A38620"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A54764"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A60988"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64319"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64349"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64460"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a64351"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jcr"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;prh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#poo -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;poo">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Programação Orientada a Objectos</ont_universidade:tem_designacao>
+        <ont_universidade:ano_da_disciplina>2</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54212"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a70415"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;anr"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#prc -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;prc">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Processamento de Representação e Conhecimento 2015</ont_universidade:tem_designacao>
+        <ont_universidade:tem_pagina_curricular rdf:datatype="&xsd;string">http://www4.di.uminho.pt/~jcr/AULAS/prc2015/</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a64283"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jcr"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;mei_plc"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;pg27770"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#prh -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;prh">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:chama_se>Pedro Rangel Henriques</ont_universidade:chama_se>
+        <ont_universidade:tem_site>http://www4.di.uminho.pt/~prh/</ont_universidade:tem_site>
+        <ont_universidade:nome_cidade>Braga</ont_universidade:nome_cidade>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:e_director_curso rdf:resource="&ont_universidade;lei"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;pl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#rcm -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;rcm">
+        <rdf:type rdf:resource="&ont_universidade;Docente"/>
+        <rdf:type rdf:resource="&ont_universidade;Pessoa"/>
+        <ont_universidade:chama_se rdf:datatype="&xsd;string">Rui Mendes</ont_universidade:chama_se>
+        <ont_universidade:tem_sexo>M</ont_universidade:tem_sexo>
+        <ont_universidade:tem_site>https://github.com/rcm/</ont_universidade:tem_site>
+        <ont_universidade:tem_nacionalidade>PT</ont_universidade:tem_nacionalidade>
+        <ont_universidade:e_do_departamento rdf:resource="&ont_universidade;di"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;li2"/>
+        <ont_universidade:lecciona rdf:resource="&ont_universidade;spln"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#sc -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;sc">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Sistemas da Computação</ont_universidade:tem_designacao>
+        <ont_universidade:tem_pagina_curricular>http://gec.di.uminho.pt/lei/sc/</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;ajp"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#sd -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;sd">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_pagina_curricular>https://elearning.uminho.pt/</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tem_designacao>Sistemas Distribuidos</ont_universidade:tem_designacao>
+        <ont_universidade:ano_da_disciplina>3</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67643"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;cbm"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#so -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;so">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Sistemas Operativos</ont_universidade:tem_designacao>
+        <ont_universidade:tem_pagina_curricular>https://elearning.uminho.pt/</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A35133"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A38620"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A40616"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A54764"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A60988"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A61029"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62021"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A62819"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64308"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64331"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64460"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A70513"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71613"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A71927"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a27678"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a61076"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a70415"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71015"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71074"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a8320"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;cbm"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;fsm"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#spln -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;spln">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_pagina_curricular>https://github.com/rcm</ont_universidade:tem_pagina_curricular>
+        <ont_universidade:ano_da_disciplina>1</ont_universidade:ano_da_disciplina>
+        <ont_universidade:tem_designacao>Scripting no processamento de linguagem natural</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a64283"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;mei_plc"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;pg27770"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;rcm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#srcr -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;srcr">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Sistemas de Representação de Conhecimento e Raciocínio</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64349"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A67737"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a71150"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;can"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/5/ont_universidade#stp -->
+
+    <owl:NamedIndividual rdf:about="&ont_universidade;stp">
+        <rdf:type rdf:resource="&ont_universidade;Disciplina"/>
+        <ont_universidade:tem_designacao rdf:datatype="&xsd;string">Semântica da Programação</ont_universidade:tem_designacao>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;A64308"/>
+        <ont_universidade:tem_aluno_inscrito rdf:resource="&ont_universidade;a54731"/>
+        <ont_universidade:é_leccionada_por rdf:resource="&ont_universidade;jsp"/>
+        <ont_universidade:pertence_ao_curso_de rdf:resource="&ont_universidade;lcc"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

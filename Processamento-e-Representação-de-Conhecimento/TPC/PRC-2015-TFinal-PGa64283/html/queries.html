@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Queries em Sparql</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <div class="container">
+      <br/>
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active">
+              <a href="../index.html">Home</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="text-muted lead ">Queries em SPARQL
+          <br/>
+          <small>Todas as queries foram testadas no
+            <em>
+              <a href="http://www.ldodds.com/projects/twinkle/">Twinkle</a>
+            </em>
+          </small>
+        </h1>
+      </div>
+      <hr/>
+      <div class="row">
+        <br/>
+        <br/>
+        <a class="lead" role="button" data-toggle="collapse" href="#q1" aria-expanded="false" aria-controls="collapseExample">
+     Lista de todos os alunos presentes na ontologia ordenados por nome.
+     </a>
+        <hr>
+        <div class="collapse" id="q1">
+          <div class="well">
+            <code>SELECT ?nome ?idade ?sexo ?nacionalidade
+              <br/>WHERE {
+              <br/>?person rdf:type ont:Aluno.
+              <br/>?person ont:chama_se ?nome.
+              <br/>?person ont:tem_idade ?idade.
+              <br/>?person ont:tem_sexo ?sexo.
+              <br/>?person ont:tem_nacionalidade ?nacionalidade.
+              <br/>}
+              <br/>ORDER by ?nome
+              <br/>
+            </code>
+          </div>
+        </div>
+        <a class="lead" role="button" data-toggle="collapse" href="#q2" aria-expanded="false" aria-controls="collapseExample">
+      Triplos aluno,curso e universidade
+     </a>
+        <hr>
+        <div class="collapse" id="q2">
+          <div class="well">
+            <code>SELECT ?nome ?curso ?universidade
+              <br/>WHERE {
+              <br/>?person rdf:type ont:Aluno.
+              <br/>?person ont:chama_se ?nome.
+              <br/>?person ont:frequenta_o_curso ?c.
+              <br/>?c ont:nome_curso ?curso.
+              <br/>?person ont:estuda ?uni.
+              <br/>?uni ont:nome_universidade ?universidade
+              <br/>}
+              <br/>ORDER by ?nome
+              <br/>
+            </code>
+          </div>
+        </div>
+        <a class="lead" role="button" data-toggle="collapse" href="#q3" aria-expanded="false" aria-controls="collapseExample">
+     Lista dos docentes mais departamento, faculdade e universidade onde trabalham.
+    </a>
+        <div class="collapse" id="q3">
+          <div class="well">
+            <code>SELECT ?nome ?departamento ?faculdade ?universidade
+              <br/>WHERE {
+              <br/>?person rdf:type ont:Docente.
+              <br/>?person ont:chama_se ?nome.
+              <br/>?person ont:e_do_departamento ?d.
+              <br/>?d ont:nome_departamento ?departamento.
+              <br/>?d ont:departamento_pertence_a ?f.
+              <br/>?f ont:nome_faculdade ?faculdade.
+              <br/>?f ont:pertence_a_universidade ?u.
+              <br/>?u ont:nome_universidade ?universidade
+              <br/>}
+              <br/>ORDER by ?nome
+              <br/>
+            </code>
+          </div>
+        </div>
+        <hr/>
+        <a class="lead" role="button" data-toggle="collapse" href="#q4" aria-expanded="false" aria-controls="collapseExample">
+        Cursos existentes por departamento. 
+      </a>
+        <div class="collapse" id="q4">
+          <div class="well">
+            <code>SELECT ?nome ?departamento ?faculdade ?universidade
+              <br/>WHERE {
+              <br/>?curso rdf:type ont:Curso.
+              <br/>?curso ont:nome_curso ?nome.
+              <br/>?curso ont:curso_pertence_ao_dep ?d.
+              <br/>?d ont:nome_departamento ?departamento.
+              <br/>?d ont:departamento_pertence_a ?f.
+              <br/>?f ont:nome_faculdade ?faculdade.
+              <br/>?f ont:pertence_a_universidade ?u.
+              <br/>?u ont:nome_universidade ?universidade
+              <br/>}
+              <br/>ORDER by ?nome
+              <br/>
+            </code>
+          </div>
+        </div>
+        <hr/>
+        <a class="lead" role="button" data-toggle="collapse" href="#q5" aria-expanded="false" aria-controls="collapseExample">
+       Numero de inscritos por Disciplina
+      </a>
+        <div class="collapse" id="q5">
+          <div class="well">
+            <code>SELECT ?disc (COUNT(?al) AS ?numero_inscritos)
+              <br/>WHERE {
+              <br/>?d rdf:type ont:Disciplina.
+              <br/>?d ont:tem_designacao ?disc.
+              <br/>?d ont:tem_aluno_inscrito ?al.
+              <br/>}
+              <br/>GROUP BY ?disc
+              <br/>
+            </code>
+          </div>
+        </div>
+        <hr/>
+        <a class="lead" role="button" data-toggle="collapse" href="#q6" aria-expanded="false" aria-controls="collapseExample">
+       Alunos que estão no 3º ano mais o numero e o respectivo curso
+      </a>
+        <div class="collapse" id="q6">
+          <div class="well">
+            <code>SELECT ?nome ?numero ?curso
+              <br/>WHERE {
+              <br/>?person rdf:type ont:Aluno.
+              <br/>?person ont:esta_no_ano ?ano.
+              <br/>?person ont:chama_se ?nome.
+              <br/>?person ont:tem_numero ?numero.
+              <br/>?person ont:frequenta_o_curso ?c.
+              <br/>?c ont:nome_curso ?curso.
+              <br/>FILTER regex(?ano,"3").
+              <br/>}</code>
+          </div>
+        </div>
+        <hr/>
+        <a class="lead" role="button" data-toggle="collapse" href="#q7" aria-expanded="false" aria-controls="collapseExample">
+        Numero de cadeiras inscritas de cada aluno ordenado por nome
+        </a>
+        <div class="collapse" id="q7">
+          <div class="well highlight zero-clipboard">
+            <code>
+              <br/>SELECT ?nome ?numero ?curso (COUNT(?n) AS ?cadeiras)
+              <br/>WHERE {
+              <br/>?person rdf:type ont:Aluno.
+              <br/>?person ont:chama_se ?nome.
+              <br/>?person ont:tem_numero ?numero.
+              <br/>?person ont:frequenta_o_curso ?c.
+              <br/>?person ont:aluno_tem_disc ?n.
+              <br/>?c ont:nome_curso ?curso.
+              <br/>}
+              <br/>GROUP BY ?nome
+              <br/>ORDER BY ?nome</code>
+          </div>
+        </div>
+        <hr/>
+        <a class="lead" role="button" data-toggle="collapse" href="#q8" aria-expanded="false" aria-controls="collapseExample">
+        Alunos que estão no segundo ano e inscritos a Sistemas Operativos
+        </a>
+        <div class="collapse" id="q8">
+          <div class="well highlight zero-clipboard">
+            <code>
+              <br/>SELECT ?aluno ?numero WHERE {
+              <br/>?person rdf:type ont:Aluno.
+              <br/>?person ont:chama_se ?aluno.
+              <br/>?person ont:aluno_tem_disc ?disc.
+              <br/>?disc ont:tem_designacao ?nome.
+              <br/>?person ont:tem_numero ?numero.
+              <br/>?person ont:esta_no_ano ?ano.
+              <br/>FILTER regex(?nome,"Sistemas Operativos")
+              <br/>FILTER regex(?ano,"2")
+              <br/>} ORDER BY ?aluno</code>
+          </div>
+        </div>
+        <hr/>
+        <a class="lead" role="button" data-toggle="collapse" href="#q9" aria-expanded="false" aria-controls="collapseExample">
+       Triplo Funcionário,nacionalidade,função.
+        </a>
+        <div class="collapse" id="q9">
+          <div class="well highlight zero-clipboard">
+            <code>
+              <br/>SELECT DISTINCT ?func ?nacionalidade ?funcao WHERE {
+              <br/>?f rdf:type ont:Funcionário.
+              <br/>?f ont:chama_se ?func.
+              <br/>?f ont:tem_nacionalidade ?nacionalidade.
+              <br/>?f ont:tem_funcao ?funcao.
+              <br/>} ORDER BY ?func</code>
+          </div>
+        </div>
+        <hr/>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/bootstrap.js"></script>
+  </body>
+
+</html>

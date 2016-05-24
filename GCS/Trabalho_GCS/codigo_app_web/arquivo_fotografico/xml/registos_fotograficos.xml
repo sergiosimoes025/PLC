@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fotos SYSTEM "fotografias.dtd">
+<fotos>
+   <foto ficheiro="1.jpg">
+        <quem>João Simões,Fábio Vieira,João Martins,Bruno Conceição</quem>
+        <quando data="2014-1-1"/>
+        <facto>Jogo de Futebol</facto>
+        <autor tipo="Fotografo">Sérgio Simões</autor>
+    </foto>
+    
+     <foto ficheiro="2.jpg">
+        <quem>Vitor Simões</quem>
+        <quando data="2014-12-13"/>
+        <facto>Colheita de Verão</facto>
+        <autor tipo="Fotografo">Mario Silva</autor>
+    </foto>
+    
+     <foto ficheiro="3.jpg">
+        <quem>Ana de Lourdes de Oliveira; Antonio Oliveira Machado;</quem>
+        <quando data="2002-01-15"/>
+        <facto>A família Machado durante um passeio</facto>
+        <autor tipo="Fotografo">Rodrigo Moreno</autor>
+    </foto>
+    
+     <foto ficheiro="4.jpg">
+        <quem>Joana d'Orta</quem>
+        <quando data="2003-02-17"/>
+        <facto>Joana a estudar para o 20!</facto>
+        <autor tipo="Fotografo">Tiago Martins</autor>
+    </foto>
+    
+     <foto ficheiro="5.jpg">
+        <quem>Maria Albertina</quem>
+        <onde>Ponte da barca</onde>
+        <quando data="2014-02-17"/>
+        <facto>A minha avó :rox:</facto>
+        <autor tipo="Fotografo">Hélder Rocha</autor>
+    </foto>
+    
+     <foto ficheiro="6.jpg">
+        <quem>Barack Obama</quem>
+        <quando data="2012-08-18"/>
+        <facto>Dia de Praia na White House</facto>
+        <autor>David Rodrigues</autor>
+    </foto>
+    
+    <foto ficheiro="7.jpg">
+        <quem>AHlack Mohibir</quem>
+        <onde>Marrocos</onde>
+        <quando data="2014-07-18"/>
+        <facto>A fazer negócios no mercado negro</facto>
+        <autor>Paulo Sousa</autor>
+    </foto>
+    
+     <foto ficheiro="8.jpg">
+        <quem>Manuel Sousa</quem>
+        <onde>Campo da  Lagoa</onde>
+        <quando data="2015-01-18"/>
+        <facto>A preparar o seu pitch</facto>
+        <autor>Fernando Martins</autor>
+    </foto>
+
+    <foto ficheiro="9.jpg">
+        <quem>David Moreira</quem>
+        <onde>Mumbai</onde>
+        <quando data="2014-02-17"/>
+        <facto>Eu a convencer o David a ir ao dentista</facto>
+        <autor tipo="Fotografo">Sérgio Simões</autor>
+    </foto>
+    
+     <foto ficheiro="10.jpg">
+        <quem>Toni Alberto</quem>
+        <quando data="2012-08-18"/>
+        <facto>Dia de Praia</facto>
+        <autor>David Rodrigues</autor>
+    </foto>
+    
+    <foto ficheiro="11.jpg">
+        <quem>Pedro André Fontes</quem>
+        <onde>New York</onde>
+        <quando data="2014-07-18"/>
+        <facto>Na pausa do trabalho</facto>
+        <autor>Paulo Sousa</autor>
+    </foto>
+    
+     <foto ficheiro="12.jpg">
+        <quem>Jihara Moh</quem>
+        <onde>Nova Deli</onde>
+        <quando data="2015-01-18"/>
+        <facto>Depois de fazer o primeiro piercing</facto>
+        <autor>Fernando Martins</autor>
+    </foto>
+
+    <foto ficheiro="13.jpg">
+        
+        <quem>David Moreira; José Malhoa; Rui Pereira; Joana Martins</quem>
+        <onde>Austin, Texas</onde>
+        <quando data="2014-02-17"/>
+        <facto>Fim da reunião de trabalho</facto>
+        <autor tipo="Fotografo">Sérgio Simões</autor>
+    </foto>
+    
+     <foto ficheiro="14.jpg">
+        <quem>Justin Bieber</quem>
+        <quando data="2012-08-18"/>
+        <facto>Antes do show</facto>
+        <autor>Tiago Martins</autor>
+    </foto>
+    
+    <foto ficheiro="15.jpg">
+        <quem>John Cena</quem>
+        <onde>Alaska</onde>
+        <quando data="2014-07-18"/>
+        <facto>Durante a apanha da lenha</facto>
+        <autor>Hélder Rocha</autor>
+    </foto>
+    
+     <foto ficheiro="16.jpg">
+        <quem>Malola Jojo</quem>
+        <onde>Campo da Lagoa</onde>
+        <quando data="2015-01-18"/>
+        <facto>Primeiro jogo no Lagoncinha</facto>
+        <autor>Fernando Martins</autor>
+    </foto>
+
+    <foto ficheiro="17.jpg">
+        <quem>Jejee</quem>
+        <onde>Dubai</onde>
+        <quando data="2014-02-17"/>
+        <facto>Jogo de Basquetebol</facto>
+        <autor tipo="Fotografo">Tiago Martins</autor>
+    </foto>
+    
+     <foto ficheiro="18.jpg">
+        <quem>Jean Leaf</quem>
+        <quando data="2012-08-18"/>
+        <facto>Durante o trabalho</facto>
+        <autor>David Rodrigues</autor>
+    </foto>
+    
+    <foto ficheiro="19.jpg">
+        <quem>Psy</quem>
+        <onde>South Korea</onde>
+        <quando data="2014-07-18"/>
+        <facto>Gagnamstyle</facto>
+        <autor>Fernando Martins</autor>
+    </foto>
+    
+     <foto ficheiro="20.jpg">
+        <quem>Manuel Sousa</quem>
+        <onde>Mongolia</onde>
+        <quando data="2015-01-18"/>
+        <facto>À caça</facto>
+        <autor>Fernando Sousa</autor>
+    </foto>
+</fotos>

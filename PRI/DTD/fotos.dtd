@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT fotos (foto+) >
+<!ELEMENT foto (quando,quem,facto,onde?)>
+<!ELEMENT quando (#PCDATA)>
+<!ELEMENT quem (#PCDATA)>
+<!ELEMENT facto (#PCDATA)>
+<!ELEMENT onde (#PCDATA)>
+
+
+<!ATTLIST foto ficheiro CDATA #REQUIRED>
+<!ATTLIST quando data CDATA #REQUIRED>

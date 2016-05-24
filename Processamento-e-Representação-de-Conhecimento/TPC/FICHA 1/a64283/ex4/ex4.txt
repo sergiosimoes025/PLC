@@ -1,0 +1,31 @@
+1 . Qual a diferença entre uma ontologia e uma conceptualização?
+
+R : Uma conceptualização refere-se há acção de organizar em conceitos um certo assunto. Por outro lado uma ontologia
+é um modelo de dados que representa um conjunto de conceitos dentro de um domínio e os relacionamentos entre estes.
+									
+									---------------
+									
+2 . Se vários websites usarem a mesma ontologia pode um termo ter significados diferentes em diferentes websites?
+
+R : Visto que estão a utilizar a mesma ontologia , os significados dos diferentes termos terão que ser iguais para 
+todos os websites que se regerem por esta ontologia,visto que as relações criadas são fixas para todos os websites. 
+Contudo existe um caso de excepção que seria caso os conceitos fossem homónimos. 
+									
+									---------------
+									
+3 . Uma base de conhecimento pode usar mais de uma ontologia? 
+Caso a sua resposta seja negativa explique porquê. Caso seja positiva explique de que modo é poderiam ser usadas.
+
+R : Pode por exemplo se quisermos criar uma ontologia sobre o domínio da Biomedicina , é possível inferir que uma só ontologia não 
+será suficiente visto que existem vários sub-domínios relacionados com este tema. Para tal cria-se uma base de conhecimento
+com um certo domínio, mas com várias ontologias que pertencem a este domínio mas especificam um sub-domínio deste. É preciso 
+referir também que as ontologias podem correr o risco de entrar em conflito.
+									
+									---------------
+									
+4 . Qual a relação entre classes e indivíduos ?
+
+R : Uma classe pode conter indivíduos outras classes ou mesmo uma combinação de ambos. Por exemplo eu Sérgio Simões , sou um 
+indivíduo contudo pertenço á classe Pessoa. Por outro lado já não posso dizer que pessoa pertence a mim. 
+
+

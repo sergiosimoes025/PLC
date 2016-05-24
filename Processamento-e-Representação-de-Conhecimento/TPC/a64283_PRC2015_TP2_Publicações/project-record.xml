@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-record>
+    <meta>
+        <title>TPC2</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <subtitle>Processamento e Representação de Conhecimento</subtitle>
+        <begin-date>Março 2015</begin-date>
+        <end-date>Março 2015</end-date>
+    </meta>
+    <abstract>
+        
+    <b>Motivação:</b>    
+        <p>A Web Semântica é nada mais nada menos, que uma web com toda sua informação organizada de forma que não somente seres humanos possam entendê-la, mas principalmente máquinas/computadores.
+            Disse principalmente máquinas, porque elas nos ajudarão, de fato, em tarefas que hoje, invariavelmente temos que executá-las manualmente.</p>   
+        
+        
+    <b>Objectivo :</b>
+        <p> Terminar as ocorrências do ficheiro: <i>jcrpubs.xml</i></p> 
+        <p> Para tal foi necessário analisar o ficheiro , de modo a ver quais eram
+        as propriedades de cada tipo de Publicação. Foi possível concluir que existem as seguintes
+        subclasses de Publicação :</p>
+        <ul>
+            <li>Book</li>
+            <li>Proceedings</li>
+            <li>Inproceedings</li>
+            <li>Phdthesis</li>
+            <li>MasterThesis</li>
+            <li>Article</li>   
+            <li>Misc</li>
+            <li>Inbook</li>
+        </ul>
+        
+        <p> Através da análise de cada tipo  foi possível inferir que todos tinham as propriedades:</p>
+        <ul>
+            <li>Título</li>
+            <li>Doi</li>
+            <li>Data</li>
+            <li>Autor</li>
+        </ul>
+        
+        <p> Contudo , também foi possível inferir que existem propriedades que são destinadas somente a cada tipo
+            de publicação. Por exemplo tanto <i>Phdthesis</i>, como <i>Masterthesis</i> contêm a propriedade <i>school</i>.</p>
+        <p>Por outro lado o tipo <i>Article</i> é o que contêm mais propriedades unicas, tais como:</p>
+            <ul>
+                <li>number</li>
+                <li>issn</li>
+                <li>volume</li>
+                <li>journal</li>
+            </ul>
+        <p> </p>
+        <p>Para representar estes dados foi usado <i>XSL</i> de modo a processar o ficheiro <i>jcrpubs.xml</i> 
+        com a finalidade de originar um ficheiro com os dados representados na linguagem <i>RDF</i></p>
+        
+        
+     
+        </abstract>
+    <workteam>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        
+        
+    </workteam>
+   <deliverables>
+       <xref url="project-record.dtd">project-record.dtd</xref>
+       <xref url="project-record.html">project-record.html</xref>
+       <xref url="project-record.xml">project-record.xml</xref>
+       <xref url="project-record.xsl">project-record.xsl</xref>
+       <xref url="pubs.xsl">Stylesheet publicações</xref>
+       <xref url="pubs-rdf.xml">Ficheiro final (RDF)</xref>
+       
+   </deliverables>
+</project-record>

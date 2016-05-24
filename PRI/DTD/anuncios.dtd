@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT anuncios (anuncio*) >
+<!ELEMENT anuncio (profissao,contactos,corpo,disponibilidade) >
+<!ELEMENT profissao (#PCDATA) >
+<!ELEMENT contactos (telefone,email,url) >
+<!ELEMENT telefone (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT url (#PCDATA) >
+<!ELEMENT corpo (#PCDATA) >
+<!ELEMENT disponibilidade (#PCDATA) >

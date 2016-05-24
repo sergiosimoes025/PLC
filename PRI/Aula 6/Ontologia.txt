@@ -1,0 +1,24 @@
+Perceber conceitos, ONTODL, OWL DSL, GPL
+
+conceito: NOMECONCEITO (':' atributosConceito);
+
+ontodl: conceitos relacoes ligacoes '.';
+
+conceitos: 'CONCEITOS' conceito+;
+
+atributosConceito: atributo(',' atributo)*;
+
+atributo: PAL;
+
+relacoes: 'RELACOES' relacao+;
+
+relacao: NOMERELACAO;
+
+ligacoes: 'LIGACOES' ligacao+;
+
+ligacao:NOMECONCEITO NOMERELACAO NOMECONCEITO ;
+
+NOMECONCEITO: PAL;
+NOMERELACAO:PAL;
+
+PAL: (('a'..'z')|('A'..'Z'))+;

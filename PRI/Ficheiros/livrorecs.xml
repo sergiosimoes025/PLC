@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE livro-de-receitas SYSTEM "file:/Users/boombz/Downloads/oxygen/livro-receitas.dtd">
+<livro-de-receitas>
+    <abertura>
+        <autor>José Carlos Ramalho</autor>
+        <data>17 de Março de 2003</data>
+        <local>Universidade do Minho</local>
+    </abertura>
+    <receitas>
+        <receita língua="pt" classificação="doçaria">
+            <título>Mousse de chocolate</título>
+            <ingredientes>
+                <ingrediente>200g de chocolate de chocolate de culinária</ingrediente>
+                <ingrediente>50g de margarina</ingrediente>
+                <ingrediente>meia dúzia de ovos</ingrediente>
+                <ingrediente>4 colheres de sopa de açucar</ingrediente>
+            </ingredientes>
+            <preparação>
+                <instrução>Separam-se as gemas das claras.</instrução>
+                <instrução>Derrete-se o chocolate com a margarina.</instrução>
+                <instrução>Adicionam-se as gemas.</instrução>
+                <instrução>Mistura-se o açucar no chocolate.</instrução>
+                <instrução>Batem-se as claras em castelo.</instrução>
+                <instrução>Mistura-se tudo no recipiente final.</instrução>
+            </preparação>
+        </receita>
+    </receitas>
+</livro-de-receitas>

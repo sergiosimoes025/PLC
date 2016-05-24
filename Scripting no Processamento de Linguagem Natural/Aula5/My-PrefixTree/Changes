@@ -1,0 +1,6 @@
+Revision history for Perl extension My::PrefixTree.
+
+0.01  Mon Mar 30 03:23:59 2015
+	- original version; created by h2xs 1.23 with options
+		-XAn My::PrefixTree
+

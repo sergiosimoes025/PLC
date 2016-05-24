@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquivo-musical>
+    <obra id="m1">
+        <titulo>Homenagem ao JSerra</titulo>
+        <tipo categoria="rua">Marcha</tipo>
+        <compositor>Perez</compositor>
+    </obra>
+    <obra id="m2">
+        <titulo>Armindo Alvez</titulo>
+        <tipo>Marcha</tipo>
+        <compositor>Perez</compositor>
+        <instrumentos>
+            <instrumento>
+                <designacao>Sax Baritono</designacao>
+                <partitura type="PIF" path="ArmindoAlvez-saxB.tif"/>
+            </instrumento>
+            <instrumento>
+                <designacao>Viola da outra</designacao>
+                <partitura type="PIF" path="ArmindoAlvez-saxB.tif"/>
+            </instrumento>
+        </instrumentos>
+    </obra>
+    
+    <obra id="m3">
+        <titulo>David Cenz</titulo>
+        <tipo categoria="cenas" >Marcha</tipo>
+        <compositor>Maradona</compositor>
+        <instrumentos>
+            <instrumento>
+                <designacao>Viola da cena</designacao>
+                <partitura type="PIF" path="ArmindoAlvez-saxB.tif"/>
+            </instrumento>
+            <instrumento>
+                <designacao>Clarinete I</designacao>
+                <partitura type="PIF" path="ArmindoAlvez-saxB.pdf"/>
+            </instrumento>
+            <instrumento>
+                <designacao>Clarinete II</designacao>
+                <partitura type="PIF" path="ArmindoAlvez-saxB.pdf"/>
+            </instrumento>
+        </instrumentos>
+        <arranjo>Luiz Carlos</arranjo>
+    </obra>
+    
+    
+</arquivo-musical>

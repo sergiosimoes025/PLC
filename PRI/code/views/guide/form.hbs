@@ -1,0 +1,318 @@
+  
+  {{#contentFor 'header'}}
+    <link href='/plugins/bootstrap-formhelpers.css' rel='stylesheet'>
+  {{/contentFor}}
+    
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8 col-md-offset-2' id='new-guide'>
+          <form id='guide-form' method='post' action='/guide/create' accept-charset="UTF-8" role='form' enctype='multipart/form-data'> <!-- enctype -->
+            <input type='hidden' id='totalplaces' name='totalplaces' value='0' />
+            <div class='header'>
+              <h1>
+                <span class='icon icon-map-route'></span>
+                New journey
+              </h1>
+              <!--
+              <div class='pull-right'>
+                <input checked='checked' class='switch' data-off-text='PRIVATE' data-on-text='PUBLIC' data-size='normal' name='privacyStatus' type='checkbox'>
+              </div>
+              -->
+            </div>
+            <div class='row guide-info'>
+              <div class='form-group col-md-12'>
+                <input class='form-control input-lg' name='title' placeholder='Name your journey' type='text'>
+              </div>
+              <div class='form-group col-md-8'>
+                <textarea class='form-control' name='description' placeholder='Write an awesome description about it' rows='6'></textarea>
+              </div>
+              <div class='form-group col-md-4'>
+                <div class='form-group'>
+                  <div class='bfh-selectbox'>
+                    <div>Select category</div>
+                    <div data-value='1'>Shopping</div>
+                    <div data-value='2'>Gardens</div>
+                    <div data-value='3'>Museums</div>
+                    <div data-value='4'>Night life</div>
+                    <div data-value='5'>Attractions</div>
+                    <div data-value='6'>Entertainment</div>
+                  </div>
+                  <input type='hidden' name='category' id='result-category' />
+                </div>
+              </div>
+
+            </div>
+            <div class='divider'></div>
+            <div id='guide-places'>
+              <article class='place'>
+                <div class='wrap'>
+                  <header>
+                    <h1 class='h4'>New Place</h1>
+                  </header>
+                  <div class='row'>
+                    <div class='col-md-8'>
+                      <div class='form-group'>
+                        <input class='form-control' placeholder='What is this place called?' id='place-title' name='places.0.title' type='text'>
+                      </div>
+                      <div class='form-group'>
+                        <textarea class='form-control' placeholder='Share your experience about it.. what was it like?' id='places-0-description' name='places.0.description' rows='6'></textarea>
+                         You have <span id="placeDescriptionCharsLeft-0"></span> chars left
+                      </div>
+                      <div class='form-group'>
+                        <input class='form-control' id='map_input-0' placeholder='Type to search the place address' type='text'>
+                        <input type='hidden' data-geo-0='lat' name="places.0.lat" />
+                        <input type='hidden' data-geo-0='lng' name="places.0.lng" />
+                      </div>
+                    </div>
+                    <div class='col-md-4'>
+                      <div class='form-group' id='imageInput'>
+                        <label for='imageInput'>Image</label>
+                        <p class='help-block'>Upload one image:</p>
+                        <input class='form-control imageSelect' id='imageInput' type='file' name='0' />
+                      </div>
+                    <!-- <div class='form-group'>
+                        <input class='form-control' placeholder='...or insert image URL' type='url'>
+                      </div>
+                    -->
+                    </div>
+                    <div class='col-md-12'>
+                      <div class='map_canvas-0' style="width:710px;height:200px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class='divider'></div>
+            <div class='footer'>
+              <div class='row'>
+                <div class='col-md-6'>
+                  <a class='newPlace' href='#'>+ New place</a>
+                </div>
+                <div class='col-md-6'>
+                  <div id='progress'></div>
+                  <button id='submit-btn' class='btn btn-primary pull-right' type='submit'>Create journey</button>
+                </div>
+              </div>
+            </div>
+            <!--<div id='cenas'></div>
+            <input name='file' type="file" class='cloudinary-fileupload' data-cloudinary-field='image_upload' />
+            <input type='hidden' id='image_upload' name='image_upload' />
+            <div id="picture-result"></div>
+            <div id="preview"></div>-->
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    {{#contentFor 'scripts'}}
+      <script type="text/javascript" src="/javascripts/jquery.ui.widget.js"></script>
+      <script type="text/javascript" src="/javascripts/jquery.iframe-transport.js"></script>
+      <script type="text/javascript" src="/javascripts/jquery.fileupload.js"></script>
+      <script type='text/javascript' src="//cdn.jsdelivr.net/jquery.cloudinary/1.0.11/jquery.cloudinary.min.js"></script>
+      <script type='text/javascript' src='/plugins/bootstrap-formhelpers.js'></script>
+      <!--<script type='text/javascript' src='/plugins/bootstrap-switch.js'></script>-->
+      <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.0/spin.min.js'></script>
+      <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places'></script>
+      <script type='text/javascript' src='/javascripts/geocomplete.js'></script>
+      <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js'></script>
+      <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.limit/1.2/jquery.limit-1.2.js'></script>
+
+
+      <script type='text/javascript'>
+
+       $(document).ready(function() {
+
+          var id = 0;
+
+         $.cloudinary.config({ cloud_name: 'dj5ncrwwf', api_key: '763249739557766'});
+/*
+          var cenas = {
+            timestamp: {{ signature.timestamp }},
+            callback: '{{ signature.callback }}',
+             signature: '{{ signature.signature }}',
+            api_key: '{{ signature.api_key }}'
+          }
+
+         // $('.cloudinary-fileupload').attr('data-form-data', htmlEscape(JSON.stringify(cenas)));
+
+          $('.cloudinary-fileupload').cloudinary_fileupload({formData: cenas, url: 'https://api.cloudinary.com/v1_1/dj5ncrwwf/upload' });
+
+          $('.cloudinary-fileupload').on('cloudinarydone', function (e, data) {
+            console.log(data);
+          });
+
+           function htmlEscape(str) {
+              return String(str)
+                      .replace(/&/g, '&amp;')
+                      .replace(/"/g, '&quot;')
+                      .replace(/'/g, '&#39;')
+                      .replace(/</g, '&lt;')
+                      .replace(/>/g, '&gt;');
+          }
+          /* start: function(e) {
+              $('#picture-result').text('Starting upload...');
+            },
+            progress: function(data) {
+              console.log(data);
+              $('#picture-result').text('Uploading...' + Math.round((data.loaded * 100.0) / data.total) + '%');
+            },
+            fail: function(e) {
+              $('#picture-result').text('Upload failed');
+            }, 
+            done: function(e, data) {
+              console.log(data);
+              $('#picture-result').text('Uploaded!');
+              $('#preview').html(
+                    $.cloudinary.image(data.result.public_id, { secure: true, cdn_subdomain: true, width:50, height:50, crop: 'thumb', quality: 90 })
+                  );
+              return true;
+            }
+          });*/
+
+          $("#map_input-"+id).geocomplete({
+              map: '.map_canvas-'+id,
+              details : 'form',
+              detailsAttribute: "data-geo-"+id,
+              markerOptions : {
+                draggable : true
+              }
+          }).bind("geocode:dragged", function(event, latLng) {
+            $('input[name="places.'+id+'.lat"]').val(latLng.lat());
+            $('input[name="places.'+id+'.lng"]').val(latLng.lng());
+          });
+
+          var div = $('#guide-places');
+          var add = $('.newPlace');
+
+          add.on('click', function() {
+            id++;
+            $('input[name=totalplaces]').val(id);
+            $("<article class='place'>"
+                +"<div class='wrap'>"
+                  +"<header>"
+                    +"<h1 class='h4'>New Place</h1>"
+                  +"</header>"
+                  +"<div class='row'>"
+                    +"<div class='col-md-8'>"
+                      +"<div class='form-group'>"
+                        +"<input class='form-control' placeholder='What is this place called?' name='places."+id+".title' type='text'>"
+                      +"</div>"
+                      +"<div class='form-group'>"
+                        +"<textarea class='form-control' placeholder='Share your experience about it.. what was it like?' id='places."+id+".description' name='places."+id+".description' rows='6'></textarea>
+                          You have <span id='placeDescriptionCharsLeft-"+id+"'></span> chars left"
+                      +"</div>"
+                      +"<div class='form-group'>"
+                        +"<input class='form-control' id='map_input-"+id+"' placeholder='Type to search the place adress' type='text'>"
+                        +"<input type='hidden' data-geo-"+id+"='lat' name='places."+id+".lat' />"
+                        +"<input type='hidden' data-geo-"+id+"='lng' name='places."+id+".lng' />"
+                      +"</div>"
+                    +"</div>"
+                    +"<div class='col-md-4'>"
+                      +"<div class='form-group' id='imageInput'>"
+                        +"<label for='imageInput'>Image</label>"
+                        +"<p class='help-block'>Upload one image:</p>"
+                        +"<input class='form-control imageSelect' id='imageInput' name='"+id+"' type='file' />"
+                      +"</div>"
+                      //+"<div class='form-group'>"
+                      //  +"<input class='form-control' placeholder='...or insert image URL' type='url'>"
+                      //+"</div>"
+                    +"</div>"
+                    +"<div class='col-md-12'>"
+                      +"<div class='map_canvas-"+id+"' style='width:710px;height:200px;'></div>"
+                    +"</div>"
+                  +"</div>"
+                +"</div>"
+              +"</article>"
+            ).appendTo(div);
+
+            $("#map_input-"+id).geocomplete({
+              map: '.map_canvas-'+id,
+              details : 'form',
+              detailsAttribute: "data-geo-"+id,
+              markerOptions : {
+                draggable : true
+              }
+            }).bind("geocode:dragged", function(event, latLng) {
+              $('input[name="places.'+id+'.lat"]').val(latLng.lat());
+              $('input[name="places.'+id+'.lng"]').val(latLng.lng());
+            });
+
+            $('#places-'+id+'-description').limit('160','#placeDescriptionCharsLeft-'+id);
+
+            return false; // faz com que nao retorne o valor do trigger link .newPlace, que seria # (cardinal) e levaria a pagina para o topo do browser
+          });
+
+          $('#places-'+id+'-description').limit('160','#placeDescriptionCharsLeft-'+id);
+
+          
+          $("#guide-form").submit(function(e) {
+            e.preventDefault();
+            var placesdescription = 'places.'+ id +'.description';
+          })
+          .validate({
+            rules: {
+                title: {
+                  required: true,
+                  minlength: 5,
+                  maxlength: 60
+                },
+                description: {
+                  required: true,
+                  minlength: 10,
+                  maxlength: 1000
+                }
+            },
+            submitHandler: function(form) {
+              var opts = {
+                lines: 8, // The number of lines to draw
+                length: 2, // The length of each line
+                width: 4, // The line thickness
+                radius: 8, // The radius of the inner circle
+                corners: 1, // Corner roundness (0..1)
+                rotate: 0, // The rotation offset
+                direction: 1, // 1: clockwise, -1: counterclockwise
+                color: '#000', // #rgb or #rrggbb or array of colors
+                speed: 1.2, // Rounds per second
+                trail: 77, // Afterglow percentage
+                shadow: false, // Whether to render a shadow
+                hwaccel: false, // Whether to use hardware acceleration
+                className: 'spinner', // The CSS class to assign to the spinner
+                zIndex: 2e9, // The z-index (defaults to 2000000000)
+                top: '50%', // Top position relative to parent
+                left: '55%' // Left position relative to parent
+              };
+
+              var target = document.getElementById('progress');
+              var spinner = new Spinner(opts).spin(target);
+
+              $('#result-category').val($('.bfh-selectbox-option').text());
+
+              var formData = new FormData($('#guide-form')[0]);
+
+              $('#submit-btn').prop('disabled',true);
+              $('#guide-form :input').prop('disabled', true);
+
+              $.ajax({
+                type: 'POST',
+                url: '/guide/create',
+                data: formData,
+                //async:false,
+                cache:false,
+                contentType: false,
+                processData: false,
+                success: function(response) {  
+                   window.location.replace(response);
+                },
+                error: function() {
+                  alert('Error!');
+                }
+              });
+              return false;
+            }
+          });
+
+        });
+      </script>
+    {{/contentFor}}
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT projecto-record (cabecalho,workteam,abstract,deliverables*)>
+
+<!ELEMENT cabecalho (chave,title,subtitle?,begindate,enddate?,supervisor)>
+
+<!ELEMENT chave (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begindate (#PCDATA) >
+<!ELEMENT enddate (#PCDATA) >
+<!ELEMENT supervisor (nome,mail,website) >
+
+<!ELEMENT workteam (aluno*) >
+
+<!ELEMENT aluno (nome,mail)>
+<!ATTLIST aluno 
+          id ID #REQUIRED>
+         
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT mail (#PCDATA) >
+<!ELEMENT website (#PCDATA) >
+
+<!ELEMENT abstract (#PCDATA) >
+
+<!ELEMENT deliverables (#PCDATA)>
+<!ATTLIST deliverables
+            href CDATA #IMPLIED>
+            

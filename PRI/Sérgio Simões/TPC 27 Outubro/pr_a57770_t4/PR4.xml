@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project-record SYSTEM "file:/C:/Users/Bruno/Documents/Oxygen%20Documents/Ficheiros%20dtd/PR-jcr.dtd">
+<project-record>
+    <meta>
+        <Title>Project Record 4</Title>
+        <Subtitle>Trabalho com xsl</Subtitle>
+        <Keyname>PR4</Keyname>
+        <BeginDate>27 Outubro 2014</BeginDate>
+        <EndDate>1 de Novembro 2014</EndDate>
+        <Supervisor>
+            <supervisor>
+                <name> José Carlos Ramalho  </name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www.di.uminho.pt/~jcr</homepage>
+            </supervisor>
+        </Supervisor>
+    </meta>
+    <WorkTeam>
+        <student>
+            <ident>a57770</ident>
+            <name>Bruno Filipe Carreiro Moura</name>
+            <email>a57770@alunos.uminho.pt</email>
+        </student>
+    </WorkTeam>
+    <Abstract>
+        <p>A partir de um arquivo sonoro guardado em formato XML foi construída uma página HTML com ajuda de um ficheiro XSL.</p>
+        <p>Observações: Não consegui retirar a informação do nodo obs.</p>
+    </Abstract>
+    <Logs>
+        <log>
+            <date></date>
+            <description>
+                <p></p>
+            </description>
+        </log>
+    </Logs>
+    <Deliverables>
+        <xref url="Agenda Sonora.xsl">Agenda Sonora.xsl</xref>
+        <xref url="Agenda Sonora.xml">Agenda Sonora.xml</xref>
+        <xref url="PR4.xsl">PR4.xsl</xref>
+        <xref url="PR4.xml">PR4.xml</xref>
+    </Deliverables>
+</project-record>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project-record>
+    <meta>
+        <title>TPC5</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <begin-date>Novembro 2014</begin-date>
+        <end-date>Novembro 2014</end-date>
+    </meta>
+    <abstract>
+        <p>
+         Para a elaboração deste TPC era necessário requer conhecimentos
+         sobre <b>XML Schema</b>.
+          XML Schema é uma alternativa ao DTD baseada em XML.
+          Um esquema XML descreve a estrutura de um documento XML.
+          A linguagem XML Schema também é chamada de XML Schema Definition (XSD).
+        </p>
+        
+        <p><b>Objectivo</b></p>
+       
+        <p>Definir os blocos de construção do ficheiro <i>project-record.xml</i> através de <b>XML Schema</b></p>
+        
+       
+        </abstract>
+    <workteam>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        
+        
+    </workteam>
+   <deliverables>
+       <xref url="project-record.xsd">project-record.xsd</xref>
+       <xref url="project-record.xml">project-record.xml</xref>
+       <xref url="project-record.xsl">project-record.xsl</xref>
+       <xref url="project-record.html">project-record.html</xref>
+       
+   </deliverables>
+</project-record>

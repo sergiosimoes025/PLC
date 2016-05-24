@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
+    vc:minVersion="1.1">
+
+    <xs:element name="arv-gen">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="pessoa"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pessoa">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="nome" type="xs:string"/>
+                <xs:element name="data-nasc" type="xs:date"/>
+                <xs:element minOccurs="0" name="pai">
+                    <xs:complexType>
+                        <xs:attribute name="ref" type="xs:IDREF"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="mae">
+                    <xs:complexType>
+                        <xs:attribute name="ref" type="xs:IDREF"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

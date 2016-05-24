@@ -1,0 +1,102 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <style>
+                    #titulo{
+                        font-variant:small-caps;
+                        font-size:40px;
+                        text-align:center;
+                        color:red;
+                        border:1px solid black;
+                        background-color:#F0F8FF;
+                    }
+                    
+                    
+                </style><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script><title>Project record</title>
+   </head>
+   <body>
+      <center>
+         <h1 style="color:red;font-size:60px;border:1px solid black;margin-bottom:40px;background-color: #F0F8FF;">Project record</h1>
+      </center>
+      <table width="100%" border="1">
+         <tr>
+            <td width="50%"><b>KEY-NAME: </b>a66jbj<br><b>TITLE: </b>TPC4<br><b>SUBTITLE:  </b>Processamento e Representac&#807;a&#771;o de Conhecimento<br></td>
+            <td width="50%"><b>BEGIN-DATE: </b>Abril 2015<br><b>END-DATE: </b>Abril 2015<br><b>SUPERVISORS:</b><ul>
+                              
+                  <li><a href="http://www3.di.uminho.pt/~jcr/">Jos&eacute; Carlos Ramalho</a>,
+                     jcr@di.uminho.pt
+                  </li>
+                          
+               </ul><br></td>
+         </tr>
+      </table><br><h2 id="titulo" style="text-align:center;">WorkTeam </h2>
+              
+      <div style="margin-left:30px;"><i style="color:green;">Id : </i>64283
+      </div>
+      <div style="margin-left:30px;"><i style="color:red;">Name :  </i>S&eacute;rgio Manuel Pereira Sim&otilde;es
+      </div>
+      <div style="margin-left:30px;"><i style="color:blue;">Email :  </i><a href="mailto:sergiohero@gmail.com">sergiohero@gmail.com</a></div>
+      <p></p>
+              
+              
+          
+      <hr>
+      <h2 id="titulo" style="text-align:center;">Abstract</h2>
+              
+          <b>Motiva&ccedil;&atilde;o:</b>    
+              
+      <p>O SOAP foi criado com o intuito de ser um protocolo de comunica&ccedil;&atilde;o simples (pouco exigente), 
+         baseado em XML e destinado &agrave; troca de informa&ccedil;&atilde;o tipada e estruturada entre aplica&ccedil;&otilde;es distribu&iacute;das e descentralizadas.
+         De forma a n&atilde;o comprometer a independ&ecirc;ncia em rela&ccedil;&atilde;o &agrave;s plataformas de desenvolvimento, 
+         o SOAP n&atilde;o define um protocolo de transporte para o envio de mensagens, apesar de possuir uma descri&ccedil;&atilde;o de como deve ser utilizado
+         sobre HTTP.
+         A exist&ecirc;ncia desta descri&ccedil;&atilde;o deve-se ao facto do HTTP ser o protocolo standard para a Internet. No entanto, o SOAP n&atilde;o se
+         encontra vinculado ao HTTP, 
+         podendo utilizar uma grande variedade de outros protocolos. 
+         Por exemplo: FTP - File Transfer Protocol, SMTP - Simple Mail Transfer Protocol, BEEP - Blocks Extensible Exchange Protocol.
+         
+         implementa&ccedil;&atilde;o de Web Services em PHP utilizando a classe NuSoap. 
+             
+                     Nos ultimos tempos a cria&ccedil;&atilde;o de web services tem sido cada vez mais comum. Para construir tal tem sido usado mais
+         frequentemente WebServices com NuSOAP.
+                     Tal &eacute; um conjunto de classes PHP que permite aos programadores criar e consumir servi&ccedil;os Web baseados em SOAP
+         1.1, 1.1 e WSDL HTTP 1.0/1.1. 
+                    
+      </p>   
+              
+              
+          <b>Objectivo :</b>
+           
+      <p> Neste trabalho de casa o objectivo era criar um web service sobre um ficheiro de inquiri&ccedil;&otilde;es que oferecesse servi&ccedil;os tais
+         como :
+      </p>
+             
+      <li style="margin-left:10px">Contar quantas vezes um certo nome se encontra no ficheiro xml</li>
+      <li style="margin-left:10px">Listar todos os ids que aparecem junto ao nome enviado</li>
+              Para a constru&ccedil;&atilde;o deste servi&ccedil;o, foi criado um servidor e um cliente. O servidor acede ao ficheiro <i>xml</i> e envia os dados para o cliente. 
+              
+      <p><b>Notas importantes :</b></p>
+              
+      <li style="margin-left:10px">Primeiro, quando a inst&acirc;ncia do soapclient &eacute; criado, o par&acirc;metro especificado &eacute; o URL para o servi&ccedil;o. 
+                         No meu caso, server.php &eacute; acedido a partir http://localhost:8888/TPC4/server.php
+      </li>
+      <li style="margin-left:10px">Em segundo lugar, ao chamar o servi&ccedil;o, o primeiro par&acirc;metro &eacute; o nome do servi&ccedil;o. 
+                         Este deve corresponder ao nome case-sens&iacute;tive de um m&eacute;todo dispon&iacute;vel no servidor. 
+                         Neste caso, ele deve corresponder aos m&eacute;todos registrados no server.php. 
+      </li>
+              
+              
+      <hr>
+      <h2 id="titulo"> Deliverables :</h2>
+      <li style="margin-left:20px;"><a href="project-record.html">project-record.html</a></li>
+      <li style="margin-left:20px;"><a href="project-record.xml">project-record.xml</a></li>
+      <li style="margin-left:20px;"><a href="project-record.xsl">project-record.xsl</a></li>
+      <li style="margin-left:20px;"><a href="server.php">Servidor</a></li>
+      <li style="margin-left:20px;"><a href="client.php">Cliente</a></li>
+      <li style="margin-left:20px;"><a href="lib">Biblioteca de nuSOAP</a></li>
+      <li style="margin-left:20px;"><a href="xml">Ficheiros XML</a></li>
+      <li style="margin-left:20px;"><a href="footer.php">Footer</a></li>
+      <li style="margin-left:20px;"><a href="header.php">Header</a></li>
+      <hr><img src="http://png-4.findicons.com/files/icons/2315/default_icon/34/copyright.png"><i>Copyright S&eacute;rgio Sim&otilde;es - Abril 2015</i></body>
+</html>

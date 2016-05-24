@@ -1,0 +1,9 @@
+3 ficheiros: php, HTML e project record
+
+Construir um formulário para Project Records
+
+Basear no schema desenvolvido nas aulas
+
+Como resposta construir uma pagina HTML com a informação recebida no servidor
+
+Esccrever um formulario para ler os campos todos.

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-record>
+    <meta>
+        <title>TPC4</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <subtitle>Processamento e Representação de Conhecimento</subtitle>
+        <begin-date>Abril 2015</begin-date>
+        <end-date>Abril 2015</end-date>
+    </meta>
+    <abstract>
+        
+    <b>Motivação:</b>    
+        <p>O SOAP foi criado com o intuito de ser um protocolo de comunicação simples (pouco exigente), 
+            baseado em XML e destinado à troca de informação tipada e estruturada entre aplicações distribuídas e descentralizadas.
+            De forma a não comprometer a independência em relação às plataformas de desenvolvimento, 
+            o SOAP não define um protocolo de transporte para o envio de mensagens, apesar de possuir uma descrição de como deve ser utilizado sobre HTTP.
+            A existência desta descrição deve-se ao facto do HTTP ser o protocolo standard para a Internet. No entanto, o SOAP não se encontra vinculado ao HTTP, 
+            podendo utilizar uma grande variedade de outros protocolos. 
+            Por exemplo: FTP - File Transfer Protocol, SMTP - Simple Mail Transfer Protocol, BEEP - Blocks Extensible Exchange Protocol. 
+            implementação de Web Services em PHP utilizando a classe NuSoap. 
+            
+            Nos ultimos tempos a criação de web services tem sido cada vez mais comum. Para construir tal tem sido usado mais frequentemente WebServices com NuSOAP.
+            Tal é um conjunto de classes PHP que permite aos programadores criar e consumir serviços Web baseados em SOAP 1.1, 1.1 e WSDL HTTP 1.0/1.1. 
+           </p>   
+        
+        
+    <b>Objectivo :</b>
+     <p> Neste trabalho de casa o objectivo era criar um web service sobre um ficheiro de inquirições que oferecesse serviços tais como :</p>
+       <ul>
+        <li>Contar quantas vezes um certo nome se encontra no ficheiro <i>xml</i></li>   
+        <li>Listar todos os <i>ids</i> que aparecem junto ao nome enviado</li>
+      </ul>
+        Para a construção deste serviço, foi criado um servidor e um cliente. O servidor acede ao ficheiro <i>xml</i> e envia os dados para o cliente. 
+        <p><b>Notas importantes :</b></p>
+        <ul>
+            <li>Primeiro, quando a instância do soapclient é criado, o parâmetro especificado é o URL para o serviço. 
+                No meu caso, server.php é acedido a partir http://localhost:8888/TPC4/server.php</li>
+            
+            <li>Em segundo lugar, ao chamar o serviço, o primeiro parâmetro é o nome do serviço. 
+                Este deve corresponder ao nome case-sensítive de um método disponível no servidor. 
+                Neste caso, ele deve corresponder aos métodos registrados no <i>server.php</i>. </li>
+            
+        </ul>
+        
+        </abstract>
+    <workteam>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        
+        
+    </workteam>
+   <deliverables>
+       
+       <xref url="project-record.html">project-record.html</xref>
+       <xref url="project-record.xml">project-record.xml</xref>
+       <xref url="project-record.xsl">project-record.xsl</xref>
+       <xref url="server.php">Servidor</xref>
+       <xref url="client.php">Cliente</xref>
+       <xref url="lib">Biblioteca de nuSOAP</xref>
+       <xref url="xml">Ficheiros XML</xref>
+       <xref url="footer.php">Footer</xref>
+       <xref url="header.php">Header</xref>
+       
+       
+   </deliverables>
+</project-record>

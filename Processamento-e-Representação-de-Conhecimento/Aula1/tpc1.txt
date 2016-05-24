@@ -1,0 +1,8 @@
+sardinhas
+suportes
+sanitas
+sapatilhas
+seven-up
+suricata
+
+Fazer uma ontologia sobre um destes temas , com pelo menos duas classes + individuos + data cenz + object cenz

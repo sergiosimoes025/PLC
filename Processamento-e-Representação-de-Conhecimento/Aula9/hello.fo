@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="primeira" page-width="210mm" page-height="297mm">
+            <fo:region-body region-name="PageBody" margin="1.5cm"> </fo:region-body>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="primeira">
+        <fo:flow flow-name="PageBody">
+           
+            <fo:block>Olá. Este é o meu primeiro documento em XSLFO.</fo:block>
+            <fo:block font-family="Arial" font-size="12pt" line-height="200%" border="1px outset blue">
+                Para este paragráfo foi utilizado uma fonte Arial
+                <fo:inline baseline-shift="super">em super script</fo:inline>
+            </fo:block>
+            <fo:block> Texto 
+                <fo:inline baseline-shift="-50%">-50%</fo:inline> texto
+                
+            </fo:block>
+            
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

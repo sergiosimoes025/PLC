@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report 
+    xmlns="http://elpri.di.uminho.pt/report"
+    xmlns:p="http://elpri.di.uminho.pt/paragraph"
+    xmlns:l="http://elpri.di.uminho.pt/list"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://elpri.di.uminho.pt/report file:../xsd/report2014.xsd">
+    <front-matter>
+        <meta>
+            <title>Relatório Trabalho Prático de GCS/PRI</title>
+            <subttitle>Base de Dados de Emigração</subttitle>
+            <authors>
+                <author>
+                    <name>Fernando Martins</name>
+                    <identifier>pg25297</identifier>
+                    <email>pg25297@alunos.uminho.pt</email>
+                    <photo path="../images/fernando.jpg"/>
+                </author>
+                <author>
+                    <name>Hélder Rocha</name>
+                    <identifier>pg27737</identifier>
+                    <email>pg27737@alunos.uminho.pt</email>
+                    <photo path="../images/helder.jpg"/>
+                </author>
+                <author>
+                    <name>Sérgio Simões</name>
+                    <identifier>a64283</identifier>
+                    <email>a64283@alunos.uminho.pt</email>
+                    <photo path="../images/sergio.png"/>
+                </author>
+                <author>
+                    <name>Tiago Martins</name>
+                    <identifier>pg25306</identifier>
+                    <email>pg25306@alunos.uminho.pt</email>
+                    <photo path="../images/tiago.png"/>
+                </author>
+            </authors>
+            <date>2015-01-26</date>
+            <affil></affil>
+        </meta>
+        <abstract>
+            <p:p>Neste trabalho pretende-se criar uma Base de dados de Emigração para recolher informação extraída de vários tipos de documentos do Arquivo Municipal de Fafe.</p:p>
+            <p:p>Começaremos por trabalhar um arquivo Fotográfico recolhendo a informação de um XML e através de um formulário em HTML e vários ficheiros em PHP processar toda a informação indicada em cada foto e carregar para as respetivas tabelas da BDE. </p:p>
+        </abstract>
+    </front-matter>
+    <body>
+        <section id="arqfoto">
+            <title>Arquivo Fotográfico</title>
+            <subsection>
+                <title>Dados de Input para o Sistema</title>
+                <subsubsection>
+                    <title>DTD</title>
+                    <p:p><p:xref href="../images/images_PRI/dtd_foto.png">DTD do arquivo fotográfico</p:xref></p:p>
+                </subsubsection>
+                <subsubsection>
+                    <title>SCHEMA</title>
+                    <p:p><p:xref href="../images/images_PRI/schema_foto.png">Schema do arquivo fotográfico</p:xref></p:p>
+                </subsubsection>
+                <subsubsection>
+                    <title>Ficheiro XML</title>
+                    <p:p><p:xref href="../images/images_PRI/xml_foto.png">XML do arquivo fotográfico</p:xref></p:p>
+                </subsubsection>
+            
+            </subsection>
+            
+            
+            
+            <subsection>
+                <title>Esquema relacional da Base de Dados</title>
+                <p:p><p:xref href="../images/images_PRI/bd_arq_foto.png">Esquema da BD</p:xref></p:p>
+            </subsection>
+        </section>
+        <section id="arqbio">
+            <title>Arquivo Biográfico</title>
+            <subsection>
+                <title>Dados de Input para o Sistema</title>
+                <subsubsection>
+                    <title>SCHEMA</title>
+                    <p:p><p:xref href="../images/images_PRI/schema_bio.png">Schema do arquivo biográfico</p:xref></p:p>
+                </subsubsection>
+                
+                <subsubsection>
+                    <title>Ficheiro XML</title>
+                    <p:p><p:xref href="../images/images_PRI/xml_bio.png">XML do arquivo biográfico</p:xref></p:p>
+                </subsubsection>
+                
+                <subsubsection>
+                    <title>Esquema relacional da Base de Dados</title>
+                    <p:p><p:xref href="../images/images_PRI/bd_bio.png">Esquema da BD</p:xref></p:p>
+                </subsubsection>
+            </subsection>
+            
+            
+        </section>
+        <section id="arquivo_requerimento_passaportes">
+        <title>Arquivo de Requerimento de Passaportes</title>
+        <subsection>
+            <title>Gramática Independende de Contexto</title>
+            <p:p><p:xref href="../images/images_GCS/gic.html"> Link para GIC</p:xref></p:p>
+        </subsection>
+            
+        <subsection>
+            <title>Esquema Relacional da Base de Dados</title>
+            <p:p><p:xref href="../images/images_GCS/transferir.png">Esquema relacional</p:xref></p:p>
+        </subsection>    
+            
+            
+        <subsection>
+            <title>Gramática de Atributos</title>
+            <p:p><p:xref href="../images/images_GCS/2.png">Exemplo 1</p:xref></p:p>
+            <p:p><p:xref href="../images/images_GCS/3.png">Exemplo 2</p:xref></p:p>
+            <p:p><p:xref href="../images/images_GCS/1.png">Exemplo 3</p:xref></p:p>
+            
+           
+        </subsection> 
+            
+            <subsection>
+                <title>Árvores de Derivação</title>
+                <p:p><p:xref href="../images/images_GCS/entidade.png">Árvore de derivação de entidade</p:xref></p:p>
+                <p:p><p:xref href="../images/images_GCS/processo.png">Árvore de derivação de processo</p:xref></p:p>
+                <p:p><p:xref href="../images/images_GCS/acompanhante.png">Árvore de derivação de acompanhante</p:xref></p:p>
+            </subsection>
+        </section>
+        
+        
+    </body>
+    <back-matter>
+    </back-matter>
+</report>

@@ -1,0 +1,77 @@
+    
+    {{#contentFor 'header'}}
+      <link href='stylesheets/landing-font.css' rel='stylesheet'>
+      <link href='plugins/bootstrap-formhelpers.css' rel='stylesheet'>
+    {{/contentFor}}
+
+    <!-- /Login -->
+    <div class='container' id='login'>
+      <div class='row'>
+        <div class='col-md-4 col-md-offset-4'>
+          <div class='title'>
+            <h1 class='h4'>Login</h1>
+          </div>
+          <div class='row'>
+            {{#if message}}
+              <div class='col-md-12'>
+                <div class='alert alert-danger small'>
+                  {{ message }}
+                </div>
+              </div>
+            {{/if}}
+            <form role='form' method='post' action='/login'>
+              <input type="hidden" name="_csrf" value="{{ csrftoken }}" />
+
+              <div class='form-group col-md-12'>
+                <input class='form-control' placeholder='Your email' type='email' name='email'>
+              </div>
+              <div class='form-group col-md-12'>
+                <input class='form-control' placeholder='Password' type='password' name='password'>
+              </div>
+              <div class='col-md-6'>
+                <div class='checkbox'>
+                  <label>
+                    <input type='checkbox'>
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <div class='col-md-6' id='fp'>
+                <a href='/forgot'>Forgot password?</a>
+              </div>
+               
+        </div>
+        <div class='modal-footer'>
+            <button class='btn btn-primary btn-lg btn-block' type='submit'>LOG IN</button>
+            <p class='small'>
+              Don't have an account!
+              <a href='/register'>Sign Up Here</a>
+            </p>
+          </div>
+            </form>
+          </div>
+         
+      </div>
+    </div>
+
+    
+    {{#contentFor 'scripts'}}
+      <script type='text/javascript' src='/plugins/bootstrap-formhelpers.js'></script>
+      <script type='text/javascript'>
+        $(document).ready(function() {
+          var $videoModal = $(".video-modal");
+          $("#video-player").click(function () {
+            $videoModal.toggleClass("active");
+            clearInterval(interval);
+            interval = null;
+          });
+          $videoModal.click(function () {
+            $videoModal.removeClass("active");
+          });
+          $videoModal.find(".wrap").click(function (e) {
+            e.stopPropagation();
+          });
+        });
+      </script>
+    {{/contentFor}}
+

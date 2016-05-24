@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-20 "http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#"
+     xml:base="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-20="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20">
+        <date rdf:datatype="&xsd;string">19 de Maio de 2015</date>
+        <subject rdf:datatype="&xsd;string">PRC</subject>
+        <author rdf:datatype="&xsd;string">Sérgio Simões</author>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#author -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-20;author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#date -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-20;date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#subject -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-20;subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#e_capital -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;e_capital">
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Capital"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#localiza_se -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;localiza_se">
+        <rdfs:domain rdf:resource="&untitled-ontology-20;City"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#pertenceApais -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;pertenceApais">
+        <rdfs:domain rdf:resource="&untitled-ontology-20;City"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;Country"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-20;temCidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#temCapital -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;temCapital">
+        <rdfs:range rdf:resource="&untitled-ontology-20;City"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#temCidade -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;temCidade">
+        <rdfs:range rdf:resource="&untitled-ontology-20;City"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Country"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-20;temCidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#temFronteira -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;temFronteira">
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Country"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#temNome -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-20;temNome">
+        <rdfs:domain rdf:resource="&untitled-ontology-20;City"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Country"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-20;State"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#Capital -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;Capital">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-20;City"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-20;e_capital"/>
+                        <owl:someValuesFrom rdf:resource="&untitled-ontology-20;Country"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#City -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;City"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#Country -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#State -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;State"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#anadia -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-20;anadia">
+        <rdf:type rdf:resource="&untitled-ontology-20;City"/>
+        <temNome>Anadia
+</temNome>
+        <localiza_se rdf:resource="&untitled-ontology-20;avei"/>
+        <pertenceApais rdf:resource="&untitled-ontology-20;p1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#avei -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-20;avei">
+        <rdf:type rdf:resource="&untitled-ontology-20;City"/>
+        <rdf:type rdf:resource="&untitled-ontology-20;State"/>
+        <temNome>Aveiro
+</temNome>
+        <temCidade rdf:resource="&untitled-ontology-20;anadia"/>
+        <pertenceApais rdf:resource="&untitled-ontology-20;p1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#lisb -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-20;lisb">
+        <rdf:type rdf:resource="&untitled-ontology-20;Capital"/>
+        <temNome>Lisboa</temNome>
+        <e_capital rdf:resource="&untitled-ontology-20;p1"/>
+        <pertenceApais rdf:resource="&untitled-ontology-20;p1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#madrid -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-20;madrid">
+        <rdf:type rdf:resource="&untitled-ontology-20;Capital"/>
+        <pertenceApais rdf:resource="&untitled-ontology-20;p3_esp"/>
+        <e_capital rdf:resource="&untitled-ontology-20;p3_esp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#p1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-20;p1">
+        <rdf:type rdf:resource="&untitled-ontology-20;Country"/>
+        <temNome>Portugal
+</temNome>
+        <temCapital rdf:resource="&untitled-ontology-20;lisb"/>
+        <temFronteira rdf:resource="&untitled-ontology-20;p3_esp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#p2_fr -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-20;p2_fr">
+        <rdf:type rdf:resource="&untitled-ontology-20;Country"/>
+        <temNome>França
+</temNome>
+        <temFronteira rdf:resource="&untitled-ontology-20;p3_esp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#p3_esp -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-20;p3_esp">
+        <rdf:type rdf:resource="&untitled-ontology-20;Country"/>
+        <temNome>Espanha</temNome>
+        <temFronteira rdf:resource="&untitled-ontology-20;p1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

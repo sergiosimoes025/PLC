@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-5 "http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5">
+        <date rdf:datatype="&xsd;dateTime">23-02-2015
+</date>
+        <creator rdf:datatype="&xsd;string">Sérgio Simões</creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Uma ontologia sobre o contexto universitário</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#creator -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-5;creator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#date -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-5;date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#frequenta -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-5;frequenta">
+        <rdfs:domain rdf:resource="&untitled-ontology-5;Aluno"/>
+        <rdfs:range rdf:resource="&untitled-ontology-5;Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#leciona -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-5;leciona">
+        <rdfs:range rdf:resource="&untitled-ontology-5;Disciplina"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-5;Docente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#temTrabalhador -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-5;temTrabalhador">
+        <owl:inverseOf rdf:resource="&untitled-ontology-5;trabalhaPara"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#trabalhaPara -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-5;trabalhaPara">
+        <rdfs:domain rdf:resource="&untitled-ontology-5;Pessoa"/>
+        <rdfs:range rdf:resource="&untitled-ontology-5;Universidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#éfrequentado -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-5;éfrequentado">
+        <owl:inverseOf rdf:resource="&untitled-ontology-5;frequenta"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#élecionada -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-5;élecionada">
+        <owl:inverseOf rdf:resource="&untitled-ontology-5;leciona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#temDesignação -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-5;temDesignação">
+        <rdfs:domain rdf:resource="&untitled-ontology-5;Curso"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-5;Disciplina"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#temId -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-5;temId">
+        <rdfs:domain rdf:resource="&untitled-ontology-5;Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#temNome -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-5;temNome">
+        <rdfs:domain rdf:resource="&untitled-ontology-5;Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#1ºciclo -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;1ºciclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Curso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#2ºciclo -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;2ºciclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Curso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#3ºciclo -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;3ºciclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Curso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Aluno -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Aluno">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Pessoa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-5;frequenta"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-5;Curso"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#AlunoMEI -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;AlunoMEI">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Aluno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Artigo -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Artigo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Publicação"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Conferência -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Conferência">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Artigo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Curso -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Curso"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Departamento -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Departamento">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Escola"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Disciplina -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Disciplina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Docente -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Docente">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Funcionário"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Doutoramento -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Doutoramento">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Tese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Escola -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Escola">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Universidade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Funcionário -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Funcionário">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Livro -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Livro">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Publicação"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Mestrado -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Mestrado">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Tese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#NDocente -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;NDocente">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Funcionário"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Pessoa -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Publicação -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Publicação"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Revista -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Revista">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Artigo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Tese -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Tese">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-5;Publicação"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#Universidade -->
+
+    <owl:Class rdf:about="&untitled-ontology-5;Universidade"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#A1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-5;A1">
+        <rdf:type rdf:resource="&untitled-ontology-5;Aluno"/>
+        <temId>64283</temId>
+        <temNome>Sérgio Simões
+</temNome>
+        <frequenta rdf:resource="&untitled-ontology-5;MEI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#A2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-5;A2">
+        <rdf:type rdf:resource="&untitled-ontology-5;Aluno"/>
+        <temNome>Toino
+</temNome>
+        <temId>123</temId>
+        <frequenta rdf:resource="&untitled-ontology-5;MEI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#D1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-5;D1">
+        <rdf:type rdf:resource="&untitled-ontology-5;Disciplina"/>
+        <temDesignação rdf:datatype="&xsd;string">Processamento
+</temDesignação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#MEI -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-5;MEI">
+        <rdf:type rdf:resource="&untitled-ontology-5;2ºciclo"/>
+        <temDesignação>Mestrado em Engenharia Informática
+</temDesignação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#P1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-5;P1">
+        <rdf:type rdf:resource="&untitled-ontology-5;Pessoa"/>
+        <temNome rdf:datatype="&xsd;string">Sérgio Simões</temNome>
+        <temId>64283
+</temId>
+        <leciona rdf:resource="&untitled-ontology-5;D1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#U1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-5;U1">
+        <rdf:type rdf:resource="&untitled-ontology-5;Universidade"/>
+        <temDesignação>Universidade do Minho
+</temDesignação>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

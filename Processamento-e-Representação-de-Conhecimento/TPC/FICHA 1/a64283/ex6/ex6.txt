@@ -1,0 +1,31 @@
+1 . Considera as classes Homem e Mulher. Indica uma relação entre as duas classes que possa ser incluída numa ontologia:
+
+R : Uma das muitas relações que podia existir seria é_casado_com .
+
+						-------------------------------
+
+2 . Considera as classes Pessoa, Homem e Mulher. Indica uma relação entre as três que possa ser incluída numa ontologia. 
+Que parte deste relacionamento pode ser expresso em RDFS? 
+
+R : Uma relação poderia ser temParente. 
+						-------------------------------
+						
+3 .Suponha que declaramos Pedro e Paulo como pai de Maria. É óbvio que estamos perante um erro semântico. 
+Como é que o modelo semântico poderia validar esta situação sinalizando o erro?
+
+R : Teríamos que colocar uma restrição onde  se permitia que apenas um indíviduo fosse pai de alguém.
+					
+						-------------------------------
+						
+4. Qual a relação existente entre as relações filhoDe e paiDe ?
+
+R : A relação filhoDe é a inversa da relação paiDe. O contradomínio e o domínio trocam de papéis.
+					
+						-------------------------------
+						
+5. Considera a proppriedade come com domínio animal e contradomínio animal ou planta.
+ Suponha que é definida uma nova classe designada Vegetariano. 
+Indica uma restrição necessária para esta classe associada à propriedade come.
+
+R : O vegetariano apenas poderia comer plantas. Nunca poderia existir uma relação come com domínio
+Vegetariano e contradomínio Animal. 

@@ -1,0 +1,23 @@
+<!DOCTYPE NEWSPAPER [
+
+<!ELEMENT NEWSPAPER (ARTICLE+)>
+<!ELEMENT ARTICLE (HEADLINE,BYLINE,LEAD,BODY,NOTES)>
+<!ELEMENT HEADLINE (#PCDATA)>
+<!ELEMENT BYLINE (#PCDATA)>
+<!ELEMENT LEAD (#PCDATA)>
+<!ELEMENT BODY (#PCDATA)>
+<!ELEMENT NOTES (#PCDATA)> 
+
+<!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>
+<!ATTLIST ARTICLE EDITOR CDATA #IMPLIED>
+<!ATTLIST ARTICLE DATE CDATA #IMPLIED>
+<!ATTLIST ARTICLE EDITION CDATA #IMPLIED>
+]>
+
+<!-- para atributos usa-se ATTLIST com o nome da tag e  a seguir o nome do atributo
+
+pode-se usar #REQUIRED(necessário)/#IMPLIED(opcional)/#FIXED(é fixo)
+
+#PCDATA - PCDATA is text that WILL be parsed by a parser. The text will be examined by the parser for entities and markup.
+#CDATA - CDATA is text that will NOT be parsed by a parser. Tags inside the text will NOT be treated as markup and entities will not be expanded.
+

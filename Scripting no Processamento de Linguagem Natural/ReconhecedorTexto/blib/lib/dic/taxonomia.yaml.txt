@@ -1,0 +1,105 @@
+--- #YAML:1.0
+
+- pessoa:
+   - advogado
+   - arquitecto
+   - atleta:
+      - futebolista
+   - escritor:
+      - poeta
+   - jornalista
+   - militar:
+      - general
+      - almirante
+      - brigadeiro
+      - sargento
+      - tenente
+      - capitão
+   - músico:
+      - compositor
+      - pianista
+   - político:
+      - presidente da república
+      - deputado
+      - rei:
+         - rei_de_portugal
+   - religioso:
+      - cardeal
+      - clérigo
+      - papa
+      - padre
+      - bispo
+      - santo
+
+- organização:
+   - organização história:
+      - dinastia
+      - cortes
+   - pessoa colectiva
+   - agrupamento musical
+   - clube desportivo:
+      - clube de futebol
+   - empresa:
+      - banco
+   - jornal
+   - hospital
+   - instituição:
+      - instituição religiosa
+      - instituição de solidariedade
+      - instituição académica
+      - instituição cultural
+      - instituição administrativa:
+         - câmara municipal
+         - governo
+      - instituição política:
+         - partido político
+      - tribunal
+   - teatro
+
+- geográfica:
+   - continente
+   - estado
+   - ilha
+   - lago
+   - mar
+   - monumento:
+      - convento
+      - mosteiro
+      - igreja
+   - oceano
+   - pais:
+      - reino
+      - rebública
+      - principado
+      - antigo pais
+   - paróquia
+   - localidade
+   - povoado:
+      - aldeia
+      - cidade:
+         - sede de distrito
+      - concelho
+      - distrito
+      - freguesia
+      - lugar
+      - sede de concelho
+      - vila
+   - província
+   - região
+   - ribeira
+   - rio
+   - serra
+
+- evento:
+   - encontro
+   - evento histórico:
+       - guerra
+       - batalha
+       - invasão
+       - conquista
+
+- artefacto:
+   - documento
+
+- outro:
+   - signo

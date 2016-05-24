@@ -1,0 +1,20 @@
+dedo temSubclasse indicador;
+dedos temMembro dedo;
+----------------------
+
+EquipaBasket temMembro jogadorBasket;
+JogadorBasket temSubclasse poste;
+----------------------
+
+Marcadores temMembro Marcador;
+Marcador temSubclasse MarcadorAzul;
+----------------------
+
+Talher temSubclasse Garfo;
+Faqueiro temMembro talher;
+----------------------
+
+sapato temSubclasse bota;
+sapatos temMembro sapatos;
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+    <elem>1</elem>
+    <lista>
+        <elem>2</elem>
+        <lista>
+            <elem>3</elem>
+            <lista>
+                <elem>4</elem>
+                <lista/>
+            </lista>
+        </lista>
+    </lista>
+</lista>

@@ -1,0 +1,14 @@
+Grupo 3:
+
+Sérgio Simões.
+Hélder Rocha.
+
+
+Em anexo está :
+
+Gramática de atributos;
+Gramática Independente de Contexto;
+Ficheiro de teste com as frases da linguagem;
+Imagens da apresentação contendo as árvores de derivação;
+Interface Web , que está contida no trabalho da parte de tarde do perfil;
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
+    vc:minVersion="1.1">
+
+    <xs:element name="exame">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cabeçalho">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="1">
+                            <xs:element name="uc" type="xs:string"/>
+                            <xs:element name="tipo_exame" type="xs:string"/>
+                            <xs:element name="data" type="xs:date"/>
+                            <xs:element name="hora" type="xs:string"/>
+                            <xs:element name="aviso" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="corpo">
+                    <xs:complexType>
+                        <xs:choice maxOccurs="unbounded">
+                            <xs:element name="imagem">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descrição" type="xs:string"/>
+                                        <xs:element name="path" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="questão">
+                                <xs:complexType>
+                                    <xs:sequence maxOccurs="1">
+                                        <xs:element name="numero" type="xs:integer"/>
+                                        <xs:element name="texto" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

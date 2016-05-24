@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
+    vc:minVersion="1.1">
+
+    <xs:element name="livro-receitas">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="receita">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="ingredientes">
+                                <xs:complexType>
+                                    <xs:sequence maxOccurs="unbounded">
+                                        <xs:element name="ingrediente">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="nome" type="xs:string"/>
+                                                  <xs:element name="custo" type="xs:string"/>
+                                                  <xs:element name="dose" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="autor" type="xs:string"/>
+                            <xs:element name="modo-preparação" type="xs:string"/>
+                            <xs:element name="tempo-preparação" type="xs:float"/>
+                        </xs:sequence>
+                        <xs:attribute name="tipo">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="sopa"/>
+                                    <xs:enumeration value="entradas"/>
+                                    <xs:enumeration value="carne"/>
+                                    <xs:enumeration value="peixe"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

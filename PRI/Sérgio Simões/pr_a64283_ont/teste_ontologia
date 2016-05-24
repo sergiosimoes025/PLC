@@ -1,0 +1,42 @@
+CONCEITOS: 
+CONCEITO CARRO.
+ATRIBUTOS portas->4,
+           motor->potente,
+           traccao->4.
+;
+
+CONCEITO AUTOCARRO.
+ATRIBUTOS  
+portas->2,
+lugares->+50,
+motor->fraco.
+
+;
+
+CONCEITO MOTA.
+ATRIBUTOS
+rodas->2,
+motor->125,
+lugares->2,
+capacete->obrigatorio.
+
+;
+
+CONCEITO VEICULO.
+ATRIBUTOS
+rodas->tem,
+lugares->+1.
+
+LIGACOES 
+eum,
+naoeum,
+pertencea.
+
+RELACOES
+
+        CARRO. eum VEICULO.
+,   
+        CARRO. noeum AUTOCARRO.
+,        
+        MOTA. pertencea VEICULO.
+.

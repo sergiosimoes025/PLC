@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!-- To change this license header, choose License Headers in Project Properties. To change this template file, choose Tools
+| Templates and open the template in the editor. -->
+<html>
+    
+    <head>
+        <title>Relatório</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/simple-sidebar.css" rel="stylesheet">
+        <link href="../css/stylesheet.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <br/>
+                <br/>
+                <center>
+                    <nav>
+                        <ul class="nav nav-pills text-center">
+                            <li role="presentation" style="width:150px" class="lead">
+                                <h3>
+                                    <a name="init" href="../index.html">Home</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </nav>
+                    <br/>
+                    <hr/>
+                    <div class="capa">
+                        <h1 class="lead">Relatório
+                            <br/>
+                            <h2>Desenvolvimento de uma Ontologia sobre o tema Universidade</h2>
+                        </h1>
+                        <br/>
+                        <h5 class="nome">Sérgio Simões 64283</h5>
+                </center>
+                <hr/>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h1>
+                    <a id="titulo_menu" name="indice">Indice</a>
+                </h1>
+                <ul>
+                    <li>
+                        <h3>
+                            <a href="#int">Introdução</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#o_que_ont">O que é uma ontologia?</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#pq_ont">Por que desenvolver uma ontologia?</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#tema">Tema escolhido</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#construcao">Construção da Ontologia</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <h3>
+                                    <a href="#dom">Domínio que a ontologia vai cobrir</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#quest">Que tipo de questões as informações na ontologia vão responder?</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#classes">Classes e a Hierarquia das Classes</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#dp">Data  Properties</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#op">Object Properties</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#populacao">População da ontologia</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#conc">Conclusão</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#anex">Anexos</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h1>
+                        <a name="int">Introdução</a>
+                    </h1>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <p>Neste projecto o objectivo era construir uma ontologia, sobre um domínio à nossa escolha. Eu optei pela especificação do
+                        domínio "Universidade". Acho que é um domínio onde existem inúmeras relações e pode ser facilmente explorado.</p>
+                    <p>As classes que caracterizam o domínio escolhido são as componentes que constituem e integram uma universidade tais como,alunos,departamentos
+                        etc.</p>
+                </div>
+            </div>
+        </div>
+        <center>
+            <a href="#init">Indice</a>
+        </center>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <a name="o_que_ont"><h1>O que é uma ontologia?</h1></a>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <p>Em Ciência da Computação, Sistemas de Informação e Ciência da Informação, uma ontologia é um modelo de dados que representa
+                        um conjunto de conceitos dentro de um domínio e os relacionamentos entre estes.</p>
+                    <p>Uma ontologia é utilizada para realizar inferência sobre os objetos do domínio.</p>
+                    <p>Ontologias são utilizadas em inteligência artificial, web semântica, engenharia de software e arquitetura da informação,
+                        como uma forma de representação de conhecimento sobre o mundo ou alguma parte deste. Ontologias geralmente descrevem:</p>
+                    <ul>
+                        <li>Indivíduos - os objetos básicos;</li>
+                        <li>Classes - conjuntos, coleções ou tipos de objetos</li>
+                        <li>Atributos - propriedades, características ou parâmetros que os objetos podem ter e compartilhar</li>
+                        <li>Relacionamentos - as formas como os objetos podem se relacionar com outros objetos.</li>
+                    </ul>
+                </div>
+            </div>
+            <center>
+                <a href="#init">Indice</a>
+            </center>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-lg-8">
+                    <a name="pq_ont"><h1>Porque desenvolver uma ontologia?</h1></a>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <p>Para compartilhar o entendimento de uma estrutura de informação :</p>
+                    <ul>
+                        <li>Entre pessoas</li>
+                        <li>Entre agentes de software</li>
+                    </ul>
+                    <p>Para permitir o reuso de um domínio de conhecimento,para evitar “re-inventar a roda”, de modo a criar padrões e permitir
+                        a interoperabilidade</p>
+                </div>
+            </div>
+            <center>
+                <a href="#init">Indice</a>
+            </center>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-lg-5">
+                    <a name="tema"><h1>Tema escolhido</h1></a>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <p>O tema escolhido para a construção da ontologia foi o domínio "Universidade".</p>
+                    <p>Optei por este domínio, devido ao facto de ser um domínio altamente explorável e interessante de popular. Visto que é impossível
+                        construir uma ontologia universal, tentei restringir ao máximo as classes da ontologia.
+                        <p>Esta vai relacionar alunos com docentes , docentes com departamentos , universidades com faculdades etc.</p>
+                </div>
+            </div>
+            <center>
+                <a href="#init">Indice</a>
+            </center>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-lg-5">
+                    <a name="construcao"><h1>Construção da Ontologia</h1></a>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <ol>
+                        <a name="dom"><h3><li>Domínio que a ontologia vai cobrir</li></h3></a>
+                        <br/>
+                        <p>A ontologia irá englobar o domínio respectivo a uma universidade. Uma universidade contêm alunos , docentes, departamentos,
+                            faculdades etc. O ponto onde me foquei mais foi no domínio dos cursos e dos departamentos.</p>
+                        <p>Na minha ontologia será possível verificar alguns dos cursos oferecidos pelo Departamento de Informática da Universidade
+                            do Minho e igualmente os docentes e alunos que estão nestes.</p>
+                        <p>Foi feita uma abordagem
+                            <em>top-down</em>para o desenvolvimento da ontologia.</p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <a name="quest"><h3><li>Que tipo de questões as informações na ontologia vão responder?</li></h3></a>
+                        <br/>
+                        <p>Esta ontologia conseguirá responder a questões do tipo :</p>
+                        <ul>
+                            <li>Alunos inscritos a uma dada unidade curricular;</li>
+                            <li>Alunos que frequentam um dado curso;</li>
+                            <li>Os docentes que leccionam mais cadeiras;</li>
+                            <li>Os departamentos existentes;</li>
+                            <li>As páginas curriculares de cada docente;</li>
+                            <li>Funcionários que trabalham na universidade e em que área;</li>
+                            <li>Quais as faculdades que pertencem a cada universidade;</li>
+                            <li>Cursos existentes por departamento;</li>
+                            <li>Datas da criação de cada um dos cursos,e das universidades;</li>
+                            <li>A duração de cada curso;</li>
+                        </ul>
+                        <br/>
+                        <p>Para além destas questões, a ontologia conseguirá responder a muitas mais questões.</p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <a name="classes"><h3 class="bg-warning"><li>Classes e a Hierarquia das Classes</li></h3></a>
+                        <br/>
+                        <p>Esta foi a primeira fase da construção da ontologia. De modo a não obter um domínio com grandes dimensões foram escolhidas
+                            os objectos que de certo modo são "pilares" para qualquer universidade e que se mais se relacionassem .</p>
+                        <p>Após uma análise ao problema a hiearquia de classes ficou constituida da seguinte maneira :</p>
+                        <ul>
+                            <li>Disciplina</li>
+                            <li>Departamento</li>
+                            <li>Curso</li>
+                            <li>Pessoa
+                                <ul>
+                                    <li>Funcionário</li>
+                                    <li>Docente</li>
+                                    <li>Aluno</li>
+                                </ul>
+                            </li>
+                            <li>Universidade</li>
+                            <li>Faculdade</li>
+                        </ul>
+                        <br/>
+                        <p>É possível verificar que existe polimorfismo de classes, nomeadamente para a classe
+                            <em>Pessoa</em>.</p>
+                        <p>No fase inicial de construção da ontologia, foi elaborado um diagrama que relaciona as diferentes classes de modo a poder
+                            visualizar quais as relações que iriam existir. Obviamente que posteriormente foram adicionadas mais relações , tal vai ser
+                            possível verificar mais à frente.</p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <center>
+                            <img src="../img/teste.png" class="img-responsive" alt="Responsive image" height="400px" width="600px" />
+                            <br/>
+                            <a href="#init">Indice</a>
+                        </center>
+                        <br/>
+                        <a name="dp">
+                            <h3 class="bg-success">
+                                <li>Data Properties</li>
+                            </h3>
+                        </a>
+                        
+                        <p>Para cada objecto existem várias propriedades/atributos.</p>
+                        <ul>
+                            <li>
+                                <h4>Universidade</h4>
+                            </li>
+                            <ul>
+                                <li>nome_universidade (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao nome da Universidade</li>
+                                <li>universidade_fundou_se_em (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao ano de fundação da universidade</li>
+                                <li>tem_home_page : Propriedade (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) simples referente à página da universidade</li>
+                            </ul>
+                            <br/>
+                            <li>
+                                <h4 class="">Departamento</h4>
+                            </li>
+                            <ul>
+                                <li>nome_departamento (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao nome do departamento</li>
+                            </ul>
+                            <br/>
+                            <li>
+                                <h4 class="">Faculdade</h4>
+                            </li>
+                            <ul>
+                                <li>nome_faculdade (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao nome da Faculdade</li>
+                                </li>
+                            </ul>
+                            <br/>
+                            <li>
+                                <h4 class="">Curso</h4>
+                            </li>
+                            <ul>
+                                <li>tem_duracao_de (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente a duração do curso</li>
+                                <li>tipo_curso (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao tipo do curso</li>
+                                <li>nome_curso (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao nome do curso</li>
+                                <li>tem_pagina_curricular (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente à página do curso</li>
+                                <li>curso_iniciou_se_em (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente à data de abertura do curso</li>
+                            </ul>
+                            <br/>
+                            <li>
+                                <h4 class="">Disciplina</h4>
+                            </li>
+                            <ul>
+                                <li>tem_designacao (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao nome da disciplina</li>
+                                <li>ano_da_disciplina (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao ano da disciplina</li>
+                            </ul>
+                            <li>
+                                <h4 class="">Pessoa</h4>
+                            </li>
+                            <ul>
+                                <li>chama_se (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao nome da pessoa</li>
+                                <li>tem_sexo (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao sexo da pessoa</li>
+                                <li>tem_nacionalidade (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente a nacionalidade da pessoa</li>
+                                <li>tem_idade (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente a idade da pessoa</li>
+                            </ul>
+                            <br/>
+                            <li>
+                                <h4 class="">Docente</h4>
+                            </li>
+                            <ul>
+                                <li>tem_site (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente á página do docente</li>
+                            </ul>
+                            <br/>
+                            <li>
+                                <h4 class="">Funcionário</h4>
+                            </li>
+                            <ul>
+                                <li>tem_funcao (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente a função do funcionário</li>
+                            </ul>
+                            <br/>
+                            <li>
+                                <h4 class="">Aluno</h4>
+                            </li>
+                            <ul>
+                                <li>tem_numero (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ao numero do aluno</li>
+                                <li>esta_no_ano (
+                                    <mark>
+                                        <em>String</em>
+                                    </mark>) : Propriedade simples referente ano do curso</li>
+                            </ul>
+                        </ul>
+                        <br/>
+                        <br/>
+                        <a name="op"><h3 class="bg-info"><li>Object Properties</li></h3></a>
+                        <p>Existem várias relações entre as classes existentes.</p>
+                        <br/>
+                        <br/>
+                        <div class="table-responsive ">
+                            <table class="table table-striped">
+                                <th>Nome relação</th>
+                                <th>Domínio</th>
+                                <th>Contradomínio</th>
+                                <th>Info</th>
+                                <th>Inversa</th>
+                                <tr>
+                                    <td>aluno_tem_disc</td>
+                                    <td>Aluno</td>
+                                    <td>Disciplina</td>
+                                    <td>Relação entre o aluno e uma disciplina a que se encontra inscrito</td>
+                                    <td>tem_aluno_inscrito</td>
+                                </tr>
+                                <tr>
+                                    <td>curso_pertence_ao_dep</td>
+                                    <td>Curso</td>
+                                    <td>Departamento</td>
+                                    <td>Departamento a que o curso pertence</td>
+                                    <td>tem_curso_de</td>
+                                </tr>
+                                <tr>
+                                    <td>curso_tem_aluno</td>
+                                    <td>Curso</td>
+                                    <td>Aluno</td>
+                                    <td>Relação entre o curso e o aluno que está inscrito a este.</td>
+                                    <td>frequenta_o_curso</td>
+                                </tr>
+                                <tr>
+                                    <td>departamento_pertence_a</td>
+                                    <td>Departamento</td>
+                                    <td>Faculdade</td>
+                                    <td>Faculdade a que pertence o departamento</td>
+                                    <td>tem_departamento_de</td>
+                                </tr>
+                                <tr>
+                                    <td>e_diretor_curso</td>
+                                    <td>Docente</td>
+                                    <td>Curso</td>
+                                    <td>Docente que é diretor de curso de um curso</td>
+                                    <td>tem_director_curso</td>
+                                </tr>
+                                <tr>
+                                    <td>e_do_departamento</td>
+                                    <td>Docente</td>
+                                    <td>Departamento</td>
+                                    <td>Relação que traduz o departamento a que pertence o docente</td>
+                                    <td>tem_docente</td>
+                                </tr>
+                                <tr>
+                                    <td>estuda</td>
+                                    <td>Aluno</td>
+                                    <td>Universidade</td>
+                                    <td>Universidade a que pertence o aluno al</td>
+                                    <td>univ_tem_aluno</td>
+                                </tr>
+                                <tr>
+                                    <td>pertence_a_universidade</td>
+                                    <td>Faculdade</td>
+                                    <td>Universidade</td>
+                                    <td>Universidade a que pertence a faculdade</td>
+                                    <td>é_constituida_por_faculdade_de</td>
+                                </tr>
+                                <tr>
+                                    <td>tem_funcionario</td>
+                                    <td>Universidade</td>
+                                    <td>Funcionário</td>
+                                    <td>Funcionário que trabalha na universidade</td>
+                                    <td>trabalha</td>
+                                </tr>
+                                <tr>
+                                    <td>tem_disciplina</td>
+                                    <td>Curso</td>
+                                    <td>Disciplina</td>
+                                    <td>Disciplina que o curso contêm</td>
+                                    <td>pertence_ao_curso_de</td>
+                                </tr>
+                                <tr>
+                                    <td>tem_vice_director_curso</td>
+                                    <td>Curso</td>
+                                    <td>Docente</td>
+                                    <td>Director de curso</td>
+                                    <td>é_vice_director</td>
+                                </tr>
+                                <tr>
+                                    <td>lecciona</td>
+                                    <td>Docente</td>
+                                    <td>Disciplina</td>
+                                    <td>Disciplina leccionada por docente</td>
+                                    <td>é_leccionada_por</td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </ol>
+                    <center>
+                        <a href="#init">Indice</a>
+                    </center>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-lg-5">
+                    <a name="populacao"><h1>População da Ontologia</h1></a>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <p>Na população da ontologia,apenas foi criado uma Universidade, tal é devido porque a criação de entidades para uma ontologia
+                        é de certo modo um processo longo e desgantante.</p>
+                    <p>A universidade criada está bastante populada no que diz respeito aos alunos,docentes e disciplinas.</p>
+                    <p>Ao todo foram criados 92 indíviduos.</p>
+                    <ul>
+                        <li>Universidade -
+                            <b>1</b>
+                        </li>
+                        <li>Faculdade -
+                            <b>3</b>
+                        </li>
+                        <li>Departamento -
+                            <b>3</b>
+                        </li>
+                        <li>Curso -
+                            <b>3</b>
+                        </li>
+                        <li>Aluno -
+                            <b>30</b>
+                        </li>
+                        <li>Disciplina -
+                            <b>26</b>
+                        </li>
+                        <li>Docente -
+                            <b>19</b>
+                        </li>
+                        <li>Funcionário -
+                            <b>7</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <center>
+                <a href="#init">Indice</a>
+            </center>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-lg-5">
+                    <a name="conc"><h1>Conclusão</h1></a>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <p>Após a elaboração deste projecto posso concluir que todos os objectivos propostos foram cumpridos.</p>
+                    <p>Contudo alguns pontos na construção da ontologia podiam ter sido mais explorados :</p>
+                    <ul>
+                        <li>
+                            <p>Podia-se ter criado mais classes, de modo a completar mais o domínio de universidade, contudo , tal poderia trazer algumas
+                                condicionantes no futuro.</p>
+                        </li>
+                        <li>
+                            <p>Em relação ás
+                                <em>Data Properties</em>, podia se ter criado mais, de modo a detalhar mais a informação sobre os objectos.</p>
+                        </li>
+                        <li>
+                            <p>A população da ontologia foi de certo modo a parte mais abstracta do projecto. Foram criadas entidades que permitem executar
+                                uma boa variadade de queries em
+                                <em>SPARQL</em>, contudo poderiam ter sido adicionadas mais entidades.</p>
+                        </li>
+                    </ul>
+                    <p>Em suma a ontologia criada está bem estruturada e, é fácil de analisar. É possível executar uma grande variadade de queries
+                        em
+                        <em>SPARQL</em>.</p>
+                </div>
+            </div>
+            <center>
+                <a href="#init">Indice</a>
+            </center>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-lg-5">
+                    <a name="anex"><h1>Anexos</h1></a>
+                    <hr/>
+                </div>
+                <div class="col-lg-12">
+                    <a href="../ont_universidade.owl"><h3>Ontologia</h3></a>
+                </div>
+            </div>
+            <br/>
+            <br/>
+    </body>
+
+</html>

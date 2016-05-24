@@ -1,0 +1,250 @@
+<div class='container'>
+      <div class='row'>
+        <div class='col-md-8 tab-content' id='edit-profile'>
+          <div class='tab-pane fade in active' id='profile-inner-01'>
+          <form id='profile-details-form' role='form' method='post' action='/account/edit-profile' enctype='multipart/form-data'>
+              <input type='hidden' id='total_uploads' name='total_uploads' value='0' />
+              <div class='header'>
+                <h1 class='h3'>
+                  <span class='icon icon-user-list'></span>
+                  Profile Details
+                </h1>
+              </div>
+              <div class='divider'></div>
+              <div class='row fields-row'>
+                <div class='col-md-6'>
+                  <p>Profile Picture</p>
+                  <img alt='profile-picture' class='profile-picture-preview avatar' data-src='{{ user.picture }}'>
+                  <div class='uploader-tools'>
+                    <input type='file' name='picture'>
+                  </div>
+                </div>
+                <div class='col-md-6'>
+                  <p>Cover Photo</p>
+                  <img alt='cover-photo' class='cover-photo-preview avatar' data-src='{{ user.cover }}'>
+                  <div class='uploader-tools'>
+                    <input type='file' name='cover'>
+                  </div>
+                </div>
+              </div>
+              <div class='divider'></div>
+              <div class='row fields-row'>
+                <div class='col-md-4'>
+                  <p>Email</p>
+                </div>
+                <div class='col-md-8 form-group'>
+                <input class='form-control' placeholder='Your email' type='email' name='email' value='{{ user.email }}'>
+                </div>
+                <div class='col-md-4'>
+                  <p>First Name</p>
+                </div>
+                <div class='col-md-8 form-group'>
+                <input class='form-control' placeholder='First Name' type='text' name='first' value='{{ user.name.first }}'>
+                </div>
+                <div class='col-md-4'>
+                  <p>Last Name</p>
+                </div>
+                <div class='col-md-8 form-group'>
+                <input class='form-control' placeholder='Last Name' type='text' name='last' value='{{ user.name.last }}'>
+                </div>
+                <div class='col-md-4'>
+                  <p>City / Country</p>
+                </div>
+                <div class='col-md-8 form-group'>
+                  <div id='selectbox'>
+                    <div class='bfh-selectbox bfh-countries' data-country='PT' id='countries_states1'></div>
+                    <div class='bfh-selectbox bfh-states' data-blank='false' data-country='countries_states1'></div>
+                  </div>
+                  <input type='hidden' id='result-country' name='country' />
+                  <input type='hidden' id='result-city' name='city' />
+                </div>
+                <div class='col-md-4'>
+                  <p>Gender</p>
+                </div>
+                <div class='col-md-8 form-group'>
+                  <div id='genders'>
+                    <label>
+                      <input id='female' name='gender' type='radio' value='female'>
+                      Female
+                    </label>
+                    <label>
+                      <input checked='checked' id='male' name='gender' type='radio' value='male'>
+                      Male
+                    </label>
+                  </div>
+                </div>
+                <div class='col-md-4'>
+                  <p>About</p>
+                </div>
+                <div class='col-md-8 form-group'>
+                  <textarea class='form-control' placeholder='Write some words about you' name='about' rows='6'>{{ user.about }}</textarea>
+                </div>
+              </div>
+              <div class='divider last'></div>
+              <div class='footer'>
+                <div class='row'>
+                  <div class='col-md-6 col-md-offset-6'>
+                    <div id='progress'></div>
+                    <button class='btn btn-primary pull-right' type='submit'>Update</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class='tab-pane fade' id='profile-inner-02'>
+            <form id='account-settings-form' role='form' method='post' action='/account/change-password'>
+              <input type='hidden' name='_csrf' value='{{ csrftoken }}' />
+              <div class='header'>
+                <h1 class='h3'>
+                  <span class='icon icon-user-list'></span>
+                  Account Settings
+                </h1>
+              </div>
+              <div class='divider'></div>
+              <div class='row fields-row'>
+                <div class='col-md-4'>
+                  <p>Change Password</p>
+                </div>
+                <div class='col-md-4 form-group'>
+                  <input class='form-control password' name="oldPassword" placeholder='Old password' type='password'>
+                </div>
+                <div class='col-md-4 form-group'>
+                  <input class='form-control password' name="newPassword" placeholder='New password' type='password'>
+                </div>
+              </div>
+              <div class='divider last'></div>
+              <div class='footer'>
+                <div class='row'>
+                  <div class='col-md-6'>
+                    <a href='/account/delete'>Click here</a>
+                    to delete your account.
+                  </div>
+                  <div class='col-md-6'>
+                    <button class='btn btn-primary pull-right' type='submit'>Update</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- SIDEBAR -->
+        <div class='col-md-4'>
+          <div id='editprofile-sidebar'>
+            <article class='sidebar-module'>
+              <div class='row title'>
+                <div class='col-md-6'>
+                  <h1 class='h6 module-title'>My Settings</h1>
+                </div>
+              </div>
+              <div class='module-box'>
+                <ul class='list-group'>
+                  <li class='list-group-item active'>
+                    <a data-toggle='tab' href='#profile-inner-01'>Profile Details</a>
+                  </li>
+                  <li class='list-group-item'>
+                    <a data-toggle='tab' href='#profile-inner-02'>Account Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{#contentFor 'scripts'}}
+      <script type='text/javascript' src='/plugins/bootstrap-formhelpers.js'></script>
+      <script type='text/javascript' src='/plugins/bootstrap-switch.js'></script>
+      <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js'></script>
+      <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.0/spin.min.js'></script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+          $('.profile-picture-preview').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:80, height:80, crop: 'thumb'
+          });
+
+          $('.cover-photo-preview').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:80, height:80, crop: 'thumb'
+          });
+
+          $("#"+'{{ user.gender }}').prop("checked", true);
+          $('.bfh-countries .bfh-selectbox-option').text('{{ user.country }}');
+          $('.bfh-states .bfh-selectbox-option').text('{{ user.city }}');
+
+          $('#profile-details-form').submit(function(ev) {
+            $('#result-country').val($('.bfh-countries .bfh-selectbox-option').text());
+            $('#result-city').val($('.bfh-states .bfh-selectbox-option').text());
+          });
+
+          $("#profile-details-form").submit(function(e) {
+            e.preventDefault();
+
+            $('button[type=submit]').prop('disabled',true);
+
+            var opts = {
+              lines: 8, // The number of lines to draw
+              length: 2, // The length of each line
+              width: 4, // The line thickness
+              radius: 8, // The radius of the inner circle
+              corners: 1, // Corner roundness (0..1)
+              rotate: 0, // The rotation offset
+              direction: 1, // 1: clockwise, -1: counterclockwise
+              color: '#000', // #rgb or #rrggbb or array of colors
+              speed: 1.2, // Rounds per second
+              trail: 77, // Afterglow percentage
+              shadow: false, // Whether to render a shadow
+              hwaccel: false, // Whether to use hardware acceleration
+              className: 'spinner', // The CSS class to assign to the spinner
+              zIndex: 2e9, // The z-index (defaults to 2000000000)
+              top: '50%', // Top position relative to parent
+              left: '65%' // Left position relative to parent
+            };
+
+            var target = document.getElementById('progress');
+            var spinner = new Spinner(opts).spin(target);
+          })
+          .validate({
+            rules: {
+              first: {
+                required: true
+              },
+              last : {
+                required: true
+              }
+            },
+            submitHandler: function(form) {
+
+              var total = 0;
+
+              if($('input[name="picture"]').val()) $('#total_uploads').val(++total);
+              if($('input[name="cover"]').val()) $('#total_uploads').val(++total);
+
+              var formData = new FormData($('#profile-details-form')[0]);
+
+              $('#profile-details-form :input').prop('disabled', true);
+
+              $.ajax({
+                type: 'POST',
+                url: $('#profile-details-form').attr('action'),
+                data: formData,
+               // async:false,
+                cache:false,
+                contentType: false,
+                processData: false,
+                success: function(response) {  
+                  window.location.href = '/profile/{{ user._id }}';
+                },
+                error: function() {
+                  alert('Error: Please report the administrators');
+                }
+              });
+
+              return false;
+            }
+          });
+
+        });
+      </script>
+    {{/contentFor}}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT livro-receitas (receita+) >
+<!ELEMENT receita (nome,ingredientes,autor,modo-preparação,tempo-preparação) >
+<!ELEMENT autor (#PCDATA) >
+<!ATTLIST  receita tipo (sopa | entrada | peixe | carne) #REQUIRED >
+<!ELEMENT ingredientes (ingrediente+) >
+<!ELEMENT ingrediente (nome,custo,dose) >
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT custo (#PCDATA)>
+<!ELEMENT dose (#PCDATA)>
+<!ELEMENT modo-preparação (#PCDATA)>
+<!ELEMENT tempo-preparação (#PCDATA)>

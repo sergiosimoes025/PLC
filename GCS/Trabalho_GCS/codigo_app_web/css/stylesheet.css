@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/dez/2014, 19:54:26
+    Author     : Perez_25
+*/
+
+#title {
+    font-family: Arial;
+    font-size: 40px;
+    border:1px solid;
+    font-variant: small-caps;
+    text-align: center;
+    color:#b43004;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    
+    #adicionar_registo{
+     font-family:Arial;
+     font-size:20px;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin-top: 80px;
+    }    
+
+    a{
+     font-style: normal;
+     color:black;
+     font-family: Arial;
+     text-decoration: none;
+   
+    }
+    
+    #titulo_listar{
+        font-variant: small-caps;
+        font-size:40px;
+        font-family: Arial;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        font-style: italic;
+        color:#f2b50f;
+        padding:10px 10px 10px 10px;
+        border:0px solid black;
+	background-image:url(http://www.mcjeditora.com.br/portal/wp-content/uploads/2013/06/Fotografia.jpg);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:20px;
+        width:500px;
+        
+        
+    }
+    
+    #imagem_descricao{
+        margin-top: 20px;
+        padding:30px;
+        text-align: center;
+        font-family: Arial;
+        width: 475px;
+        background-image: url("https://c1.staticflickr.com/3/2792/4051101164_6491fc3c39.jpg");
+        border:1px solid black;
+        border-radius: 20px;
+       
+    }   
+    
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: center;
+    padding: 5px;
+    font-family: Arial;
+    background: #fefff7;
+}
+
+#foto {
+    border:4px solid #9c412b ;
+    width: 206px;
+    margin-top: 30px;
+    }
+    
+label.field{
+        text-align: right;
+        width:100px;
+        float:left;
+        font-weight: bold;
+    }
+    
+input.textbox300{
+        width: 300px;
+        float:left;
+        
+        
+    }
+    
+fieldset p{
+        clear:both;
+        padding:5px;
+    }    
+    
+legend{
+font-size: 40px;
+ font-family: Arial;
+ margin-left: 40px;
+ }    
+ 
+ #arq_fot{
+     background: #f3e4d0;
+     
+ }

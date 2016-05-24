@@ -1,0 +1,170 @@
+
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8' id='message-container'>
+          <article class='message-body'>
+            <header class='row'>
+             <div class='col-md-7'>
+                <h1 class='h3'>
+                  <div id="subject"></div>
+                </h1>
+              </div>
+              <div class='col-md-5'>
+                <div class='message-btn-group pull-right'>
+                  <a class='save' href='#'>
+                    <div class='icon icon-favorite-star-fill'></div>
+                    Unsave
+                  </a>
+                  <a class='delete' href='#'>Delete</a>
+                  <a class='report' href='#'>Report</a>
+                </div>
+              </div>
+            </header>
+            <div class='scroll-container'></div>
+
+            <article class='message-reply'>
+              <form role='form' method='post' action=''>
+                <div class='row'>
+                  <div class='form-group col-md-12'>
+                    <textarea class='form-control' name='message' placeholder='Type here to reply' rows='3'></textarea>
+                  </div>
+                  <div class='form-group col-md-12'>
+                    <button class='btn btn-primary pull-right' type='submit'>Send message</button>
+                  </div>
+                </div>
+              </form>
+            </article>
+          </article>
+        </div>
+        <!-- SIDEBAR -->
+        <div class='col-md-4'>
+          <div id='messages-sidebar'>
+            <article class='sidebar-module'>
+              <div class='row title'>
+                <div class='col-md-4'>
+                  <a class='inbox active' href='#'>
+                    <h1 class='h6 module-title'>Inbox ({{ messages.length }})</h1>
+                  </a>
+                </div>
+                <div class='col-md-8'>
+                  <ul class='nav pull-right'>
+                    <li>
+                      <a href='#'>Starred (0)</a>
+                    </li>
+                    <li>
+                      <a href='#'>Sent</a>
+                    </li>
+                    <li>
+                      <a href='#'>Trash</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='module-box'>
+                {{#if messages}}
+                  {{#each messages}}
+                    <div class='row box-row'>
+                      <a class='message-wrap unread' href='/messages/conversation/{{ contact._id }}'>
+                        <span class='col-md-4 image'>
+                          <img class='img-responsive img-circle authorSidePicture' data-src='{{ contact.picture }}'>
+                        </span>
+                        <span class='col-md-8 text'>
+                          <p>
+                            <span class='bold'>{{ contact.name.full}}</span>
+                            <br>
+                            <span class='italic'>{{ conversation.0.message }}</span>
+                          </p>
+                          <span class='time-wrap'>
+                            <p>{{{formatTimezone conversation.0.created }}}</p>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                  {{/each}}
+                {{/if}}
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{#contentFor 'scripts'}}
+        <script type="text/javascript" src='/plugins/bootstrap-formhelpers.js'></script>
+        <script type="text/javascript" src='/plugins/bootstrap-switch.js'></script>
+        <script type="text/javascript" src="/plugins/jquery.custom-scrollbar.js"></script>
+       
+        <script type="text/javascript">
+          $(document).ready(function() {
+
+            $('.authorSidePicture').cloudinary({ 
+              secure: true, cdn_subdomain: true, width:220, height:220, crop: 'thumb'
+            });
+
+            $('.message-wrap').on('click', function(ev) {
+              ev.preventDefault();
+
+              $('.scroll-container').empty();              
+              $link = $(this).attr('href');
+
+              $.getJSON($link, function(data) {
+                $('#subject').text('Conversation with ' + data.contact.name.first);
+
+                $.each(data.conversation, function(key, val) {
+                  if(val.author._id == '{{ user._id }}') {
+                    $boxdiv = "<div class='box sended-message'><div class='header row'>";
+                  }
+                  else {
+                    $boxdiv = "<div class='box received-message'><div class='header row'>"
+                  }
+
+                  $($boxdiv+"<div class='col-md-6'><div class='user-name'><a href='/profile/"+val.author._id+"'>"
+                    +"<img class='img-circle author-conversation-picture' alt='user-picture' data-src='"+val.author.picture+"'>"+val.author.name.first+"</img></a> said:"
+                    +"</div></div><div class='col-md-6 time-wrap'><time>"
+                    +"<div class='icon icon-clock-time'></div> "
+                    + moment(Date.parse(val.created)).fromNow()
+                    +"</time></div></div><p>"+ val.message +"</p>"
+                    +"</div><div class='divider'></div>"
+                  ).appendTo('.scroll-container');
+                });
+
+                $('.message-reply form').attr('action','/messages/create/'+data.contact._id);
+
+                $('.author-conversation-picture').cloudinary({ 
+                  secure: true, cdn_subdomain: true, width:30, height:30, crop: 'thumb'
+                });
+
+                $("#messages-sidebar .module-box, #message-container .scroll-container").customScrollbar({
+                  updateOnWindowResize:true,
+                  skin: "default-skin",
+                  wheelSpeed: 20
+                });
+
+              });
+            });
+
+            $('.message-reply form').submit(function(ev) {
+              ev.preventDefault();
+
+              var $form = $( this ),
+                   term = $form.find( "textarea[name='message']" ).val(),
+                   url  = $form.attr( "action" );
+             
+              var posting = $.post( url, { message: term } );
+              posting.done(function( data ) {
+                if(data == 200) {
+                  $("<div class='box sended-message'><div class='header row'>"
+                    +"<div class='col-md-6'><a href='#'>"+'{{ user.name.first }}'+"</a> said:"
+                    +"</div><div class='col-md-6 time-wrap'><time>"
+                    +"<div class='icon icon-clock-time'></div> "
+                    + moment(Date.now).fromNow()
+                    +"</time></div></div><p>"+ term +"</p>"
+                    +"</div><div class='divider'></div>"
+                  ).appendTo('.scroll-container');
+                }
+              });
+            }); 
+
+          });
+        </script>
+    {{/contentFor}}

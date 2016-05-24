@@ -1,0 +1,65 @@
+
+dbpedia.org/sparql
+
+cenas para fazer :
+1- Lista de desportos referenciados na dbpedia (designação em inglês)
+2- Listar os nomes e a respectiva descrição dos jogadores de polo aquático que estão classificados
+como Person na ontologia/esquema schema.org
+
+//solução para a 1
+
+select distinct ?sport ?name count(?name) where{
+?sport a dbpedia-owl:Sport.
+?sport rdfs:label ?name.
+FILTER langmatches( lang(?name),"en").
+}
+order by asc(?name)
+
+
+//solução para a 2 apanha cenas que estão erradas devido aos burros que meteram lá os dados
+
+PREFIX schema:<http://schema.org/>
+PREFIX prop:<http://dbpedia.org/property/>
+
+
+select  distinct ?name ?desc where{
+?person a schema:Person.
+?person prop:sport <http://dbpedia.org/resource/Water_polo>.
+?person prop:name ?name.
+?person prop:shortDescription ?desc
+
+}
+order by asc(?name)
+LIMIT 100
+
++ exemplos
+
+PREFIX schema:<http://schema.org/>
+PREFIX prop:<http://dbpedia.org/property/>
+
+
+select  distinct ?desc ?abs where{
+?person a schema:Person.
+?person prop:name ?name.
+?person prop:shortDescription ?desc.
+filter regex(?name ,"Bach, Johann Sebastian").
+?person dbpedia-owl:abstract ?abs.
+filter langmatches( lang(?abs), "pt")
+
+
+}
+order by asc(?name)
+LIMIT 10
+
+
+fazer um website
+
+Indice de compositores
+  compositor1
+  cometc
+
+  clicando num deles vamos para a página de um deles
+
+  Que informação é que vamos buscar ?
+
+  Compositores musicais do barroco

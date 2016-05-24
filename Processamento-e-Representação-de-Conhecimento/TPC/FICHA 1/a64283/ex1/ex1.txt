@@ -1,0 +1,28 @@
+Carro 
+ -> constituídoPor : metal,plástico;
+ -> temComponente  : PortaBagagens, Habitáculo;
+ -> temSubclasse   : comercial,monovolume;
+ 
+  Dente
+ -> constituídoPor : coroa,raiz,esmalte,polpa;
+
+ Ave
+ -> temSubclasse   : galinha,pomba;
+ 
+  Galinha
+ -> constituídoPor : asa,perna;
+ 
+  Ovo
+ -> constituídoPor : casca,gema;
+
+  Transmissão
+ -> temSubclasse   : manual,automática;
+ 
+  Bolacha
+ -> temSubclasse   : BolachaChoc,BolachaGengibre;
+ 
+  Livro
+ -> temSubclasse   : Romance,Autobiografia;
+ 
+  Luva 
+ -> temComponente  : LuvaEsquerda,LuvaDireita;

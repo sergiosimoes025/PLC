@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv_europass SYSTEM "file:/Applications/oxygen/Ficheiros/cv-europass.dtd">
+<cv_europass>
+    <informacao_pessoal>
+        <nome>
+            <nome_proprio>Hélder Márcio</nome_proprio>
+            <apelido>Loureiro da Rocha</apelido>
+        </nome>
+        <morada>
+            <rua>Rua de Fontes 584</rua>
+            <cod_postal>4580-315</cod_postal>
+            <cidade>Cete</cidade>
+            <pais>Portugal</pais>
+        </morada>
+        <telefone>
+            <tipo_telefone>Telemóvel</tipo_telefone>
+            <numero>915958226</numero>
+        </telefone>
+        <email>helder.1124.30@gmail.com</email>
+        <sexo>Masculino</sexo>
+        <datanascimento>
+            <data>
+                <dia>03</dia>
+                <mes>12</mes>
+                <ano>1991</ano>
+            </data>
+        </datanascimento>
+        <nacionalidades>
+            <nacionalidade>Portuguesa</nacionalidade>
+        </nacionalidades>
+        <foto>
+            <xref url="www.foto.com">foto legendada</xref>
+        </foto>
+    </informacao_pessoal>
+    <educacao_formacao>
+        <curso>Licenciatura em Engenharia Informática</curso>
+        <ano_entrada>
+            <data>
+                <dia>15</dia>
+                <mes>09</mes>
+                <ano>2009</ano>
+            </data>
+        </ano_entrada>
+        <ano_conclusao>
+            <data>
+                <dia>15</dia>
+                <mes>09</mes>
+                <ano>2014</ano>
+            </data>
+        </ano_conclusao>
+        <local_formacao>
+            <nome_proprio>Universidade do Minho</nome_proprio>
+            <cidade>braga</cidade>
+            <pais>Portugal</pais>
+        </local_formacao>
+    </educacao_formacao>
+    <competencias_pessoais>
+        <lingua_materna>Portuguesa</lingua_materna>
+        <outras_linguas>
+            <lingua>Inglês</lingua>
+            <compreender>
+                <compreensao_oral>B1</compreensao_oral>
+                <leitura>B1</leitura>
+            </compreender>
+            <falar>
+                <interacao_oral>B1</interacao_oral>
+                <producao_oral>B1</producao_oral>
+            </falar>
+            <escrever>B1</escrever>
+        </outras_linguas>
+        <competencias_informaticas>
+            <informacao_adicional>
+                <p>Competência em <b>dtd</b> e <b>xml's</b></p>
+                <p>Java, C++, C, Haskell</p>
+            </informacao_adicional>
+        </competencias_informaticas>
+        <carta_conducao>
+            <tipo tipocarta="B">B</tipo>
+        </carta_conducao>
+    </competencias_pessoais>
+    <informacao_adicional>
+        <p>Federado em futebol 6 anos, desde iniciado a júnior.</p>
+        <p>Candidato de uma lista, cargo de tesoureiro, para a Associação Académica da Universidade do Minho.</p>
+    </informacao_adicional>
+</cv_europass>

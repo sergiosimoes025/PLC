@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livro-receitas>
+    <receita tipo="sopa">
+        <nome> Sopa de tomate</nome>
+        <ingredientes>
+            <ingrediente>
+                <nome>Tomate</nome>
+                <custo>0.25</custo>
+                <dose>100 gramas</dose>
+            </ingrediente>
+            <ingrediente>
+                <nome>Cebolas</nome>
+                <custo>0.24</custo>
+                <dose>200 gramas</dose>
+            </ingrediente>
+        </ingredientes>
+        <autor>Sérgio Simões</autor>
+        <modo-preparação> Mete-se o tomate na panela e depois mexe-se até da merda</modo-preparação>
+        <tempo-preparação>10</tempo-preparação>
+    </receita>
+</livro-receitas>

@@ -1,0 +1,75 @@
+
+  {{#contentFor 'header'}}
+    <link href='/stylesheets/landing-font.css' rel='stylesheet'>
+    <link href='/plugins/bootstrap-formhelpers.css' rel='stylesheet'>
+  {{/contentFor}}
+
+    <section id='hero'>
+      <div id='bg'></div>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='h1 slogan'>
+              Follow the footsteps,
+              <br>
+              share your journey.
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-12 buttons'>
+            <a class='btn btn-default btn-lg' href='/register' id='landing-button'>Create account</a>
+            <br>
+            <a class='signin' href='/login'>
+              or
+              <div class='bold'>sign in</div>
+              to your account
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id='features'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-4'>
+            <img src='images/feature_01.png'>
+            <h1 class='h4'>Don't be selfish</h1>
+            <p>Create routes and share with your friends which places are the best to visit</p>
+          </div>
+          <div class='col-md-4'>
+            <img src='images/feature_02.png'>
+            <h1 class='h4'>Being lost isn't cool anymore</h1>
+            <p>Find roadmaps that are related with the city that you are going to visit</p>
+          </div>
+          <div class='col-md-4'>
+            <img src='images/feature_03.png'>
+            <h1 class='h4'>You will never walk alone</h1>
+            <p>Follow other people and you will always find someone no matter where you are</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    {{#contentFor 'scripts'}}
+      <script src='/plugins/bootstrap-formhelpers.js'></script>
+      <script type='text/javascript'>
+        $(document).ready(function() {
+          $('body').attr('style', 'background-color:#FFF');
+
+          var $videoModal = $(".video-modal");
+          $("#video-player").click(function () {
+            $videoModal.toggleClass("active");
+            clearInterval(interval);
+            interval = null;
+          });
+          $videoModal.click(function () {
+            $videoModal.removeClass("active");
+          });
+          $videoModal.find(".wrap").click(function (e) {
+            e.stopPropagation();
+          });
+        });
+      </script>
+    {{/contentFor}}

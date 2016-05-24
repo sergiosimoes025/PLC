@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project-record SYSTEM "file:/Applications/oxygen/Ficheiros/PR.dtd">
+<project-record>
+    <meta>
+        <title>TPC2 - CV - Europass</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <begin-date>Outubro 2014</begin-date>
+        <end-date>Outubro 2014</end-date>
+    </meta>
+    <workteam>
+        <student>
+            <ident>1</ident>
+            <name>Hélder Márcio Loureiro da Rocha</name>
+            <email>helder.1124.30@gmail.com</email>
+        </student>
+    </workteam>
+</project-record>

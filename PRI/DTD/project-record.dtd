@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT project-record (meta, abstract?, workteam, logs?, deliverables?) >
+<!ELEMENT meta (title,subtitle?, key-name, supervisors, begin-date, end-date?) >
+
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT key-name (#PCDATA) >
+
+<!ELEMENT supervisors (supervisor+) >
+<!ELEMENT supervisor (name, email, homepage) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT homepage (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+
+<!ELEMENT begin-date (#PCDATA) >
+<!ELEMENT end-date (#PCDATA) >
+
+<!ELEMENT abstract (p+) >
+<!-- elemento paragrafo b = bold i = italico etc etc-->
+<!ELEMENT p (#PCDATA|b|i|u|ackron|xref)* >
+<!ELEMENT b (#PCDATA|i|u|ackron|xref)* >
+<!ELEMENT i (#PCDATA|b|u|ackron|xref)* >
+<!ELEMENT u (#PCDATA|b|i|ackron|xref)* >
+<!ELEMENT ackron (#PCDATA) >
+<!ELEMENT xref (#PCDATA) >
+<!ATTLIST xref
+            url CDATA #REQUIRED >
+ 
+
+<!ELEMENT workteam (student+) >
+<!ELEMENT student (ident, name, email) >
+
+<!ELEMENT ident (#PCDATA) >
+
+<!ELEMENT logs (log+) >
+<!ELEMENT log (date, description) >
+
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT description (p+) >
+
+<!ELEMENT deliverables (xref+) >

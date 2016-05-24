@@ -1,0 +1,21 @@
+Processo:
+Ano do processo
+Numero do Processo: 733/66-266B5 (Por exemplo)
+camara
+data envio de prrocesso
+num passaporte
+
+Requerente
+nome
+BI
+residente em freguesia
+destino(país/cidade) 
+data prevista saiuda 
+data nasc
+local nasc
+filiação
+estado civil
+conjuge
+filhos
+profissão atual / futura
+habilitações

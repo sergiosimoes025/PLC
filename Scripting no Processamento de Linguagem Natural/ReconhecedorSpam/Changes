@@ -1,0 +1,6 @@
+Revision history for Perl extension ReconhecedorSpam.
+
+0.01  Thu Jul  2 22:04:02 2015
+	- original version; created by h2xs 1.23 with options
+		-XAn ReconhecedorSpam
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-record>
+    <meta>
+        <title>TPC1</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <begin-date>Fevereiro 2015</begin-date>
+        <end-date>Fevereiro 2015</end-date>
+    </meta>
+    <abstract>
+    
+        
+        <p><b>Objectivo</b></p>
+       
+     <p>Criar uma ontologia que represente o domínio de sapatilhas. Para a construção desta indentifiquei 4 classes que 
+     de certo modo são as mais importantes neste domínio:
+     </p>
+         <ul>
+             <li>Companhia - entidade responsável pelo lançamento das sapatilhas ex:(ADIDAS,PUMA,etc);</li>
+             <li>Empresa - entidade responsável pela produção das sapatilhas ex:(Fábrica calçado - Guimarães);</li>
+             <li>Sapatilha - entidade principal;</li>
+             <li>Pessoa - entidade responsável por "montar" as sapatilhas ex:(António Limpo);</li>
+         </ul>
+         
+         <p>As relações entre estas verificam-se da seguinte maneira:</p>
+         <ul>
+             <li>Pessoa->Trabalhador <b>monta</b> Sapatilha;</li>
+             <li>Pessoa->Trabalhador <b>trabalha-para</b> Empresa;</li>
+             <li>Empresa <b>trabalha-para</b> Companhia;</li>
+             <li>Companhia lança Sapatilha;</li>
+             <li>Companhia define-preço Sapatilha;</li>
+         </ul>
+             
+             
+         <p> A ontologia foi construida através do programa <i>protege</i>.</p> 
+     
+        </abstract>
+    <workteam>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        
+        
+    </workteam>
+   <deliverables>
+       <xref url="project-record.dtd">project-record.dtd</xref>
+       <xref url="project-record.html">project-record.html</xref>
+       <xref url="project-record.xml">project-record.xml</xref>
+       <xref url="project-record.xsl">project-record.xsl</xref>
+       <xref url="sapatilha.owl">Ontologia sapatilha</xref>
+   </deliverables>
+</project-record>

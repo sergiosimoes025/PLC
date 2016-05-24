@@ -1,0 +1,331 @@
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class='alert alert-warning small'>
+        <center><b>Hello and welcome to our Beta testing!</b> The basic functionality is still being developed, therefore not everything you see will work as expected, but updates will come up everyday so that you can test what's new. Please help us turn this platform into something valuable by giving us your feedback! All feedback is important in order to make progress, may it be bugs found, suggestions, or features you want! You can find the feedback button on the left of the page. Thank you!</center>
+      </div>
+    </div>
+    <div class='col-md-7 col-md-offset-1'>
+      <div id='feeds'>
+        {{#if activities}}
+          {{#each activities.activityStream}}
+            <article class='feed'>
+              <div class='wrap'>
+                <div class='avatar-outside'>
+                  <div class='badge blue-bg'>
+                    <span class='icon-favorite-star'></span>
+                  </div>
+                  <a href='/profile/{{ author._id }}'><img class='authorPicture img-circle' data-src='{{ author.picture }}'></a>
+                </div>
+                <header>
+                  <p>
+                    <a class='author' href='/profile/{{ author._id }}'>{{ author.name.full }}</a>
+                          {{ verb }}
+                          <a class='guide-name' href='/guide/{{ object._id }}'>{{ object.title }}</a>
+                          {{ sentence }}
+                        </p>
+                        <time>
+                          <span class='icon icon-clock-time'></span>
+                          <p>{{{formatTimezone created}}}</p>
+                        </time>
+                      </header>
+                      <hr>
+                      <div class='row'>
+                        <div class='col-md-5'>
+                          <a href='/guide/{{ object._id }}'>
+                            <img class='guidePicture-activity img-responsive' data-src='{{ object.places.0.picture }}'>
+                          </a>
+                        </div>
+                        <div class='col-md-7 right-side'>
+                          <a href='/guide/{{ object._id }}'><h1 class='h5 title-route'>{{ object.title }}</h1></a>
+                          <p class='description'>{{#if object.description }} {{{trimString object.description 250}}} {{/if}}</p>
+                          <div class='user-rating'>
+                            <div class='numbers'>
+                              {{#if object.avg }} {{ object.avg }} {{else}} 0.0 {{/if}}
+                            </div>
+                            <div class='rating'>
+                              <span>user rating</span>
+                              <br>
+                              {{ object.votes.length }} votes
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                {{/each}}
+              {{/if}}
+
+              <!--
+              <article class='feed'>
+                <div class='wrap'>
+                  <div class='avatar-outside'>
+                    <div class='badge red-bg'>
+                      <span class='icon-reward-badge'></span>
+                    </div>
+                    <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                  <header>
+                    <p>
+                      <a class='author' href='profile.html'>Mark Lee</a>
+                      's guide
+                      <a class='guide-name' href='guide.html'>Tea Route</a>
+                      has been promoted by
+                      <span class='staff-picks'>staff picks</span>
+                    </p>
+                    <time>
+                      <span class='icon icon-clock-time'></span>
+                      <p>7 mins ago</p>
+                    </time>
+                  </header>
+                </div>
+              </article>
+              <article class='feed'>
+                <div class='wrap'>
+                  <div class='avatar-outside'>
+                    <div class='badge blue-bg'>
+                      <span class='icon-bubble-chat'></span>
+                    </div>
+                    <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                  <header>
+                    <p>
+                      <a class='author' href='profile.html'>Donna Gifford</a>
+                      reviewed the guide
+                      <a class='guide-name' href='guide.html'>Shangai Museums</a>
+                    </p>
+                    <time>
+                      <span class='icon icon-clock-time'></span>
+                      <p>7 mins ago</p>
+                    </time>
+                  </header>
+                  <hr>
+                  <div class='row'>
+                    <div class='col-md-5'>
+                      <div class='image-wrap'>
+                        <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                      </div>
+                    </div>
+                    <div class='col-md-7 right-side'>
+                      <div class='rate'>
+                        <span class='star-green icon-favorite-star-fill'></span>
+                        <span class='star-green icon-favorite-star-fill'></span>
+                        <span class='star-green icon-favorite-star-fill'></span>
+                        <span class='star-green icon-favorite-star-fill'></span>
+                        <span class='star-green icon-favorite-star-fill'></span>
+                        <span class='number'>5</span>
+                      </div>
+                      <h1 class='h5 title-review'>Awesome place to visit!</h1>
+                      <p class='description'>Cras ullamcorper diam eget magna faucibus rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis ut aliquam turpis. Sed ac felis orci. Curabitur sagittis quam nisi, auctor hendrerit lorem scelerisque  lorem sefi...</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class='feed'>
+                <div class='wrap'>
+                  <div class='avatar-outside'>
+                    <div class='badge blue-bg'>
+                      <span class='icon-map-route'></span>
+                    </div>
+                    <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                  <header>
+                    <p>
+                      <a class='author' href='profile.html'>Ralph Bergquist</a>
+                      created a new guide
+                      <a class='guide-name' href='guide.html'>Tea Route</a>
+                      in
+                      <a class='guide-name' href='guide.html'>Madrid</a>
+                    </p>
+                    <time>
+                      <span class='icon icon-clock-time'></span>
+                      <p>7 mins ago</p>
+                    </time>
+                  </header>
+                </div>
+              </article>
+              <article class='feed'>
+                <div class='wrap'>
+                  <div class='avatar-outside'>
+                    <div class='badge green-bg'>
+                      <span class='icon-users-group'></span>
+                    </div>
+                    <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                  <header>
+                    <p>
+                      <a class='author' href='profile.html'>Forrest Gilliam</a>
+                      started following
+                      <a class='author' href='profile.html'>Cynthia Provost</a>
+                    </p>
+                    <time>
+                      <span class='icon icon-clock-time'></span>
+                      <p>7 mins ago</p>
+                    </time>
+                  </header>
+                </div>
+              </article>
+              <article class='feed'>
+                <div class='wrap'>
+                  <div class='avatar-outside'>
+                    <div class='badge orange-bg'>
+                      <span class='icon-single-add'></span>
+                    </div>
+                    <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                  <header>
+                    <p>
+                      <a class='author' href='profile.html'>Forrest Gilliam</a>
+                      just joined Pigero
+                    </p>
+                    <time>
+                      <span class='icon icon-clock-time'></span>
+                      <p>7 mins ago</p>
+                    </time>
+                  </header>
+                </div>
+              </article>
+              -->
+
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div id='feeds-sidebar'>
+              <article class='sidebar-module'>
+                <div class='row title'>
+                  <div class='col-md-6'>
+                    <h1 class='h6 module-title'>My Journeys</h1>
+                  </div>
+                  <div class='col-md-6 sidebar-btns'>
+                    <a class='bottom-tooltip' data-original-title='Create new' data-toggle='tooltip' href='/guide/create'>
+                      <span class='icon icon-plus-add-1'></span>
+                    </a>
+                    <a class='bottom-tooltip' data-original-title='View all' data-toggle='tooltip' href='#'>
+                      <span class='icon icon-list-binder'></span>
+                    </a>
+                  </div>
+                </div>
+                <div class='module-box'>
+
+                  {{#if user.guides.length}}
+                    {{#each user.guides}}
+                      <div class='row box-row'>
+                        <div class='col-md-4'>
+                          <div class='image-wrap'>
+                            <img class='guidePicture-sidebar' data-src='{{ places.0.picture }}'>
+                          </div>
+                        </div>
+                        <div class='col-md-8 wrap'>
+                          <header>
+                            <h1 class='h5'>
+                              <a href='/guide/{{ _id }}'>{{{trimString title 12}}}</a>
+                            </h1>
+                          </header>
+                          <div class='action-btn'>
+                            <a href='/guide/{{ _id }}/edit' title='Edit'>Edit</a>
+                            <a class='remove' href='/guide/{{ _id }}/delete' title='Edit'>Remove</a>
+                          </div>
+                          <div class='icons pull-right'>
+                            <span>
+                              <a class='icon icon-favorite-star-fill' href='#'>
+                                <span>{{ favorites.length }}</span>
+                              </a>
+                            </span>
+                            <span>
+                              <a class='icon icon-bubble-chat' href='#'>
+                                <span>{{ reviews.length }}</span>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    {{/each}}
+                  {{else}}
+                    <div class='box-row blank'>
+                      <div>
+                        You currently don't have any journeys.
+                        <br>
+                        <a href='/guide/create'>Click here to create one</a>
+                      </div>
+                    </div>
+                  {{/if}}
+                </div>
+              </article>
+              <article class='sidebar-module'>
+                <div class='row title'>
+                  <div class='col-md-6'>
+                    <h1 class='h6 module-title'>My Favorites</h1>
+                  </div>
+                  <div class='col-md-6 sidebar-btns'>
+                    <a class='bottom-tooltip' data-original-title='View all' data-toggle='tooltip' href='#'>
+                      <span class='icon icon-list-binder'></span>
+                    </a>
+                  </div>
+                </div>
+                <div class='module-box'>                  
+                  {{#if user.favorites.length}}
+                    {{#each user.favorites}}
+                      <div class='row box-row'>
+                        <div class='col-md-4'>
+                          <div class='image-wrap'>
+                            <img src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                          </div>
+                        </div>
+                        <div class='col-md-8 wrap'>
+                          <header>
+                            <h1 class='h5'>
+                              <a href='#'>{{{trimString title 12}}}</a>
+                            </h1>
+                          </header>
+                          <span class='author'>
+                            by
+                            <a class='bold' href='/profile/{{ author._id }}'>{{ author.name.full }}</a>
+                          </span>
+                          <div class='action-btn'>
+                            <a class='remove' href='#' title='Edit'>Remove</a>
+                          </div>
+                          <div class='user-rating pull-right'>
+                            <div class='numbers'>
+                              {{#if avg}} {{ avg }} {{else}} 0.0 {{/if}}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    {{/each}}
+                  {{else}}
+                    <div class='box-row blank'>
+                      <div>
+                        You currently don't have favorite journeys.
+                        <br>
+                        <a href='/explore'>Click here to explore</a>
+                      </div>
+                    </div>
+                  {{/if}}
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{#contentFor 'scripts'}}
+        <script type='text/javascript'>
+          $(document).ready(function() {
+            $('#activity-nav').addClass('active');
+            
+            $('.authorPicture').cloudinary({ 
+              secure: true, width:80, height:80, crop: 'thumb', radius: 'max' 
+            });
+
+            $('.guidePicture-sidebar').cloudinary({ 
+              secure: true, width:100, height:80, crop: 'thumb' 
+            });
+
+             $('.guidePicture-activity').cloudinary({ 
+              secure: true, width:232, height:232, crop: 'thumb' 
+            });
+
+          });
+        </script>
+      {{/contentFor}}

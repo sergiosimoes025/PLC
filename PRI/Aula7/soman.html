@@ -1,0 +1,29 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Soma de N inteiros</title>
+        <script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="application/javascript" src="somador.js"></script>
+    </head>
+    <body>
+        <h1>
+            Soma de N inteiros
+            <input type="button" id="adicionar" value="+" />
+            <input type="button" id="remover" value="-" />
+        </h1>
+        <form action="soma.php" method="post" id="somador">
+            <fieldset id="operandos">
+                <legend>Operandos</legend>
+                <div id="o1">
+                    <label for="op1">Op1: </label>
+                    <input id="op1" type="text" name="op1" size="4" />
+                </div>
+                <div id="o2">
+                    <label for="op2">Op2: </label>
+                    <input id="op2" type="text" name="op2" size="4" />
+                </div>      
+            </fieldset>
+            <input type="button" id="enviar" value="Enviar" />
+        </form>
+    </body>
+</html>

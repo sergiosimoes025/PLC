@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://elpri.di.uminho.pt/report"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://elpri.di.uminho.pt/report file:/Users/Perez_25/Documents/Universidade/PL-%20MESTRADO/PED/report2014.xsd">
+    <front-matter>
+        <meta>
+            <title></title>
+            <authors>
+                <author>
+                    <name></name>
+                </author>
+            </authors>
+            <date>2014-12-15</date>
+        </meta>
+        <acknowledgements>
+            <p xmlns="http://elpri.di.uminho.pt/paragraph">Isto é um teste</p>
+        </acknowledgements>
+        <abstract>
+            <p xmlns="http://elpri.di.uminho.pt/paragraph">Isto é um teste</p>
+        </abstract>
+        <toc></toc>
+        <lof></lof>
+    </front-matter>
+    <body>
+        <section>
+            <title>Primeira seçao</title>
+        </section>
+    </body>
+    <back-matter/>
+        
+        
+    
+</report>

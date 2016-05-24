@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/component.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" >
+
+  <title>Base de dados de Emigração: Adicionar Registos Biográficos</title>
+</head>
+
+<body class="cbp-spmenu-push" style="font-family: 'Lato', Calibri, Arial, sans-serif;">
+
+  <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+  <h3>Créditos</h3>
+  <p style="border-left:0px;">Fernando Martins - PG25297</p>
+  <p>Hélder Rocha - PG27737</p>
+  <p>Sérgio Simões - A64283</p>
+  <p>Tiago Martins - PG25306</p>
+</nav>
+
+  <div class="container">
+
+    <header class="clearfix">
+      <span style="display:block;">Processamento e Representação de Informação</span>
+      <h1>Base dados de Emigração</h1>
+      <div class="masthead">
+        <nav>
+          <ul class="nav nav-justified" style="margin-top:20px;">
+            <li><a href="../../index.php">Ínicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Arquivo Fotográfico<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Registos</li>
+                <li><a href="../../arquivo_fotografico/html/adicionar_registos_fotograficos.html">Adicionar</a></li>
+                <li><a href="../../arquivo_fotografico/php/reset_registos_fotograficos.php">Remover</a></li>
+              </ul>
+            </li>
+	    <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Arquivo Biográfico<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Registos</li>
+                <li><a href="../../arquivo_biografico/html/adicionar_registos_biograficos.html">Adicionar</a></li>
+                <li><a class="resetButton" href="../../arquivo_biografico/php/reset_registos_biograficos.php">Remover</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="#">A.R.P.</a>
+            </li>
+            <li><a href="../../relatorio/php/relatorio.php">Relatório</a></li>
+            <li><a id="showBottom" href="#">Créditos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="row center-block">
+          <h2 style="text-align:center; padding-bottom:20px;">Adicionar Requerimentos de Passaporte</h2>
+          <form class="form-horizontal" name="form" action="../php/insert_bd.php" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+              <label class="col-md-6 control-label">Via ficheiro <b>SQL</b></label>
+              <div class="col-md-6">
+                <input type="file" class="filestyle" data-input="false" name="ficheiro_sql"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-6 pull-right">
+                <button class="btn btn-success" type="submit">Submeter</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+    <div class="main">
+      <div class="row center-block">
+          <h3 style="text-align:center; padding-bottom:20px;">Remover Requerimentos de Passaporte</h3>
+          <form class="form-horizontal" name="form" action="../php/delete.php" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+              <div class="col-md-6 pull-right">
+                <button class="btn btn-success" type="submit">Remover</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../js/jquery-2.1.3.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/modernizr.custom.js"></script>
+  <script src="../../js/classie.js"></script>
+  <script src="../../js/custom.js"></script>
+  <script src="../../js/bootstrap-filestyle.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(":file").filestyle({input: false});
+    });
+  </script>
+
+
+</body>
+</html>

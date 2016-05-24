@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-record>
+    <meta>
+        <title>TPC3</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <subtitle>Processamento e Representação de Conhecimento</subtitle>
+        <begin-date>Março 2015</begin-date>
+        <end-date>Março 2015</end-date>
+    </meta>
+    <abstract>
+        
+    <b>Motivação:</b>    
+        <p> O Simple Knowledge OrganizationSystem (SKOS) é um modelo para expressar a estrutura básica e conteúdo de sistemas de organização do conhecimento.
+            SKOS é, como o nome representa, um sistema simples para a organização do conhecimento. 
+           </p>   
+        
+        
+    <b>Objectivo :</b>
+        <p>Analisar e processar o ficheiro <i>ACM-SKOSTaxonomy.xml</i> com a finalidade, de criar um indice com os <i>top-concepts</i> e com os <i>concepts</i>.</p>
+        <p>Para além da criação do indice,foi criado para cada  <i>concept</i>, uma página com o título , etiquetas/classificadores e com as suas relações semânticas.</p>
+        <p> Os dados estavam modelados em <i>SKOS</i>. Estes referenciavam uma data de conceitos, onde, cada um destes estava identificado por um <i>id</i>. Através deste foi possível interligar os
+        diferentes conceitos de modo a construir um multi grafo. De modo a construir este foi necessário estudar e analisar as relações semânticas de cada conceito , nomeadamente
+        os seus <i>broaders</i>,<i>narrowers</i> e os conceitos que estão relacionados <i>related</i>. No ficheiro  <i>ACM-SKOSTaxonomy.xml</i> estas relações vinham acompanhadas 
+        com uma propriedade <i>resource</i> que continha o id para os conceitos.</p>
+        <p> Os conceitos foram organizados por ordem alfabética e para apresentar os dados foi utilizado <i>bootstrap</i>.</p>
+        
+        </abstract>
+    <workteam>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        
+        
+    </workteam>
+   <deliverables>
+       
+       <xref url="project-record.html">project-record.html</xref>
+       <xref url="project-record.xml">project-record.xml</xref>
+       <xref url="project-record.xsl">project-record.xsl</xref>
+       <xref url="ACM-SKOSTaxonomy.xsl">Stylesheet</xref>
+       <xref url="ACM-SKOSTaxonomy.xml">Ficheiro com os dados modelados em SKOS</xref>
+       <xref url="indice.html">Indice de conceitos</xref>
+       
+       
+   </deliverables>
+</project-record>

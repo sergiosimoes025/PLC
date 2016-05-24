@@ -1,0 +1,690 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/perez_25/ontologies/2015/2/untitled-ontology-15"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/perez_25/ontologies/2015/2/untitled-ontology-15">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="#date"/>
+        <Literal datatypeIRI="&xsd;dateTime">Março de 2015</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">Ontologia em OWL sobre o mundo do cinema</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#created"/>
+        <Literal datatypeIRI="&xsd;string">Sérgio Simões a64283</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActorFeminino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActorMasculino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Argumento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Escritor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Filme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Género"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lingua"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Livro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#País"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peça_Musical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Realizador"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Atuou"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Compôs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Escreveu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Realizou"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foiComposta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foiEscrita"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temArgumento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temGénero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temLingua"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temPaísOrigem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temRealizador"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tempeçaMusical"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duracao"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nacionalidade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sexo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#argumento_f2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#billy_burke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catherine_hardwicke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diCaprio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#f1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#f2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frances"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ingles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#joaquimDeAlmeida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kristen_stewart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#melissa_rosenberg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#portugues"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#robert_pattinson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#taylor_lautner"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Actor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoa"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Atuou"/>
+                <Class IRI="#Filme"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActorFeminino"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Actor"/>
+            <DataHasValue>
+                <DataProperty IRI="#sexo"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">F</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActorMasculino"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Actor"/>
+            <DataHasValue>
+                <DataProperty IRI="#sexo"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">M</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Escritor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoa"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Escreveu"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Argumento"/>
+                    <Class IRI="#Livro"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Musico"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoa"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Compôs"/>
+                <Class IRI="#Peça_Musical"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Realizador"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoa"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Realizou"/>
+                <Class IRI="#Filme"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Argumento"/>
+        <Class IRI="#Obra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Livro"/>
+        <Class IRI="#Obra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peça_Musical"/>
+        <Class IRI="#Obra"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Argumento"/>
+        <NamedIndividual IRI="#argumento_f2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoa"/>
+        <NamedIndividual IRI="#billy_burke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Realizador"/>
+        <NamedIndividual IRI="#catherine_hardwicke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoa"/>
+        <NamedIndividual IRI="#diCaprio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#País"/>
+        <NamedIndividual IRI="#eua"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Filme"/>
+        <NamedIndividual IRI="#f1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Filme"/>
+        <NamedIndividual IRI="#f2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#País"/>
+        <NamedIndividual IRI="#fran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lingua"/>
+        <NamedIndividual IRI="#frances"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lingua"/>
+        <NamedIndividual IRI="#ingles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoa"/>
+        <NamedIndividual IRI="#joaquimDeAlmeida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoa"/>
+        <NamedIndividual IRI="#kristen_stewart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoa"/>
+        <NamedIndividual IRI="#melissa_rosenberg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#País"/>
+        <NamedIndividual IRI="#portugal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lingua"/>
+        <NamedIndividual IRI="#portugues"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoa"/>
+        <NamedIndividual IRI="#robert_pattinson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoa"/>
+        <NamedIndividual IRI="#taylor_lautner"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Atuou"/>
+        <NamedIndividual IRI="#billy_burke"/>
+        <NamedIndividual IRI="#f2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Realizou"/>
+        <NamedIndividual IRI="#catherine_hardwicke"/>
+        <NamedIndividual IRI="#f2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Atuou"/>
+        <NamedIndividual IRI="#diCaprio"/>
+        <NamedIndividual IRI="#f1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temActor"/>
+        <NamedIndividual IRI="#f1"/>
+        <NamedIndividual IRI="#diCaprio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temLingua"/>
+        <NamedIndividual IRI="#f1"/>
+        <NamedIndividual IRI="#ingles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temActor"/>
+        <NamedIndividual IRI="#f2"/>
+        <NamedIndividual IRI="#kristen_stewart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temLingua"/>
+        <NamedIndividual IRI="#f2"/>
+        <NamedIndividual IRI="#ingles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temPaísOrigem"/>
+        <NamedIndividual IRI="#f2"/>
+        <NamedIndividual IRI="#eua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Atuou"/>
+        <NamedIndividual IRI="#joaquimDeAlmeida"/>
+        <NamedIndividual IRI="#f2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Atuou"/>
+        <NamedIndividual IRI="#kristen_stewart"/>
+        <NamedIndividual IRI="#f2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Escreveu"/>
+        <NamedIndividual IRI="#melissa_rosenberg"/>
+        <NamedIndividual IRI="#argumento_f2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Atuou"/>
+        <NamedIndividual IRI="#robert_pattinson"/>
+        <NamedIndividual IRI="#f2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Atuou"/>
+        <NamedIndividual IRI="#taylor_lautner"/>
+        <NamedIndividual IRI="#f2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#billy_burke"/>
+        <Literal datatypeIRI="&xsd;string">Billy Burke
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#billy_burke"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#catherine_hardwicke"/>
+        <Literal datatypeIRI="&xsd;string">Catherine Hardwicke</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#catherine_hardwicke"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidade"/>
+        <NamedIndividual IRI="#diCaprio"/>
+        <Literal datatypeIRI="&xsd;string">USA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#diCaprio"/>
+        <Literal datatypeIRI="&xsd;string">Leonardo di Caprio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#diCaprio"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#eua"/>
+        <Literal datatypeIRI="&xsd;string">EUA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#f1"/>
+        <Literal datatypeIRI="&xsd;string">Django</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#data"/>
+        <NamedIndividual IRI="#f2"/>
+        <Literal datatypeIRI="&xsd;dateTime">2008-12-04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracao"/>
+        <NamedIndividual IRI="#f2"/>
+        <Literal datatypeIRI="&xsd;integer">122</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#f2"/>
+        <Literal datatypeIRI="&xsd;string">Twilight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#fran"/>
+        <Literal datatypeIRI="&xsd;string">França</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#frances"/>
+        <Literal datatypeIRI="&xsd;string">Francês
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#ingles"/>
+        <Literal datatypeIRI="&xsd;string">Inglês</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidade"/>
+        <NamedIndividual IRI="#joaquimDeAlmeida"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Português</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#joaquimDeAlmeida"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Joaquim de Almeida</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#kristen_stewart"/>
+        <Literal datatypeIRI="&xsd;string">Kristen Stewart
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#kristen_stewart"/>
+        <Literal datatypeIRI="&xsd;string">F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#melissa_rosenberg"/>
+        <Literal datatypeIRI="&xsd;string">Melissa Rosenberg
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#melissa_rosenberg"/>
+        <Literal datatypeIRI="&xsd;string">F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#portugal"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#portugues"/>
+        <Literal datatypeIRI="&xsd;string">Portugues</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#robert_pattinson"/>
+        <Literal datatypeIRI="&xsd;string">Robert Pattinson
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#robert_pattinson"/>
+        <Literal datatypeIRI="&xsd;string">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#taylor_lautner"/>
+        <Literal datatypeIRI="&xsd;string">Taylor Lautner
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#taylor_lautner"/>
+        <Literal datatypeIRI="&xsd;string">M</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Atuou"/>
+        <ObjectProperty IRI="#temActor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#foiComposta"/>
+        <ObjectProperty IRI="#Compôs"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#foiEscrita"/>
+        <ObjectProperty IRI="#Escreveu"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Realizou"/>
+        <ObjectProperty IRI="#temRealizador"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Atuou"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Compôs"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Escreveu"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Realizou"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temActor"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temArgumento"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temGénero"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temLingua"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temPaísOrigem"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temRealizador"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tempeçaMusical"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Atuou"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Compôs"/>
+        <Class IRI="#Peça_Musical"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Escreveu"/>
+        <ObjectUnionOf>
+            <Class IRI="#Argumento"/>
+            <Class IRI="#Livro"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Realizou"/>
+        <Class IRI="#Filme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temArgumento"/>
+        <Class IRI="#Argumento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temLingua"/>
+        <Class IRI="#Lingua"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temPaísOrigem"/>
+        <Class IRI="#País"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temRealizador"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tempeçaMusical"/>
+        <Class IRI="#Peça_Musical"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#data"/>
+        <Class IRI="#Filme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracao"/>
+        <Class IRI="#Filme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nacionalidade"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <ObjectUnionOf>
+            <Class IRI="#Filme"/>
+            <Class IRI="#Lingua"/>
+            <Class IRI="#País"/>
+            <Class IRI="#Pessoa"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sexo"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracao"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nacionalidade"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#diCaprio</IRI>
+        <Literal datatypeIRI="&xsd;string">Actor da cena</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

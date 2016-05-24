@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquivo_biografias xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/Users/Perez_25/Downloads/arquivo_biografias.xsd">
+    <biografia>
+        <data>1992-12-03</data>
+        <sujeito>Sérgio Simões</sujeito>
+        <local>Aveiro</local>
+        <evento>Aniversário do António</evento>
+    </biografia>
+    
+    <biografia>
+        <data>1992-12-03</data>
+        <sujeito>Sérgio Simões</sujeito>
+        <local>Aveiro</local>
+        <evento>Aniversário do António</evento>
+    </biografia>
+    
+</arquivo_biografias>

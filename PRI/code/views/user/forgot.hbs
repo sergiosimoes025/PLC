@@ -1,0 +1,14 @@
+
+<h1>{{ title }}</h1>
+
+{{#if message}}
+	<p><b>{{ message }}</b></p>
+{{/if}}
+
+<p>Provide your e-mail address so you can reset your password</p>
+
+<form method="post" action="/forgot">
+	<input type="email" name="email" placeholder="E-mail" />
+	<input type="hidden" name="_csrf" value="{{ csrftoken }}" />
+	<input type="submit" value="Send" />
+</form>

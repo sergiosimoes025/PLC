@@ -1,0 +1,705 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-22 "http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#"
+     xml:base="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-22="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22">
+        <author>Sérgio Simões</author>
+        <date>25 de Maio de 2015</date>
+        <subject>PRC</subject>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#author -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-22;author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#date -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-22;date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#subject -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-22;subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#faz_parte_da_turma -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;faz_parte_da_turma">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+        <rdfs:range rdf:resource="&untitled-ontology-22;Turma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#gosta_de_estudar -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;gosta_de_estudar">
+        <rdfs:range rdf:resource="&untitled-ontology-22;Disciplina"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Estudante"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#gosta_de_sumo -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;gosta_de_sumo">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Estudante"/>
+        <rdfs:range rdf:resource="&untitled-ontology-22;Sumo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#senta_se_á_direita_de -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;senta_se_á_direita_de">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+        <rdfs:range rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#senta_se_á_esquerda_de -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;senta_se_á_esquerda_de">
+        <rdfs:range rdf:resource="&untitled-ontology-22;Pessoa"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#tem_animal -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;tem_animal">
+        <rdfs:range rdf:resource="&untitled-ontology-22;Animal_irracional"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#tem_como_disciplina_favorita -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;tem_como_disciplina_favorita">
+        <rdfs:range rdf:resource="&untitled-ontology-22;Disciplina"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#tem_como_sumo_favorito -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;tem_como_sumo_favorito">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+        <rdfs:range rdf:resource="&untitled-ontology-22;Sumo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#tem_mochila -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;tem_mochila">
+        <rdfs:range rdf:resource="&untitled-ontology-22;Mochila"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#vai_viajar_para -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-22;vai_viajar_para">
+        <rdfs:range rdf:resource="&untitled-ontology-22;Europeia"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#chama_se -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-22;chama_se">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#senta_se_na -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-22;senta_se_na">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#tem_cor -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-22;tem_cor">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Mochila"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#tem_nome -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-22;tem_nome">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Cidade"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Disciplina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#tem_sabor -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-22;tem_sabor">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Sumo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#é_animal_do_tipo -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-22;é_animal_do_tipo">
+        <rdfs:domain rdf:resource="&untitled-ontology-22;Animal_irracional"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Animal_irracional -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Animal_irracional">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;é_animal_do_tipo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Cidade -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Cidade">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;tem_nome"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Disciplina -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Disciplina">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;tem_nome"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Estudante -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Estudante">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;tem_como_disciplina_favorita"/>
+                <owl:onClass rdf:resource="&untitled-ontology-22;Disciplina"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;senta_se_á_esquerda_de"/>
+                <owl:onClass rdf:resource="&untitled-ontology-22;Pessoa"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;tem_animal"/>
+                <owl:onClass rdf:resource="&untitled-ontology-22;Animal_irracional"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;vai_viajar_para"/>
+                <owl:onClass rdf:resource="&untitled-ontology-22;Cidade"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;senta_se_na"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;senta_se_á_direita_de"/>
+                <owl:onClass rdf:resource="&untitled-ontology-22;Pessoa"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;tem_como_sumo_favorito"/>
+                <owl:onClass rdf:resource="&untitled-ontology-22;Sumo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-22;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Europeia -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Europeia">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-22;Cidade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Mochila -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Mochila">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;tem_cor"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Pessoa -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Sumo -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Sumo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-22;tem_sabor"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Turma -->
+
+    <owl:Class rdf:about="&untitled-ontology-22;Turma"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Abacaxi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Abacaxi">
+        <rdf:type rdf:resource="&untitled-ontology-22;Sumo"/>
+        <tem_sabor rdf:datatype="&xsd;string">abacaxi</tem_sabor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Ana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Ana">
+        <rdf:type rdf:resource="&untitled-ontology-22;Estudante"/>
+        <chama_se rdf:datatype="&xsd;string">Ana</chama_se>
+        <senta_se_na rdf:datatype="&xsd;string">meio </senta_se_na>
+        <tem_como_sumo_favorito rdf:resource="&untitled-ontology-22;Limão"/>
+        <faz_parte_da_turma rdf:resource="&untitled-ontology-22;TP3"/>
+        <tem_animal rdf:resource="&untitled-ontology-22;a3"/>
+        <vai_viajar_para rdf:resource="&untitled-ontology-22;c3"/>
+        <tem_como_disciplina_favorita rdf:resource="&untitled-ontology-22;d3"/>
+        <tem_mochila rdf:resource="&untitled-ontology-22;mochila4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Joana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Joana">
+        <rdf:type rdf:resource="&untitled-ontology-22;Estudante"/>
+        <chama_se rdf:datatype="&xsd;string">Joana</chama_se>
+        <senta_se_na rdf:datatype="&xsd;string">segunda posição a partir da esquerda</senta_se_na>
+        <tem_como_sumo_favorito rdf:resource="&untitled-ontology-22;Abacaxi"/>
+        <senta_se_á_direita_de rdf:resource="&untitled-ontology-22;Pati"/>
+        <faz_parte_da_turma rdf:resource="&untitled-ontology-22;TP3"/>
+        <tem_animal rdf:resource="&untitled-ontology-22;a2"/>
+        <vai_viajar_para rdf:resource="&untitled-ontology-22;c2"/>
+        <tem_como_disciplina_favorita rdf:resource="&untitled-ontology-22;d2"/>
+        <tem_mochila rdf:resource="&untitled-ontology-22;mochila5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Jéssica -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Jéssica">
+        <rdf:type rdf:resource="&untitled-ontology-22;Estudante"/>
+        <chama_se rdf:datatype="&xsd;string">Jéssica
+</chama_se>
+        <senta_se_á_direita_de rdf:resource="&untitled-ontology-22;Ana"/>
+        <tem_como_sumo_favorito rdf:resource="&untitled-ontology-22;Laranja"/>
+        <senta_se_á_esquerda_de rdf:resource="&untitled-ontology-22;Renata"/>
+        <faz_parte_da_turma rdf:resource="&untitled-ontology-22;TP3"/>
+        <tem_animal rdf:resource="&untitled-ontology-22;a4"/>
+        <vai_viajar_para rdf:resource="&untitled-ontology-22;c4"/>
+        <tem_como_disciplina_favorita rdf:resource="&untitled-ontology-22;d4"/>
+        <tem_mochila rdf:resource="&untitled-ontology-22;mochila1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Laranja -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Laranja">
+        <rdf:type rdf:resource="&untitled-ontology-22;Sumo"/>
+        <tem_sabor rdf:datatype="&xsd;string">laranja</tem_sabor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Limão -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Limão">
+        <rdf:type rdf:resource="&untitled-ontology-22;Sumo"/>
+        <tem_sabor rdf:datatype="&xsd;string">limão</tem_sabor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Morango -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Morango">
+        <rdf:type rdf:resource="&untitled-ontology-22;Sumo"/>
+        <tem_sabor rdf:datatype="&xsd;string">morango</tem_sabor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Pati -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Pati">
+        <rdf:type rdf:resource="&untitled-ontology-22;Estudante"/>
+        <chama_se rdf:datatype="&xsd;string">Pati</chama_se>
+        <senta_se_na rdf:datatype="&xsd;string">primeiro lugar na esquerda</senta_se_na>
+        <senta_se_á_esquerda_de rdf:resource="&untitled-ontology-22;Joana"/>
+        <tem_como_sumo_favorito rdf:resource="&untitled-ontology-22;Morango"/>
+        <faz_parte_da_turma rdf:resource="&untitled-ontology-22;TP3"/>
+        <tem_animal rdf:resource="&untitled-ontology-22;a1"/>
+        <vai_viajar_para rdf:resource="&untitled-ontology-22;c1"/>
+        <tem_como_disciplina_favorita rdf:resource="&untitled-ontology-22;d1"/>
+        <tem_mochila rdf:resource="&untitled-ontology-22;mochila2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#Renata -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;Renata">
+        <rdf:type rdf:resource="&untitled-ontology-22;Estudante"/>
+        <chama_se rdf:datatype="&xsd;string">Renata</chama_se>
+        <senta_se_á_direita_de rdf:resource="&untitled-ontology-22;Jéssica"/>
+        <faz_parte_da_turma rdf:resource="&untitled-ontology-22;TP3"/>
+        <tem_animal rdf:resource="&untitled-ontology-22;a5"/>
+        <vai_viajar_para rdf:resource="&untitled-ontology-22;c5"/>
+        <tem_como_disciplina_favorita rdf:resource="&untitled-ontology-22;d5"/>
+        <tem_como_sumo_favorito rdf:resource="&untitled-ontology-22;maracujá"/>
+        <tem_mochila rdf:resource="&untitled-ontology-22;mochila3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#TP3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;TP3">
+        <rdf:type rdf:resource="&untitled-ontology-22;Turma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#a1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;a1">
+        <é_animal_do_tipo rdf:datatype="&xsd;string">Canário</é_animal_do_tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#a2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;a2">
+        <é_animal_do_tipo rdf:datatype="&xsd;string">cão</é_animal_do_tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#a3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;a3">
+        <é_animal_do_tipo rdf:datatype="&xsd;string">Gato</é_animal_do_tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#a4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;a4">
+        <é_animal_do_tipo rdf:datatype="&xsd;string">Cavalo</é_animal_do_tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#a5 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;a5">
+        <é_animal_do_tipo rdf:datatype="&xsd;string">Hamster
+</é_animal_do_tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#c1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;c1">
+        <rdf:type rdf:resource="&untitled-ontology-22;Europeia"/>
+        <tem_nome rdf:datatype="&xsd;string">Londres</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#c2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;c2">
+        <rdf:type rdf:resource="&untitled-ontology-22;Europeia"/>
+        <tem_nome rdf:datatype="&xsd;string">Paris</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#c3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;c3">
+        <rdf:type rdf:resource="&untitled-ontology-22;Europeia"/>
+        <tem_nome rdf:datatype="&xsd;string">Bruxelas
+</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#c4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;c4">
+        <rdf:type rdf:resource="&untitled-ontology-22;Europeia"/>
+        <tem_nome rdf:datatype="&xsd;string">Roma</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#c5 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;c5">
+        <rdf:type rdf:resource="&untitled-ontology-22;Europeia"/>
+        <tem_nome rdf:datatype="&xsd;string">Estocolmo</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#d1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;d1">
+        <rdf:type rdf:resource="&untitled-ontology-22;Disciplina"/>
+        <tem_nome rdf:datatype="&xsd;string">História</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#d2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;d2">
+        <rdf:type rdf:resource="&untitled-ontology-22;Disciplina"/>
+        <tem_nome rdf:datatype="&xsd;string">Matemática</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#d3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;d3">
+        <rdf:type rdf:resource="&untitled-ontology-22;Disciplina"/>
+        <tem_nome rdf:datatype="&xsd;string">Português</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#d4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;d4">
+        <rdf:type rdf:resource="&untitled-ontology-22;Disciplina"/>
+        <tem_nome rdf:datatype="&xsd;string">Biologia</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#d5 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;d5">
+        <rdf:type rdf:resource="&untitled-ontology-22;Disciplina"/>
+        <tem_nome rdf:datatype="&xsd;string">Artes
+</tem_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#maracujá -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;maracujá">
+        <rdf:type rdf:resource="&untitled-ontology-22;Sumo"/>
+        <tem_sabor rdf:datatype="&xsd;string">maracujá</tem_sabor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#mochila1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;mochila1">
+        <rdf:type rdf:resource="&untitled-ontology-22;Mochila"/>
+        <tem_cor>Verde
+</tem_cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#mochila2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;mochila2">
+        <rdf:type rdf:resource="&untitled-ontology-22;Mochila"/>
+        <tem_cor rdf:datatype="&xsd;string">Amarela</tem_cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#mochila3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;mochila3">
+        <rdf:type rdf:resource="&untitled-ontology-22;Mochila"/>
+        <tem_cor rdf:datatype="&xsd;string">Preta
+</tem_cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#mochila4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;mochila4">
+        <rdf:type rdf:resource="&untitled-ontology-22;Mochila"/>
+        <tem_cor rdf:datatype="&xsd;string">Vermelha</tem_cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-22#mochila5 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-22;mochila5">
+        <rdf:type rdf:resource="&untitled-ontology-22;Mochila"/>
+        <tem_cor rdf:datatype="&xsd;string">Azul</tem_cor>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

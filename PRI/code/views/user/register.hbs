@@ -1,0 +1,106 @@
+
+  {{#contentFor 'header'}}
+    <link href='stylesheets/landing-font.css' rel='stylesheet'>
+    <link href='plugins/bootstrap-formhelpers.css' rel='stylesheet'>
+  {{/contentFor}}
+
+    <!-- /Signup -->
+    <div class='container' id='signup'>
+      <div class='row'>
+        <div class='col-md-6 col-md-offset-3'>
+          <div class='title'>
+            <h1 class='h4'>Signup</h1>
+            <p>
+              | Have an account?
+              <a href='/login'>Login</a>
+            </p>
+          </div>
+          <div class='row'>
+            <div class='col-md-12'>
+              {{#if message}}
+                <div class='alert alert-danger small'>
+                  {{ message }}
+                </div>
+              {{/if}}
+            </div>
+            <form role='form' method='post' action='/register'>
+              <input type='hidden' name='_csrf' value='{{ csrftoken }}' />
+
+              <div class='form-group col-md-6'>
+                <input class='form-control' placeholder='Your email' type='email' name='email'>
+              </div>
+              <div class='form-group col-md-6'>
+                <input class='form-control' placeholder='Password' type='password' name='password'>
+              </div>
+              <div class='col-md-6' id='left-column'>
+                <div class='form-group'>
+                  <input class='form-control' placeholder='First Name' type='text' name='name[first]'>
+                </div>
+                <div class='form-group'>
+                  <input class='form-control' placeholder='Last Name' type='text' name='name[last]'>
+                </div>
+              </div>
+              <div class='col-md-6' id='right-column'>
+                <div class='form-group' id='selectbox'>
+                  <div class='bfh-selectbox bfh-countries' data-country='PT' id='countries_states1' ></div>
+                  <div class='bfh-selectbox bfh-states' data-blank='false' data-country='countries_states1' ></div>
+                </div>
+
+                <input type='hidden' name='country' id='result-country' />
+                <input type='hidden' name='city' id='result-city' />
+
+                <div class='form-group' id='genders'>
+                  <label>
+                    <input id='female' name='gender' type='radio' value='female'>
+                    Female
+                  </label>
+                  <label>
+                    <input id='male' name='gender' type='radio' value='male'>
+                    Male
+                  </label>
+                </div>
+              </div>
+            
+          </div>
+            <div class='row modal-footer'>
+		            <div class='col-md-6'>
+		              <p>
+		                By clicking Create account, you agree to our
+		                <a href='/about' target='_blank'>Terms</a>
+		                and that you have read our
+		                <a href='/privacy' target='_blank'>Data Use Policy,</a>
+		              </p>
+		            </div>
+		            <div class='col-md-6'>
+		              <button class='btn btn-primary pull-right' type='submit'>Create account</button>
+		            </div>
+          		</div>	
+          	</form>
+        </div>
+      </div>
+    </div>
+
+    {{#contentFor 'scripts'}}
+      <script type='text/javascript' src='/plugins/bootstrap-formhelpers.js'></script>
+      <script type='text/javascript'>
+        $(document).ready(function() {
+          $('form').submit(function( event ) {
+            $('#result-country').val($('.bfh-countries .bfh-selectbox-option').text());
+            $('#result-city').val($('.bfh-states .bfh-selectbox-option').text());
+          });
+
+          var $videoModal = $(".video-modal");
+          $("#video-player").click(function () {
+            $videoModal.toggleClass("active");
+            clearInterval(interval);
+            interval = null;
+          });
+          $videoModal.click(function () {
+            $videoModal.removeClass("active");
+          });
+          $videoModal.find(".wrap").click(function (e) {
+            e.stopPropagation();
+          });
+        });
+      </script>
+    {{/contentFor}}

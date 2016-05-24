@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-9 "http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#" >
+    <!ENTITY untitled-ontology-5 "http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-5#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9">
+        <rdfs:comment>Trabalho de casa 1 - Ontolgia sobre Sapatilhas</rdfs:comment>
+        <untitled-ontology-5:creator>Sérgio Simões</untitled-ontology-5:creator>
+        <untitled-ontology-5:date>28-01-2015
+</untitled-ontology-5:date>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#define_preço -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;define_preço">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Companhia"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#lançada_por -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;lançada_por">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Companhia"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#trabalha_para -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;trabalha_para">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Empresa"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Trabalhador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#é_montada_por -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;é_montada_por">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Artesanal"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#tem_cor -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;tem_cor">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#tem_designação -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;tem_designação">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#tem_idade -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;tem_idade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#tem_localização -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;tem_localização">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Companhia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#tem_numero -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;tem_numero">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Adidas -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Adidas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Companhia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Artesanal -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Artesanal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Empresa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Companhia -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Companhia">
+        <rdfs:comment>Companhias que criam sapatilhas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Element -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Element">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Companhia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Empresa -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Empresa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Nike -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Nike">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Companhia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Pessoa -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Puma -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Puma">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Companhia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_andebol -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_andebol">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha_indoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_basquetebol -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_basquetebol">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha_indoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_casual -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_casual">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_ciclismo -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_ciclismo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha_desporto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_corrida -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_corrida">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha_desporto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_dança -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_dança">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_desporto -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_desporto">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_futsal -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_futsal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha_indoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_indoor -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_indoor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha_desporto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Sapatilha_montanha -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Sapatilha_montanha">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Sapatilha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Timberland -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Timberland">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Companhia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#Trabalhador -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Trabalhador">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#C1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;C1">
+        <rdf:type rdf:resource="&untitled-ontology-9;Adidas"/>
+        <define_preço rdf:resource="&untitled-ontology-9;S1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#C2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;C2">
+        <rdf:type rdf:resource="&untitled-ontology-9;Element"/>
+        <tem_localização rdf:datatype="&xsd;string">Lisboa
+</tem_localização>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#E1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;E1">
+        <rdf:type rdf:resource="&untitled-ontology-9;Artesanal"/>
+        <tem_designação rdf:datatype="&xsd;string">Fábrica Calçado - Morais</tem_designação>
+        <trabalha_para rdf:resource="&untitled-ontology-9;C2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#E2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;E2">
+        <rdf:type rdf:resource="&untitled-ontology-9;Artesanal"/>
+        <tem_designação rdf:datatype="&xsd;string">Fábrica calçado - Guimarães</tem_designação>
+        <trabalha_para rdf:resource="&untitled-ontology-9;C1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#S1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;S1">
+        <rdf:type rdf:resource="&untitled-ontology-9;Sapatilha_futsal"/>
+        <tem_numero rdf:datatype="&xsd;string">35-40</tem_numero>
+        <tem_designação rdf:datatype="&xsd;string">Adidas f10+</tem_designação>
+        <tem_cor rdf:datatype="&xsd;string">Cor-de-laranja
+</tem_cor>
+        <lançada_por rdf:resource="&untitled-ontology-9;C1"/>
+        <é_montada_por rdf:resource="&untitled-ontology-9;E1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#S2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;S2">
+        <rdf:type rdf:resource="&untitled-ontology-9;Sapatilha_casual"/>
+        <tem_numero rdf:datatype="&xsd;decimal">43</tem_numero>
+        <tem_cor rdf:datatype="&xsd;string">Vermelho</tem_cor>
+        <lançada_por rdf:resource="&untitled-ontology-9;C2"/>
+        <é_montada_por rdf:resource="&untitled-ontology-9;E2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#S3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;S3">
+        <rdf:type rdf:resource="&untitled-ontology-9;Sapatilha_basquetebol"/>
+        <tem_numero rdf:datatype="&xsd;decimal">45</tem_numero>
+        <tem_designação rdf:datatype="&xsd;string">Chicago-runners</tem_designação>
+        <lançada_por rdf:resource="&untitled-ontology-9;C2"/>
+        <é_montada_por rdf:resource="&untitled-ontology-9;E2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#T1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;T1">
+        <rdf:type rdf:resource="&untitled-ontology-9;Trabalhador"/>
+        <tem_designação rdf:datatype="&xsd;string">Sérgio Simões</tem_designação>
+        <trabalha_para rdf:resource="&untitled-ontology-9;E1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/1/untitled-ontology-9#T2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;T2">
+        <rdf:type rdf:resource="&untitled-ontology-9;Trabalhador"/>
+        <tem_designação rdf:datatype="&xsd;string">David Moreira</tem_designação>
+        <trabalha_para rdf:resource="&untitled-ontology-9;E2"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

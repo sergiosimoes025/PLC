@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<arv-gen>
+    <pessoa
+        id="p1">
+        <nome>David Ramalho</nome>
+        <data-nasc>1994-11-03</data-nasc>
+    </pessoa>
+    <pessoa
+        id="p2">
+        <nome>Manuela Ramalho</nome>
+        <data-nasc>1999-03-11</data-nasc>
+    </pessoa>
+    <pessoa id="p3">
+        <nome>José dos Santos Ramalho</nome>
+        <data-nasc>1941-06-02</data-nasc>
+        <pai ref="p1"/>
+        <mae ref="p2"/>
+    </pessoa>
+    <pessoa id="p4">
+        <nome>José Adolfo Ramalho</nome>
+        <data-nasc>1941-06-02</data-nasc>
+        <pai ref="p1"/>
+        <mae ref="p2"/>
+    </pessoa>
+    <pessoa id="p5">
+        <nome>Rodolfa Ramalho</nome>
+        <data-nasc>1941-06-02</data-nasc>
+        <pai ref="p1"/>
+        <mae ref="p2"/>
+    </pessoa>
+    <pessoa id="p6">
+        <nome>Leite Ramalho</nome>
+        <data-nasc>1941-06-02</data-nasc>
+        <pai ref="p3"/>
+    </pessoa>
+    <pessoa id="p7">
+        <nome>Isaura Ramalho</nome> 
+        <data-nasc>1967-02-01</data-nasc> 
+        <pai ref="p3"/>
+    </pessoa>
+    <pessoa id="p12">
+        <nome>José dos Santos Ramalho</nome>
+        <data-nasc>1941-06-02</data-nasc>
+        <pai ref="p6"/>
+    </pessoa>
+</arv-gen>

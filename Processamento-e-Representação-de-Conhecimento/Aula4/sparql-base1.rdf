@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/example#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+
+ex:P a foaf:Person ;
+  foaf:nickname "Peter" .
+
+ex:N a foaf:Person ;
+  foaf:name "Nancy Mayr"^^xsd:string ;
+  foaf:nickname "Nance" .
+
+ex:M a mo:MusicArtist ;
+  foaf:nickname "Mario" .
+
+ex:L
+  foaf:nickname "Luigi"@it ;
+  foaf:nickname "Ruiji"@jp .
+
+ex:B a foaf:Person ;
+  foaf:name "Barbara Mayr" ;
+  foaf:nickname "Babs"@en .
+
+ex:T a mo:MusicGroup ;
+  foaf:name "The Bros." ;
+  foaf:member ex:M ;
+  foaf:member ex:L .
+
+ex:G a mo:Performance ;
+  dc:title "Gig of The Bros. at the Donkey Kong Club" ;
+  mo:performer ex:T ;
+  mo:listener ex:P , ex:N , [
+    a foaf:Person ;
+    foaf:nickname "Babs"@en ] .
+

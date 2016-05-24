@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indice_autores>
+    <author> Eric Miller </author>
+    <list_keys>
+        <key>Metadata.Workshop</key>
+    </list_keys>
+    <author> Jean Godby </author>
+    <list_keys>
+        <key>Metadata.Workshop</key>
+    </list_keys>
+    <author> Perez 25 </author>
+    <list_keys>
+        <key>Metadata.Formats</key>
+    </list_keys>
+    <author> Ron Daniel </author>
+    <list_keys>
+        <key>Metadata.Workshop</key>
+        <key>Metadata.Formats</key>
+    </list_keys>
+</indice_autores>

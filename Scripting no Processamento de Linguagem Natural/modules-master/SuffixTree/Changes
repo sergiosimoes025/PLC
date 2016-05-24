@@ -1,0 +1,6 @@
+Revision history for Perl extension SuffixTree.
+
+0.01  Sun Nov 17 07:35:00 2013
+	- original version; created by h2xs 1.23 with options
+		-XAn SuffixTree
+

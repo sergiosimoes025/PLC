@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT livro-receitas (abertura,receitas)>
+<!ELEMENT abertura (autor,data,local)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT local (#PCDATA)>
+<!ELEMENT receitas (receita*) >
+<!ELEMENT receita (titulo,ingredientes,preparação)>
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT ingredientes (ingrediente+) >
+<!ELEMENT ingrediente (#PCDATA) >
+<!ELEMENT preparacao (instrucao+)>
+<!ELEMENT instrucao (#PCDATA) >
+
+<!ATTLIST receita lingua CDATA #REQUIRED >
+<!ATTLIST receita classificacao CDATA #REQUIRED >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

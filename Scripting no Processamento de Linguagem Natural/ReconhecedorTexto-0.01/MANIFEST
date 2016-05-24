@@ -1,0 +1,17 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/ReconhecedorTexto.t
+lib/ReconhecedorTexto.pm
+ficheiros_de_teste/teste.txt
+ficheiros_de_teste/teste2.txt
+ficheiros_de_teste/teste3.txt
+ficheiros_de_teste/teste5.txt
+ficheiros_de_teste/teste4.txt
+ficheiros_de_teste/testeus.txt
+dic/pt-PT.dic
+dic/entidades.txt
+lib/main.pl
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

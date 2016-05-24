@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ELEMENT anúncio (profissão,corpo,contactos,disponibilidade)>
+<!ELEMENT profissão (#PCDATA)>
+<!ELEMENT corpo (#PCDATA|idade|morada)*>
+<!ELEMENT idade (#PCDATA)>
+<!ELEMENT morada (#PCDATA)>
+<!ELEMENT disponibilidade (#PCDATA)>
+<!ELEMENT contactos (email|pagweb|telefone)+>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT pagweb (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>

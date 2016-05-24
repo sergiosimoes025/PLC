@@ -1,0 +1,48 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="name"/>
+  <variable name="abs"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot; Schneider</literal></binding>
+   <binding name="abs"><literal xml:lang="de">Josef „Pepi“ Schneider (* 1901; † unbekannt) war ein österreichischer Fußballspieler und Fußballtrainer.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot; Schneider</literal></binding>
+   <binding name="abs"><literal xml:lang="fr">Josef « Pépi » Schneider, né en 1901, était un joueur et un entraîneur autrichien de football.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot; Schneider</literal></binding>
+   <binding name="abs"><literal xml:lang="en">Josef &quot;Pepi&quot; Schneider (1901-Unknown) was an Austrian football player and manager.He played for Wiener AF, SC Bewegung XX, Brigittenauer AC, Austria Amateure, FC Ostmark, Wiener AC, MTK Hungária Budapest, Brooklyn Hakoah, Grasshoppers-Zürich, Stade Rennais, Le Havre AC and Olympique Alès.He coached Stade Rennais, Le Havre AC and Austria Wien.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot; Schneider</literal></binding>
+   <binding name="abs"><literal xml:lang="it">Josef Schneider, detto Pépi (1901 – 1972), è stato un calciatore austriaco, di ruolo difensore.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot;&quot;&quot;Gopi Mohan Pinnamaneni&quot;&quot;&quot;</literal></binding>
+   <binding name="abs"><literal xml:lang="en">Gopimohan (born Pinnamaneni Gopi Mohan) is an Indian screenplay and story writer who works in the Telugu film industry.Gopi Mohan worked in the direction department for N.Shankar&#39;s 1999 Telugu film Yamajathakudu, B. Gopal&#39;s 2000 Telugu film Vamsi.He assisted in script and direction for Teja&#39;s 2001 super hit Telugu film Nuvvu Nenu.Later he wrote the screenplay in 2002 Telugu super hit film Santosham.He is associated with successful directors Dasaradh, Sreenu Vytla, Surender Reddy, Teja, G.Nageswara Reddy from past ten years.In the past, he has written screenplays for movies such as Santosham, Venky, Mr &amp; Mrs Sailajakrishnamurthy, Sri, Ashok, Dhee, Dubai Seenu, Lakshyam, Swagatam, Jhummandi Naadam, Dhenikaina Ready, Greeku Veerudu. He is now writing screenplays with Veeru Potla for the movie Doosukeltha.He first wrote the story in the 2008 super hit Telugu film Ready.He wrote stories for director Sreenu Vytla films Ready, King, Namo Venkatesa, Dookudu, Baadshah.Gopi Mohan and Kona Venkat worked together for many super hit films as script writers.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot;&quot;&quot;Kolli Santosh Ravindranath&quot;&quot;&quot;</literal></binding>
+   <binding name="abs"><literal xml:lang="en">K. S. Ravindra (Kolli Santosh Ravindranath) is an Indian screenwriter and story writer who works in the Telugu and Kannada film industries.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot;Alek&quot;, &quot;Glizda&quot;, &quot;Kopernicki&quot;, &quot;Koziorożec&quot;</literal></binding>
+   <binding name="abs"><literal xml:lang="en">Maciej Aleksy Dawidowski codename: Alek, Glizda, Kopernicki, Koziorożec (born November 3, 1920, Drohobycz — died March 30, 1943, Warsaw, Poland) was a Polish Scoutmaster (podharcmistrz), Polish Scouting resistance activist and Second Lieutenant of the Armia Krajowa during the Second World War. Dawidowski is a main character in the books Kamienie na Szaniec by Aleksander Kamiński, and Rudy, Alek, Zośka by Barbara Wachowicz.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot;Alek&quot;, &quot;Glizda&quot;, &quot;Kopernicki&quot;, &quot;Koziorożec&quot;</literal></binding>
+   <binding name="abs"><literal xml:lang="fr">Maciej Aleksy Dawidowski noms de code: Alek, Glizda, Kopernicki, Koziorożec (né le 3 novembre 1920, Drohobycz — mort le 30 mars 1943, Varsovie, Pologne) était un assistant scoutmestre polonais, membre des Szare Szeregi et sous-lieutenant dans l&#39;Armia Krajowa pendant la Seconde Guerre mondiale. Dawidowski est l&#39;un des principaux personnages des livres Kamienie na szaniec d&#39;Aleksander Kamiński, et Rudy, Alek, Zośka de Barbara Wachowicz.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot;Alek&quot;, &quot;Glizda&quot;, &quot;Kopernicki&quot;, &quot;Koziorożec&quot;</literal></binding>
+   <binding name="abs"><literal xml:lang="pl">Maciej Aleksy Dawidowski, ps. Alek, a także Glizda, Kopernicki, Koziorożec (ur. 3 listopada 1920 w Drohobyczu, zm. 30 marca 1943 w Warszawie) – instruktor harcerski, podharcmistrz, sierżant podchorąży Armii Krajowej, bohater książki Aleksandra Kamińskiego pt. Kamienie na szaniec.</literal></binding>
+  </result>
+  <result>
+   <binding name="name"><literal xml:lang="en">&quot;Aleksander Chekov&quot;</literal></binding>
+   <binding name="abs"><literal xml:lang="en">Aleksander Chekov (Russian: Александр Чехов, tr. Aleksander Chekov) also known as Aleksandr Chekov, or Aleksander Chekhov, is a Russian professional wrestler. He currently wrestles on the independent circuit throughout the Southeastern United States as well as New England and Puerto Rico as one half of the &quot;Red Devil Fight Team&quot; tag team with Mikhail Ivanov.</literal></binding>
+  </result>
+ </results>
+</sparql>

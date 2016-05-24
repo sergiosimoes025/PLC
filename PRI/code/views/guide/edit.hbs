@@ -1,0 +1,316 @@
+  
+  {{#contentFor 'header'}}
+    <link href='/plugins/bootstrap-formhelpers.css' rel='stylesheet'>
+  {{/contentFor}}
+    
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8 col-md-offset-2' id='new-guide'>
+          <form id='guide-form' method='post' action='/guide/{{ guide._id }}/edit' enctype="multipart/form-data" role='form'>
+            <input type='hidden' id='totalplaces' name='totalplaces' value='0' />
+            <div class='header'>
+              <h1>
+                <span class='icon icon-map-route'></span>
+                Edit journey
+              </h1>
+              <!--
+              <div class='pull-right'>
+                <input checked='checked' class='switch' data-off-text='PRIVATE' data-on-text='PUBLIC' data-size='normal' name='privacyStatus' type='checkbox'>
+              </div>
+              -->
+            </div>
+            <div class='row guide-info'>
+              <div class='form-group col-md-12'>
+                <input class='form-control input-lg' name='title' placeholder='Name your journey' type='text' value='{{ guide.title }}'>
+              </div>
+              <div class='form-group col-md-8'>
+                <textarea class='form-control' name='description' placeholder='Write an awesome description about it' rows='6'>{{ guide.description }}</textarea>
+              </div>
+              <div class='form-group col-md-4'>
+                <div class='form-group'>
+                  <div class='bfh-selectbox'>
+                    <div>Select category</div>
+                    <div data-value='1'>Shopping</div>
+                    <div data-value='2'>Gardens</div>
+                    <div data-value='3'>Museums</div>
+                    <div data-value='4'>Night life</div>
+                    <div data-value='5'>Attractions</div>
+                    <div data-value='6'>Entertainment</div>
+                  </div>
+                  <input type='hidden' name='category' id='result-category' />
+                </div>
+              </div>
+            </div>
+            <div class='divider'></div>
+            <div id='guide-places'>
+             {{#each guide.places}}
+	             <article class='place'>
+	                <div class='wrap'>
+	                  <header>
+	                    <h1 class='h4'>Place</h1>
+	                  </header>
+	                  <div class='row'>
+	                    <div class='col-md-8'>
+	                      <div class='form-group'>
+	                        <input class='form-control' placeholder='Title' id='place-title' name='places.{{@index}}.title' type='text' value='{{ title }}'>
+	                      </div>
+	                      <div class='form-group'>
+	                        <textarea class='form-control' placeholder='Share your experience about this place'  name='places.{{@index}}.description' rows='6'>{{ description }}</textarea>
+	                      </div>
+	                      <div class='form-group'>
+	                        <input class='form-control' id='map_input-{{@index}}' placeholder='Type to search the place address' type='text'>
+	                        <input type='hidden' data-geo-{{@index}}='lat' name="places.{{@index}}.lat" value='{{ lat }}'/>
+	                        <input type='hidden' data-geo-{{@index}}='lng' name="places.{{@index}}.lng" value='{{ lng }}'/>
+	                      </div>
+	                    </div>
+	                    <div class='col-md-4'>
+	                      <div class='form-group' id='imageInput'>
+	                        <label for='imageInput'>Image</label>
+	                        <p class='help-block'>Upload one image:</p>
+	                        <input class='form-control imageSelect' id='imageInput' type='file' name='{{@index}}' value='{{ picture }}' />
+	                      </div>
+	                      <img data-src='{{ picture }}' class='placePicture' />
+	                    <!-- <div class='form-group'>
+	                        <input class='form-control' placeholder='...or insert image URL' type='url'>
+	                      </div>
+	                    -->
+	                    </div>
+	                    <div class='col-md-12'>
+	                      <div id='map_canvas-{{@index}}' class='map_canvas-{{@index}}' style="width:710px;height:200px;"></div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </article>
+	            {{/each}}
+            </div>
+            <div class='divider'></div>
+            <div class='footer'>
+              <div class='row'>
+                <div class='col-md-6'>
+                  <a class='newPlace' href='#'>+ New place</a>
+                </div>
+                <div class='col-md-6'>
+                  <div id='progress'></div>
+                  <button class='btn btn-primary pull-right' type='submit'>Update</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div id="progress"></div>
+        </div>
+      </div>
+    </div>
+
+    {{#contentFor 'scripts'}}
+      <script type='text/javascript' src='/plugins/bootstrap-formhelpers.js'></script>
+      <!--<script type='text/javascript' src='/plugins/bootstrap-switch.js'></script>-->
+      <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?v=3.5&sensor=false&amp;libraries=places'></script>
+      <script type='text/javascript' src='/javascripts/geocomplete.js'></script>
+      <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js'></script>
+      <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.0/spin.min.js'></script>
+
+      <script type='text/javascript'>
+       $(document).ready(function() {
+
+          var id = {{ guide.places.length }} - 1;
+
+          $('.placePicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:100, height:100, crop: 'thumb', quality:90
+          });
+
+          $('span.bfh-selectbox-option').html('{{ guide.category }}');
+          
+          {{#each guide.places}}
+            $("#map_input-{{@index}}").geocomplete({
+                location: [{{ lat }}, {{ lng }}],
+                map: '.map_canvas-{{@index}}',
+                details : 'form',
+                detailsAttribute: "data-geo-{{@index}}",
+                markerOptions : {
+                  draggable : true
+                }
+            }).bind("geocode:dragged", function(event, latLng) {
+              $('input[name="places.{{@index}}.lat"]').val(latLng.lat());
+              $('input[name="places.{{@index}}.lng"]').val(latLng.lng());
+            });
+          {{/each}}
+
+          var div = $('#guide-places');
+          var add = $('.newPlace');
+
+          add.on('click', function() {
+            id++;
+            $('input[name=totalplaces]').val(id+1);
+            $("<article class='place'>"
+                +"<div class='wrap'>"
+                  +"<header>"
+                    +"<h1 class='h4'>New Place</h1>"
+                  +"</header>"
+                  +"<div class='row'>"
+                    +"<div class='col-md-8'>" 
+                      +"<div class='form-group'>"
+                        +"<input class='form-control' placeholder='Title' name='places."+id+".title' type='text'>"
+                      +"</div>"
+                      +"<div class='form-group'>"
+                        +"<textarea class='form-control' placeholder='Share your experience about this place'  name='places."+id+".description' rows='6'></textarea>"
+                      +"</div>"
+                      +"<div class='form-group'>"
+                        +"<input class='form-control' id='map_input-"+id+"' placeholder='Type to search the place adress' type='text'>"
+                        +"<input type='hidden' data-geo-"+id+"='lat' name='places."+id+".lat' />"
+                        +"<input type='hidden' data-geo-"+id+"='lng' name='places."+id+".lng' />"
+                      +"</div>"
+                    +"</div>"
+                    +"<div class='col-md-4'>"
+                      +"<div class='form-group' id='imageInput'>"
+                        +"<label for='imageInput'>Image</label>"
+                        +"<p class='help-block'>Upload one image:</p>"
+                        +"<input class='form-control imageSelect' id='imageInput' name='"+id+"' type='file' />"
+                      +"</div>"
+                      //+"<div class='form-group'>"
+                      //  +"<input class='form-control' placeholder='...or insert image URL' type='url'>"
+                      //+"</div>"
+                    +"</div>"
+                    +"<div class='col-md-12'>"
+                      +"<div class='map_canvas-"+id+"' style='width:710px;height:200px;'></div>"
+                    +"</div>"
+                  +"</div>"
+                +"</div>"
+              +"</article>"
+            ).appendTo(div);
+
+            $("#map_input-"+id).geocomplete({
+              map: '.map_canvas-'+id,
+              details : 'form',
+              detailsAttribute: "data-geo-"+id,
+              markerOptions : {
+                draggable : true
+              }
+            }).bind("geocode:dragged", function(event, latLng) {
+              $('input[name="places.'+id+'.lat"]').val(latLng.lat());
+              $('input[name="places.'+id+'.lng"]').val(latLng.lng());
+            });
+
+            return false; // faz com que nao retorne o valor do trigger link .newPlace, que seria # (cardinal) e levaria a pagina para o topo do browser
+          });
+
+          $('input:file').on('change', function() {
+            $("input[name=totalplaces]").val(parseInt($("input[name=totalplaces]").val()) + 1);
+          });
+          
+          $("#guide-form").submit(function(e) {
+            e.preventDefault();
+          })
+          .validate({
+            rules: {
+                title: {
+                  required: true,
+                  minlength: 5
+                },
+                description: {
+                  required: true,
+                  minlength: 10
+                }
+            },
+            submitHandler: function(form) {
+               var opts = {
+                lines: 8, // The number of lines to draw
+                length: 2, // The length of each line
+                width: 4, // The line thickness
+                radius: 8, // The radius of the inner circle
+                corners: 1, // Corner roundness (0..1)
+                rotate: 0, // The rotation offset
+                direction: 1, // 1: clockwise, -1: counterclockwise
+                color: '#000', // #rgb or #rrggbb or array of colors
+                speed: 1.2, // Rounds per second
+                trail: 77, // Afterglow percentage
+                shadow: false, // Whether to render a shadow
+                hwaccel: false, // Whether to use hardware acceleration
+                className: 'spinner', // The CSS class to assign to the spinner
+                zIndex: 2e9, // The z-index (defaults to 2000000000)
+                top: '50%', // Top position relative to parent
+                left: '65%' // Left position relative to parent
+              };
+
+              var target = document.getElementById('progress');
+              var spinner = new Spinner(opts).spin(target);
+
+              $('#result-category').val($('.bfh-selectbox-option').text());
+
+              var formData = new FormData($('#guide-form')[0]);
+
+              $('input[type=submit]').prop('disabled',true);
+              $('#guide-form :input').prop('disabled', true);
+
+              $.ajax({
+                type: 'POST',
+                url: $('#guide-form').attr('action'),
+                data: formData,
+                //async:false,
+                cache:false,
+                contentType: false,
+                processData: false,
+                success: function(response) {  
+                   window.location.replace(response);
+                },
+                error: function() {
+                  alert('Error!');
+                }
+              });
+              return false;
+            }
+          });
+        });
+      </script>
+    {{/contentFor}}
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<form method="post" action="/guide/{{ guide._id }}/edit">
+	<p><input type="text" name="title" value="{{ guide.title }}" /></p>
+	<p><input type="text" name="description" value="{{ guide.description }}" /></p>
+	<p><input type="text" name="category" value="{{ guide.category }}" /></p>
+
+
+	<div id="place-div">
+		{{#each guide.places}}
+			<h2>Place {{@index}}</h2>
+			<p><input type="text" name="places[{{@index}}][title]" value="{{ title }}" /></p>
+			<p><input type="text" name="places[{{@index}}][description]" value="{{ description }}" /></p>
+			<p><input type="text" name="places[{{@index}}][address]" value="{{ address }}" /></p>
+		{{/each}}
+	</div>
+
+
+	<a href="#" id="addMore">Add more</a>
+	<p><input type="submit" value="Update" /></p>
+</form> 
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var div = $('#place-div');
+		var add = $('#addMore');
+		var id  = $('#place-div h2').size();
+
+		add.on('click', function() {
+			$("<h2>New Place "+ id +"</h2>"
+			  +"<p><input type='text' name='places["+ id +"][title]' placeholder='Place title' /></p>"
+			  +"<p><input type='text' name='places["+ id +"][description]' placeholder='Place Description' /></p>"
+			  +"<p><input type='text' name='places["+ id +"][address]' placeholder='Place address' /></p>"
+			).appendTo(div);
+
+			id++;
+
+			return false; // wtf is this
+		});
+	});
+</script>
+-->

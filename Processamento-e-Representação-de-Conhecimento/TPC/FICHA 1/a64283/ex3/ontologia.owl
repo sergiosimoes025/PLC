@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-20 "http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#"
+     xml:base="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-20="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20">
+        <date rdf:datatype="&xsd;string">19 de Maio de 2015</date>
+        <subject rdf:datatype="&xsd;string">PRC</subject>
+        <author rdf:datatype="&xsd;string">Sérgio Simões</author>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#author -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-20;author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#date -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-20;date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#subject -->
+
+    <owl:AnnotationProperty rdf:about="&untitled-ontology-20;subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#temComponente -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;temComponente">
+        <rdfs:range rdf:resource="&untitled-ontology-20;Bolo"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;Forma"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;Glacé"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Queque"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#temIngrediente -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-20;temIngrediente">
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Bolo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-20;Glacé"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;açucar"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;baunilha"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;farinha"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;fermento"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;leite"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;manteiga"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;ovo"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;pó"/>
+        <rdfs:range rdf:resource="&untitled-ontology-20;sal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#Bolo -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;Bolo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#Forma -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;Forma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#Glacé -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;Glacé"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#Ingrediente -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;Ingrediente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#Queque -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;Queque"/>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#açucar -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;açucar">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#baunilha -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;baunilha">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#farinha -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;farinha">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#fermento -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;fermento">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#leite -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;leite">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#manteiga -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;manteiga">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#ovo -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;ovo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#pó -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;pó">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;açucar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/perez_25/ontologies/2015/4/untitled-ontology-20#sal -->
+
+    <owl:Class rdf:about="&untitled-ontology-20;sal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-20;Ingrediente"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

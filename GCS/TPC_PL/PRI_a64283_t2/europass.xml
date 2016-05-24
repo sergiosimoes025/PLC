@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE europass SYSTEM "file:/Users/Perez_25/Desktop/cv_europass.dtd">
+<europass>
+    <informação-pessoal>
+        <nome>Sérgio Manuel Pereira Simões</nome>
+        <morada>
+            <rua>Lagoncinha</rua>
+            <numero>6</numero>
+            <código-postal>3780 599</código-postal>
+            <localidade>Torres,Vilarinho do Bairro</localidade>
+            <distrito>Aveiro</distrito>
+            <país>Portugal</país>
+        </morada>
+        <contacto>
+            <numero>911173130</numero>
+            <email>sergiohero@gmail.com</email>
+            <outros>
+                <facebook>sergiosimoes25</facebook>
+                <google>sergiohero@gmail.com</google>
+                <twitter></twitter>
+            </outros>
+        </contacto>
+        <sexo>Masculino</sexo>
+        <nacionalidade>Portuguesa</nacionalidade>
+    </informação-pessoal>
+    <posto-de-trabalho>Engenheiro Informático</posto-de-trabalho>
+    <experiencias-profissionais></experiencias-profissionais>
+    <educações-formações>
+        <educação-formação>
+            <data-inicio>
+                <mes>9</mes>
+                <ano>2011</ano>
+            </data-inicio>
+            <data-fim>
+                <mes>6</mes>
+                <ano>2014</ano>
+            </data-fim>
+            <nome-formação>Licenciatura em Engenharia Informática</nome-formação>
+            <entidade-formação>Universidade do Minho</entidade-formação>
+            <tópicos-de-formação>
+             <tópico-de-formação>C++</tópico-de-formação>   
+             <tópico-de-formação>Java</tópico-de-formação>
+            </tópicos-de-formação>
+        </educação-formação>
+    </educações-formações>
+</europass>

@@ -1,0 +1,418 @@
+
+    <!-- Full Header -->
+    <div class='fullHeader' id='profileHeader'>
+      <div class='fullHeader-inner'>
+        <div class='innerShadow'></div>
+        <img id='coverPicture' alt='cover picture' data-src='{{ profile.cover }}'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-12 user-info'>
+              <div class='user-picture'>
+                <div class='user-picture-inner img-circle'>
+                  <img id='profilePicture' alt='profile picture' data-src='{{ profile.picture }}'>
+                </div>
+              </div>
+              <h1 class='name'>
+                {{ profile.name.full }}
+                <div class='user-icons'>
+                  {{#if notProfileOwner}}
+                    <a class='add top-tooltip' data-original-title='Start following' data-toggle='tooltip' href='/follow/{{ profile._id }}'>
+                      <span class='icon icon-single-add'></span>
+                      <span class='text'>Follow</span>
+                    </a>
+                    <a class='message' data-keyboard='true' data-toggle='modal' href='#message-modal'>
+                      <span class='icon icon-message-envelope'></span>
+                    </a>
+                  {{else}}
+                    <a class='edit-profile' href='/account'>
+                      <span class='icon icon-setting'></span>
+                      <span class='text'>Edit profile</span>
+                    </a>
+                  {{/if}}
+                </div>
+              </h1>
+              <p class='geo'>
+                <span class='icon icon-pin-map-fill'></span>
+                {{#if profile.city}} {{ profile.city }}, {{/if}} {{ profile.country }}
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-4 pull-right user-statics'>
+              <div class='user-statics-inner'>
+                <div class='block'>
+                  <h1>{{#if follows}} {{ follows.followerscount }} {{else}} 0 {{/if}}</h1>
+                  <p>Followers</p>
+                </div>
+                <div class='block'>
+                  <h1>{{#if follows}} {{ follows.followingcount }} {{else}} 0 {{/if}}</h1>
+                  <p>Following</p>
+                </div>
+                <div class='block'>
+                  <h1>0</h1>
+                  <p>Featured</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Full Header -->
+    <!-- Message Modal -->
+    <div aria-hidden='true' aria-labelledby='myModalLabel' class='modal fade' id='message-modal' role='dialog' tabindex='-1'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>&#215;</button>
+            <h1 class='h4 modal-title' id='myModalLabel'>New message</h1>
+          </div>
+          <form id='message-form' role='form' method='post' action='/messages/create/{{ profile._id }}'>
+            <div class='modal-body'>
+              <div class='row'>
+                <div class='col-md-12'>
+                  <p>
+                    To: {{ profile.name.full }}
+                  </p>
+                </div>
+              </div>
+              <div class='row'>
+                  <!--
+                  <div class='col-md-12'>
+                    <div class='alert alert-danger small'>
+                      <strong>Error.</strong>
+                      Please try again send your message.
+                    </div>
+                  </div>
+                  <div class='col-md-12'>
+                    <div class='alert alert-success small'>
+                      <strong>Success!</strong>
+                      Your message has been sent.
+                    </div>
+                  </div>
+                  
+                  <div class='form-group col-md-12'>
+                    <input class='form-control' placeholder='Subject' type='text' name='subject'>
+                  </div>
+                -->
+                  <div class='form-group col-md-12'>
+                    <textarea class='form-control' placeholder='Type here your message...' rows='6' name='message'></textarea>
+                  </div>
+              </div>
+            </div>
+            <div class='modal-footer'>
+              <div class='col-md-6 col-md-offset-6'>
+                <button class='btn btn-primary pull-right' type='submit'>Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /Message Modal -->
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <!-- Nav tabs -->
+          <div class='nav-tabs-container' id='profile-nav-tabs'>
+            <ul class='nav nav-tabs nav-justified'>
+              <li class='active'>
+                <a data-toggle='tab' href='#guides'>{{ profile.name.first}}'s journeys</a>
+              </li>
+              <li>
+                <a data-toggle='tab' href='#favorites'>Favorites</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Profile Boxes -->
+          <div class='tab-content'>
+            <!-- Guides -->
+            <div class='tab-pane fade fade in active' id='guides'>
+              <article class='profile-module'>
+                <div class='module-box'>
+                  {{#if profile.guides}}
+                    {{#each profile.guides}}
+                      <div class='row box-row'>
+                        <div class='col-md-3'>
+                          <img class='guidePicture img-responsive' data-src='{{ places.0.picture }}'>
+                        </div>
+                        <div class='col-md-6 wrap'>
+                          <header>
+                            <h1 class='h5'>
+                              <a href='/guide/{{ _id }}'>{{{trimString title 35}}}</a>
+                            </h1>
+                            <p>{{{trimString description 160}}}</p>
+                            <p class='date'>
+                              <span class='icon-clock-time'></span>
+                             {{{formatDate created}}}
+                            </p>
+                          </header>
+                        </div>
+                        <div class='col-md-3 wrap'>
+                          <div class='user-rating pull-right'>
+                            <div class='numbers'>
+                              {{#if avg}} {{ avg }} {{else}} 0.0 {{/if}}
+                            </div>
+                            <div class='rating'>
+                              <span>user rating</span>
+                              <br>
+                              {{ votes.length }} votes
+                            </div>
+                          </div>
+                          <div class='icons'>
+                            <span>
+                              <a class='icon icon-favorite-star-fill' href='#'>
+                                <span>{{ favorites.length }}</span>
+                              </a>
+                            </span>
+                            <span>
+                              <a class='icon icon-bubble-chat-fill' href='#'>
+                                <span>{{ reviews.length }}</span>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    {{/each}}
+                  {{else}}
+                    <div class='row box-row blank'>
+                      <div>
+                        This user has no journeys yet
+                      </div>
+                    </div>
+                  {{/if}}
+                </div>
+              </article>
+            </div>
+            <!-- Favorites -->
+            <div class='tab-pane fade' id='favorites'>
+              <article class='profile-module'>
+                <div class='module-box'>
+                  {{#if profile.favorites}}
+                    {{#each profile.favorites}}
+                      <div class='row box-row'>
+                        <div class='col-md-3'>
+                          <img class='guidePicture img-responsive' src='{{ places.0.picture }}'>
+                        </div>
+                        <div class='col-md-6 wrap'>
+                          <header>
+                            <h1 class='h5'>
+                              <a href='#'>{{ title }}</a>
+                            </h1>
+                            <p>{{ description }}</p>
+                            <p class='date'>
+                              <span class='icon-clock-time'></span>
+                              {{{formatDate created}}}
+                            </p>
+                          </header>
+                        </div>
+                        <div class='col-md-3 wrap'>
+                          <div class='user-rating pull-right'>
+                            <div class='numbers'>
+                              4.7
+                            </div>
+                            <div class='rating'>
+                              <span>user rating</span>
+                              <br>
+                              {{ votes.length }} votes
+                            </div>
+                          </div>
+                          <div class='icons'>
+                            <span>
+                              <a class='icon icon-like-heart-fill' href='#'>
+                                <span>{{ favorites.length }}</span>
+                              </a>
+                            </span>
+                            <span>
+                              <a class='icon icon-bubble-chat-fill' href='#'>
+                                <span>{{ reviews.length }}</span>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    {{/each}}
+                  {{else}}
+                    <div class='row box-row blank'>
+                      <div>
+                        This user has no favorites yet
+                      </div>
+                    </div>
+                  {{/if}}
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- /Profile Boxes -->
+        </div>
+        <div class='col-md-3 col-md-offset-1'>
+          <div id='profile-sidebar'>
+            {{#if profile.about}}
+              <article id='about-user'>
+                <h1 class='h5 title'>
+                  <span class='bold'>About</span>
+                  {{ profile.name.full }}
+                </h1>
+                <p>{{ profile.about }}</p>
+              </article>
+            {{/if}}
+            {{#if follows.followingcount}}
+              <article id='following'>
+                <h1 class='h5 title'>
+                  <span class='icon icon-users-group'></span>
+                  <span class='bold'>Following</span>
+                </h1>
+                  {{#each follows.following}}
+                    <a class='bottom-tooltip' data-original-title='{{ name.full }}' data-toggle='tooltip' href='/profile/{{ _id }}'>
+                      <div class='avatar-wrap'>
+                        <img class='followeePicture' alt='picture' data-src='{{ picture }}'>
+                      </div>
+                    </a>
+                  {{/each}}
+              </article>
+            {{/if}}
+            {{#if recentActivity.userFeed}}
+                <article id='recent-activity'>
+                  <h1 class='h5 title'>
+                    <span class='icon icon-arrow-right'></span>
+                    <span class='bold'>Recent</span>
+                    activity
+                  </h1>
+                  {{#each recentActivity.userFeed}}
+                    <div class='row activity-row'>
+                      <div class='col-md-2'>
+                        <span class='badge blue-bg'>
+                          <span class='icon icon-bubble-chat'></span>
+                        </span>
+                      </div>
+                      <div class='col-md-10'>
+                        <p>
+                          {{{upperCase verb}}}
+                          <a href='/guide/{{ object._id }}'>{{{trimString object.title 30}}}</a>
+                          {{ sentence }}
+                          <time>
+                            {{{formatTimezone created}}}
+                          </time>
+                        </p>
+                      </div>
+                    </div>
+                  {{/each}}
+                  <!--<div class='activity-row'>
+                    <p>
+                      <span class='badge blue-bg'>
+                        <span class='icon icon-favorite-star'></span>
+                      </span>
+                      Voted 4 stars on
+                      <a href='#'>Paris Gardens</a>
+                    </p>
+                  </div>
+                  <div class='activity-row'>
+                    <p>
+                      <span class='badge green-bg'>
+                        <span class='icon icon-users-group'></span>
+                      </span>
+                      Started following
+                      <a href='#'>Cynthia Provost</a>
+                    </p>
+                  </div>-->
+              </article>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {{#contentFor 'scripts'}}
+      <script type='text/javascript' src="//cdn.jsdelivr.net/jquery.cloudinary/1.0.11/jquery.cloudinary.min.js"></script>
+      
+      <script type='text/javascript'>
+        $(document).ready(function() {
+
+          $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+              xhr.setRequestHeader('X-CSRF-Token', '{{ csrftoken }}');
+            } 
+          });
+
+          $('#profilePicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:200, height:200, crop: 'thumb' /* gravity: 'face', radius: 'max' */ 
+          });
+
+          $('#coverPicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, effect: 'blur:400', width:1585, height:991, crop: 'fit'
+          });
+
+          $('.followeePicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:50, height:50, crop: 'thumb', radius: 'max' 
+          });
+
+          $('.guidePicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:165, height:165, crop: 'thumb' 
+          });
+
+          {{#if isFollowing}}
+            $(".user-icons a.add").addClass('added').attr('href','/unfollow/{{ profile._id }}');
+            $(".user-icons a.add span.text").text("Following");
+            $(".user-icons a.add span.icon").removeClass("icon-single-add").addClass("icon-single-valid"); 
+          {{/if}}
+
+          $(".user-icons a.add").on('click', function(e) {
+            $link = $(this);
+
+            if($link.hasClass("added"))
+            {
+              $.post($link.attr('href'), {}, function(data) 
+              {   
+                if (data == 200) {  
+                  $(".user-icons a.add").removeClass('added').attr('href','/follow/{{ profile._id }}');
+                  $(".user-icons a.add span.text").text("Follow");
+                  $(".user-icons a.add span.icon").removeClass("icon-single-valid").addClass("icon-single-add");
+                }
+              });
+            }
+            else
+            {              
+              $.post($link.attr('href'), {}, function(data) 
+              {   
+                if (data === 200) {
+                  $link.addClass('added').attr('href','/unfollow/{{ profile._id }}');
+                  $(".user-icons a.add span.text").text("Following");
+                  $(".user-icons a.add span.icon").removeClass("icon-single-add").addClass("icon-single-valid");
+                }
+              }); 
+            }
+
+            return false;
+          });
+
+          $('#message-form').submit(function(ev) 
+          {
+            ev.preventDefault();
+            $.ajax({
+              type : $(this).attr('method'),
+              url  : $(this).attr('action'),
+              data : $(this).serialize(),
+              context : this,
+              success : function(data) 
+              {
+                $('#message-modal').modal('toggle');
+              },
+              error: function(data) 
+              {
+                alert('error');
+                
+                var errors = JSON.parse(data.responseText);
+                
+                for (error in errors) 
+                { 
+                  var id = '#id_' + error;
+                   $(id).parent('p').prepend(errors[error]);
+                  }
+                }
+            });
+            return false;
+          });
+
+        });
+      </script>
+    {{/contentFor}}

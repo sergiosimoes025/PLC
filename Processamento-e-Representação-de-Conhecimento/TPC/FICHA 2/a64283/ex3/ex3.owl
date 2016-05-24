@@ -1,0 +1,63 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+
+<foaf:Person rdf:ID="me">
+<foaf:name>Sérgio Simões</foaf:name>
+<foaf:title>Ex3</foaf:title>
+<foaf:givenname>Sérgio</foaf:givenname>
+<foaf:family_name>Simões</foaf:family_name>
+<foaf:nick>Perez</foaf:nick>
+<foaf:mbox_sha1sum>c66afcb338d6eb04c19a3c09498fc746a772ad9c</foaf:mbox_sha1sum>
+<foaf:homepage rdf:resource="sergio-simoes.tk"/>
+<foaf:depiction rdf:resource="25.png"/>
+<foaf:phone rdf:resource="tel:911173130"/>
+<foaf:workplaceHomepage rdf:resource="Universidade do Minho"/>
+<foaf:workInfoHomepage rdf:resource="www.di.uminho.pt"/>
+<foaf:schoolHomepage rdf:resource="http://www.uminho.pt/"/>
+<foaf:interest rdf:resource="Benfica"/>
+<foaf:age rdf:resource="22"/>
+<foaf:currentProject rdf:resource="PRC"/>
+<foaf:gender rdf:resource="male"/>
+<foaf:status rdf:resource="happy"/>
+<foaf:OnlineAccount rdf:resource="https://www.facebook.com/sergio.simoes.25"/>
+<foaf:OnlineAccount rdf:resource="sergiohero@gmail.com"/>
+<foaf:interest rdf:resource="Soccer"/>
+<foaf:OnlineAccount rdf:resource="https://pt.linkedin.com/pub/sérgio-simões/90/4ab/596"/>
+<foaf:dnaChecksum rdf:resource="done"/>
+<foaf:accountName rdf:resource="perez25"/>
+
+<foaf:knows>
+<foaf:Person>
+<foaf:name>João Alves</foaf:name>
+<foaf:mbox_sha1sum>91d04354586e36e74dc3282ac1a00a1e5e75f0df</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Paulo Sousa</foaf:name>
+<foaf:mbox_sha1sum>684ddc5978c35f7015015a85851eed8b5bb75403</foaf:mbox_sha1sum></foaf:Person></foaf:knows></foaf:Person>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>João Carlos</foaf:name>
+<foaf:mbox_sha1sum>ee94e28d4e098ee903a0298a19e81a51016742a4</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Bruno Moura</foaf:name>
+<foaf:mbox_sha1sum>8d6ed99f1eb5e63fc17df0c36a6b0052fcfc3f1b</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Dilma Simões</foaf:name>
+<foaf:mbox_sha1sum>625304887cfa476754feb9d8a0ea1d6095a51150</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Mónica Simões</foaf:name>
+<foaf:mbox_sha1sum>5db32f2709a035536437def52f5e62f3267ac550</foaf:mbox_sha1sum></foaf:Person></foaf:knows></foaf:Person>
+
+</rdf:RDF>

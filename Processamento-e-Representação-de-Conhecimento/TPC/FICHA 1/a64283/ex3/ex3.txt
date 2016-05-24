@@ -1,0 +1,12 @@
+Depois de terminares a estrutura base da tua ontologia pensa como podes expandi-la. 
+Fará sentido destacar componentes comestíveis dos não comestíveis? 
+Como é que uma classe massa crua poderia ser contemplada e qual a sua relação com a classe bolo? 
+Será que a ontologia poderia contemplar classes para velas e outros adereços?
+
+
+Resposta :
+
+De modo a tornar mais completa a ontologia faz todo o sentido destacar os componentes comestíveis dos não comestivéis. 
+Por outro lado o bolo é constítuido por massa crua. Essa seria a relação entre ambos. 
+Caso fossem destacados os componentes comestíveis e não comestivéis faria sentido complementar a ontologia com conceitos tais como velas
+e outros adereços, mas apenas nesta situação. 

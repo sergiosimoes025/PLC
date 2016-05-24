@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project-record SYSTEM "file:/Users/Perez_25/Downloads/Sérgio Simões/TPC_4/project-record.dtd">
+<project-record>
+    <meta>
+        <title>TPC4</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <begin-date>Novembro 2014</begin-date>
+        <end-date>Novembro 2014</end-date>
+    </meta>
+    <abstract>
+  
+        
+        <p><b>Objectivo</b></p>
+       
+     <p>Criar uma página html com a ajuda do xsl extraindo os dados do ficheiro XML <i>Agenda_sonora</i>.</p>
+        </abstract>
+    <workteam>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        
+        
+    </workteam>
+   <deliverables>
+       <xref url="Agenda_Sonora.xml">Agenda_sonora.xml</xref>
+       <xref url="Agenda_Sonora.xsl">AgendaSonora.xsl</xref>
+       <xref url="project-record.xml">project-record.xml</xref>
+       <xref url="project-record.xsl">project-record.xsl</xref>
+   </deliverables>
+</project-record>

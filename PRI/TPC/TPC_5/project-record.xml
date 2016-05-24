@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project-record>
+<meta>
+        <title>TPC3</title>
+        <key-name>a66jbj</key-name>
+        <supervisors>
+            <supervisor>
+                <name>José Carlos Ramalho</name>
+                <email>jcr@di.uminho.pt</email>
+                <homepage>http://www3.di.uminho.pt/~jcr/</homepage>
+            </supervisor>
+        </supervisors>
+        <begin-date>Outubro 2014</begin-date>
+        <end-date>Outubro 2014</end-date>
+    </meta>
+    <abstract>
+        <p>
+         Para a elaboração deste TPC era necessário requer conhecimentos
+         sobre <b>XSL</b>.
+          Este descreve como fazer o “display” de  um documento XML. <b>XSL</b> é uma espécie stylesheets para xml,
+         do mesmo modo que CSS são stylesheets para HTML. 
+         O <b>XSL</b> engloba três partes :</p>
+        <p> XPATH - linguagem para definir partes de um documentos XML;</p>
+        <p>XSLT - linguagem para tranformar documentos XML;</p>            
+        <p> XSL-FO - linguagem para definir documentos XML;</p>
+        <p><b>Objectivo</b></p>
+       
+     <p>Criar uma stylesheet que processe informação sobre a submissão de trabalhos práticos, e criar uma página HTML onde seja fácil consultar a informação das várias submissões.
+       Por fim completar o project-record.</p>
+        </abstract>
+    <workteam>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        <student>
+            <ident>64283</ident>
+            <name>Sérgio Manuel Pereira Simões</name>
+            <email>sergiohero@gmail.com</email>
+        </student>
+        
+    </workteam>
+   <deliverables>
+       <xref url="file:/Users/Perez_25/Desktop/tps.html">tps.html</xref>
+       <xref url="file:/Users/Perez_25/Desktop/tps.xml">tps.xml</xref>
+       <xref url="file:/Users/Perez_25/Desktop/tps.dtd">tps.dtd</xref>
+       <xref url="file:/Users/Perez_25/Desktop/tps.dtd">tps.xsl</xref>
+       <xref url="file:/Users/Perez_25/Desktop/project-record.dtd">project-record.dtd</xref>
+       <xref url="file:/Users/Perez_25/Desktop/project-record.xml">project-record.xml</xref>
+       <xref url="file:/Users/Perez_25/Desktop/project-record.xsl">project-record.xsl</xref>
+       <xref url="file:/Users/Perez_25/Desktop/project-record.html">project-record.html</xref>
+   </deliverables>
+</project-record>

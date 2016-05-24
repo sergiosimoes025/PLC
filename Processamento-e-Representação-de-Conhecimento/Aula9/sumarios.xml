@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sumarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <disciplina>
+        <curso sigla="MEI">Mestrado em Engenharia Informática</curso>
+        <designacao sigla="PRI">Processamento e Representação de Conhecimento</designacao>
+        <url>http://www.di.uminho.pt/~jcr/AULAS/pri2015/</url>
+        <ano>2014/2015</ano>
+        <num-alunos>22</num-alunos>
+    </disciplina>
+    <professor>
+        <nome>José Carlos Ramalho</nome>
+        <email>jcr@di.uminho.pt</email>
+        <url>http://www.di.uminho.pt/~jcr</url>
+    </professor>
+    <aulas>
+        <aula>
+            <data>2015-02-23</data>
+            <tema>Introdução à Web Semântica</tema>
+            <sumario>
+                <p>A evolução da Web: da sintaxe à semântica.</p>
+                <p>A importância da semântica no mundo digital.</p>
+                <p>Introdução às ontologias como especificações formais de conhecimento.</p>
+                <p>Apresentação de um <xref url="didac/sw2011-protege-univ.pdf">tutorial sobre o Protégé</xref>.</p>
+                <p>Desenvolvimento de um pequeno caso de estudo:<lista>
+                    <item>
+                        <p><xref url="didac/univ.owl">uma ontologia universitária</xref>.</p>
+                    </item>
+                </lista></p>
+                <p>TPC: desenvolver uma ontologia sobre um dos seguintes temas:<lista>
+                    <item>
+                        <p>sanitas;</p>
+                    </item>
+                    <item>
+                        <p>sapatilhas;</p>
+                    </item>
+                    <item>
+                        <p>sardinhas;</p>
+                    </item>
+                    <item>
+                        <p>seven-up;</p>
+                    </item>
+                    <item>
+                        <p>suricata;</p>
+                    </item>
+                    <item>
+                        <p>suportes.</p>
+                    </item>
+                </lista></p>
+            </sumario>
+        </aula>
+        
+        <aula>
+            <data>2015-03-02</data>
+            <tema>RDF</tema>
+            <sumario>
+                <p>Introdução à especificação formal de conhecimento: conhecimento implícito e conhecimento explícito.</p>
+                <p>RDF como a linguagem base para a especificação de conhecimento: a redução de tudo a relações binárias ou triplos (sujeito, predicado e objeto).</p>
+                <p>Resolução da ficha1: criar uma especificação RDF para uma história narrada; criar uma especificação RDF para a lista de publicações do JCR (iniciado na aula, ficou para completar como TPC).</p>
+            </sumario>
+        </aula>
+        
+        <aula>
+            <data>2015-03-09</data>
+            <tema>SPARQL</tema>
+            <sumario>
+                <p>Discussão sobre o povoamento de ontologias a partir de fontes de dados: correção do TPC.</p>
+                <p>Introdução ao SPARQL como linguagem de query para ontologias baseadas em RDF.</p>
+                <p>Resolução de vários exercícios da ficha2: Colocação de queries a vários SPARQL endpoints.</p>
+                <p>TPC: realização de queries sobre o endpoint Musicbrainz.</p>
+            </sumario>
+        </aula>
+        
+        <aula>
+            <data>2015-03-16</data>
+            <tema>Serviços SPARQL</tema>
+            <sumario>
+                <p>Criação de serviços SPARQL para colheita de informação.</p>
+                <p>Construção de websites com conteúdos colhidos com serviços SPARQL.</p>
+            </sumario>
+        </aula>
+        
+        <aula>
+            <data>2015-03-23</data>
+            <tema>4Store</tema>
+            <sumario>
+                <p>Introdução ao 4Store.</p>
+                <p>Pequenos exemplos e aplicações.</p>
+                <p>(Aula lecionada pelo professor José João Almeida)</p>
+            </sumario>
+        </aula>
+        
+        <aula>
+            <data>2015-03-27</data>
+            <tema>SKOS</tema>
+            <sumario>
+                <p>Introdução ao SKOS: especificação de thesaurus.</p>
+                <p>Exemplos de alguns thesauri: ACM2012 e localidades de Portugal.</p>
+                <p>TPC: criação de um visualizador para thesaurus SKOS.</p>
+            </sumario>
+        </aula>
+        
+        <aula>
+            <data>2015-03-30</data>
+            <tema>OWL</tema>
+            <sumario>
+                <p>Discussão sobre o trabalho de casa: geração de descritores SKOS.</p>
+                <p>Realização de uma sessão tutorial com o protégé sobre a criação de ontologias OWL: uma ontologia sobre cinema.</p>
+            </sumario>
+        </aula>
+        <aula>
+            <data>2015-04-13</data>
+            <tema>OAI-pmh</tema>
+            <sumario>
+                <p>Introdução a protocolos de recolha automática de informação via Web.</p>
+                <p>O protocolo OAI-pmh: funcionamento e constituição.</p>
+                <p>Implementação de um pequeno caso de estudo sobre o RepositoriUM.</p>
+                <p>TPC: melhorar o caso implementado na aula de modo a que a lista de sets retorne links ativos para o método "ListRecords" de cada set.</p>
+            </sumario>
+        </aula>
+        <aula>
+            <data>2015-04-20</data>
+            <tema>Web Services</tema>
+            <sumario>
+                <p>Introdução aos Web Services: arquitetura, funcionamento, mensagens SOAP, clientes e servidores.</p>
+                <p>Implementação de clientes simples para serviços externos: hello e aritmética.</p>
+                <p>Como tratar erros e fazer debug numa arquitetura baseada em Web Services: faults e errors.</p>
+                <p>Construção de servidores simples.</p>
+                <p>Construção de aplicações Web recorrendo a serviços externos que são integrados via Web Services: uma pequena aplicação para conversão de moeda.</p>
+                <p>Documentação de apoio disponível <xref url="http://www.di.uminho.pt/~jcr/LIVROS/EngWeb-OpenBook/">online</xref>.</p>
+                <p>TPC: os alunos deverão criar um serviço sobre a base de dados em XML dos <xref url="http://www.di.uminho.pt/~jcr/XML/didac/xmldocs/inquiricoes/processos.xml">processos de inquirição de génere</xref> e que deverá fornecer duas funcionalidades:<lista>
+                    <item>
+                        <p>ContaNomes: dado um nome (1 palavra) dá o número de ocorrências desse nome na base de dados (pesquisa nos campos nome, pai e mãe);</p>
+                    </item>
+                    <item>
+                        <p>IdsNome: dado um nome (1 palavra) dá a lista de ids em que esse nome aparece contido no campo nome.</p>
+                    </item>
+                </lista></p>
+            </sumario>
+        </aula>
+        <aula>
+            <data>2015-04-27</data>
+            <tema>Web Services</tema>
+            <sumario>
+                <p>Web Services: criação de clientes e servidores em várias linguagens.</p>
+                <p>Criação de clientes e servidores com SOAP::Lite e nusoap.</p>
+                <p>Criação de clientes que executam na linha de comandos.</p>
+                <p>TPC: <lista>
+                    <item>
+                        <p>Criar um serviço que dada uma data responde com o dia da semana. Exemplo: in: 1950-12-05; out: quarta.</p>
+                    </item>
+                    <item>
+                        <p>Criar um cliente que lê um ficheiro XML com pares (nome, data de nascimento) e cria uma tabela HTML com (nome, data de nascimento, dia).</p>
+                    </item>
+                </lista></p>
+            </sumario>
+        </aula>
+    </aulas>
+    
+</sumarios>

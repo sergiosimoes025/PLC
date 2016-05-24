@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BIBLIOGRAPHY LANG="pt">
+    <BIBLIODIV>
+        <TITLE>Artigos</TITLE>
+        
+        <BIBLIOENTRY ID="Metadata.Workshop"
+            XREFLABEL="Metadata.Workshop">
+            <TITLE>OCLC/NCSA Metadata Workshop Report</TITLE>
+            <AUTHORGROUP>
+                <AUTHOR>
+                    <FIRSTNAME>Jean</FIRSTNAME>
+                    <SURNAME>Godby</SURNAME>
+                </AUTHOR>
+                <AUTHOR>
+                    <FIRSTNAME>Eric</FIRSTNAME>
+                    <SURNAME>Miller</SURNAME>
+                </AUTHOR>
+                <AUTHOR>
+                    <FIRSTNAME>Ron</FIRSTNAME>
+                    <SURNAME>Daniel</SURNAME>
+                </AUTHOR>
+            </AUTHORGROUP>
+        </BIBLIOENTRY>
+        <BIBLIOENTRY ID="Metadata.Formats"
+            XREFLABEL="Metadata.Formats">
+            <TITLE>OCLC/NCSA Metadata Workshop Report</TITLE>
+            <AUTHORGROUP>
+                <AUTHOR>
+                    <FIRSTNAME>Jean</FIRSTNAME>
+                    <SURNAME>Godby</SURNAME>
+                </AUTHOR>
+                <AUTHOR>
+                    <FIRSTNAME>Eric</FIRSTNAME>
+                    <SURNAME>Miller</SURNAME>
+                </AUTHOR>
+                <AUTHOR>
+                    <FIRSTNAME>Ron</FIRSTNAME>
+                    <SURNAME>Daniel</SURNAME>
+                </AUTHOR>
+            </AUTHORGROUP>
+        
+        </BIBLIOENTRY>
+        dsadasdas
+        <BIBLIOENTRY ID="Aetadata.Formats"
+            XREFLABEL="Metadata.Formats">
+            <TITLE>OCLC/NCSA Metadata Workshop Report</TITLE>
+            <AUTHORGROUP>
+                <AUTHOR>
+                    <FIRSTNAME>Jean</FIRSTNAME>
+                    <SURNAME>Godby</SURNAME>
+                </AUTHOR>
+                <AUTHOR>
+                    <FIRSTNAME>Eric</FIRSTNAME>
+                    <SURNAME>Miller</SURNAME>
+                </AUTHOR>
+                <AUTHOR>
+                    <FIRSTNAME>Ron</FIRSTNAME>
+                    <SURNAME>Daniel</SURNAME>
+                </AUTHOR>
+            </AUTHORGROUP>
+            
+        </BIBLIOENTRY>
+        
+    </BIBLIODIV>
+</BIBLIOGRAPHY>

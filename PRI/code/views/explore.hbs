@@ -1,0 +1,522 @@
+
+    <!-- Slideshow -->
+    <div class='carousel slide' data-interval='4000' data-ride='carousel' id='exploreSlide'>
+      <!-- Indicators -->
+      <ol class='carousel-indicators'>
+        <li class='active' data-slide-to='0' data-target='#exploreSlide'></li>
+        <li data-slide-to='1' data-target='#exploreSlide'></li>
+        <li data-slide-to='2' data-target='#exploreSlide'></li>
+        <li data-slide-to='3' data-target='#exploreSlide'></li>
+      </ol>
+      <div class='carousel-inner'>
+        <div class='item active'>
+          <img alt='First slide' class='animated fadeInDown' src='http://executive.tur.br/blog/wp-content/uploads/2014/03/torre-eiffel.jpg'>
+          <div class='container'>
+            <div class='carousel-caption animated fadeInLeft animated fadeInLeft'>
+              <h1>Paris with love</h1>
+              <p>We offer people an opportunity to not only taste exquisite French wines, but also to learn more about them. Our restaurant and tasting rooms are located right next to the Louvre in a spectacular 17th Century wine cellar.</p>
+              <div class='user-name'>
+                <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                by
+                <a href='#'>Mark Lee</a>
+              </div>
+              <div class='user-rating'>
+                <div class='numbers'>
+                  4.7
+                </div>
+                <div class='rating'>
+                  <span>user rating</span>
+                  <br>
+                  500 votes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='item'>
+          <img alt='Second slide' class='animated fadeInDown' src='http://templatizer.gsappcloud.org/sites/default/files/imagecache/primary500/paris-lr_1.jpg'>
+          <div class='container'>
+            <div class='carousel-caption animated fadeInLeft'>
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <div class='user-name'>
+                <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                by
+                <a href='#'>Mark Lee</a>
+              </div>
+              <div class='user-rating'>
+                <div class='numbers'>
+                  4.7
+                </div>
+                <div class='rating'>
+                  <span>user rating</span>
+                  <br>
+                  500 votes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='item'>
+          <img alt='Third slide' class='animated fadeInDown' src='http://leclassicboho.com.br/image/data/paris6.jpg'>
+          <div class='container'>
+            <div class='carousel-caption animated fadeInLeft'>
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <div class='user-name'>
+                <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                by
+                <a href='#'>Mark Lee</a>
+              </div>
+              <div class='user-rating'>
+                <div class='numbers'>
+                  4.7
+                </div>
+                <div class='rating'>
+                  <span>user rating</span>
+                  <br>
+                  500 votes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='item'>
+          <img alt='Third slide' class='animated fadeInDown' src='http://www.dudalinafeminina.com.br/blog/wp-content/uploads/2013/08/Paris-0792.jpg'>
+          <div class='container'>
+            <div class='carousel-caption animated fadeInLeft'>
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <div class='user-name'>
+                <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                by
+                <a href='#'>Mark Lee</a>
+              </div>
+              <div class='user-rating'>
+                <div class='numbers'>
+                  4.7
+                </div>
+                <div class='rating'>
+                  <span>user rating</span>
+                  <br>
+                  500 votes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Slideshow -->
+    <!-- Explore Modules -->
+    <div class='container nav-tabs-container' id='explore-nav-tabs'>
+      <div class='row'>
+        <!-- Nav tabs -->
+        <div class='col-md-6' style='margin-left: 25%;'>
+          <ul class='nav nav-tabs nav-justified'>
+            <li class='active'>
+              <a data-toggle='tab' href='#today'>Today</a>
+            </li>
+            <li>
+              <a data-toggle='tab' href='#week'>Week</a>
+            </li>
+            <li>
+              <a data-toggle='tab' href='#month'>Month</a>
+            </li>
+            <li>
+              <a data-toggle='tab' href='#year'>Year</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='container tab-content'>
+      <!-- Today -->
+      <div class='row tab-pane fade fade in active' id='today'>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-like-heart-fill'></span>
+              What's popular?
+            </h1>
+            <div class='module-box'>
+              {{#if popular}}
+                {{#each popular}}
+                  <div class='row box-row'>
+                    <div class='col-md-4'>
+                      <div class='image-wrap'>
+                        <img class='guidePicture img-responsive' data-src='{{ places.0.picture }}'>
+                      </div>
+                    </div>
+                    <div class='col-md-8 wrap'>
+                      <header>
+                        <h1 class='h5'>
+                          <a href='/guide/{{ _id }}'>{{{trimString title 25}}}</a>
+                        </h1>
+                        <p>{{{trimString description 130}}}</p>
+                      </header>
+                      <div class='user-rating small'>
+                         <div class='numbers'>
+                          {{#if avg }} {{ avg }} {{else}} 0.0 {{/if}}
+                        </div>
+                      </div>
+                      <div class='user-name'>
+                        <img alt='user picture' class='userPicture img-circle' src='{{ author.picture }}'>
+                        by
+                        <a href='/profile/{{ author._id }}'>{{ author.name.full }}</a>
+                      </div>
+                      <div class='icons pull-right'>
+                        <span>
+                          <a class='icon icon-favorite-star-fill' href='#'>
+                            <span>{{ favorites.length }}</span>
+                          </a>
+                        </span>
+                        <span>
+                          <a class='icon icon-bubble-chat-fill' href='#'>
+                            <span>{{ reviews.length }}</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                {{/each}}
+              {{/if}}
+            </div>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-favorite-star'></span>
+              Trending
+            </h1>
+            <div class='module-box'>
+              <!--
+              <div class='row box-row'>
+                <div class='col-md-4'>
+                  <div class='image-wrap'>
+                    <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                </div>
+                <div class='col-md-8 wrap'>
+                  <header>
+                    <h1 class='h5'>
+                      <a href='#'>Tea Route</a>
+                    </h1>
+                    <p>One of the most sought-after tour guides in Paris, Paul owns and operates Wego Walking Tours. When not giving tours, he can be usually found traveling...</p>
+                  </header>
+                  <div class='user-name'>
+                    <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                    by
+                    <a href='#'>Mark Lee</a>
+                  </div>
+                  <div class='icons pull-right'>
+                    <span>
+                      <a class='icon icon-like-heart' href='#'>
+                        <span>13</span>
+                      </a>
+                    </span>
+                    <span>
+                      <a class='icon icon-bubble-chat' href='#'>
+                        <span>8</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- Week -->
+      <div class='row tab-pane fade' id='week'>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-like-heart'></span>
+              Popular guides
+            </h1>
+            <div class='module-box'>
+              <!--
+              <div class='row box-row'>
+                <div class='col-md-4'>
+                  <div class='image-wrap'>
+                    <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                </div>
+                <div class='col-md-8 wrap'>
+                  <header>
+                    <h1 class='h5'>
+                      <a href='#'>Tea Route</a>
+                    </h1>
+                    <p>One of the most sought-after tour guides in Paris, Paul owns and operates Wego Walking Tours. When not giving tours, he can be usually found traveling...</p>
+                  </header>
+                  <div class='user-name'>
+                    <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                    by
+                    <a href='#'>Mark Lee</a>
+                  </div>
+                  <div class='icons pull-right'>
+                    <span>
+                      <a class='icon icon-like-heart' href='#'>
+                        <span>13</span>
+                      </a>
+                    </span>
+                    <span>
+                      <a class='icon icon-bubble-chat' href='#'>
+                        <span>8</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-favorite-star'></span>
+              Trending
+            </h1>
+            <!--
+            <div class='module-box'>
+              <div class='row box-row'>
+                <div class='col-md-4'>
+                  <div class='image-wrap'>
+                    <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                </div>
+                <div class='col-md-8 wrap'>
+                  <header>
+                    <h1 class='h5'>
+                      <a href='#'>Tea Route</a>
+                    </h1>
+                    <p>One of the most sought-after tour guides in Paris, Paul owns and operates Wego Walking Tours. When not giving tours, he can be usually found traveling...</p>
+                  </header>
+                  <div class='user-name'>
+                    <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                    by
+                    <a href='#'>Mark Lee</a>
+                  </div>
+                  <div class='icons pull-right'>
+                    <span>
+                      <a class='icon icon-like-heart' href='#'>
+                        <span>13</span>
+                      </a>
+                    </span>
+                    <span>
+                      <a class='icon icon-bubble-chat' href='#'>
+                        <span>8</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>          
+            </div>
+            -->
+          </article>
+        </div>
+      </div>
+      <!-- Month -->
+      <div class='row tab-pane fade' id='month'>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-like-heart'></span>
+              Popular guides
+            </h1>
+            <div class='module-box'>
+              <!--
+              <div class='row box-row'>
+                <div class='col-md-4'>
+                  <div class='image-wrap'>
+                    <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                </div>
+                <div class='col-md-8 wrap'>
+                  <header>
+                    <h1 class='h5'>
+                      <a href='#'>Tea Route</a>
+                    </h1>
+                    <p>One of the most sought-after tour guides in Paris, Paul owns and operates Wego Walking Tours. When not giving tours, he can be usually found traveling...</p>
+                  </header>
+                  <div class='user-name'>
+                    <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                    by
+                    <a href='#'>Mark Lee</a>
+                  </div>
+                  <div class='icons pull-right'>
+                    <span>
+                      <a class='icon icon-like-heart' href='#'>
+                        <span>13</span>
+                      </a>
+                    </span>
+                    <span>
+                      <a class='icon icon-bubble-chat' href='#'>
+                        <span>8</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-favorite-star'></span>
+              Trending
+            </h1>
+            <div class='module-box'>
+              <!--
+              <div class='row box-row'>
+                <div class='col-md-4'>
+                  <div class='image-wrap'>
+                    <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                </div>
+                <div class='col-md-8 wrap'>
+                  <header>
+                    <h1 class='h5'>
+                      <a href='#'>Tea Route</a>
+                    </h1>
+                    <p>One of the most sought-after tour guides in Paris, Paul owns and operates Wego Walking Tours. When not giving tours, he can be usually found traveling...</p>
+                  </header>
+                  <div class='user-name'>
+                    <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                    by
+                    <a href='#'>Mark Lee</a>
+                  </div>
+                  <div class='icons pull-right'>
+                    <span>
+                      <a class='icon icon-like-heart' href='#'>
+                        <span>13</span>
+                      </a>
+                    </span>
+                    <span>
+                      <a class='icon icon-bubble-chat' href='#'>
+                        <span>8</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- Year -->
+      <div class='row tab-pane fade' id='year'>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-like-heart'></span>
+              Popular guides
+            </h1>
+            <div class='module-box'>
+              <!--
+              <div class='row box-row'>
+                <div class='col-md-4'>
+                  <div class='image-wrap'>
+                    <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                </div>
+                <div class='col-md-8 wrap'>
+                  <header>
+                    <h1 class='h5'>
+                      <a href='#'>Tea Route</a>
+                    </h1>
+                    <p>One of the most sought-after tour guides in Paris, Paul owns and operates Wego Walking Tours. When not giving tours, he can be usually found traveling...</p>
+                  </header>
+                  <div class='user-name'>
+                    <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                    by
+                    <a href='#'>Mark Lee</a>
+                  </div>
+                  <div class='icons pull-right'>
+                    <span>
+                      <a class='icon icon-like-heart' href='#'>
+                        <span>13</span>
+                      </a>
+                    </span>
+                    <span>
+                      <a class='icon icon-bubble-chat' href='#'>
+                        <span>8</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class='explore-module'>
+            <h1 class='h2 module-title'>
+              <span class='icon icon-favorite-star'></span>
+              Trending
+            </h1>
+            <div class='module-box'>
+              <!--
+              <div class='row box-row'>
+                <div class='col-md-4'>
+                  <div class='image-wrap'>
+                    <img class='img-responsive' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  </div>
+                </div>
+                <div class='col-md-8 wrap'>
+                  <header>
+                    <h1 class='h5'>
+                      <a href='#'>Tea Route</a>
+                    </h1>
+                    <p>One of the most sought-after tour guides in Paris, Paul owns and operates Wego Walking Tours. When not giving tours, he can be usually found traveling...</p>
+                  </header>
+                  <div class='user-name'>
+                    <img alt='User name' class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                    by
+                    <a href='#'>Mark Lee</a>
+                  </div>
+                  <div class='icons pull-right'>
+                    <span>
+                      <a class='icon icon-like-heart' href='#'>
+                        <span>13</span>
+                      </a>
+                    </span>
+                    <span>
+                      <a class='icon icon-bubble-chat' href='#'>
+                        <span>8</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <!-- /Explore Modules -->
+
+    {{#contentFor 'scripts'}}
+      <script type='text/javascript'>
+        $(document).ready(function() {
+          $('.userPicture').cloudinary({ 
+            secure: true, width:30, height:30, crop: 'thumb', quality: 90 
+          });
+
+          $('.guidePicture').cloudinary({ 
+            secure: true, width:165, height:160, crop: 'thumb', quality: 90 
+          });
+
+          $('#explore-nav').addClass('active');
+        });
+      </script>
+    {{/contentFor}}

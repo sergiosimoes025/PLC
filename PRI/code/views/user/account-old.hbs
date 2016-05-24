@@ -1,0 +1,113 @@
+
+<h2>{{ user.name.full }}'s Account</h2>
+
+
+{{#if message}}
+	<p><b>{{ message }}</b></p>
+{{/if}}
+
+
+<h3>Change Picture</h3>
+<form id="picture-upload-form" method="post" action="/account/change-picture" enctype="multipart/form-data">
+	<p><input type="file" name="upload" /></p>
+	<p><input type="submit" value="Upload" /></p>
+</form>
+<div id="picture-result"></div>
+
+
+<h3>Change Cover Photo</h3>
+<form id="cover-upload-form" method="post" action="/account/change-cover" enctype="multipart/form-data">
+	<p><input type="file" name="upload" /></p>
+	<p><input type="submit" value="Upload" /></p>
+</form>
+<div id="cover-result"></div>
+
+
+<h3>Change Profile Details</h3>
+<form method="post" action="/account/edit-profile">
+	<p><input type="text" name="email" placeholder="email" value="{{ user.email }}" /></p>
+	<p><input type="text" name="name[first]" placeholder="first name" value="{{ user.name.first }}" /></p>
+	<p><input type="text" name="name[last]" placeholder="last name" value="{{ user.name.last }}" /></p>
+	<p><input type="text" name="city" placeholder="city" value="{{ user.city }}" /></p>
+	<p><input type="text" name="country" placeholder="country" value="{{ user.country }}" /></p>
+	<p><input type="text" name="gender" placeholder="gender" value="{{ user.gender }}" /></p>
+	<p><textarea name="about" rows="3" cols="25" placeholder="How do you describe yourself?">{{ user.about }}</TEXTAREA></p>
+
+	<input type="hidden" name="_csrf" value="{{ csrftoken }}" />
+	<input type="submit" value="Update" />
+</form>
+
+
+<h3>Change Password</h3>
+<form method="post" action="/account/change-password">
+	<p><input type="password" name="oldPassword" placeholder="old password" /></p>
+	<p><input type="password" name="newPassword" placeholder="new password" /></p>
+	
+	<input type="hidden" name="_csrf" value="{{ csrftoken }}" />
+	<input type="submit" value="Update" />
+</form>
+
+
+<h3>Delete Account</h3>
+<form method="post" action="/account/delete">
+	<input type="hidden" name="_csrf" value="{{ csrftoken }}" />
+	<input type="submit" value="Delete" />
+</form>
+
+{{#contentFor 'scripts'}}
+	<!--<script type="text/javascript" src="/javascripts/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.fileupload.js"></script>
+	-->
+
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.49/jquery.form.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+	        $.ajaxSetup({
+	      		beforeSend: function(xhr, settings) {
+	      	   		xhr.setRequestHeader('X-CSRF-Token', '{{ csrftoken }}');
+	            } 
+	        });
+
+	        /*
+
+	        $.cloudinary.config({ cloud_name: 'dj5ncrwwf', api_key: '763249739557766'});
+
+			$('.cloudinary-fileupload').fileupload({
+				dropZone: '#drop',
+				start: function(e) {
+					$('#picture-result').text('Starting upload...');
+				},
+				progress: function(data) {
+					$('#picture-result').text('Uploading...' + Math.round((data.loaded * 100.0) / data.total) + '%');
+				},
+				fail: function(e) {
+					$('#picture-result').text('Upload failed');
+				},
+				done: function(e, data) {
+					$('#picture-result').text('Uploaded!');
+					$('#preview').html(
+        				$.cloudinary.image(data.result, { secure: true, cdn_subdomain: true, width:120, height:120, crop: 'thumb', quality: 90 })
+      				);
+      				return true;
+				}
+			});
+
+	        */
+
+	        $('#picture-upload-form').ajaxForm(function(data) { 
+              	$($.cloudinary.image(data, { 
+            		secure: true, cdn_subdomain: true, width:120, height:120, crop: 'thumb', quality: 90
+          		})).appendTo('#picture-result');
+            });
+
+            $('#cover-upload-form').ajaxForm(function(data) { 
+              	$($.cloudinary.image(data, { 
+            		secure: true, cdn_subdomain: true, width:120, height:120, crop: 'thumb', quality: 90
+          		})).appendTo('#cover-result');
+            });
+		
+	    });
+	</script>
+{{/contentFor}}

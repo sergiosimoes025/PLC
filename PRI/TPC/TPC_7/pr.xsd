@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="project-record">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="meta">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="subtitle" type="xs:string"/>
+                            <xs:element name="key-name" type="xs:string"/>
+                            <xs:element name="supervisors">
+                                <xs:complexType>
+                                    <xs:sequence maxOccurs="unbounded">
+                                        <xs:element name="supervisor">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="name" type="xs:string"/>
+                                                  <xs:element name="email" type="xs:string"/>
+                                                  <xs:element minOccurs="0" name="homepage"
+                                                  type="xs:anyURI"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="begin-date" type="xs:string"/>
+                            <xs:element name="end-date" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="workteam">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="student">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ident" type="xs:string"/>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="email" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="1" name="abstract">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="1">
+                            <xs:element maxOccurs="unbounded" name="p">
+                                <xs:complexType mixed="true">
+                                    <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                        <xs:element name="b"/>
+                                        <xs:element name="i"/>
+                                        <xs:element name="u"/>
+                                        <xs:element name="ackron"/>
+                                        <xs:element name="xref">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                  <xs:attribute name="url" type="xs:anyURI"/>
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="logs">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xs:element name="log">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="date" type="xs:string"/>
+                                        <xs:element name="description"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="deliverables">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xs:element maxOccurs="unbounded" name="xref">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:NCName">
+                                            <xs:attribute name="url" type="xs:anyURI"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

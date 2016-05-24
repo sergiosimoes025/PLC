@@ -1,0 +1,17 @@
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(0,Antonio,Matos,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(0,Maria,Sousa,F);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(0,Miguel,Matos,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(1,Nuno Antonio,Saavedra,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(1,Isabel Maria,Torres Machado,F);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(1,Ricardo,Saavedra,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(1,Ana Maria,Saavedra,F);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(2,Vitor Oliveira,Simoes,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(2,Dilma Pereira,Carvalho,F);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(2,Monica,Simoes,F);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(2,Joao,Simoes,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(2,Sergio,Simoes,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(3,Ricardo,Machado Saavedra,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,genero) values(3,Elisa,Lacerda,F);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(3,Francisco,Machado Saavedra,M);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(3,Joana,Machado Saavedra,F);
+INSERT INTO PESSOAS(key,nome_proprio,apelido,sexo) values(3,Lurdes,Machado Saavedra,F);

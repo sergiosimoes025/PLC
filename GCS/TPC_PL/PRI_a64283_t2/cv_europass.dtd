@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT  europass (informação-pessoal ,posto-de-trabalho, experiencias-profissionais,educações-formações) >
+<!ELEMENT posto-de-trabalho (#PCDATA) >
+<!ELEMENT  informação-pessoal (nome,morada,contacto,sexo,nacionalidade) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT sexo (#PCDATA) >
+<!ELEMENT nacionalidade (#PCDATA) >
+
+<!ELEMENT morada (rua,numero,código-postal,localidade,distrito,país) >
+<!ELEMENT numero (#PCDATA) >
+<!ELEMENT rua (#PCDATA) >
+<!ELEMENT código-postal (#PCDATA) >
+<!ELEMENT distrito (#PCDATA) >
+<!ELEMENT país (#PCDATA) >
+<!ELEMENT localidade (#PCDATA) >
+
+<!ELEMENT contacto (numero+,email,outros) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT outros (facebook,google,twitter,outro*) >
+<!ELEMENT facebook (#PCDATA) >
+<!ELEMENT google (#PCDATA) >
+<!ELEMENT twitter (#PCDATA) >
+<!ELEMENT outro (#PCDATA)  >
+<!ELEMENT experiencias-profissionais (experiencia-profissional*) >
+<!ELEMENT experiencia-profissional (data-inicio,data-fim,posto-de-trabalho,morada,info) >
+<!ELEMENT data-inicio (mes,ano) >
+<!ELEMENT data-fim (mes,ano) >
+<!ELEMENT ano (#PCDATA) >
+<!ELEMENT mes (#PCDATA) >
+<!ELEMENT info (#PCDATA) >
+
+
+
+<!ELEMENT educações-formações (educação-formação+) >
+<!ELEMENT educação-formação (data-inicio, data-fim , nome-formação,entidade-formação, tópicos-de-formação) >
+<!ELEMENT nome-formação (#PCDATA) >
+<!ELEMENT entidade-formação (#PCDATA) >
+<!ELEMENT tópicos-de-formação (tópico-de-formação+) >
+<!ELEMENT tópico-de-formação (#PCDATA) >
+
+

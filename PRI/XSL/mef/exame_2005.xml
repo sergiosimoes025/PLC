@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arv-gen>
+     <pessoa id="p1">
+         <nome>David Ramalho</nome>
+         <data-nasc>1994-11-03</data-nasc>
+         <pai ref="p7"/>
+         <mae ref="p8"/>
+        </pessoa>
+     <pessoa id="p2">
+         <nome>Leonardo Ramalho</nome>
+         <data-nasc>1999-03-11</data-nasc>
+         <pai ref="p7"/>
+         <mae ref="p8"/>
+        </pessoa>
+   
+     <pessoa id="p7">
+        <nome>Jos´e Carlos Ramalho</nome>
+         <data-nasc>1967-02-01</data-nasc>
+         <pai ref="p12"/>
+         </pessoa>
+    
+    <pessoa id="p12">
+         <nome>Jos´e dos Santos Ramalho</nome>
+         <data-nasc>1941-06-02</data-nasc>
+        </pessoa>
+    
+    </arv-gen>

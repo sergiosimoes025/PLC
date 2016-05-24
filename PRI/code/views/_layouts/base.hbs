@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>{{ title }} : pigero</title>
+   
+    <!-- Bootstrap -->
+    <link href='/stylesheets/typekit.css' rel='stylesheet'>
+    <link href='/stylesheets/my.css' rel='stylesheet'>
+
+    {{{block 'header'}}}
+
+	  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>  <![endif]-->
+    <script src='//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <script src='//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
+	</head>
+
+	<body>
+		{{#if user}}
+    <!-- Navbar -->
+    <nav class='navbar-wrapper navbar-default navbar-fixed-top' role='navigation'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-8'>
+            <div class='navbar-header'>
+              <a class='logo' href='/'>
+                <img alt='Pigero' src='/images/logo.png'>
+              </a>
+            </div>
+            <nav class='navigation'>
+              <ul class='nav navbar-nav'>
+                <li id='activity-nav'>
+                  <a href='/'>Activity</a>
+                </li>
+                <li id='explore-nav'>
+                  <a href='/explore'>Explore</a>
+                </li>
+                <li>
+                  <a class='search-btn-trigger' href='#'>
+                    <span class='icon icon-search'></span>
+                  </a>
+                </li>
+                <li>
+                  <a href='/guide/create' id='new-guide-btn'>
+                    <span class='button'>
+                      <span class='button-icon icon-map-route'></span>
+                      New journey
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class='col-md-4'>
+            <nav class='user-nav'>
+              <ul class='nav navbar-nav'>
+                <li class='notifications-icon dropdown'>
+                  <a class='dropdown-toggle icon icon-bell-notification' data-toggle='dropdown' href='javascript:;'>
+                    <!--<span class='badge'>2</span>-->
+                  </a>
+                  <div class='dropdown-menu dropdown-menu-right'>
+                    <div class='panel'>
+                      <div class='panel-heading'>
+                        Notifications
+                        <span class='number badge'>0</span>
+                      </div>
+                      <!--
+                      <ul class='list-group' id='notifications'>
+                        <li class='list-group-item new'>
+                          <a href='#'>
+                            <span class='col-md-2'>
+                              <img class='img-responsive img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                            </span>
+                            <span class='col-md-10 notif-text'>
+                              <p>
+                                Your guide
+                                <span class='bold'>Tea Route</span>
+                                has been reviewed by
+                                <span class='bold'>John Kart</span>
+                              </p>
+                              <span class='time-wrap'>
+                                <span class='icon icon-clock-time'></span>
+                                <p>7 mins ago</p>
+                              </span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    -->
+                    </div>
+                  </div>
+                </li>
+                <li class='notifications-icon dropdown'>
+                  <a class='dropdown-toggle icon icon-message-envelope' data-toggle='dropdown' href='javascript:;'>
+                    <!--<span class='badge'>1</span>-->
+                  </a>
+                  <div class='dropdown-menu dropdown-menu-right'>
+                    <div class='panel'>
+                      <div class='panel-heading'>
+                        Messages
+                        <span class='number badge'>0</span>
+                      </div>
+                      <ul id='message-list' class='list-group'></ul>
+                      <div class='panel-footer'>
+                        <a class='view-all' href='/messages'>View all messages</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class='username dropdown pull-right'>
+                  <a class='username-link dropdown-toggle' data-toggle='dropdown' href='#'>
+                    <span class='user-avatar'>
+                      <img id='navPicture' class='img-circle' data-src='{{ user.picture }}'>
+		                  {{ user.name.first }}
+                    </span>
+                    <span class='arrow icon-arrow-bottom'></span>
+                  </a>
+                  <ul class='dropdown-menu'>
+                    <li>
+                      <a href='/profile/{{ user._id }}'>
+                        <span class='icon-wrap'>
+                          <span class='icon icon-user-list'></span>
+                        </span>
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/account'>
+                        <span class='icon-wrap'>
+                          <span class='icon icon-setting'></span>
+                        </span>
+                        Settings
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/logout'>
+                        <span class='icon-wrap'>
+                          <span class='icon icon-logout-exit'></span>
+                        </span>
+                        Sign out
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+		<!-- /Navbar -->
+    <!-- SearchBar -->
+	  <div id='full-SearchBar'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <form role='form'>
+              <div class='input-group'>
+                <input class='form-control' id='searchbar' placeholder='SEARCH FOR JOURNEYS AND PEOPLE' type='text'>
+                <span class='input-group-btn symbol'>
+                  <button class='btn btn-default' title='SEARCH' type='button'>
+                    <span class='icon icon-search'></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>        
+        <div class='row results-wrap' style="display:none;">
+          <div class='col-md-6'>
+            <ul id='user-results' class='results'>
+              <!--
+              <li class='header'>
+                <span>Users</span>
+              </li>
+              <li class='result'>
+                <a href='#'>
+                  <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  <span class='text'>Rafael Viana</span>
+                  <span class='text normal'>Porto, Portugal</span>
+                </a>
+              </li>
+              <li class='result'>
+                <a href='#'>
+                  <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  <span class='text'>Rafael Viana</span>
+                  <span class='text normal'>Porto, Portugal</span>
+                </a>
+              </li>
+              <li class='result'>
+                <a href='#'>
+                  <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  <span class='text'>Rafael Viana</span>
+                  <span class='text normal'>Porto, Portugal</span>
+                </a>
+              </li>
+            -->
+            </ul>
+          </div>
+          <div class='col-md-6'>
+            <ul id='journey-results' class='results'>
+              <!--
+              <li class='header'>
+                <span>Journeys</span>
+              </li>
+              <li class='result'>
+                <a href='#'>
+                  <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  <span class='text'>Wine journey in Paris</span>
+                  <div class='user-rating small'>
+                    <div class='numbers'>
+                      4.7
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='result'>
+                <a href='#'>
+                  <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  <span class='text'>Wine journey in Paris</span>
+                  <div class='user-rating small'>
+                    <div class='numbers'>
+                      4.7
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='result'>
+                <a href='#'>
+                  <img class='img-circle' src='http://ppcdn.500px.org/68114255/f358a570cb58166efec28b79a6677495c30416a9/3.jpg'>
+                  <span class='text'>Wine journey in Paris</span>
+                  <div class='user-rating small'>
+                    <div class='numbers'>
+                      4.7
+                    </div>
+                  </div>
+                </a>
+              </li>
+            -->
+            </ul>
+          </div>
+        </div>
+        <!--
+        <div class='row show-all'>
+          <div class='col-md-12'>
+            <a href='#' title='See all results'>See all results (3)</a>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+    <div class='search-overlay'></div>
+    <!-- /Feedback Modal -->
+    <a class='feedback-trigger' data-keyboard='true' data-toggle='modal' href='#feedback-modal'>Feedback</a>
+    <div aria-hidden='true' aria-labelledby='myModalLabel' class='modal fade' id='feedback-modal' role='dialog' tabindex='-1'>
+      <div class='modal-dialog'>
+                      <form id='feedback-form' role='form' method='post' action='/feedback'>
+
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>&#215;</button>
+            <h1 class='h4 modal-title' id='myModalLabel'>Give your feedback</h1>
+          </div>
+          <div class='modal-body'>
+            <div class='row'>
+                <!--
+                <div class='col-md-12'>
+                  <div class='alert alert-danger small'>
+                    <strong>Error.</strong>
+                    Please try again send your message.
+                  </div>
+                </div>
+                <div class='col-md-12'>
+                  <div class='alert alert-success small'>
+                    <strong>Thank you!</strong>
+                    Your feedback is very important to us, we appreciate your attention.
+                  </div>
+                </div>
+                -->
+                <div class='form-group col-md-12'>
+                  <input class='form-control' placeholder='Subject' name='subject' type='text'>
+                </div>
+                <div class='form-group col-md-12'>
+                  <textarea class='form-control' name='text' placeholder='Send us your suggestions and/or bugs found..' rows='6'></textarea>
+                </div>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <div class='col-md-6 col-md-offset-6'>
+              <button class='btn btn-primary pull-right' type='submit'>Send</button>
+            </div>
+          </div>
+       </form>
+        </div>
+      </div>
+    </div>
+	  <!-- /SearchBar -->
+		{{else}}
+		  <!-- Navbar -->
+		    <nav class='navbar-wrapper navbar-default navbar-fixed-top' role='navigation'>
+		    	<div class='container'>
+			       	<div class='row'>
+			          	<div class='col-md-8'>
+			            	<div class='navbar-header'>
+			              		<a class='logo' href='/'>
+			                		<img alt='Pigero' src='/images/logo.png'>
+			              		</a>
+			            	</div>
+			          	</div>
+			          	<div class='col-md-4'>
+			            	<nav id='landing-nav'>
+				              <ul>
+				                <li class='how'>
+				                  <a href='javascript:;' id='video-player'>
+				                    <span class='icon icon-how-it-works'></span>
+				                    HOW IT WORKS
+				                  </a>
+				                </li>
+				                <li>
+				                  <a data-keyboard='true' data-toggle='modal' href='/register'>SIGNUP</a>
+				                </li>
+				                <li>
+				                  <a data-keyboard='true' data-toggle='modal' href='/login'>LOGIN</a>
+				                </li>
+				              </ul>
+			            	</nav>
+			          	</div>
+			        </div>
+			    </div>
+			</nav>
+    	<!-- /Navbar -->
+	    <section class='video-modal'>
+	      <div class='wrap'>
+	        <iframe allowfullscreen='' frameborder='0' height='350' mozallowfullscreen='' src='//www.youtube-nocookie.com/embed/a0sb6-HCp2I?rel=0' webkitallowfullscreen='' width='620'></iframe>
+	      </div>
+	    </section>
+		{{/if}}
+
+		{{{ body }}}
+
+    <footer>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6'>
+            <p>© Copyright 2014. All rights reserved.</p>
+          </div>
+          <div class='col-md-6'>
+            <ul>
+              <li>
+                <a href='/about'>About</a>
+              </li>
+              <li>
+                <a href='/privacy'>Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+		  <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  		<script type='text/javascript' src='/javascripts/bootstrap.min.js'></script>
+  		<script type='text/javascript' src="//cdn.jsdelivr.net/jquery.cloudinary/1.0.11/jquery.cloudinary.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.0.6/moment-timezone.min.js"></script>
+
+  		<script type='text/javascript'>
+        	$(document).ready(function() {
+
+          		$.cloudinary.config({ cloud_name: 'dj5ncrwwf' });
+
+              $.ajaxSetup({
+                beforeSend: function(xhr, settings) {
+                    xhr.setRequestHeader('X-CSRF-Token', '{{ csrftoken }}');
+                  } 
+              });
+
+          		$('#navPicture').cloudinary({ 
+            		secure: true, cdn_subdomain: true, width:35, height:35, crop: 'thumb', quality: 100
+          		});
+
+          		$('.icon-message-envelope').click(function(e) {
+          			$('#message-list').empty();
+          			$.getJSON('/messages/'+'{{ user._id }}', function(data) {
+          				$.each(data, function(key, val) {
+          					console.log(val);
+          					$("<li class='list-group-item'><a href='#'><span class='col-md-2'>"
+		                		+"<img class='author-picture-message img-responsive img-circle' data-src='"+val.contact.picture+"'>"
+		                        +"</span><span class='col-md-10 notif-text'><p>"
+		                        +"<span class='bold'>"+val.contact.name.first+"</span><br>"
+		                        +"<span class='italic'>"+val.conversation[0].message+"</span>"
+		                        +"</p><span class='time-wrap'>"
+		                        +"<span class='icon icon-clock-time'></span>"
+		                        +"<p>"+moment(Date.parse(val.conversation[0].created)).fromNow()+"</p></span></span></a></li>"
+		                    ).appendTo('#message-list');
+          				});
+
+          				$('.author-picture-message').cloudinary({ 
+            				secure: true, cdn_subdomain: true, width:52, height:52, crop: 'thumb', quality: 100
+          				});
+          			});
+          		});
+
+              $('#searchbar').keyup(function(e){
+                if(e.keyCode == 8) {
+                  $('#user-results').empty();
+                  $('#journey-results').empty();
+                  $('.results-wrap').css('display','none');
+                }
+              });
+
+              $('#searchbar').on('input', function(ev) {
+                ev.preventDefault();
+                $.post('/search/'+ $(this).val(), function(data) {
+                  if(data != undefined) {
+                    if(data.users.length) {
+                      $('.results-wrap').css('display','block');
+                      $('#user-results').empty().html("<li class='header'><span>Users</span></li>");
+                      $.each(data.users, function(idx, user) {
+                        $("<li class='result'><a href='/profile/"+ user._id +"'>"
+                            +"<img class='user-picture-search img-circle' data-src='"+ user.picture +"'>"
+                            +"<span class='text'>"+ user.name.first + " " + user.name.last + "</span>"
+                            +"<span class='text normal'>"+ user.city + ", " + user.country +"</span></a></li>"
+                        ).appendTo('#user-results');
+                      });
+
+                      $('.user-picture-search').cloudinary({ 
+                        secure: true, cdn_subdomain: true, width:50, height:50, crop: 'thumb'
+                      });
+                    }
+                    if(data.guides.length) {
+                      $('.results-wrap').css('display','block');
+                      $('#journey-results').empty().html("<li class='header'><span>Journeys</span></li>");
+                      $.each(data.guides, function(idx, guide) {
+                        $("<li class='result'><a href='/guide/"+ guide._id +"'>"
+                          +"<img class='guide-picture-search img-circle' data-src='"+ guide.places[0].picture +"'>"
+                          +"<span class='text'>"+ guide.title + "</span>"
+                          +"<div class='user-rating small'><div class='numbers'>"+ guide.avg +"</div></div></a></li>"
+                        ).appendTo('#journey-results');
+                      });
+
+                      $('.guide-picture-search').cloudinary({ 
+                        secure: true, cdn_subdomain: true, width:50, height:50, crop: 'thumb'
+                      });
+                    }
+                  }
+                });
+              });
+
+              $('#feedback-form').submit(function(ev) 
+              {
+                ev.preventDefault();
+                $.ajax({
+                  type : $(this).attr('method'),
+                  url  : $(this).attr('action'),
+                  data : $(this).serialize(),
+                  context : this,
+                  success : function(data) 
+                  {
+                    $('#feedback-modal').modal('toggle');
+                  },
+                  error: function(data) 
+                  {
+                    alert('error');
+                    
+                    var errors = JSON.parse(data.responseText);
+                    
+                    for (error in errors) 
+                    { 
+                      var id = '#id_' + error;
+                       $(id).parent('p').prepend(errors[error]);
+                      }
+                    }
+                });
+                return false;
+              });
+        	});
+        </script>
+
+		  {{{block 'scripts'}}}
+
+    	<script type='text/javascript' src='/javascripts/pigero.js'></script>
+    		
+	</body>
+</html>

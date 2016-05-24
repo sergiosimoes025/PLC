@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jornal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/Users/Perez_25/Documents/Universidade/Mestrado/PLC/PED/SCHEMAS/jornal.xsd">
+    <cabeçalho>
+        <edição>Opinião Perez</edição>
+        <data>2015-02-02</data>
+        <local>3B</local>
+    </cabeçalho>
+    <corpo>
+      <secção id="Crónica da semana">
+          <artigo id="benfica">
+                    <titulo>Crónica da Semana</titulo>
+                    <sub_titulo>Benfica ganha de novo</sub_titulo>
+                    <data>2015-02-02</data>
+                    <autor>Perez</autor>
+                    <p>
+                      <nome_pessoa>Jonas marca mais um golo!</nome_pessoa>  
+                    </p>
+                </artigo>
+         
+              <artigo id="porto">
+              <titulo>FCP</titulo>
+              <sub_titulo>Mais um jogo ganho facilmente</sub_titulo>
+              <data>2015-02-02</data>
+              <autor>David Rodrigues</autor>
+              <p>
+                 <imagem> cenz</imagem> 
+              </p>
+          </artigo>
+          
+          <secção id="Futsal">
+              <artigo>
+                  <titulo>Benfica ganha em braga</titulo>
+                  <sub_titulo>Resultado final 5 -3 </sub_titulo>
+                  <data>2015-02-01</data>
+                  <autor>Rodrigo Moreno</autor>
+              </artigo>
+              
+          </secção>
+            </secção>
+      
+            
+        
+    </corpo>
+    <fecho></fecho>
+</jornal>

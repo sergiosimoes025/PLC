@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT arv-gen (pessoa)+ >
+<!ELEMENT pessoa (nome,data-nasc,pai?,mae?) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT data-nasc (#PCDATA) >
+<!ELEMENT pai EMPTY >
+<!ELEMENT mae EMPTY >
+<!ATTLIST pessoa id ID #REQUIRED >
+<!ATTLIST pai ref IDREF #REQUIRED >
+<!ATTLIST mae ref IDREF #REQUIRED >

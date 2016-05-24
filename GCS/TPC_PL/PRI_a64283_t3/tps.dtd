@@ -1,0 +1,73 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT trabalhos (grupo)+>
+<!ATTLIST trabalhos
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT grupo (aluno1,(aluno2,aluno3)?,titulo,file,file-env?,data)>
+<!ATTLIST grupo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT aluno1 (numero1,nome1,curso1)>
+<!ATTLIST aluno1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT aluno2 (numero2,nome2,curso2)>
+<!ATTLIST aluno2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT aluno3 (numero3,nome3,curso3)>
+<!ATTLIST aluno3
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ATTLIST titulo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT file-env (#PCDATA)>
+<!ATTLIST file-env
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT data (#PCDATA)>
+<!ATTLIST data
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT numero1 (#PCDATA)>
+<!ATTLIST numero1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nome1 (#PCDATA)>
+<!ATTLIST nome1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT curso1 (#PCDATA)>
+<!ATTLIST curso1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT numero2 (#PCDATA)>
+<!ATTLIST numero2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nome2 (#PCDATA)>
+<!ATTLIST nome2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT curso2 (#PCDATA)>
+<!ATTLIST curso2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT numero3 (#PCDATA)>
+<!ATTLIST numero3
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nome3 (#PCDATA)>
+<!ATTLIST nome3
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT curso3 (#PCDATA)>
+<!ATTLIST curso3
+  xmlns CDATA #FIXED ''>

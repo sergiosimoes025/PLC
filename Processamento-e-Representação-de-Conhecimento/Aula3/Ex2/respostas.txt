@@ -1,0 +1,48 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://www.di.uminho.pt/jcr/XML/rdf/ex2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+Quais os títulos das publicações presentes na Ontologia?
+
+SELECT ?titulo
+WHERE {
+?s ex:titulo ?titulo
+}
+
+ORDER BY ASC(?titulo)
+
+
+Quais os títulos das publicações em co-autoria com "Miguel Ferreira"?
+
+b)
+//todos os títulos
+SELECT ?titulo
+WHERE {
+//todas as publicações que temAutor	
+ ?pub ex:temAutor _:x.	
+ _:x ?p ?o.
+ ?o ex:nome "Miguel Ferreira".
+ ?pub ex:titulo ?titulo
+
+}
+
+c)
+
+//todos os títulos de publicação que são  do ano de  2008
+SELECT ?titulo
+WHERE{
+?pub ex:titulo ?titulo.
+?pub ex:data "2008".
+}
+
+d)
+
+SELECT ?ano (COUNT(?pub) AS ?cenas)
+WHERE{
+?pub ex:titulo ?titulo.
+?pub ex:data ?ano 
+}
+
+GROUP by ?ano
+
+

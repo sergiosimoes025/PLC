@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>formulario_tpc6</title>
+
+<style>
+
+dados{
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+	}
+
+
+legend{
+	font-family: Arial;
+	font-size: 20px;
+	font-style: bold;
+	color:#FFF;
+}
+
+div legend {
+	background-color: #14C6CE;
+
+}
+
+fieldset {
+	background-color: #c0d6e4;
+
+}
+
+hr {	
+	height: 6px;
+   
+
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    border: 1;
+    width: 500px;
+    height:40px;
+    font-size: 20px;
+    font-family: Tahoma;
+    background: #14C6CE;
+
+	
+	}
+
+
+</style>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="application/javascript" src="adicionar_workteam.js"></script>
+<script type="text/javascript" src="adicionar_ficheiro.js"></script>
+<script type="text/javascript" src="gest_supervisor.js"></script>
+
+
+<script>
+function validateForm() {
+    var x = document.forms["form"]["begin-date"].value;
+  	if (x==null || x=="") {
+        alert("Data tem campos por preencher");
+        return false;
+    }
+ }
+
+
+ function validateAbstract(){
+ 	var x = document.getElementById("resumo");
+ 	if(x==null || x==""){
+ 		alert("O campo está abstract tem que ser preenchido!");
+ 		return false;
+ 	}
+}
+
+
+ function removeElement(parentDiv, childDiv){
+     if (childDiv == parentDiv) {
+          alert("The parent div cannot be removed.");
+     }
+     else if (document.getElementById(childDiv)) {     
+          var child = document.getElementById(childDiv);
+          var parent = document.getElementById(parentDiv);
+          parent.removeChild(child);
+     }
+     else {
+          alert("Child div has already been removed or does not exist.");
+          return false;
+     }
+}
+</script>
+
+</head>
+
+
+
+
+<h1 style="font-family:Arial;color:green;"><center> Formulário Project Record</center></h1>
+
+<body style="background-color: #c0d6e4;">
+<center>
+<form name="form" action="servidor.php" onsubmit="return validateForm()" method="post">
+	<fieldset>
+		<div><legend>Data de realização</legend></div>
+
+		<br>
+			<label>Begin Date</label><br>
+				<input type="text" size="40" name="begin-date" Placeholder="dd/mm/aaaa">
+		<br>
+		<br>
+
+
+
+
+		<label>End date</label><br>
+			<input type="text"   size="40"  name="end-date" Placeholder="dd/mm/aaaa">
+		<br>
+		<br>
+	</fieldset>
+
+
+	<fieldset>
+		<br>
+		<div><legend><legenda>Dados</legenda></legend></div>
+		<br>
+			<label>Chave</label><br>
+				<input type="text"  size="40" name="chave" value="">
+				<br/>
+				<br/>
+				<div><label> Titulo </label><br>
+				<input type="text" size="40" name="title" id="data_title" value="">	
+
+
+	<br>
+	<br>
+	<br>			
+	</fieldset>
+
+
+	<fieldset id="supervisors">
+		<br>
+		<div><legend>Supervisores</legend></div>
+		<br>
+		<h5>
+			<input type="button" id ="adicionar_supervisor" value="Adicionar"/>
+			&nbsp;&nbsp;
+			&nbsp;&nbsp;
+			<input type="button" id="remover_supervisor" value="Remover"/>
+		</h5>
+			<hr>
+			<div id="s1">
+
+			<label for="supervisor1">Nome</label>
+				<input type='text' name='name_super[]'>
+				 &nbsp;&nbsp;
+			<label for="supervirsor1">Email</label>
+				 <input type='text' name='email_super[]'><br><hr>
+			</div>
+		
+	
+</fieldset>
+
+
+
+
+<fieldset id="equipa_trabalho"> 
+	<div>
+		<legend>
+				Workteam
+		</legend>
+	</div>
+	<h5>
+		<input type="button" id="adicionar_equipa_trabalho" value="Adicionar" />
+		&nbsp;&nbsp;
+		&nbsp;&nbsp;
+		<input type="button" id="remover_equipa_trabalho" value="Remover" />
+	</h5>
+	<hr/>
+	
+	<div id="w1">
+		<label for="worker1">Nome</label>
+		<input type="text" id="worker1"  name="worker_name[]" size="20" />
+			&nbsp;&nbsp;
+			&nbsp;&nbsp;
+
+
+		<label for="worker1">Id</label>
+		<input type="text" id="worker1"  name="worker_id[]" size="20"/>
+			&nbsp;&nbsp;
+			&nbsp;&nbsp;
+		<label for="worker1">Email</label>
+		<input type ="text" id="worker1" name="worker_email[]" size="20"/>
+	
+	</div>
+	<hr>
+
+
+</fieldset>
+
+
+
+
+
+
+<fieldset>
+<div><legend>Abstract</legend></div>
+<br>
+<textarea rows="4" cols="100" id="resumo" name="abstract" placeholder="Resumo sobre o projecto"></textarea>
+</fieldset>
+
+
+<fieldset id="ficheiros">
+	<div><legend>Ficheiros</legend></div>
+	<h5>
+	<input type="button" id="adicionar_ficheiro" value="Adicionar"/>
+	&nbsp;&nbsp;
+	&nbsp;&nbsp;
+	<input type="button" id="remover_ficheiro" value="Remover"/>
+	</h5>
+	<hr/>
+
+	<div id="f1">
+	<label for="file1"> Ficheiro : </label>
+	<input type="file" id="file1" name="file_name[]" size="20"/>
+	</div>
+	<hr/>
+
+
+</fieldset>
+
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+<div id="rodape">
+
+<div><input type="submit" style="margin-top:0px;margin-bottom: 10px;" value="Enviar"  onsubmit="return validateAbstract()" id="enviar"/></div>
+
+<div style="color:#FFF">Copyright Sérgio Simões - Novembro 2014</div> 
+</div>
+</form>
+
+</center>
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,112 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <style>
+                    #titulo{
+                        font-variant:small-caps;
+                        font-size:40px;
+                        text-align:center;
+                        color:red;
+                        border:1px solid black;
+                        background-color:#F0F8FF;
+                    }
+                    
+                    
+                </style><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script><title>Project record</title>
+   </head>
+   <body>
+      <center>
+         <h1 style="color:red;font-size:60px;border:1px solid black;margin-bottom:40px;background-color: #F0F8FF;">Project record</h1>
+      </center>
+      <table width="100%" border="1">
+         <tr>
+            <td width="50%"><b>KEY-NAME: </b>a66jbj<br><b>TITLE: </b>TPC2<br><b>SUBTITLE:  </b>Processamento e Representac&#807;a&#771;o de Conhecimento<br></td>
+            <td width="50%"><b>BEGIN-DATE: </b>Mar&ccedil;o 2015<br><b>END-DATE: </b>Mar&ccedil;o 2015<br><b>SUPERVISORS:</b><ul>
+                              
+                  <li><a href="http://www3.di.uminho.pt/~jcr/">Jos&eacute; Carlos Ramalho</a>,
+                     jcr@di.uminho.pt
+                  </li>
+                          
+               </ul><br></td>
+         </tr>
+      </table><br><h2 id="titulo" style="text-align:center;">WorkTeam </h2>
+              
+      <div style="margin-left:30px;"><i style="color:green;">Id : </i>64283
+      </div>
+      <div style="margin-left:30px;"><i style="color:red;">Name :  </i>S&eacute;rgio Manuel Pereira Sim&otilde;es
+      </div>
+      <div style="margin-left:30px;"><i style="color:blue;">Email :  </i><a href="mailto:sergiohero@gmail.com">sergiohero@gmail.com</a></div>
+      <p></p>
+              
+              
+          
+      <hr>
+      <h2 id="titulo" style="text-align:center;">Abstract</h2>
+              
+          <b>Motiva&ccedil;&atilde;o:</b>    
+              
+      <p>A Web Sem&acirc;ntica &eacute; nada mais nada menos, que uma web com toda sua informa&ccedil;&atilde;o organizada de forma que n&atilde;o somente seres humanos
+         possam entend&ecirc;-la, mas principalmente m&aacute;quinas/computadores.
+                     Disse principalmente m&aacute;quinas, porque elas nos ajudar&atilde;o, de fato, em tarefas que hoje, invariavelmente temos que
+         execut&aacute;-las manualmente.
+      </p>   
+              
+              
+          <b>Objectivo :</b>
+              
+      <p> Terminar as ocorr&ecirc;ncias do ficheiro: <i>jcrpubs.xml</i></p> 
+              
+      <p> Para tal foi necess&aacute;rio analisar o ficheiro , de modo a ver quais eram
+                 as propriedades de cada tipo de Publica&ccedil;&atilde;o. Foi poss&iacute;vel concluir que existem as seguintes
+                 subclasses de Publica&ccedil;&atilde;o :
+      </p>
+              
+      <li style="margin-left:10px">Book</li>
+      <li style="margin-left:10px">Proceedings</li>
+      <li style="margin-left:10px">Inproceedings</li>
+      <li style="margin-left:10px">Phdthesis</li>
+      <li style="margin-left:10px">MasterThesis</li>
+      <li style="margin-left:10px">Article</li>
+      <li style="margin-left:10px">Misc</li>
+      <li style="margin-left:10px">Inbook</li>
+              
+              
+      <p> Atrav&eacute;s da an&aacute;lise de cada tipo  foi poss&iacute;vel inferir que todos tinham as propriedades:</p>
+              
+      <li style="margin-left:10px">T&iacute;tulo</li>
+      <li style="margin-left:10px">Doi</li>
+      <li style="margin-left:10px">Data</li>
+      <li style="margin-left:10px">Autor</li>
+              
+              
+      <p> Contudo , tamb&eacute;m foi poss&iacute;vel inferir que existem propriedades que s&atilde;o destinadas somente a cada tipo
+                     de publica&ccedil;&atilde;o. Por exemplo tanto <i>Phdthesis</i>, como <i>Masterthesis</i> cont&ecirc;m a propriedade <i>school</i>.
+      </p>
+              
+      <p>Por outro lado o tipo <i>Article</i> &eacute; o que cont&ecirc;m mais propriedades unicas, tais como:
+      </p>
+                  
+      <li style="margin-left:10px">number</li>
+      <li style="margin-left:10px">issn</li>
+      <li style="margin-left:10px">volume</li>
+      <li style="margin-left:10px">journal</li>
+              
+      <p> </p>
+              
+      <p>Para representar estes dados foi usado <i>XSL</i> de modo a processar o ficheiro <i>jcrpubs.xml</i> 
+                 com a finalidade de originar um ficheiro com os dados representados na linguagem <i>RDF</i></p>
+              
+              
+           
+              
+      <hr>
+      <h2 id="titulo"> Deliverables :</h2>
+      <li style="margin-left:20px;"><a href="project-record.dtd">project-record.dtd</a></li>
+      <li style="margin-left:20px;"><a href="project-record.html">project-record.html</a></li>
+      <li style="margin-left:20px;"><a href="project-record.xml">project-record.xml</a></li>
+      <li style="margin-left:20px;"><a href="project-record.xsl">project-record.xsl</a></li>
+      <li style="margin-left:20px;"><a href="pubs.xsl">Stylesheet publica&ccedil;&otilde;es</a></li>
+      <li style="margin-left:20px;"><a href="pubs-rdf.xml">Ficheiro final (RDF)</a></li>
+      <hr><img src="http://png-4.findicons.com/files/icons/2315/default_icon/34/copyright.png"><i>Copyright S&eacute;rgio Sim&otilde;es - Mar&ccedil;o 2015</i></body>
+</html>

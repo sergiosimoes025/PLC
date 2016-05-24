@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquivobiografico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <nota> 
+            <data>12/03/2012</data> - o <sujeito>Miguel Gonçalves</sujeito> esta quinta-feira <evento>foi ao aniversário do Luís</evento> que se realizou na sua casa em <local>Braga</local>.
+        </nota>
+        <nota>
+            <data>9/5/1912</data> - vindo no vapor Rugia, <evento>chegou há dias a esta <local>vila</local></evento> o nosso presado amigo sr.<sujeito>Antão Guimarães</sujeito> um excelente e bom rapaz nosso patrício, que no Pará faz a honra da classe a que pertence - e superiores do comércio. É irmão dos nossos bons e distintos amigos srs. Afonso Teixeira da Silva e Francisco Guimarães Lopes Pereira, considerados negociantes na importante praça paraense.
+        </nota>
+        <nota>
+            <data>23/9/1915</data> - Vindo do Pará <evento>deve chegar no próximo dia 26 a <local>Lisboa</local></evento> o nosso amigo sr. <sujeito>Antão Guimarães</sujeito>, 
+            irmão do amigos srs. Afonso Guimarães e Francisco Guimarães Lopes Pereira. Vem de visita a sua adorada 
+            família tratamento da sua saúde.
+        </nota>
+        <nota>
+            <data>3/2/1916</data> - Tivemos o prazer de <evento>cumprimentar nesta <local>vila</local> o nosso bom amigo</evento>
+            Sr. <sujeito>Antão Guimarães</sujeito>, um simpático nosso concidadão, há meses chegado do Pará.
+        </nota>
+        <nota>
+            <data>12/10/1916</data> - <evento>Retirou-se para o <local>Pará</local> o nosso simpático amigo</evento> sr. <sujeito>Antão Guimarães</sujeito>, 
+            irmão dos nossos estimados Afonso e Francisco Guimarães, que aqui esteve a tratar da sua saúde durante muitos meses.
+        </nota>
+        <nota>
+            <data>12/11/1908</data> - no dia 25 do mês passado <evento>passou o aniversário natalício deste nosso dedicado e bom amigo</evento>, 
+            que no Pará, com enorme actividade está à frente da importantíssima casa comercial denominada Bazar Liquidador , 
+            de M. Lopes Guimarães, de que ele é sócio, <sujeito>Antão Guimarães</sujeito>.
+        </nota>
+        <nota>
+            <data>7/12/1912</data> - <evento>retirou-se na Terça-Feira desta <local>vila</local></evento>, depois de alguns meses de gozo no torrão patrício o 
+            nosso bom amigo e simpático rapaz, muito estimado no Pará, sr. <sujeito>Antão Guimarães</sujeito> e seu irmão Francisco Guimarães Lopes Pereira,
+            cavalheiros importantes naquela cidade paraense.
+        </nota>
+        <nota> 
+            <data>9/01/2015</data> - o <sujeito>João Paulo</sujeito> esta terça-feira foi <evento>apresentar o seu projecto de Engenharia Informática</evento> à conferencias de Computação Gráfica em <local>Lisboa</local>.
+        </nota>
+</arquivobiografico>
+

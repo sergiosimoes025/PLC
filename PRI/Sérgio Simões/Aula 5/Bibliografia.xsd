@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="bibliography">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="article"/>
+        <xs:element ref="book"/>
+        <xs:element ref="inbook"/>
+        <xs:element ref="inproceedings"/>
+        <xs:element ref="masterthesis"/>
+        <xs:element ref="misc"/>
+        <xs:element ref="phdthesis"/>
+        <xs:element ref="proceedings"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="article">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="author"/>
+          <xs:element ref="author-ref"/>
+          <xs:element ref="title"/>
+        </xs:choice>
+        <xs:element ref="journal"/>
+        <xs:element minOccurs="0" ref="number"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="doi"/>
+          <xs:element ref="issn"/>
+          <xs:element ref="month"/>
+          <xs:element ref="publisher"/>
+          <xs:element ref="uri"/>
+          <xs:element ref="volume"/>
+          <xs:element ref="year"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="deliverables"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="journal" type="xs:string"/>
+  <xs:element name="number" type="xs:integer"/>
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice>
+          <xs:element maxOccurs="unbounded" ref="author"/>
+          <xs:element maxOccurs="unbounded" ref="author-ref"/>
+        </xs:choice>
+        <xs:element ref="title"/>
+        <xs:element ref="publisher"/>
+        <xs:element ref="year"/>
+        <xs:element ref="address"/>
+        <xs:element ref="month"/>
+        <xs:element ref="deliverables"/>
+        <xs:element minOccurs="0" ref="isbn"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inbook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="author-ref"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="editor-ref"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="editor"/>
+        <xs:element ref="title"/>
+        <xs:element ref="chapter"/>
+        <xs:element ref="pages"/>
+        <xs:element ref="publisher"/>
+        <xs:element ref="year"/>
+        <xs:element ref="month"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="volume"/>
+          <xs:element ref="isbn"/>
+        </xs:sequence>
+        <xs:element minOccurs="0" ref="doi"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chapter" type="xs:string"/>
+  <xs:element name="pages" type="xs:NMTOKEN"/>
+  <xs:element name="inproceedings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="author"/>
+          <xs:element ref="author-ref"/>
+          <xs:element ref="title"/>
+        </xs:choice>
+        <xs:element ref="booktitle"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="address"/>
+          <xs:element ref="month"/>
+          <xs:element ref="year"/>
+        </xs:choice>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="editor"/>
+          <xs:element ref="uri"/>
+        </xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="deliverables"/>
+          <xs:element ref="doi"/>
+          <xs:element ref="isbn"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="issn"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="booktitle" type="xs:string"/>
+  <xs:element name="masterthesis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="author-ref"/>
+        <xs:element ref="title"/>
+        <xs:element ref="school"/>
+        <xs:element ref="year"/>
+        <xs:element ref="month"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="misc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="author-ref"/>
+        <xs:element ref="title"/>
+        <xs:element ref="howpublished"/>
+        <xs:element ref="year"/>
+        <xs:element minOccurs="0" ref="doi"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="howpublished" type="xs:string"/>
+  <xs:element name="phdthesis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="author-ref"/>
+        <xs:element ref="title"/>
+        <xs:element ref="school"/>
+        <xs:element ref="year"/>
+        <xs:element ref="address"/>
+        <xs:element ref="month"/>
+        <xs:element ref="deliverables"/>
+        <xs:element ref="doi"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="proceedings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="year"/>
+        <xs:element maxOccurs="unbounded" ref="editor-ref"/>
+        <xs:element minOccurs="0" ref="editor"/>
+        <xs:element ref="address"/>
+        <xs:element ref="month"/>
+        <xs:choice>
+          <xs:element ref="deliverables"/>
+          <xs:element ref="doi"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="isbn"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="author-ref">
+    <xs:complexType>
+      <xs:attribute name="authorid" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editor-ref">
+    <xs:complexType>
+      <xs:attribute name="authorid" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editor">
+    <xs:complexType mixed="true">
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="publisher" type="xs:string"/>
+  <xs:element name="year" type="xs:integer"/>
+  <xs:element name="month" type="xs:NMTOKEN"/>
+  <xs:element name="volume" type="xs:string"/>
+  <xs:element name="isbn" type="xs:NMTOKEN"/>
+  <xs:element name="doi" type="xs:anyURI"/>
+  <xs:element name="author">
+    <xs:complexType mixed="true">
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="address" type="xs:string"/>
+  <xs:element name="uri" type="xs:anyURI"/>
+  <xs:element name="deliverables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="pdf"/>
+        <xs:element minOccurs="0" ref="xhtml"/>
+        <xs:element minOccurs="0" ref="doc"/>
+        <xs:element minOccurs="0" ref="ppt"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pdf">
+    <xs:complexType>
+      <xs:attribute name="url" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xhtml">
+    <xs:complexType>
+      <xs:attribute name="url" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doc">
+    <xs:complexType>
+      <xs:attribute name="url" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ppt">
+    <xs:complexType>
+      <xs:attribute name="description" type="xs:NCName"/>
+      <xs:attribute name="url" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="issn" type="xs:string"/>
+  <xs:element name="school" type="xs:string"/>
+</xs:schema>

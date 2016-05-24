@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/Users/Perez_25/Documents/Universidade/Mestrado/PLC/PED/Exame_epoca_especial/exame.xsd">
+    <cabeçalho>
+        <uc></uc>
+        <tipo_exame></tipo_exame>
+        <data>2014-10-14</data>
+        <hora>14:00</hora>
+         <aviso>Dispõe de 2:00 horas para realizar este exame;
+                Leia as questões com toda a atenção
+            e responda com calma e clareza em folha convencional
+          </aviso>
+    </cabeçalho>
+    <corpo>
+        <imagem>
+            <descrição>Considere o seguinte excerto dum documento de registo bibliográfico 
+                (parta do princípio de que todos os registos são semelhantes
+                `aquele que se apresenta):</descrição>
+            <path>ficheiro_xml</path>
+        </imagem>
+        <questão>
+            <numero>1</numero>
+            <texto>Desenvolva um DTD para documentos com uma estrutura semelhante
+                `aquela que está representada no excerto.</texto>
+        </questão>
+        <questão>
+            <numero>2</numero>
+            <texto> Desenvolva uma stylesheet XSL para extrair todas as chaves 
+                (o atributo ID de BIBLIOENTRY) e apre- sent ́a-las por ordem alfab ́etica.</texto>
+        </questão>
+    </corpo>
+</exame>

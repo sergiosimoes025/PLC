@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT cv_europass (informacao_pessoal, posto_candidato?, experiencia_prof?, educacao_formacao, competencias_pessoais?, informacao_adicional?, anexo?) >
+
+<!-- pessoal -->
+<!ELEMENT informacao_pessoal (nome,morada,telefone,email,sexo?,datanascimento?,nacionalidades?,foto?) >
+
+<!ELEMENT nome (nome_proprio, apelido) >
+<!ELEMENT nome_proprio (#PCDATA) >
+<!ELEMENT apelido (#PCDATA) >
+
+<!ELEMENT morada (rua, cod_postal, cidade, pais) >
+<!ELEMENT rua (#PCDATA) >
+<!ELEMENT cod_postal (#PCDATA) >
+<!ELEMENT cidade (#PCDATA) >
+<!ELEMENT pais (#PCDATA) >
+
+<!ELEMENT telefone (tipo_telefone, numero) >
+<!ELEMENT tipo_telefone (#PCDATA) >
+<!ELEMENT numero (#PCDATA) >
+
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT sexo (#PCDATA) >
+<!ELEMENT datanascimento (data) >
+<!ELEMENT data (dia,mes,ano) >
+<!ELEMENT dia (#PCDATA) >
+<!ELEMENT mes (#PCDATA) >
+<!ELEMENT ano (#PCDATA) >
+<!ELEMENT nacionalidades (nacionalidade+) >
+<!ELEMENT nacionalidade (#PCDATA) >
+<!ELEMENT foto (xref) >
+<!ELEMENT xref (#PCDATA) >
+<!ATTLIST xref
+            url CDATA #REQUIRED >
+            
+
+<!-- posto a que se candidata -->
+<!ELEMENT posto_candidato (tipo_candidatura, posto_trabalho)+ >
+<!ELEMENT tipo_candidatura (#PCDATA) >
+<!ELEMENT posto_trabalho (#PCDATA) >      
+
+<!-- exp. profissional -->
+<!ELEMENT experiencia_prof (ano_entrada,ano_conclusao, cargo_ocupado, empregador, informacao_adicional) > 
+<!ELEMENT cargo_ocupado (#PCDATA) >
+
+<!ELEMENT empregador (nome_proprio, cidade, pais) >
+
+<!-- educaçao e formaçao -->
+<!ELEMENT educacao_formacao (curso,ano_entrada?,ano_conclusao,local_formacao, informacao_adicional?)>
+
+<!ELEMENT curso (#PCDATA) >
+<!ELEMENT ano_entrada (data) >
+<!ELEMENT ano_conclusao (data) >
+<!ELEMENT local_formacao (nome_proprio, cidade, pais) >
+
+<!-- competencias pessoais -->
+
+<!ELEMENT competencias_pessoais (lingua_materna, outras_linguas?, competencias_comunicacao?, competencias_organizacao?, competencias_trabalho?, competencias_informaticas?, outras?, carta_conducao?) >
+<!ELEMENT lingua_materna (#PCDATA)>
+<!ELEMENT outras_linguas (lingua, compreender,falar, escrever, diploma?) >
+<!ELEMENT lingua (#PCDATA) >
+
+<!ELEMENT compreender (compreensao_oral, leitura) >
+<!ELEMENT compreensao_oral (#PCDATA) >
+<!ELEMENT leitura (#PCDATA) >
+
+<!ELEMENT falar (interacao_oral, producao_oral) >
+<!ELEMENT interacao_oral (#PCDATA) >
+<!ELEMENT producao_oral (#PCDATA) >
+
+<!ELEMENT escrever (#PCDATA) >
+
+<!ELEMENT diploma (anexo) >
+
+<!ELEMENT competencias_comunicacao (informacao_adicional) >
+<!ELEMENT competencias_organizacao (informacao_adicional) >
+<!ELEMENT competencias_trabalho (informacao_adicional) >
+<!ELEMENT competencias_informaticas (informacao_adicional) > 
+<!ELEMENT outras (informacao_adicional) > 
+<!ELEMENT carta_conducao (tipo) >
+<!ELEMENT tipo (#PCDATA) >
+<!ATTLIST tipo
+          tipocarta CDATA #REQUIRED>
+
+<!-- informaçao adicional -->
+
+<!ELEMENT informacao_adicional (p+) >
+<!ELEMENT p (#PCDATA|b|i|u|ackron|xref)* >
+<!ELEMENT b (#PCDATA|i|u|ackron|xref)* >
+<!ELEMENT i (#PCDATA|b|u|ackron|xref)* >
+<!ELEMENT u (#PCDATA|b|i|ackron|xref)* >
+<!ELEMENT ackron (#PCDATA) >
+
+<!-- anexo -->
+
+<!ELEMENT anexo (xref+) >
+

@@ -1,0 +1,10 @@
+
+<h1>{{ title }}</h1>
+
+<p>Please enter a new password</p>
+
+<form method="post" action="/reset/{{ token }}">
+	<input type="password" name="newPassword" placeholder="New password" />
+	<input type="hidden" name="_csrf" value="{{ csrftoken }}" />
+	<input type="submit" value="Reset password" />
+</form>

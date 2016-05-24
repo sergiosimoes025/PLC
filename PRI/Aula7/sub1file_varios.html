@@ -1,0 +1,24 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Submissão de um ficheiro</title>
+        <script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="application/javascript" src="subfiles.js"></script>
+    </head>
+    <body>
+        <h1>Submissão de um ficheiro</h1>
+        <form action="subficheiro.php" method="post" enctype="multipart/form-data">
+            
+            <fieldset id="submissao">
+                <legend>Submissao</legend>
+                <div id="s1">
+                    <label for="ficheiro">Ficheiro: </label>
+                    <input type="file" name="ficheiro" id="ficheiro"/>
+                </div>
+            </fieldset>   
+            <br/>
+            <input type="submit" name="submit" value="Enviar"/>
+                
+        </form>
+    </body>
+</html>

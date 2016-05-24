@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by José Carlos Ramalho (University of Minho) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="sumarios">
+        <xs:annotation>
+            <xs:documentation>elemento principal</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="disciplina">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="curso">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="sigla" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="designacao">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="sigla" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="url" type="xs:string"/>
+                            <xs:element name="ano" type="xs:string"/>
+                            <xs:element name="num-alunos" type="xs:int"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="professor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="email" type="xs:string"/>
+                            <xs:element name="url" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="aulas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="aula" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="data" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="tema" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="nalunos" type="xs:int"/>
+                                        <xs:element name="sumario">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element ref="p" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="tipo" type="TAtipo" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="TAtipo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="T"/>
+            <xs:enumeration value="TP"/>
+            <xs:enumeration value="P"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="p">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="lista">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="p" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="xref">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="url" type="xs:string" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="kw" type="xs:string"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

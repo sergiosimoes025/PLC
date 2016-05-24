@@ -1,0 +1,18 @@
+Publicação :
+Misc;
+Proceding;
+Inproceedings;
+Article;
+
+Pessoa:
+Autor;
+Editor;
+
+Propriedade Pessoa:
+nome:Pessoa->string;
+
+Propriedade Publicação:
+data:Publicação ->date;
+título:Publicação->string;
+DOI:Publicação->url;
+autor:Publicação->Pessoa;

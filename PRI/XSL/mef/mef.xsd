@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="mef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="classe"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="classe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="codigo"/>
+        <xs:element ref="titulo"/>
+        <xs:element ref="desc"/>
+        <xs:element ref="notas-aplic" minOccurs="0"/>
+        <xs:element ref="notas-excl" minOccurs="0"/>
+        <xs:element ref="subclasses" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="codigo" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="codigo" type="xs:string"/>
+  <xs:element name="desc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="p"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="notas-aplic">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="p"/>
+        <xs:element ref="ul"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="notas-excl">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="p"/>
+        <xs:element ref="ul"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subclasses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="classe"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titulo" type="xs:string"/>
+  <xs:element name="p">
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="iref">
+          <xs:complexType>
+            <xs:attribute name="cref" type="xs:IDREF" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ul">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="li">
+          <xs:complexType mixed="true">
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="iref">
+                <xs:complexType>
+                  <xs:attribute name="cref" type="xs:IDREF" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

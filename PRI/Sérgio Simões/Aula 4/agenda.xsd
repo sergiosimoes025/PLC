@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="agenda">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="grupo"/>
+                <xs:element ref="entrada"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="grupo">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="grupo"/>
+                <xs:element ref="entrada"/>
+                <xs:element name="ref">
+                    <xs:complexType>
+                        <xs:attribute name="entref" type="xs:IDREF"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:attribute name="gid" type="xs:ID"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="entrada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nome" type="xs:string"/>
+                <xs:element minOccurs="0" name="email" type="xs:string"/>
+                <xs:element name="telefone" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID"/>
+            <xs:attribute name="tipo"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="TipoEntrada">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pessoa"/>
+            <xs:enumeration value="empresa"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

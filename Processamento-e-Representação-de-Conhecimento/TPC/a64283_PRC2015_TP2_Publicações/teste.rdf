@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:ex="http://www.di.uminho.pt/jcr/XML/rdf/ex2#">
+	<rdf:Description rdf:ID="Publicacao">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Proceedings">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="InProceedings">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Article">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Misc">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="PhdThesis">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="MasterThesis">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Inbook">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Book">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Publicacao"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Pessoa">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Autor">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Pessoa"/>
+	</rdf:Description>
+	<rdf:Description rdf:ID="Editor">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<rdfs:subClassOf rdf:resource="#Pessoa"/>
+	</rdf:Description>
+	<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdf:Property rdf:ID="nome">
+		<rdfs:domain rdf:resource="#Pessoa"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="temAutor">
+		<rdfs:domain rdf:resource="#Publicacao"/>
+		<rdfs:range rdf:resource="#Pessoa"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="temDeliverables">
+		<rdfs:domain rdf:resource="#Publicacao"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="temEditor">
+		<rdfs:domain rdf:resource="#Publicacao"/>
+		<rdfs:range rdf:resource="#Pessoa"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="data">
+		<rdfs:domain rdf:resource="#Publicacao"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="titulo">
+		<rdfs:domain rdf:resource="#Publicacao"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="doi">
+		<rdfs:domain rdf:resource="#Publicacao"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="publisher">
+		<rdfs:domain rdf:resource="#Inbook"/>
+		<rdfs:domain rdf:resource="#Article"/>
+		<rdfs:domain rdf:resource="#Book"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="booktitle">
+		<rdfs:domain rdf:resource="#Inproceedings"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="address">
+		<rdfs:domain rdf:resource="#Inproceedings"/>
+		<rdfs:domain rdf:resource="#Book"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="isbn">
+		<rdfs:domain rdf:resource="#Inproceedings"/>
+		<rdfs:domain rdf:resource="#Proceedings"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="issn">
+		<rdfs:domain rdf:resource="#Article"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="journal">
+		<rdfs:domain rdf:resource="#Article"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="number">
+		<rdfs:domain rdf:resource="#Article"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="volume">
+		<rdfs:domain rdf:resource="#Article"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="school">
+		<rdfs:domain rdf:resource="#Phdthesis"/>
+		<rdfs:domain rdf:resource="#Masterthesis"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="howpublished">
+		<rdfs:domain rdf:resource="#Misc"/>
+	</rdf:Property>
+	<ex:Autor rdf:ID="cb">
+		<ex:nome>Christoph Becker</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="kd">
+		<ex:nome>Kresimir Duretec </ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="pp">
+		<ex:nome>Petar Petrov</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mjc">
+		<ex:nome>Maria Jesus Colmenero Ruiz</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mam">
+		<ex:nome>Miguel Ángel Marzal Garcia-Quismondo</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="rf">
+		<ex:nome>Ricardo Freitas</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mk">
+		<ex:nome>Michael Kraxner</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="ar">
+		<ex:nome>Andreas Rauber</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mm">
+		<ex:nome>Mirkos Martins</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="hm">
+		<ex:nome>Henrique Machado</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jv">
+		<ex:nome>Juliana Vizzotto</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="lmf">
+		<ex:nome>Luis Miguel Ferros</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jg">
+		<ex:nome>Jonas Gassen</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="rct">
+		<ex:nome>Rogério Correa Turchetti</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="htm">
+		<ex:nome>H. T. Machado</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mom">
+		<ex:nome>M. O. Martins</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="pgf">
+		<ex:nome>P. G. D. Ferreira</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="rpa">
+		<ex:nome>Renato Preigschadt de Azevedo</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="rc">
+		<ex:nome>Rui Castro</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="lf">
+		<ex:nome>Luis Faria</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="fb">
+		<ex:nome>Francisco Barbedo</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="lcor">
+		<ex:nome>Luis Corujo</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mjpl">
+		<ex:nome>Maria João Pires Lima</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="as">
+		<ex:nome>António Sousa</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jcr">
+		<ex:nome>José Carlos Ramalho</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="prh">
+		<ex:nome>Pedro Rangel Henriques</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jj">
+		<ex:nome>José João Almeida</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jls">
+		<ex:nome>José Luis Santos</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="grl">
+		<ex:nome>Giovani Rubert Librelotto</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jgr">
+		<ex:nome>J. G. Rocha</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="arl">
+		<ex:nome>A. R. Lopes</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mrh">
+		<ex:nome>M. R. Henriques</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jlf">
+		<ex:nome>J. L. Faria</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mhj">
+		<ex:nome>M. H. Jacinto</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="hs">
+		<ex:nome>H. Santos</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="jmf">
+		<ex:nome>J. M. Fernandes</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="ajp">
+		<ex:nome>A. J. Proença</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="des">
+		<ex:nome>Daniel Edgar Pinto Soares</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mcm">
+		<ex:nome>Maria da Conceição Vieira Mota</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="cajo">
+		<ex:nome>Carlos J. Feijó Lopes</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="mf">
+		<ex:nome>Miguel Ferreira</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="pt">
+		<ex:nome>Pedro Taveira</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="vr">
+		<ex:nome>Vasco Rocha</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="ram">
+		<ex:nome>Ricardo Martins</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="ws">
+		<ex:nome>Weber Souza</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="aab">
+		<ex:nome>Ana Alice Baptista</ex:nome>
+	</ex:Autor>
+	<ex:Autor rdf:ID="migaldo">
+		<ex:nome>Luis Miguel Alves Domingues</ex:nome>
+	</ex:Autor>
+	<ex:Editor rdf:ID="rq">
+		<ex:nome>Ricardo Queirós</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="sa">
+		<ex:nome>Salvador Abreu</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="lc">
+		<ex:nome>Luis Carriço</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="gva">
+		<ex:nome>Gustavo V. Arnold</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="albie">
+		<ex:nome>Alberto Simões</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="clei04">
+		<ex:nome>Mauricio Solar and David Fernández-Baca and Ernesto Cuadros-Vargas</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="jcl">
+		<ex:nome>João Correia Lopes</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="lutz">
+		<ex:nome>Lutz Maicher</ex:nome>
+	</ex:Editor>
+	<ex:Editor rdf:ID="park">
+		<ex:nome>Jack Park</ex:nome>
+	</ex:Editor>
+	<ex:Inbook rdf:ID="IGI2013">
+		<ex:titulo>Innovations in XML Applications and Metadata Management: Advancing
+			Technologies</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:Publisher>IGI Global</ex:Publisher>
+		<ex:Doi>10.4018/978-1-4666-2669-0.ch009</ex:Doi>
+	</ex:Inbook>
+	<ex:Inbook rdf:ID="Ram99b">
+		<ex:titulo>EINE'99 - II Escola de Informática da Sociedade Brasileira de
+			Computação</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:Publisher>Sociedade Brasileira de Computação (SBC)</ex:Publisher>
+		<ex:Doi/>
+	</ex:Inbook>
+	<ex:Inbook rdf:ID="RLH06">
+		<ex:titulo>Lecture Notes in Computer Science</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:Publisher>Springer-Verlag GmbH</ex:Publisher>
+		<ex:Doi>10.1007/11676904_2</ex:Doi>
+	</ex:Inbook>
+	<ex:InProceedings rdf:id="archiving2013">
+		<ex:titulo> Guidelines for legacy repository migration</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="lf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2013</ex:data>
+		<ex:address>Washington DC, Estados Unidos</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>IS&amp;T Archiving 2013</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/23978</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="guimaramus2012">
+		<ex:titulo> MuseCode: à procura da linearidade na música tonal</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2012</ex:data>
+		<ex:address>Palácio Vila Flor, Guimarães</ex:address>
+		<ex:isbn/>
+		<ex:booktitle/>
+		<ex:doi>http://hdl.handle.net/1822/21660</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="bad2012">
+		<ex:titulo>Boas Práticas na Migração de Repositórios: lições aprendidas com o CALM e o
+			ARQBASE</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="lf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2012</ex:data>
+		<ex:address>Fundação Calouste Gulbenkian, Lisboa</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>11º Congresso Nacional de Bibliotecários, Arquivistas e
+			Documentalistas</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/21611</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="icadl2012">
+		<ex:titulo>Design and architecture of a novel preservation watch system</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="lf"/>
+				<rdf:li resources="pp"/>
+				<rdf:li resources="kd"/>
+				<rdf:li resources="cb"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2012</ex:data>
+		<ex:address>Taipei, Taiwan</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>14th International Conference on Asia-Pacific Digital Libraries, ICADL
+			2012</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/21447</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="ipres2012">
+		<ex:titulo>Preservation watch : what to monitor and how</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="lf"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="cb"/>
+				<rdf:li resources="kd"/>
+				<rdf:li resources="pp"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2012</ex:data>
+		<ex:address>Toronto, Canada</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>iPRES 2012 - 9th International Conference on Preservation of Digital
+			Objects</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/20666</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR11e">
+		<ex:titulo>New dimension in relational database preservation: raising the abstraction
+			level</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2011</ex:data>
+		<ex:address>Singapore</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>iPRES 2011 - 8th International Conference on Preservation of Digital
+			Objects</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/15859</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR11d">
+		<ex:titulo>Relational Databases Conceptual Preservation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2011</ex:data>
+		<ex:address>Berlin, Germany</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>VLDL2011 - Fourth Workshop on Very Large Digital Libraries (In conjunction
+			with the International Conference on Theory and Practice of Digital Libraries
+			(TPDL2011))</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/16019</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR11c">
+		<ex:titulo>Using Ontologies to Abstract Relational Databases Conceptual Model</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2011</ex:data>
+		<ex:address>Lisboa, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>EPIA2011 - 15th Portuguese Conference on Artificial
+			Intelligence</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/16113</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR11b">
+		<ex:titulo>Preservation of Relational Databases</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2011</ex:data>
+		<ex:address>Universidade Lusíada, Vila Nova de Famalicão, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>MSKE2011- International Conference on Managing Services in the Knowledge
+			Economy</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/13704</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR11">
+		<ex:titulo>Using Ontologies in Database Preservation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2011</ex:data>
+		<ex:address>ESEIG -IPP, Vila do Conde - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>9th Conference on XML: Aplicações e Tecnologias Associadas, XATA
+			2011</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/13703</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR10">
+		<ex:titulo>Significant Properties in the Preservation of Relational Databases</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2010</ex:data>
+		<ex:address>Glasgow, UK</ex:address>
+		<ex:isbn>978-3-642-15463-8</ex:isbn>
+		<ex:booktitle>Research and Advanced Technology for Digital Libraries, 14th European
+			Conference, ECDL2010</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/13702</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RQR10">
+		<ex:titulo>Criação e Aplicação de um modelo baseado em Topic Maps à Documentação
+			Educativa</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mjc"/>
+				<rdf:li resources="mam"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2010</ex:data>
+		<ex:address>Guimarães, Portugal</ex:address>
+		<ex:isbn>978-972-9067-39-6</ex:isbn>
+		<ex:booktitle>10º Congresso Nacional de Bibliotecários, Arquivistas e
+			Documentalistas</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/11081</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FFR10">
+		<ex:titulo>DigitArq e o novo módulo de interoperabilidade OAI-PMH</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="lmf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2010</ex:data>
+		<ex:address>Guimarães, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>10º CONGRESSO NACIONAL DE BIBLIOTECÁRIOS, ARQUIVISTAS E
+			DOCUMENTALISTAS</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/10532</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR09">
+		<ex:titulo>Relational databases digital preservation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="rf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2009</ex:data>
+		<ex:address>Lisboa - Portugal</ex:address>
+		<ex:isbn>978-972-9348-18-1</ex:isbn>
+		<ex:booktitle>INFORUM : SIMPÓSIO DE INFORMÁTICA, Lisboa, 2009</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/9740</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRHGT08">
+		<ex:titulo>A Framework to specify, extract and manage Topic Maps driven by
+			ontologies</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="jg"/>
+				<rdf:li resources="rct"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2008</ex:data>
+		<ex:address>Lisboa, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>SIGDOC'08 -- 26th ACM International Conference on Design of
+			Communication</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/8236</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="BKRFBR08">
+		<ex:titulo>Distributed Preservation Services: Integrating Planning and Actions</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="cb"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="aab"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mk"/>
+				<rdf:li resources="ar"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2008</ex:data>
+		<ex:address>Aarhus, Danmark</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>ECDL2008 - European Conference on Research and Advanced Technology for Digital
+			Libraries</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/8239</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RFFCBC08">
+		<ex:titulo>RODA and Crib: A Service-Oriented Digital Repository</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="lf"/>
+				<rdf:li resources="rc"/>
+				<rdf:li resources="fb"/>
+				<rdf:li resources="lc"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2008</ex:data>
+		<ex:address>London, England</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>iPRES 2008: The Fifth International Conference on Preservation of Digital
+			Objects</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/8226</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LMMVRH08-XATA">
+		<ex:titulo>Generating a Semantic Network for PubMed</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="mm"/>
+				<rdf:li resources="hm"/>
+				<rdf:li resources="jv"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2008</ex:data>
+		<ex:address>Évora - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA 2008 - XML: Aplicações e Tecnologias Associadas (6ª Conferência
+			Nacional)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FRF-XATA">
+		<ex:titulo>Creating a National Federation of Archives using OAI-PMH</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="lmf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2008</ex:data>
+		<ex:address>Évora - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA 2008 - XML: Aplicações e Tecnologias Associadas (6ª Conferência
+			Nacional)</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7821</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LGRH07-CLEI">
+		<ex:titulo>Using Web Services to put Metamorphosis on the Web</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="jg"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>San José - Costa Rica</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XXXIII Conferencia Latinoamericana de Informática (CLEI2007)</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7354</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LATRH07-CLEI">
+		<ex:titulo>Implementing TMCL: XTche - a topic map schema and constraint specification
+			language</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="rpa"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="rct"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>San José - Costa Rica</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XXXIII Conferencia Latinoamericana de Informática (CLEI2007)</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7364</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LARH07-EPIA">
+		<ex:titulo>Topic Maps Constraint Languages: understanding and comparing</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="rpa"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Guimarães - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Portuguese Conference on Artificial Intelligence (EPIA2007)</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7368</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LMMFRH07-TMRA">
+		<ex:titulo>Comparing Topic Maps Constraint Specification Languages</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="htm"/>
+				<rdf:li resources="mom"/>
+				<rdf:li resources="pgf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Leipzig - Germany</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>International Conference on Topic Maps Research and Applications
+			(TMRA2007)</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7399</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH06-SBSI06">
+		<ex:titulo>Metamorphosis: An Environment to Achieve Semantic Interoperability with Topic
+			Maps</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2006</ex:data>
+		<ex:address>Curitiba, Paraná - Brasil</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>III Simpósio Brasileiro de Sistemas de Informação</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7359</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH07-SEMINFO">
+		<ex:titulo>Estruturando o conhecimento com a norma ISO 13250 Topic Maps</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Torres, RS - Brasil</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>VI Seminário de Informática - SEMINFO, 2007, Torres, RS,
+			Brasil.</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RFFC07-EML">
+		<ex:titulo>Relational database preservation through XML modelling</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="lf"/>
+				<rdf:li resources="rc"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Montréal - Canada</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Extreme Markup Languages 2007, Montréal - Canada, August 2007.</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7120</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RLH07-EML">
+		<ex:titulo>Topic Maps applied to PubMed</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="rpa"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Montréal - Canada</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Extreme Markup Languages 2007, Montréal - Canada, August 2007.</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/7330</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LPRH07-XATA">
+		<ex:titulo>Navegando na Rede Semântica dos Topic Maps com o Ulisses</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="rpa"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Lisboa - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA 2007 - XML: Aplicações e Tecnologias Associadas (5ª Conferência
+			Nacional)</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/6482</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LPRH07-TM">
+		<ex:titulo>Topic Maps Constraint Specification Languages: comparing AsTMa!, OSL, and
+			XTche</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="rpa"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Oslo - Norway</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Topic Maps 2007 - The First International Topic Maps User
+			Conference</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/6474</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FCRBCF07">
+		<ex:titulo>RODA : Repositório de Objectos Digitais Autênticos</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="rc"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="fb"/>
+				<rdf:li resources="lcor"/>
+				<rdf:li resources="lf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Ponta Delgada, Açores, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>9º CONGRESSO NACIONAL DE BIBLIOTECÁRIOS, ARQUIVISTAS E
+			DOCUMENTALISTAS</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/6330</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="SFRL07">
+		<ex:titulo>Consulta Real em Ambiente Virtual: implementação de uma sala de referência e
+			leitura virtual num arquivo</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="as"/>
+				<rdf:li resources="lmf"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mjpl"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Ponta Delgada, Açores, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>9º CONGRESSO NACIONAL DE BIBLIOTECÁRIOS, ARQUIVISTAS E
+			DOCUMENTALISTAS</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/6432</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RFCFBC07">
+		<ex:titulo>XML e preservação digital</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="rc"/>
+				<rdf:li resources="lf"/>
+				<rdf:li resources="fb"/>
+				<rdf:li resources="lcor"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2007</ex:data>
+		<ex:address>Lisboa, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA2007 : XML : aplicações e tecnologias associadas : actas da Conferência
+			Nacional</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/6224</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RFFLS06">
+		<ex:titulo>Digitarq2 : nova arquitectura aplicacional para gestão de Arquivos
+			Definitivos</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="lmf"/>
+				<rdf:li resources="mjpl"/>
+				<rdf:li resources="as"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2006</ex:data>
+		<ex:address>Seixal, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>2ª Conferência Internacional de Arquivos Empresariais</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/6038</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RS2003">
+		<ex:titulo>Electronic Publishing of ADB editions</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jls"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>Universidade do Minho - Guimarães - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Electronic Publishing 2003: From information to knowledge</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RLH2003">
+		<ex:titulo>Ontology driven Websites - Metamorphosis: a framework to specify and manage
+			ontology driven websites</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="grl"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>Universidade do Minho - Guimarães - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Electronic Publishing 2003: From information to knowledge</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="Ram01">
+		<ex:titulo>Constraining Content: specification and processing</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2001</ex:data>
+		<ex:address>Berlin - Germany</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XML Europe'01</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="Ram99">
+		<ex:titulo>Recovering Old Paper Historical Documents Through SGML/XML Modelling</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1999</ex:data>
+		<ex:address>London - England</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Digital Resources for the Humanities - DRH99</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RH99">
+		<ex:titulo>XML::DT - a Perl Down Translation Module</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jj"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1999</ex:data>
+		<ex:address>Granada - Espanha</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XML Europe'99</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RLH98">
+		<ex:titulo>Generating SGML specific editors: from DTDs to Attribute Grammars</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="arl"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1998</ex:data>
+		<ex:address>Chicago - USA</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Markup Technologies'98</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RHb98">
+		<ex:titulo>Beyond DTDs: Constraining Data Content</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1998</ex:data>
+		<ex:address>Paris - France</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>SGML Europe 98 Conference</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RHHRAF98">
+		<ex:titulo>Adapting Museum Structures for the Web: No Changes Needed!</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jgr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jj"/>
+				<rdf:li resources="mrh"/>
+				<rdf:li resources="jlf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1998</ex:data>
+		<ex:address>Toronto, Canada</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Museums and the Web: An International Conference</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH97">
+		<ex:titulo>INES, an Environment for Structured Editions of SGML Documents</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="arl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1997</ex:data>
+		<ex:address>Campinas-SP -- Brasil</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>II Brasilian Symposium on Programming Languages (SBLP'97)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RAH96">
+		<ex:titulo>Document Semantics: two approaches</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jj"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1996</ex:data>
+		<ex:address>Boston - USA</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>SGML96</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="JLRH02">
+		<ex:titulo>XCSL: XML Constraint Specification Language</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="mhj"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2002</ex:data>
+		<ex:address>Montevideo, Uruguai,</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>CLEI'02</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="JLRHb02">
+		<ex:titulo>Bidirectional Conversion between XML Documents and Relational Data
+			Bases</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mhj"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2002</ex:data>
+		<ex:address>Rio de Janeiro - Brasil</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>7th International Conference on CSCW in Design</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="JHR00">
+		<ex:titulo>XML and Semantic Validation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mhj"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2000</ex:data>
+		<ex:address>Instituto de Lógica, Lenguaje e Información, Universidad de Sevilla,
+			Espanha</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Logic, Language and Information: Proceedings of the First Workshop on Logic
+			and Language</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="JLRHc02">
+		<ex:titulo>Constraint Specification Languages: comparing XCSL, Schematron and
+			XML-Schema</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mhj"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2002</ex:data>
+		<ex:address>Barcelona - Espanha</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XML Europe'02</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RH94">
+		<ex:titulo>Uma experiência de utilização da Internet na gestão pedagógica e sua
+			formalização</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1995</ex:data>
+		<ex:address>Universidade do Minho</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>I Conferência Nacional WWW, Informação Multimédia na Internet</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RAH95">
+		<ex:titulo>DAVID, Algebraic Specification of Documents</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jj"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1995</ex:data>
+		<ex:address>Twente - Holanda</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Algebraic Methods in Language Processing</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="Ram96">
+		<ex:titulo>DSSSL: basic topics</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1996</ex:data>
+		<ex:address>Universidade do Minho</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Workshop: Document Processing and SGML</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RRAH97">
+		<ex:titulo>SGML Documents: Where Does Quality Go?</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jgr"/>
+				<rdf:li resources="jj"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1997</ex:data>
+		<ex:address>Washinton - USA</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>SGML/XML'97</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH03">
+		<ex:titulo>XML Topic Map Builder: Specification and Generation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>Braga - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA 2003 - XML, Aplicações e Tecnologias Associadas</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="Ram03">
+		<ex:titulo>O XML nos curriculae das licenciaturas em informática</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>Braga - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA 2003 - XML, Aplicações e Tecnologias Associadas</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH03b">
+		<ex:titulo>TM-Builder: Um Construtor de Ontologias baseado em Topic Maps</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>La Paz, Bolívia</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>CLEI'03</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH03c">
+		<ex:titulo>Geração automática de interfaces Web para sistemas de informação:
+			Metamorphosis</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>ISEP, Porto, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>COOPMedia 2003</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="SMR03">
+		<ex:titulo>Xexam: uma linguagem de suporte para exames online (e-learning)</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="des"/>
+				<rdf:li resources="mcm"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>Vila Verde - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA2003 - XML: Aplicações e Tecnologias Associadas</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="JRH03">
+		<ex:titulo>XML Templates for Constraints (XTC), Um Nível de Abstracção para Linguagens de
+			Especificação de Restrições</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mhj"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>Vila Verde - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XATA2003 - XML: Aplicações e Tecnologias Associadas</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="VECPAR93">
+		<ex:titulo>A Heterogeneous Computer Vision Architecture: Implementation Issues</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="hs"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jmf"/>
+				<rdf:li resources="ajp"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1993</ex:data>
+		<ex:address/>
+		<ex:isbn/>
+		<ex:booktitle>1st International Meeting on Vector and Paralell Processing</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RH98b">
+		<ex:titulo>Qualidade na Publicação Electrónica: como controlá-la?</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1998</ex:data>
+		<ex:address>Guimarães - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Quatic 98: III Encontro Nacional para a Qualidade nas Tecnologias da
+			Informação e Comunicação</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RH98c">
+		<ex:titulo>Informatics and Archives: a present needed symbiosis</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1998</ex:data>
+		<ex:address>Porto - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Workshop internacional Informação e documentos de arquivo em ambientes
+			digitais</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RH98d">
+		<ex:titulo>Os desafios colocados pela informação estruturada no contexto dos arquivos: o
+			arquivo distrital de Braga</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>1998</ex:data>
+		<ex:address>Loures - Portugal </ex:address>
+		<ex:isbn/>
+		<ex:booktitle>IX encontro nacional de Museus e Autarquias</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RLH03b">
+		<ex:titulo>Adrian: a platform for E-Learning Content Prodution</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2003</ex:data>
+		<ex:address>Badajoz - Espanha</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Second International Conference on Multimedia and ICTs in
+			Education</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LR04">
+		<ex:titulo>Web Services: Metodologias de Desenvolvimento</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="cajo"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Faculdade de Engenharia da Universidade do Porto - Porto</ex:address>
+		<ex:isbn>972-99166-0-8</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2004)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR04">
+		<ex:titulo>Aquisição e Armazenamento de Metainformação no Contexto de um Arquivo</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Faculdade de Engenharia da Universidade do Porto - Porto</ex:address>
+		<ex:isbn>972-99166-0-8</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2004)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH04">
+		<ex:titulo>Um Extractor de Topic Maps a partir de Recursos Heterogéneos de
+			Informação</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Faculdade de Engenharia da Universidade do Porto - Porto</ex:address>
+		<ex:isbn>972-99166-0-8</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2004)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RTFR04">
+		<ex:titulo>Gerador de Web Services para cadeias de transformações de documentos
+			XML</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="rf"/>
+				<rdf:li resources="pt"/>
+				<rdf:li resources="vr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Faculdade de Engenharia da Universidade do Porto - Porto</ex:address>
+		<ex:isbn>972-99166-0-8</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2004)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="MRH04">
+		<ex:titulo>Comparação de Linguagens para descrição de Interfaces baseadas em XML</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="ram"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Faculdade de Engenharia da Universidade do Porto - Porto</ex:address>
+		<ex:isbn>972-99166-0-8</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2004)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR04b">
+		<ex:titulo>DIGITARQ - CREATING AND MANAGING A DIGITAL ARCHIVE</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Department of Information and Documentation Science at the University of
+			Brasilia, in Brazil</ex:address>
+		<ex:isbn>85-88130-02-05</ex:isbn>
+		<ex:booktitle>Electronic Publishing 2004 - Building Digital Bridges: linking cultures,
+			commerce and science</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RLH04">
+		<ex:titulo>Adrian - E-Learning Content Production (creating online exams)</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Department of Information and Documentation Science at the University of
+			Brasilia, in Brazil</ex:address>
+		<ex:isbn>85-88130-02-05</ex:isbn>
+		<ex:booktitle>Electronic Publishing 2004 - Building Digital Bridges: linking cultures,
+			commerce and science</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LSRH04">
+		<ex:titulo>Using the Ontology Paradigm to integrate Information Systems</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="ws"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Porto - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>International Conference on Knowledge Engineering and Decision
+			Support</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH04-Clei">
+		<ex:titulo>Extração de Topic Maps no Oveia: Especificação e Processamento</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Sociedad Peruana de Computación, Peru</ex:address>
+		<ex:isbn>9972-9876-2-0</ex:isbn>
+		<ex:booktitle>30ma Conferencia Latinoamericana de Informática (CLEI2004)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RHL04-eLes">
+		<ex:titulo>ADRIAN: Sistema de Suporte à Produção de Conteúdos</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="grl"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Universidade de Aveiro, Portugal</ex:address>
+		<ex:isbn>972-789-134-9</ex:isbn>
+		<ex:booktitle>Conferência eLes'04 - E-Learning no Ensino Superior</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FR04-capsi">
+		<ex:titulo>DigitArq: Creating a Historical Digital Archive</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Instituto Superior Técnico, Lisboa, Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>5ª Conferência da APSI - Associação Portuguesa dos Sistemas de
+			Informação</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH04-XMLw">
+		<ex:titulo>XTche - A Language for Topic Maps Schema and Constraints</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Washington, USA</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>XML Conference and Exhibition 2004 Proceedings</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="Ram05">
+		<ex:titulo>Document Composer: uma aplicação XML para extracção de informação de repositórios
+			XML</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2005</ex:data>
+		<ex:address>Braga</ex:address>
+		<ex:isbn>972-99166-1-6</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2005)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH05">
+		<ex:titulo>Obtendo Interoperabilidade Semântica em Sistemas Heterogéneos de Informação com
+			Metamorphosis</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2005</ex:data>
+		<ex:address>Braga</ex:address>
+		<ex:isbn>972-99166-1-6</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2005)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH05b">
+		<ex:titulo>Constraining XML Topic Maps with XTche</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2005</ex:data>
+		<ex:address>Braga</ex:address>
+		<ex:isbn>972-99166-1-6</ex:isbn>
+		<ex:booktitle>XML: Aplicações e Tecnologias Associadas (XATA 2005)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH04-WWS">
+		<ex:titulo>Achieving Semantic Interoperability in Heterogeneous Information Systems with
+			Topic Maps</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2004</ex:data>
+		<ex:address>Brasília, Brasil</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>I Workshop de Web Semântica (WWS2004)</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RLH05">
+		<ex:titulo>Constraining Topic Maps: A TMCL declarative implementation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2005</ex:data>
+		<ex:address>Montréal - Canada</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>Extreme Markup Languages 2005, Montréal - Canada, 1-5 August
+			2005.</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RLH05b">
+		<ex:titulo>Metamorphosis - a Topic Maps based Environment to Handle Heterogeneous
+			Information Resources</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2005</ex:data>
+		<ex:address>Leipzig - Germany</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>TMRA'05 - International Workshop on Topic Map Research and Applications </ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FBR05-CAPSI">
+		<ex:titulo>Avaliação Automática de Migração em Redes Distribuídas de Conversores</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="aab"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2005</ex:data>
+		<ex:address>Bragança - Portugal</ex:address>
+		<ex:isbn/>
+		<ex:booktitle>6ª Conferência da Associação Portuguesa de Sistemas de
+			Informação</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH05-CLEI">
+		<ex:titulo>Ulisses: Um Navegador Conceptual para Topic Maps</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2005</ex:data>
+		<ex:address>Santiago de Cali - Colombia</ex:address>
+		<ex:isbn>958-670-422-X</ex:isbn>
+		<ex:booktitle>XXXI Conferência Latinoamericana de Informática</ex:booktitle>
+		<ex:doi/>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="FBR06-XATA">
+		<ex:titulo>CRIB : a service oriented architecture for digital preservation
+			outsourcing</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="aab"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2006</ex:data>
+		<ex:address>Portalegre - Portugal</ex:address>
+		<ex:isbn>972-99166-2-4</ex:isbn>
+		<ex:booktitle>XATA - XML: Aplicações e Tecnologias Associadas</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/4457</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="RD06-XATA">
+		<ex:titulo>Especificação e Geração Automática de Navegadores para Redes Semânticas Baseados
+			em Interfaces Web</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="migaldo"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2006</ex:data>
+		<ex:address>Portalegre - Portugal</ex:address>
+		<ex:isbn>972-99166-2-4</ex:isbn>
+		<ex:booktitle>XATA - XML: Aplicações e Tecnologias Associadas</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/4576</ex:doi>
+	</ex:InProceedings>
+	<ex:InProceedings rdf:id="LRH06-XATA">
+		<ex:titulo>Topic Maps Aplicados ao Sistema de Informação do Museu da Emigração</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:data>2006</ex:data>
+		<ex:address>Portalegre - Portugal</ex:address>
+		<ex:isbn>972-99166-2-4</ex:isbn>
+		<ex:booktitle>XATA - XML: Aplicações e Tecnologias Associadas</ex:booktitle>
+		<ex:doi>http://hdl.handle.net/1822/4910</ex:doi>
+	</ex:InProceedings>
+	<ex:Article rdf:id="GARH09">
+		<ex:titulo>Topic maps constraint languages : understanding and comparing</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="rpa"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>International Journal of Reasoning-based Intelligent Systems</ex:journal>
+		<ex:issn>1755-0556. 1:3-4 (2009) 173 - 181</ex:issn>
+		<ex:volume/>
+		<ex:number/>
+		<ex:data>2009</ex:data>
+		<ex:doi> http://hdl.handle.net/1822/9741 </ex:doi>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="FBR07-IJDL">
+		<ex:titulo>An intelligent decision support system for digital preservation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="aab"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>International Journal on Digital Libraries</ex:journal>
+		<ex:issn>1432-5012 (Print) 1432-1300 (Online)</ex:issn>
+		<ex:volume/>
+		<ex:number/>
+		<ex:data>2007</ex:data>
+		<ex:doi> http://hdl.handle.net/1822/6648 </ex:doi>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="FBR06-Ariadne">
+		<ex:titulo>A foundation for automatic digital preservation</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="aab"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>Ariadne</ex:journal>
+		<ex:issn>1361-3200</ex:issn>
+		<ex:volume/>
+		<ex:number>48</ex:number>
+		<ex:data>2006</ex:data>
+		<ex:doi>http://hdl.handle.net/1822/5571</ex:doi>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="RAH1998">
+		<ex:titulo>Algebraic Specification of Documents</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="jj"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>Theoretical Computer Science journal, volume 199</ex:journal>
+		<ex:issn/>
+		<ex:volume>Elsevier</ex:volume>
+		<ex:number/>
+		<ex:data>1998</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="RARH98">
+		<ex:titulo>SGML Documents: Where does quality go?</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="jj"/>
+				<rdf:li resources="prh"/>
+				<rdf:li resources="jgr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>Markup Languages: theory and practice </ex:journal>
+		<ex:issn>1099-6621</ex:issn>
+		<ex:volume>journal, num. 1 vol. 1, MIT Press</ex:volume>
+		<ex:number/>
+		<ex:data>1999</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag>
+				<rdf:li
+					resources="http://www.di.uminho.pt/~jcr/XML/publicacoes/artigos/1999/RRAH99-MarkupLang.pdf"
+				/>
+			</rdf:Bag>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="RH98">
+		<ex:titulo>Qualidade na Publicação Electrónica: como controlá-la?</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>Sistemas de Informação</ex:journal>
+		<ex:issn/>
+		<ex:volume>journal, num. 9, pg 69-83, Associação Portuguesa de Sistemas de
+			Informação</ex:volume>
+		<ex:number/>
+		<ex:data>1998</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="RLH03">
+		<ex:titulo>Ontology driven websites with Topic Maps</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>III International Conference on Web Engineering (ICWE)</ex:journal>
+		<ex:issn/>
+		<ex:volume>Oviedo - Espanha</ex:volume>
+		<ex:number/>
+		<ex:data>2003</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag>
+				<rdf:li
+					resources="http://www.di.uminho.pt/~jcr/XML/publicacoes/artigos/2003/icwe.pdf"/>
+			</rdf:Bag>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="JLRH03">
+		<ex:titulo>XCSL: XML Constraint Specification Language</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mhj"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>CLEI Electronic Journal, ISSN 0717-5000. 2003. </ex:journal>
+		<ex:issn/>
+		<ex:volume>Best papers of XXVIII Conferencia Latinoamericana de Informática - CLEI,
+			2002</ex:volume>
+		<ex:number/>
+		<ex:data>2003</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="SRFP95">
+		<ex:titulo>A Heterogeneous Computer Vision Architecture: Implementation Issues</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="hs"/>
+				<rdf:li resources="jmf"/>
+				<rdf:li resources="ajp"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>Computing Systems in Engineering</ex:journal>
+		<ex:issn/>
+		<ex:volume>volume 6, número 4/5, páginas 401-408</ex:volume>
+		<ex:number/>
+		<ex:data>1995</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="JLRH02b">
+		<ex:titulo>XCSL tutorial</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mhj"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>ACM Crossroads</ex:journal>
+		<ex:issn/>
+		<ex:volume>8.5</ex:volume>
+		<ex:number/>
+		<ex:data>2002</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag>
+				<rdf:li
+					resources="http://www.di.uminho.pt/~jcr/XML/publicacoes/artigos/2002/JLRH02-ACM.pdf"
+				/>
+			</rdf:Bag>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Article rdf:id="RLH05-revAPSI17">
+		<ex:titulo>Geração automática de interfaces Web para Sistemas de Informação:
+			Metamorphosis</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="grl"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:journal>Revista da Associação Portuguesa de Sistemas de Informação</ex:journal>
+		<ex:issn>0872-7031</ex:issn>
+		<ex:volume>17</ex:volume>
+		<ex:number/>
+		<ex:data>2005</ex:data>
+		<ex:doi/>
+		<ex:temDeliverables>
+			<rdf:Bag>
+				<rdf:li
+					resources="http://www.di.uminho.pt/~jcr/XML/publicacoes/artigos/2002/RLH05-revAPSI17.pdf"
+				/>
+			</rdf:Bag>
+		</ex:temDeliverables>
+	</ex:Article>
+	<ex:Misc rdf:ID="RFCFBC06">
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="rc"/>
+				<rdf:li resources="lf"/>
+				<rdf:li resources="fb"/>
+				<rdf:li resources="lcor"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:titulo>RODA - Desenvolvimento de uma plataforma tecnológica para suporte de Arquivos
+			Digitais</ex:titulo>
+		<ex:Doi>http://hdl.handle.net/1822/6420</ex:Doi>
+		<date>2006</date>
+	</ex:Misc>
+	<ex:Misc rdf:ID="FBR07">
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="mf"/>
+				<rdf:li resources="aab"/>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:titulo>CRiB : preservation services for Digital Repositories</ex:titulo>
+		<ex:Doi>http://hdl.handle.net/1822/6195</ex:Doi>
+		<date>2007</date>
+	</ex:Misc>
+	<ex:Misc rdf:ID="Ram98">
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:titulo>Tutorial: Documentação Estruturada - Será que a minha empresa deve migrar para
+			uma tecnologia baseada em SGML?</ex:titulo>
+		<ex:Doi/>
+		<date>1998</date>
+	</ex:Misc>
+	<ex:Book rdf:id="RH2002">
+		<ex:titulo>XML e XSL: da teoria à prática</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="prh"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:Publisher>Colecção Tecnologias da Informação</ex:Publisher>
+		<ex:date>2002-11</ex:date>
+		<ex:Address>FCA - Editora de Informática</ex:Address>
+		<ex:temDeliverables>
+			<rdf:Bag>
+				<rdf:li
+					resources="http://www.di.uminho.pt/~jcr/XML/publicacoes/livros/fca2002/index.htm"
+				/>
+			</rdf:Bag>
+		</ex:temDeliverables>
+		<ex:Doi/>
+	</ex:Book>
+	<ex:Book rdf:id="RL05">
+		<ex:titulo>Web Services: Aplicações Distribuídas sobre Protocolos Internet</ex:titulo>
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+				<rdf:li resources="cajo"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:Publisher>Colecção Web Pro</ex:Publisher>
+		<ex:date>2005-03</ex:date>
+		<ex:Address>FCA - Editora de Informática</ex:Address>
+		<ex:temDeliverables>
+			<rdf:Bag>
+				<rdf:li resources="http://www.di.uminho.pt/~jcr/XML/publicacoes/livros/fca2005/"/>
+			</rdf:Bag>
+		</ex:temDeliverables>
+		<ex:Doi/>
+	</ex:Book>
+	<ex:Phdthesis rdf:id="Ram2000">
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:titulo>Anotação Estrutural de Documentos e sua Semântica</ex:titulo>
+		<ex:school>Tese de Doutoramento</ex:school>
+		<ex:date>2000-07</ex:date>
+		<ex:address>Universidade do Minho</ex:address>
+		<ex:temDeliverables>
+			<rdf:Bag>
+				<rdf:li resources="teses/phd-jcr/src/book1.htm"/>
+			</rdf:Bag>
+		</ex:temDeliverables>
+	</ex:Phdthesis>
+	<ex:Phdthesis rdf:id="Ram93">
+		<ex:temAutor>
+			<rdf:Bag>
+				<rdf:li resources="jcr"/>
+			</rdf:Bag>
+		</ex:temAutor>
+		<ex:titulo>Um Compilador para o GLiTCH</ex:titulo>
+		<ex:school>Escola de Engenharia - Universidade do Minho</ex:school>
+		<ex:date>1993-10</ex:date>
+		<ex:address/>
+		<ex:temDeliverables>
+			<rdf:Bag/>
+		</ex:temDeliverables>
+	</ex:Phdthesis>
+</rdf:RDF>

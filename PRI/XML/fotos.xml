@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fotos SYSTEM "file:/Users/Perez_25/Desktop/fotos.dtd">
+<fotos>
+    <foto ficheiro="cenz">
+        <quando data="12-12-2012"></quando>
+        <quem>Tó</quem>
+        <facto>Na ribeira</facto>
+    </foto>
+    <foto ficheiro="cenz2">
+        <quando data="13-12-2012"></quando>
+        <quem>Marcos</quem>
+        <facto>Na Praça</facto>
+    </foto>
+ </fotos>
+

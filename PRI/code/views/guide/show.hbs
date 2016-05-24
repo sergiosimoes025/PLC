@@ -1,0 +1,435 @@
+  
+    <!-- Full Header -->
+    <div class='fullHeader' id='guideHeader'>
+      <div class='fullHeader-inner'>
+        <div id='map_canvas'></div>
+      </div>
+    </div>
+    <!-- /Full Header -->
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <!-- GUIDE INFO -->
+          <section id='guide'>
+            <article id='guide-info'>
+              <div class='row'>
+                <div class='col-md-12'>
+                  <div class='avatar-wrap'>
+                    <img id='authorPicture' class='img-circle' data-src='{{ guide.author.picture }}'>
+                  </div>
+                  <div class='guide-title'>
+                    <h1 class='h3'>
+                      {{ guide.title }}
+                      {{#if isAuthor}}
+                        <span class='user-actions'>
+                          <a class='edit' href='/guide/{{ guide._id }}/edit' title='Edit'>Edit</a>
+                          <a class='delete' href='/guide/{{ guide._id }}/delete' title='Delete'>Delete</a>
+                        </span>
+                      {{/if}}
+                    </h1>
+                    <p>
+                      by
+                      <a href='/profile/{{ guide.author._id }}'>{{ guide.author.name.full }}</a>
+                      on {{{formatShort guide.created}}} in
+                      <strong>{{ guide.category }}</strong>
+                    </p>
+                  </div>
+                  {{#unless isAuthor}}
+                    <div class='rating-input-wrap'>
+                      {{#if voted}}
+                        <div id='rate-result' class='rate-feedback'>
+                          <p class='error alert alert-warning'>
+                            You already voted
+                            <br>
+                            on this Journey
+                          </p>
+                        </div>
+                      {{else}}
+                        <div id='rate-div'>
+                          <p>Rate now</p>
+                          <input id='rate-stars' class='rating' data-max='5' data-min='1' name='rate_this_guide' type='number'>
+                        </div>
+                        <div id='rate-result' class='rate-feedback'></div>
+                      {{/if}}
+                    </div>
+                  {{/unless}}
+                  <div class='guide-description'>
+                    <p>{{ guide.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            {{#each guide.places}}
+              <!-- Guide Boxes -->
+              <article class='module-box' id='guide-module'>
+                <div class='row box-row'>
+                  <div class='col-md-4'>
+                    <div class='image-wrap'>
+                      <img class='placePicture' data-src='{{ picture }}'>
+                    </div>
+                    <div class='showmap-wrap'>
+                      <div class='inner-table'>
+                        <div class='inner-middle show-map' value='{{@index}}'>
+                          <div class='icon icon-pin-map'></div>
+                          View map
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-md-8 wrap'>
+                    <header>
+                      <h1 class='h5'>
+                        <div style='color:#f5a27b;'>{{ title }}</div>
+                      </h1>
+                      <p>{{{trimString description 160 }}}</p>
+                    </header>
+                   <!-- <button class='show_map' value='{{@index}}'>show map</button> -->
+                  </div>
+                </div>
+              </article>
+              <!-- /Guide Boxes -->
+            {{/each}}
+          </section>
+          <!-- NEW REVIEW -->
+          {{#unless isAuthor}}
+            {{#unless voted}}
+              <div id='reviews'>
+                <div class='h3 h2 reviews-title'>
+                  Reviews
+                  <span class='number'>({{ guide.reviews.length }})</span>
+                </div>
+                <article class='new-review'>
+                  <div class='new-review-wrap module-box'>
+                    <form class='form-new-review' method='post' action='/guide/{{ guide._id }}/review' role='form'>
+                      <input class='form-control' id='headline' placeholder='Headline' type='text' name='headline'>
+                      <textarea class='form-control' id='review-text' name='text' placeholder='Write a quick review to share your thoughts' rows='6'></textarea>
+                      <div class='col-md-6 rating-input-wrap'>
+                        Rate now
+                        <input id='rate-review' class='rating' data-max='5' data-min='1' name='score' type='number'>
+                      </div>
+                      <button class='btn btn-primary pull-right' id='submit' type='submit'>Submit</button>
+                    </form>
+                  </div>
+                </article>
+              </div>
+            {{/unless}}
+          {{/unless}}
+          <!-- LIST OF REVIEWS -->
+          <section class='col-md-11 col-md-offset-1' id='user-reviews'>
+            {{#each guide.reviews}}
+              <article class='user-review module-box'>
+                <div class='wrap'>
+                  <div class='avatar-outside'>
+                    <img class='reviewPicture img-circle' data-src='{{ reviewer.picture }}'>
+                  </div>
+                  <header>
+                    <h1 class='h5'>{{ headline }}</h1>
+                    <p class='author'>
+                      by
+                      <a href='#'>{{ reviewer.name.full }}</a>
+                      <time>
+                        <span class='icon icon-clock-time'></span>
+                        {{formatTimezone created}}
+                      </time>
+                    </p>
+                    <div class='rating'>{{ score }}</div>
+                  </header>
+                  <p class='review-text'>
+                    {{ text }}
+                    <!--<a class='view-more' href='#'>View more</a>-->
+                  </p>
+                  <!--
+                  <p class='agree'>
+                    Do you agree?
+                    <a href='#'>
+                      <span class='icon icon-happy-mood-fill'></span>
+                      5
+                    </a>
+                    <a href='#'>
+                      <span class='icon icon-bad-mood-fill'></span>
+                      0
+                    </a>
+                  </p>
+                  -->
+                </div>
+              </article>
+            {{/each}}
+          </section>
+        </div>
+        <!-- SIDEBAR -->
+        <div class='col-md-3 col-md-offset-1'>
+          <div id='guide-sidebar'>
+            <article id='guide-statics'>
+              <div class='row'>
+                <div class='user-rating'>
+                  <div class='numbers'>
+                    {{#if guide.avg}} {{ guide.avg }} {{else}} 0.0 {{/if}}
+                    <p>{{ guide.votes.length }} votes</p>
+                  </div>
+                </div>
+                <a class='icon' href='#'>
+                  <span class='icon-favorite-star-fill'></span>
+                  <p>{{ guide.favorites.length }}</p>
+                </a>
+                <a class='icon' href='#'>
+                  <span class='icon-bubble-chat-fill'></span>
+                  <p>{{ guide.reviews.length }}</p>
+                </a>
+              </div>
+            </article>
+            <article id='share'>
+              <h1 class='h5 title'>
+                <span class='bold'>Share</span>
+                this guide
+              </h1>
+              <div class='row'>
+                <div class='col-md-7 input-wrap'>
+                  <input class='form-control' type='text' value='http://pigero.com/guide/{{ _id }}'>
+                </div>
+                <div class='col-md-5'>
+                  <a href='#' id='facebook'>
+                    <span class='icon-facebook'></span>
+                  </a>
+                  <a href='#' id='twitter'>
+                    <span class='icon-twitter'></span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!--
+            <article id='recent-activity'>
+              <h1 class='h5 title'>
+                <span class='icon icon-arrow-right'></span>
+                <span class='bold'>Recent</span>
+                activity
+              </h1>
+              <div class='activity-row'>
+                <p>
+                  <span class='badge blue-bg'>
+                    <span class='icon icon-bubble-chat'></span>
+                  </span>
+                  Review from
+                  <a href='#'>Cynthia Provost</a>
+                </p>
+              </div>
+              <div class='activity-row'>
+                <p>
+                  <span class='badge blue-bg'>
+                    <span class='icon icon-favorite-star'></span>
+                  </span>
+                  Voted 4 stars from
+                  <a href='#'>Cynthia Provost</a>
+                </p>
+              </div>
+              <div class='activity-row'>
+                <p>
+                  <span class='badge blue-bg'>
+                    <span class='icon icon-bubble-chat'></span>
+                  </span>
+                  Review from
+                  <a href='#'>Cynthia Provost</a>
+                </p>
+              </div>
+            </article>
+            <article id='related-guides'>
+              <h1 class='h5 title'>
+                <span class='icon icon-link-chain'></span>
+                <span class='bold'>Related</span>
+                guides
+              </h1>
+              <div class='row'>
+                <div class='col-md-7 text'>
+                  <a href='#'>Tea Route</a>
+                  by
+                  <a class='bold' href='#'>Mark Lee</a>
+                </div>
+                <div class='col-md-5 stars'>
+                  <div class='rate'>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star'></span>
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-md-7 text'>
+                  <a href='#'>Route wine in Paris</a>
+                  by
+                  <a class='bold' href='#'>Mark Lee</a>
+                </div>
+                <div class='col-md-5 stars'>
+                  <div class='rate'>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-md-7 text'>
+                  <a href='#'>Amélie Sights in Paris</a>
+                  by
+                  <a class='bold' href='#'>Mark Lee</a>
+                </div>
+                <div class='col-md-5 stars'>
+                  <div class='rate'>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star-fill'></span>
+                    <span class='star-green icon-favorite-star'></span>
+                    <span class='star-green icon-favorite-star'></span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{#contentFor 'scripts'}}
+      <script type='text/javascript' src='//maps.google.com/maps/api/js?v=3.5&sensor=false'></script>
+      <script type='text/javascript' src='/javascripts/bootstrap-rating-input.js'></script>
+
+      <script type='text/javascript'>
+        $(document).ready(function() {
+        
+          var locations = [];
+          var map, markers = [];
+          
+          function initialize() {
+
+            var style = [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":60}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":30}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ef8c25"},{"lightness":40}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#b6c54c"},{"lightness":40},{"saturation":-40}]},{}];
+
+            {{#each guide.places}}
+              locations.push([ '{{ title }}', {{ lat }}, {{ lng }}, {{@index}}]);
+            {{/each}}
+
+            var image = new google.maps.MarkerImage('/images/map_marker2.png',
+
+              // This marker is 129 pixels wide by 42 pixels tall
+              new google.maps.Size(20, 40),
+
+              // The origin for this image is 0,0.
+              new google.maps.Point(0,0),
+
+              // The anchor for this image is the base of the flagpole at 18,42.
+              new google.maps.Point(10, 40)
+
+            );
+            
+            map = new google.maps.Map(document.getElementById('map_canvas'), {
+              disableDefaultUI: true,
+              zoomControl: true,
+              zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.SMALL,
+                position: google.maps.ControlPosition.TOP_LEFT
+              },
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              styles: style
+            });
+
+            var marker, i;
+
+            var markerBounds = new google.maps.LatLngBounds();
+
+            for (i = 0; i < locations.length; i++) {  
+              var point = new google.maps.LatLng(locations[i][1], locations[i][2]);
+
+              marker = new google.maps.Marker({
+                  position: point,
+                  map: map,
+                  icon: image
+              });
+
+              markerBounds.extend(point);
+
+              var infowindow = new google.maps.InfoWindow;
+
+              google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                  infowindow.setContent(locations[i][0]);
+                  infowindow.open(map, marker);
+                }
+              })(marker, i));  
+
+              markers.push(marker);         
+            }   
+
+            map.fitBounds(markerBounds);
+          }
+
+          google.maps.event.addDomListener(window, 'load', initialize);
+
+          $('.show-map').on('click', function(ev){
+            ev.preventDefault();
+            map.setCenter(new google.maps.LatLng(locations[$(this).attr('value')][1], locations[$(this).attr('value')][2]));
+            google.maps.event.trigger(markers[$(this).attr('value')], 'click');
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+
+            return false;
+          }); 
+
+          $('#rate-stars').on('change', function(ev) {
+            ev.preventDefault();
+            $('#rate-div').empty();
+            $.post('/guide/{{ guide._id }}/vote/'+$(this).val(), function(data) {
+              console.log(data);
+              if(data == 200) {
+                console.log(data);
+                $("<p class='success alert alert-success'>Thanks for rating</p>").appendTo('#rate-result');
+              }
+            });
+          });
+
+          $('#authorPicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:78, height:78, crop: 'thumb', quality:100
+          });
+
+          $('.reviewPicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:78, height:78, crop: 'thumb', quality: 90
+          });
+
+          $('.placePicture').cloudinary({ 
+            secure: true, cdn_subdomain: true, width:240, height:160, crop: 'thumb', quality:100
+          });
+
+          $('.form-new-review').submit(function(ev) { 
+            ev.preventDefault();
+
+            var formData = new FormData($(this)[0]);
+
+            $.ajax({
+              type: 'POST',
+              url: $(this).attr('action'),
+              data: formData,
+              async:false,
+              cache:false,
+              contentType: false,
+              processData: false,
+              success: function(response) {  
+                $('.new-review').empty();
+                $("<article class='user-review module-box'><div class='wrap'><div class='avatar-outside'>"
+                   +"<img class='new-reviewPicture img-circle' data-src='"+ '{{ user.picture }}' +"'>"
+                   +"</div><header><h1 class='h5'>"+ response.title +"</h1><p class='author'>by <a href='/profile/"+'{{ user._id }}'+"'>"
+                   +'{{ user.name.full }}'+ "</a><time><span class='icon icon-clock-time'></span>time ago</time></p>"
+                   +"<div class='rating'>"+ response.score +"</div></header><p class='review-text'>"+ response.text
+                   +"</p></div></article>").appendTo('#user-reviews');
+                $('.new-reviewPicture').cloudinary({ 
+                  secure: true, cdn_subdomain: true, width:78, height:78, crop: 'thumb', quality: 90
+                });
+              },
+              error: function() {
+                alert('Error!');
+              }
+            });
+          });
+
+        });
+      </script>
+    {{/contentFor}}
